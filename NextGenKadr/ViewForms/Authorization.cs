@@ -60,23 +60,20 @@ namespace NextGenKadr
                 if (Int32.Parse(root) == 1)
                 {
                     this.DialogResult = DialogResult.OK;
-                    Authorization service = new Authorization();
-                    service.label1.Text = Login_Box.Text;
+                    Data.UserAuthorization = Login_Box.Text;
                     Close();
                 }
 
                 if (Int32.Parse(root) == 0)
                 {
                     this.DialogResult = DialogResult.No;
-                    MainForms service = new MainForms();
-                    service.UserLabelText = Login_Box.Text;
+                    Data.UserAuthorization = Login_Box.Text;
                     Close();
                 }
             }
             catch(Exception)
             {
                 MessageBox.Show("Пользователь не найден");
-
             }
 
         }

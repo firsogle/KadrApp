@@ -21,7 +21,6 @@ namespace NextGenKadr
             try
             {
                 string PathtoDB;
-                string PathtoDB;
                 if ((File.Exists("Path.txt")))
                 {
                     FileStream input = new FileStream("Path.txt", FileMode.Open, FileAccess.Read);
@@ -38,7 +37,7 @@ namespace NextGenKadr
                     using (FileStream fs = File.Create("Path.txt", 1024))
                     {
                         byte[] info = new UTF8Encoding(true).GetBytes(
-                            @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = I:\GitFolder\NextGenKadr\NextGenKadr\DB_NextGen.mdf; Integrated Security = True");
+                            @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\KadrApp\NextGenKadr\DB_NextGen.mdf; Integrated Security = True");
                         // Add some information to the file.
                         fs.Write(info, 0, info.Length);
                         Path = Convert.ToString(info);

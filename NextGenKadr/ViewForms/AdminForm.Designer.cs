@@ -266,11 +266,11 @@
             // 
             this.MainGrid.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.MainGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MainGrid.Location = new System.Drawing.Point(225, 29);
+            this.MainGrid.Location = new System.Drawing.Point(221, 28);
             this.MainGrid.Name = "MainGrid";
             this.MainGrid.RowHeadersWidth = 51;
             this.MainGrid.RowTemplate.Height = 24;
-            this.MainGrid.Size = new System.Drawing.Size(967, 709);
+            this.MainGrid.Size = new System.Drawing.Size(971, 710);
             this.MainGrid.TabIndex = 2;
             // 
             // menuStrip1
@@ -309,7 +309,8 @@
             // UserLabel
             // 
             this.UserLabel.AutoSize = true;
-            this.UserLabel.Location = new System.Drawing.Point(112, 633);
+            this.UserLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.UserLabel.Location = new System.Drawing.Point(991, 9);
             this.UserLabel.Name = "UserLabel";
             this.UserLabel.Size = new System.Drawing.Size(73, 17);
             this.UserLabel.TabIndex = 5;
@@ -333,7 +334,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 582);
+            this.label1.Location = new System.Drawing.Point(844, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 24);
             this.label1.TabIndex = 8;

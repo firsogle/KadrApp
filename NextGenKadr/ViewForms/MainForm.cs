@@ -17,7 +17,6 @@ namespace NextGenKadr
 {
     public partial class MainForms : Form
     {
-        public string UserLabelText { get; set; }
         public MainForms()
         {
             InitializeComponent();
@@ -33,7 +32,7 @@ namespace NextGenKadr
         {
             MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM General").Tables[0].DefaultView;
             MainGrid.AllowUserToAddRows = false;
-            UserLabel.Text = UserLabelText;
+            UserLabel.Text = Data.UserAuthorization;
         }
 
         private void Update_Click(object sender, EventArgs e)

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForms));
             this.MainGrid = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.поискToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.опрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,6 +47,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.MainGrid)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -70,20 +70,13 @@
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.поискToolStripMenuItem,
             this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1192, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1192, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
-            // 
-            // поискToolStripMenuItem
-            // 
-            this.поискToolStripMenuItem.Name = "поискToolStripMenuItem";
-            this.поискToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
-            this.поискToolStripMenuItem.Text = "Поиск";
             // 
             // справкаToolStripMenuItem
             // 
@@ -108,12 +101,12 @@
             // UserLabel
             // 
             this.UserLabel.AutoSize = true;
-            this.UserLabel.Location = new System.Drawing.Point(56, 604);
+            this.UserLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.UserLabel.Location = new System.Drawing.Point(1080, 7);
             this.UserLabel.Name = "UserLabel";
-            this.UserLabel.Size = new System.Drawing.Size(73, 17);
+            this.UserLabel.Size = new System.Drawing.Size(32, 17);
             this.UserLabel.TabIndex = 5;
-            this.UserLabel.Text = "sfdafsafas";
-            this.UserLabel.Click += new System.EventHandler(this.UserLabel_Click);
+            this.UserLabel.Text = "Null";
             // 
             // toolStripButton1
             // 
@@ -201,16 +194,17 @@
             this.toolStripButton1,
             this.toolstrip2,
             this.toolStripButton3,
+            this.toolStripButton2,
             this.ViewPersonStrip,
             this.toolStripSeparator1,
             this.Reports,
             this.toolStripButton11,
             this.toolStripButton4,
             this.toolStripButton5});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 30);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(199, 708);
+            this.toolStrip1.Size = new System.Drawing.Size(199, 710);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseMove);
@@ -233,11 +227,20 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 552);
+            this.label1.Location = new System.Drawing.Point(946, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 24);
             this.label1.TabIndex = 9;
             this.label1.Text = "Пользователь";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(196, 24);
+            this.toolStripButton2.Text = "Поиск по сотрудникам";
             // 
             // MainForms
             // 
@@ -273,7 +276,6 @@
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem опрограммеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem поискToolStripMenuItem;
         private System.Windows.Forms.Label UserLabel;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolstrip2;
@@ -287,5 +289,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
     }
 }

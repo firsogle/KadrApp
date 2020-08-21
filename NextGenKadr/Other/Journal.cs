@@ -27,12 +27,6 @@ namespace NextGenKadr
 
 
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Journal_Load(object sender, EventArgs e)
         {
             Jornal_Grid.DataSource = connection.ReloadGrid("SELECT * FROM Journal").Tables[0].DefaultView;

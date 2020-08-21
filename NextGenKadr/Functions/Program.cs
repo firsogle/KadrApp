@@ -20,9 +20,6 @@ namespace NextGenKadr
             Application.SetCompatibleTextRenderingDefault(false);
 
             Authorization test = new Authorization();
-            AdminForm test2 = new AdminForm();
-            MainForms test3 = new MainForms();
-
             Application.Run(test);
 
             if (test.DialogResult == DialogResult.OK)
@@ -32,4 +29,13 @@ namespace NextGenKadr
            
         }
     }
+
+    static class Data
+    {
+        public static string UserAuthorization { get; set; }
+        public static DateTime Today { get; }
+    }
+
+
+
 }
