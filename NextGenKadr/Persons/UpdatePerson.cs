@@ -18,7 +18,6 @@ namespace NextGenKadr
         {
             InitializeComponent();
             key = id;
-
             try
             {
                 if (!string.IsNullOrEmpty(Surname_Box.Text = connection.ReadDB($"SELECT Фамилия FROM General WHERE ID = {key}")))
@@ -236,7 +235,6 @@ namespace NextGenKadr
                 {
                     Mil_Commis_Box.Text = connection.ReadDB($"SELECT Mil_Commis FROM EducMil WHERE ID = {key}");
                 }
-
                 if (!string.IsNullOrEmpty(DateWork_Picker.Text = connection.ReadDB($"SELECT DateWork FROM LaborActiv WHERE ID = {key}")))
                 {
                     DateWork_Picker.Text = connection.ReadDB($"SELECT DateWork FROM LaborActiv WHERE ID = {key}");
@@ -316,7 +314,8 @@ namespace NextGenKadr
                 connection.Build($"UPDATE Passport SET [Серия паспорта РФ]=N'{RFSeries_Box.Text}',[Номер паспорта РФ]=N'{RFNumber_Box.Text}',[Дата выдачи паспорта РФ]=N'{RFTime_TimePicker.Text}',[Кем выдан паспорт РФ]=N'{RFWhere_Box.Text}',[Город регистрации]=N'{RFRegCity_Box.Text}',[Индекс города регистрации]=N'{RFRegIndex_Box.Text}',[Улица города регистрации]=N'{RFRegSt_Box.Text}',[Город проживания]=N'{RFLiveCity_Box.Text}',[Индекс города проживания]=N'{RFLiveIndex_Box.Text}',[Улица города проживания]=N'{RFLiveSt_Box.Text}',[Серия загран. паспорта]=N'{EXSeries_Box.Text}',[Номер загран. паспорта]=N'{EXNumber_Box.Text}',[Дата выдачи загран. паспорта]=N'{EXDate_TimePicker.Text}',[Место выдачи загран. паспорта] = N'{EXWhere_Box.Text}',[Срок действия]=N'{EXBefore_TimePicker.Text}' WHERE ID = {key}");
                 connection.Build($"Update EducMil SET EDNameDoc=N'{EDNameDoc_Box.Text}',EDSer=N'{EDSer_Box.Text}',EDNumber=N'{EDNumber_Box.Text}',EDNameInst=N'{EDNameInst_Box.Text}',EDQual=N'{EDQual_Box.Text}',EDSpecial=N'{EDSpecial_Box.Text}',EDPost_Name=N'{EDPost_Name_Box.Text}',EDPost_NumbDoc=N'{EDPost_NumbDoc_Box.Text}',EDPost_Give=N'{EDPost_Give_Box.Text}',EDPost_Academ=N'{EDPost_Academ_Box.Text}',EDPost_Dir=N'{EDPost_Dir_Box.Text}',Mil_ZV=N'{Mil_ZV_Box.Text}',Mil_Zapas=N'{Mil_Zapas_Box.Text}',Mil_VUS=N'{Mil_VUS_Box.Text}',Mil_Sostav=N'{Mil_Sostav_Box.Text}',Mil_Special=N'{Mil_Special_Box.Text}',Mil_Category=N'{Mil_Category_Box.Text}',Mil_Commis=N'{Mil_Commis_Box.Text}' WHERE ID = {key}");
                 connection.Build($"Update LaborActiv SET DateWork=N'{DateWork_Picker.Text}',Position=N'{Position_Box.Text}',NumberContract=N'{NumberContract_Box.Text}',NumberContractDate=N'{NumberContractDate_Picker.Text}',NumOr2=N'{NumOr2_Box.Text}',NumOr2Date=N'{NumOr2Date_Picker.Text}',ContractTerm=N'{ContractTerm_Picker.Text}',Salary=N'{Salary_Box.Text}',WorkExperience=N'{WorkExperience_Box.Text}',Allowance=N'{Allowance_Box.Text}',NumOrder=N'{NumOrder_Box.Text}',PremiumSalary=N'{PremiumSalary_Box.Text}',KTU =N'{KTU_Box.Text}',Rate=N'{Rate_Box.Text}' WHERE ID = {key}");
-              }                    
+                connection.Build($"INSERT INTO Journal ([User], Time, Action, Famaly, Name, Surname) VALUES (N'{Data.UserAuthorization}',N'{Data.Today}',N'{"Изненение данных сотрудника"}',N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}')");
+            }                    
             catch (Exception sit2)
                {
                MessageBox.Show(sit2.Message);

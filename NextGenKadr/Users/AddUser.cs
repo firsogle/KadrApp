@@ -58,7 +58,8 @@ namespace NextGenKadr.Users
             {
                //добавить проверку на заполнение 3 полей
                connection.Build($"INSERT INTO Users (Login, Password, Root) VALUES ('{login}','{password}','{root}')");
-               MessageBox.Show("Логин создан!");
+                connection.Build($"INSERT INTO Journal ([User], Time, Action, Famaly) VALUES (N'{Data.UserAuthorization}',N'{Data.Today}',N'{"Увольнение сотрудника"}',N'{login}')");
+                MessageBox.Show("Логин создан!");
                Close();
 
             }

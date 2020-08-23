@@ -49,44 +49,12 @@ namespace NextGenKadr
         private void But_Del_Click(object sender, EventArgs e)
         {
             connection.Build($"INSERT INTO DeletePersons (Причина, [Номер приказа], Имя, Фамилия, Отчество, Телефон, [ID пользователя]) VALUES (N'{Reason.Text}', N'{IdReason.Text}', N'{Surname_Box.Text}', N'{Name_Box.Text}', N'{Patronymic_Box.Text}', N'{Phone_Box.Text}', {key})");
-            try
-            {
-                connection.DeletePerson($"Delete FROM LaborActiv WHERE ID = {key}");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            try
-            {
-                connection.DeletePerson($"Delete FROM Passport WHERE ID = {key}");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            try
-            {
-                connection.DeletePerson($"Delete FROM EducMil WHERE ID = {key}");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            try
-            {
-                connection.DeletePerson($"Delete FROM General WHERE ID = {key}");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-
+            connection.DeletePerson($"Delete FROM LaborActiv WHERE ID = {key}");
+            connection.DeletePerson($"Delete FROM Passport WHERE ID = {key}");
+            connection.DeletePerson($"Delete FROM EducMil WHERE ID = {key}");
+            connection.DeletePerson($"Delete FROM General WHERE ID = {key}");
+            connection.Build($"INSERT INTO Journal ([User], Time, Action, Famaly, Name, Surname) VALUES (N'{Data.UserAuthorization}',N'{Data.Today}',N'{"Увольнение сотрудника"}',N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}')");
+            
         }
     }
 }
