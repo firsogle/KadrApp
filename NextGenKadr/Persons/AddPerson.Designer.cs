@@ -120,9 +120,6 @@
             this.EXWhere_Box = new System.Windows.Forms.TextBox();
             this.EXNumber_Box = new System.Windows.Forms.TextBox();
             this.EXSeries_Box = new System.Windows.Forms.TextBox();
-            this.RFLiveIndex_Box = new System.Windows.Forms.TextBox();
-            this.RFLiveCity_Box = new System.Windows.Forms.TextBox();
-            this.RFLiveSt_Box = new System.Windows.Forms.TextBox();
             this.RFRegIndex_Box = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.RFWhere_Box = new System.Windows.Forms.TextBox();
@@ -136,10 +133,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -301,6 +294,7 @@
             this.NumOrder_Box.Name = "NumOrder_Box";
             this.NumOrder_Box.Size = new System.Drawing.Size(100, 22);
             this.NumOrder_Box.TabIndex = 69;
+            this.NumOrder_Box.TextChanged += new System.EventHandler(this.NumOrder_Box_TextChanged);
             this.NumOrder_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             // 
             // label71
@@ -713,9 +707,9 @@
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label51.Location = new System.Drawing.Point(86, 215);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(333, 17);
+            this.label51.Size = new System.Drawing.Size(231, 17);
             this.label51.TabIndex = 54;
-            this.label51.Text = "Послевузовское образование образование";
+            this.label51.Text = "Послевузовское образование";
             // 
             // Mil_ZV_Box
             // 
@@ -953,9 +947,6 @@
             this.tabPage2.Controls.Add(this.EXWhere_Box);
             this.tabPage2.Controls.Add(this.EXNumber_Box);
             this.tabPage2.Controls.Add(this.EXSeries_Box);
-            this.tabPage2.Controls.Add(this.RFLiveIndex_Box);
-            this.tabPage2.Controls.Add(this.RFLiveCity_Box);
-            this.tabPage2.Controls.Add(this.RFLiveSt_Box);
             this.tabPage2.Controls.Add(this.RFRegIndex_Box);
             this.tabPage2.Controls.Add(this.textBox9);
             this.tabPage2.Controls.Add(this.RFWhere_Box);
@@ -969,10 +960,6 @@
             this.tabPage2.Controls.Add(this.label26);
             this.tabPage2.Controls.Add(this.label37);
             this.tabPage2.Controls.Add(this.label36);
-            this.tabPage2.Controls.Add(this.label33);
-            this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.label35);
-            this.tabPage2.Controls.Add(this.label29);
             this.tabPage2.Controls.Add(this.label32);
             this.tabPage2.Controls.Add(this.label28);
             this.tabPage2.Controls.Add(this.label27);
@@ -1006,7 +993,7 @@
             // 
             this.EXBefore_TimePicker.CustomFormat = "yyyy.MM.dd";
             this.EXBefore_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.EXBefore_TimePicker.Location = new System.Drawing.Point(166, 529);
+            this.EXBefore_TimePicker.Location = new System.Drawing.Point(166, 375);
             this.EXBefore_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.EXBefore_TimePicker.Name = "EXBefore_TimePicker";
             this.EXBefore_TimePicker.Size = new System.Drawing.Size(100, 22);
@@ -1017,7 +1004,7 @@
             // 
             this.EXDate_TimePicker.CustomFormat = "yyyy.MM.dd";
             this.EXDate_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.EXDate_TimePicker.Location = new System.Drawing.Point(578, 449);
+            this.EXDate_TimePicker.Location = new System.Drawing.Point(578, 297);
             this.EXDate_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.EXDate_TimePicker.Name = "EXDate_TimePicker";
             this.EXDate_TimePicker.Size = new System.Drawing.Size(100, 22);
@@ -1066,7 +1053,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(41, 529);
+            this.label38.Location = new System.Drawing.Point(41, 375);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(105, 17);
             this.label38.TabIndex = 40;
@@ -1076,7 +1063,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(40, 426);
+            this.label19.Location = new System.Drawing.Point(40, 272);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(173, 17);
             this.label19.TabIndex = 39;
@@ -1085,7 +1072,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(477, 446);
+            this.label23.Location = new System.Drawing.Point(477, 297);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(95, 17);
             this.label23.TabIndex = 37;
@@ -1093,14 +1080,14 @@
             // 
             // EXWhere_Box
             // 
-            this.EXWhere_Box.Location = new System.Drawing.Point(125, 479);
+            this.EXWhere_Box.Location = new System.Drawing.Point(125, 325);
             this.EXWhere_Box.Name = "EXWhere_Box";
             this.EXWhere_Box.Size = new System.Drawing.Size(634, 22);
             this.EXWhere_Box.TabIndex = 36;
             // 
             // EXNumber_Box
             // 
-            this.EXNumber_Box.Location = new System.Drawing.Point(311, 451);
+            this.EXNumber_Box.Location = new System.Drawing.Point(311, 297);
             this.EXNumber_Box.Name = "EXNumber_Box";
             this.EXNumber_Box.Size = new System.Drawing.Size(100, 22);
             this.EXNumber_Box.TabIndex = 34;
@@ -1108,33 +1095,11 @@
             // 
             // EXSeries_Box
             // 
-            this.EXSeries_Box.Location = new System.Drawing.Point(125, 449);
+            this.EXSeries_Box.Location = new System.Drawing.Point(125, 295);
             this.EXSeries_Box.Name = "EXSeries_Box";
             this.EXSeries_Box.Size = new System.Drawing.Size(100, 22);
             this.EXSeries_Box.TabIndex = 32;
             this.EXSeries_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            // 
-            // RFLiveIndex_Box
-            // 
-            this.RFLiveIndex_Box.Location = new System.Drawing.Point(295, 312);
-            this.RFLiveIndex_Box.Name = "RFLiveIndex_Box";
-            this.RFLiveIndex_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFLiveIndex_Box.TabIndex = 28;
-            this.RFLiveIndex_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            // 
-            // RFLiveCity_Box
-            // 
-            this.RFLiveCity_Box.Location = new System.Drawing.Point(94, 315);
-            this.RFLiveCity_Box.Name = "RFLiveCity_Box";
-            this.RFLiveCity_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFLiveCity_Box.TabIndex = 26;
-            // 
-            // RFLiveSt_Box
-            // 
-            this.RFLiveSt_Box.Location = new System.Drawing.Point(94, 358);
-            this.RFLiveSt_Box.Name = "RFLiveSt_Box";
-            this.RFLiveSt_Box.Size = new System.Drawing.Size(665, 22);
-            this.RFLiveSt_Box.TabIndex = 24;
             // 
             // RFRegIndex_Box
             // 
@@ -1205,7 +1170,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(40, 482);
+            this.label24.Location = new System.Drawing.Point(40, 328);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(79, 17);
             this.label24.TabIndex = 35;
@@ -1214,7 +1179,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(259, 451);
+            this.label26.Location = new System.Drawing.Point(259, 297);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(51, 17);
             this.label26.TabIndex = 33;
@@ -1223,7 +1188,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(41, 454);
+            this.label37.Location = new System.Drawing.Point(41, 300);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(49, 17);
             this.label37.TabIndex = 31;
@@ -1238,43 +1203,6 @@
             this.label36.Size = new System.Drawing.Size(254, 17);
             this.label36.TabIndex = 30;
             this.label36.Text = "Паспорт Российской Федерации";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(41, 358);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(49, 17);
-            this.label33.TabIndex = 29;
-            this.label33.Text = "Улица";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(233, 315);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(56, 17);
-            this.label34.TabIndex = 27;
-            this.label34.Text = "Индекс";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(40, 315);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(48, 17);
-            this.label35.TabIndex = 25;
-            this.label35.Text = "Город";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.Location = new System.Drawing.Point(41, 281);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(149, 17);
-            this.label29.TabIndex = 23;
-            this.label29.Text = "Место проживания";
             // 
             // label32
             // 
@@ -1822,9 +1750,6 @@
         private System.Windows.Forms.TextBox EXWhere_Box;
         private System.Windows.Forms.TextBox EXNumber_Box;
         private System.Windows.Forms.TextBox EXSeries_Box;
-        private System.Windows.Forms.TextBox RFLiveIndex_Box;
-        private System.Windows.Forms.TextBox RFLiveCity_Box;
-        private System.Windows.Forms.TextBox RFLiveSt_Box;
         private System.Windows.Forms.TextBox RFRegIndex_Box;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox RFWhere_Box;
@@ -1838,10 +1763,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;

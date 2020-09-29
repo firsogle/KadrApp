@@ -42,7 +42,6 @@ namespace NextGenKadr
                     $"INSERT INTO EducMil (EDNameDoc, EDSer, EDNumber, EDNameInst, EDQual, EDSpecial, EDPost_Name, EDPost_NumbDoc, EDPost_Give, EDPost_Academ, EDPost_Dir, Mil_ZV, Mil_Zapas, Mil_VUS, Mil_Sostav, Mil_Special, Mil_Category, Mil_Commis, ID) VALUES (N'{EDNameDoc_Box.Text}',N'{EDSer_Box.Text}',N'{EDNumber_Box.Text}',N'{EDNameInst_Box.Text}',N'{EDQual_Box.Text}',N'{EDSpecial_Box.Text}',N'{EDPost_Name_Box.Text}',N'{EDPost_NumbDoc_Box.Text}',N'{EDPost_Give_Box.Text}',N'{EDPost_Academ_Box.Text}',N'{EDPost_Dir_Box.Text}',N'{Mil_ZV_Box.Text}',N'{Mil_Zapas_Box.Text}',N'{Mil_VUS_Box.Text}',N'{Mil_Sostav_Box.Text}',N'{Mil_Special_Box.Text}',N'{Mil_Category_Box.Text}',N'{Mil_Commis_Box.Text}', '{id}')");
                 connection.Build(
                     $"INSERT INTO LaborActiv (DateWork, Position, NumberContract, NumberContractDate, NumOr2, NumOr2Date, ContractTerm, Salary, WorkExperience, Allowance, NumOrder, PremiumSalary, KTU, Rate, ID) VALUES (N'{DateWork_Picker.Text}',N'{Position_Box.Text}',N'{NumberContract_Box.Text}',N'{NumberContractDate_Picker.Text}',N'{NumOr2_Box.Text}',N'{NumOr2Date_Picker.Text}',N'{ContractTerm_Picker.Text}',N'{Salary_Box.Text}',N'{WorkExperience_Box.Text}',N'{Allowance_Box.Text}',N'{NumOrder_Box.Text}',N'{PremiumSalary_Box.Text}',N'{KTU_Box.Text}',N'{Rate_Box.Text}','{id}')");
-
                 connection.Build(
                     $"INSERT INTO Journal ([User], Time, Action, Famaly, Name, Surname) VALUES (N'{Data.UserAuthorization}',N'{Data.Today}',N'{"Добавление нового сотрудника"}',N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}')");
             }
@@ -85,6 +84,11 @@ namespace NextGenKadr
             {
                 e.Handled = true;
             }
+        }
+
+        private void NumOrder_Box_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
