@@ -12,7 +12,7 @@ namespace NextGenKadr
 
     public class ButtonClass : Control
     {
-        public ui_Button()
+      /*  public ui_Button()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint, true);
             DoubleBuffered = true;
@@ -36,5 +36,6 @@ namespace NextGenKadr
 
             graph.FillRectangle(new SolidBrush(BackColor), rect);
         }
+      */
     }
 }

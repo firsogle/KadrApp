@@ -29,7 +29,7 @@ namespace NextGenKadr
             Close();
         }
 
-        private void Select_CLick(object sender, EventArgs e)
+     /*   private void Select_CLick(object sender, EventArgs e)
         {
             string id = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
             DialogResult result = MessageBox.Show("Удалить запись?", "Выйти", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
@@ -39,6 +39,6 @@ namespace NextGenKadr
                 connection.DeletePerson($"Delete FROM Users WHERE ID = {id}");
                 GridUsers.DataSource = connection.LoadGrid("SELECT Id, Login, Password, Root FROM Users").Tables[0].DefaultView;
             }
-        }
+        }*/
     }
 }

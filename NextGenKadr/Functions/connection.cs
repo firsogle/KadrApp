@@ -1,44 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading;
 
 namespace NextGenKadr
 {
     class connection
     {
-        private static SqlConnection ConnToDB = new SqlConnection(Path());
-        private static SqlCommand sqlCommand = ConnToDB.CreateCommand();
-
-
+        static SqlConnection SQLConn;
+        static SqlCommand SQLComm;
         public static string Path()
-        
+
         {
             PathToDB service = new PathToDB();
             return service.OpenFile(); ;
-        }
-
-
+        }          
+                       
         public static DataSet LoadGrid(string SqlQuery)
         {
+  
+            SQLConn = new SqlConnection(Path());
+            SQLConn.Open();
             DataSet table = new DataSet();
             try
             {
-                using (SqlDataAdapter BaseAdapter = new SqlDataAdapter(SqlQuery, ConnToDB))
+                using (SqlDataAdapter BaseAdapter = new SqlDataAdapter(SqlQuery, SQLConn))
                 {
                     BaseAdapter.Fill(table);
-                    ConnToDB.Close();
+                    SQLConn.Close();
                 }
             }
-
             catch (Exception ex)
             {
 
@@ -46,77 +37,100 @@ namespace NextGenKadr
             }
             finally
             {
-                ConnToDB.Close();
+                SQLConn.Close();
 
             }
-            ConnToDB.Close();
+            SQLConn.Close();
             return table;
 
         }
+
+        public static string Procedure(string Login, string Password)
+        {
+            string Root = string.Empty;
+            SQLConn = new SqlConnection(Path());
+            SQLConn.Open();
+
+            SQLComm = new SqlCommand("Auth", SQLConn);
+
+            SQLComm.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter ParamSQL = new SqlParameter();
+            ParamSQL.ParameterName = "@Логин";
+            ParamSQL.SqlDbType = SqlDbType.VarChar;
+            ParamSQL.Value = Login;
+            ParamSQL.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL);
+
+            SqlParameter ParamSQL2 = new SqlParameter();
+            ParamSQL2.ParameterName = "@Пароль";
+            ParamSQL2.SqlDbType = SqlDbType.VarChar;
+            ParamSQL2.Value = Password;
+            ParamSQL2.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL2);
+
+            SqlParameter ParamSQL3 = new SqlParameter();
+            ParamSQL3.ParameterName = "@Права";
+            ParamSQL3.SqlDbType = SqlDbType.Char;
+            ParamSQL3.Size = 10;
+            ParamSQL3.Direction = ParameterDirection.Output;
+            SQLComm.Parameters.Add(ParamSQL3);
+
+
+            SQLComm.ExecuteNonQuery();
+            Root = ((string)SQLComm.Parameters["@Права"].Value).Trim();
+
+            return Root;
+        }
+
         public static void Build(string query)
         {
 
-            ConnToDB.Close();
-            ConnToDB.Open();
-            sqlCommand.CommandText = query;
-            sqlCommand.ExecuteNonQuery();
-            ConnToDB.Close();
         }
-        public static string id(string query)
-        {
-            ConnToDB.Close();
-            ConnToDB.Open();
-            sqlCommand.CommandText = query;
-            string val = sqlCommand.ExecuteScalar().ToString();
-            ConnToDB.Close();
-            return val;
-        }
+
         public static void UpdateDB(string query)
         {
-            ConnToDB.Close();
-            ConnToDB.Open();
-            sqlCommand.CommandText = query;
-            sqlCommand.ExecuteNonQuery();
-            ConnToDB.Close();
 
         }
         public static void DeletePerson(string query)
         {
-            ConnToDB.Close();
-            ConnToDB.Open();
-            sqlCommand.CommandText = query;
-            sqlCommand.ExecuteNonQuery();
-            ConnToDB.Close();
 
         }
         public static string ReadDB(string query)
         {
-            try
+
+            using (SqlCommand CommRead = new SqlCommand("Authorization", SQLConn))
             {
-                ConnToDB.Close();
-                ConnToDB.Open();
-                sqlCommand.CommandText = query;
-                sqlCommand.CommandType = CommandType.Text;
-                var val = sqlCommand.ExecuteScalar();
-                ConnToDB.Close();
-                return Convert.ToString(val);
-            }
-            catch (Exception ex)
-            {
-                return String.Empty;
+                SQLConn = new SqlConnection(Path());
+                SQLConn.Open();
+                try
+                {
+                    SQLConn.Close();
+                    SQLConn.Open();
+                    CommRead.CommandText = query;
+                    CommRead.CommandType = CommandType.Text;
+                    var val = CommRead.ExecuteScalar();
+                    SQLConn.Close();
+                    return Convert.ToString(val);
+                }
+                catch (Exception ex)
+                {
+                    return String.Empty;
+                }
             }
         }
-
-
         public static DataSet ReloadGrid(string SqlQuery)
         {
+            SQLConn = new SqlConnection(Path());
+            SQLConn.Open();
+
             DataSet table = new DataSet();
             try
             {
-                using (SqlDataAdapter BaseAdapter = new SqlDataAdapter(SqlQuery, ConnToDB))
+                using (SqlDataAdapter BaseAdapter = new SqlDataAdapter(SqlQuery, SQLConn))
                 {
                     BaseAdapter.Fill(table);
-                    ConnToDB.Close();
+                    SQLConn.Close();
                 }
             }
 
@@ -127,12 +141,24 @@ namespace NextGenKadr
             }
             finally
             {
-                ConnToDB.Close();
+                SQLConn.Close();
 
             }
-            ConnToDB.Close();
+            SQLConn.Close();
             return table;
 
+        }
+        public static string id(string query)
+        {
+            SQLConn = new SqlConnection(Path());
+            SQLConn.Open();
+
+            SQLComm = new SqlCommand("Auth", SQLConn);
+
+            SQLComm.CommandText = query;
+            string val = SQLComm.ExecuteScalar().ToString();
+            SQLConn.Close();
+            return val;
         }
     }
 }

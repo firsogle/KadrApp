@@ -40,7 +40,7 @@ namespace NextGenKadr
             Close();
         }
 
-        private void Edit_Click(object sender, EventArgs e)
+       private void Edit_Click(object sender, EventArgs e)
         {
             connection.Build($"Update Users SET Login=N'{Login_Box.Text}', Password=N'{Password_Box.Text}', Root=N'{Root_Box.Text}' WHERE ID = {id32}");
             MessageBox.Show("Запись изменена");

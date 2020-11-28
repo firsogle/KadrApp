@@ -12,9 +12,9 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace NextGenKadr
 {
-    public partial class Com : Form
+   public partial class Com : Form
     {
-        string key = string.Empty;
+       string key = string.Empty;
         public Com(string id = "")
         {
             InitializeComponent();

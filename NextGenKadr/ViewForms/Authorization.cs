@@ -53,30 +53,24 @@ namespace NextGenKadr
             string password = Password_Box.Text;
             string root;
 
-            try
-            { 
-                root = connection.ReadDB($"SELECT Root FROM Users WHERE Login = '{login}' AND  Password = '{password}'");
+                root = connection.Procedure(login,password);
 
-                if (Int32.Parse(root) == 1)
+                if (root == "0")
                 {
                     this.DialogResult = DialogResult.OK;
                     Data.UserAuthorization = Login_Box.Text;
                     Close();
                 }
 
-                if (Int32.Parse(root) == 0)
+                if (root == "1")
                 {
                     this.DialogResult = DialogResult.No;
                     Data.UserAuthorization = Login_Box.Text;
                     Close();
                 }
             }
-            catch(Exception)
-            {
-                MessageBox.Show("Пользователь не найден");
-            }
 
         }
         
     }
-}
+

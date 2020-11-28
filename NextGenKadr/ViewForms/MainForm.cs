@@ -28,9 +28,9 @@ namespace NextGenKadr
             service.ShowDialog();
         }
 
-        private void AdminForm_Load(object sender, EventArgs e)
+       private void AdminForm_Load(object sender, EventArgs e)
         {
-            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM General").Tables[0].DefaultView;
+            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
             MainGrid.AllowUserToAddRows = false;
             UserLabel.Text = Data.UserAuthorization;
         }
@@ -95,7 +95,7 @@ namespace NextGenKadr
                 MessageBox.Show("Выберите запись сотрудника");
             }
         }
-
+       
         private void ViewReports_Click(object sender, EventArgs e)
         {
             ViewReports service = new ViewReports();

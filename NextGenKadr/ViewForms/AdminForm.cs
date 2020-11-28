@@ -25,12 +25,12 @@ namespace NextGenKadr
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM General").Tables[0].DefaultView;
+            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
             MainGrid.AllowUserToAddRows = false;
             UserLabel.Text = Data.UserAuthorization;
         }
 
-        private void Update_Click(object sender, EventArgs e)
+       private void Update_Click(object sender, EventArgs e)
         {
             string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
             UpdatePerson service = new UpdatePerson(id);
@@ -77,7 +77,7 @@ namespace NextGenKadr
             }
         }
 
-        private void ViewPersonStrip_Click(object sender, EventArgs e)
+      private void ViewPersonStrip_Click(object sender, EventArgs e)
         {
             try
             {

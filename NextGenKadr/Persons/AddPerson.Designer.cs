@@ -294,7 +294,6 @@
             this.NumOrder_Box.Name = "NumOrder_Box";
             this.NumOrder_Box.Size = new System.Drawing.Size(100, 22);
             this.NumOrder_Box.TabIndex = 69;
-            this.NumOrder_Box.TextChanged += new System.EventHandler(this.NumOrder_Box_TextChanged);
             this.NumOrder_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             // 
             // label71

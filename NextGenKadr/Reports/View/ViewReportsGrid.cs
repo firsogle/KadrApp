@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace NextGenKadr
 {
-    public partial class ViewReportsGrid : Form
+   public partial class ViewReportsGrid : Form
     {
         public ViewReportsGrid(int number)
         {
