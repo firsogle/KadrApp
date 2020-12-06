@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClosedXML.Excel;
 using System.IO;
-using System.Diagnostics;
 using NextGenKadr.Users;
 
 
@@ -37,14 +36,14 @@ namespace NextGenKadr
 
         private void Update_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             UpdatePerson service = new UpdatePerson(id);
             service.ShowDialog();
         }
 
         private void DeletePerson_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             DeletePerson service = new DeletePerson(id);
             service.ShowDialog();
         }
@@ -74,7 +73,7 @@ namespace NextGenKadr
                 }
                 using (XLWorkbook wb = new XLWorkbook())
                 {
-                    wb.Worksheets.Add(dt, "General");
+                    wb.Worksheets.Add(dt, "Сотрудники");
                     wb.SaveAs(Path.Combine(Path.GetTempPath(), (name + ".xlsx")));
                 }
                 System.Diagnostics.Process.Start(Path.GetTempPath() + (name + ".xlsx"));
@@ -84,16 +83,12 @@ namespace NextGenKadr
 
         private void ViewPersonStrip_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+          
+                string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
                 ViewPerson service = new ViewPerson(id);
                 service.ShowDialog();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Выберите запись сотрудника");
-            }
+            
+
         }
        
         private void ViewReports_Click(object sender, EventArgs e)
@@ -105,7 +100,7 @@ namespace NextGenKadr
 
         private void Reports_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             Reports service = new Reports();
             service.ShowDialog();
         }
@@ -118,7 +113,7 @@ namespace NextGenKadr
 
         private void DeleteReports_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             ReportsDelete service = new ReportsDelete();
             service.ShowDialog();
         }
@@ -147,11 +142,6 @@ namespace NextGenKadr
         {
             if (e.Button != MouseButtons.Left) MouseMain = e.Location;
             Location = new Point((Size)Location - (Size)MouseMain + (Size)e.Location);
-        }
-
-        private void UserLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 

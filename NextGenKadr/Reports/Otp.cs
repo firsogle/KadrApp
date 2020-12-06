@@ -41,7 +41,7 @@ namespace NextGenKadr
         {
             try
             {
-                connection.Build($"INSERT INTO Otp_List (Фамилия, Имя, Отчество, [Табельный номер], [Номер приказа], [Начало отпуска], [Конец отпуска], [Дата приказа]) VALUES (N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}',N'{Number_ID.Text}',N'{NumberOtp_Box.Text}',N'{Otp1_Picker.Text}',N'{Otp2_Picker.Text}',N'{DateOtp_Box.Text}')");
+            //    connection.Build($"INSERT INTO Otp_List (Фамилия, Имя, Отчество, [Табельный номер], [Номер приказа], [Начало отпуска], [Конец отпуска], [Дата приказа]) VALUES (N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}',N'{Number_ID.Text}',N'{NumberOtp_Box.Text}',N'{Otp1_Picker.Text}',N'{Otp2_Picker.Text}',N'{DateOtp_Box.Text}')");
             }
             catch (Exception sit1)
             {

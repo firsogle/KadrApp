@@ -45,7 +45,7 @@ namespace NextGenKadr
         {
             try
             {
-                connection.Build($"INSERT INTO Com_List (Фамилия, Имя, Отчество, [Табельный номер], [Номер приказа], [Дата приказа], [Место командировки], Цель, [Начало командировки], [Конец командировки]) VALUES (N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}',N'{Number_ID.Text}',N'{NumberOtp_Box.Text}',N'{DateOtp_Box.Text}',N'{Place.Text}',N'{Target.Text}',N'{Com1_Picker.Text}',N'{Com2_Picker.Text}')");
+             //   connection.Build($"INSERT INTO Com_List (Фамилия, Имя, Отчество, [Табельный номер], [Номер приказа], [Дата приказа], [Место командировки], Цель, [Начало командировки], [Конец командировки]) VALUES (N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}',N'{Number_ID.Text}',N'{NumberOtp_Box.Text}',N'{DateOtp_Box.Text}',N'{Place.Text}',N'{Target.Text}',N'{Com1_Picker.Text}',N'{Com2_Picker.Text}')");
             }
             catch (Exception sit1)
             {

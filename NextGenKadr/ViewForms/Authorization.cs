@@ -17,12 +17,6 @@ namespace NextGenKadr
         {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           Application.Exit();
-        }
-
         private void Authorization_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13)
@@ -53,8 +47,9 @@ namespace NextGenKadr
             string password = Password_Box.Text;
             string root;
 
-                root = connection.Procedure(login,password);
-
+            root = connection.Auth(login, password);
+            try
+            {
                 if (root == "0")
                 {
                     this.DialogResult = DialogResult.OK;
@@ -69,8 +64,17 @@ namespace NextGenKadr
                     Close();
                 }
             }
+            catch
+            {
+                DialogResult dialogResult = MessageBox.Show("Во время авторизации произошла ошибка", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
-        
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
+}
 

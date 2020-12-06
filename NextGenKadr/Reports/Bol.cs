@@ -42,7 +42,7 @@ namespace NextGenKadr
         {
             try
             {
-                connection.Build($"INSERT INTO Bol_List (Фамилия, Имя, Отчество, [Табельный номер], [Номер приказа], [Дата приказа], [Номер документа], [Дата документа],[Начало больничного], [Конец больничного]) VALUES (N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}',N'{Number_ID.Text}',N'{NumberOtp_Box.Text}',N'{DateOtp_Box.Text}',N'{NumberDoc_Box.Text}',N'{DateDoc_Box.Text}',N'{Bol1_Picker.Text}',N'{Bol2_Picker.Text}')");
+             //   connection.Build($"INSERT INTO Bol_List (Фамилия, Имя, Отчество, [Табельный номер], [Номер приказа], [Дата приказа], [Номер документа], [Дата документа],[Начало больничного], [Конец больничного]) VALUES (N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}',N'{Number_ID.Text}',N'{NumberOtp_Box.Text}',N'{DateOtp_Box.Text}',N'{NumberDoc_Box.Text}',N'{DateDoc_Box.Text}',N'{Bol1_Picker.Text}',N'{Bol2_Picker.Text}')");
             }
             catch (Exception sit1)
             {

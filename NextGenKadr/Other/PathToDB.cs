@@ -37,7 +37,7 @@ namespace NextGenKadr
                     using (FileStream fs = File.Create("Path.txt", 1024))
                     {
                         byte[] info = new UTF8Encoding(true).GetBytes(
-                            @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\KadrApp\NextGenKadr\DB_NextGen.mdf; Integrated Security = True");
+                            @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\KadrApp\NextGenKadr\DataBase_Kadry.mdf; Integrated Security = True");
                         // Add some information to the file.
                         fs.Write(info, 0, info.Length);
                         Path = Convert.ToString(info);
@@ -56,10 +56,6 @@ namespace NextGenKadr
         private void Close(object sender, EventArgs e)
         {
             Close();
-        }
-        private void ChangeToPass_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

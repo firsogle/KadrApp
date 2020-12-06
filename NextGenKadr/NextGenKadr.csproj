@@ -324,12 +324,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB_NextGen.mdf">
+    <Content Include="DataBase_Kadry.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DB_NextGen_log.ldf">
+    <Content Include="DataBase_Kadry_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DB_NextGen.mdf</DependentUpon>
+      <DependentUpon>DataBase_Kadry.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
