@@ -179,7 +179,7 @@ namespace NextGenKadr
             SQLComm.Parameters.Add(ParamSQL5);
             
             SqlParameter ParamSQL6 = new SqlParameter();
-            ParamSQL6.ParameterName = "@Гранжданство";
+            ParamSQL6.ParameterName = "@Гражданство";
             ParamSQL6.SqlDbType = SqlDbType.NVarChar;
             ParamSQL6.Size = 50;
             ParamSQL6.Value = Param6;
@@ -233,7 +233,7 @@ namespace NextGenKadr
             SQLConn = new SqlConnection(Path());
             SQLConn.Open();
 
-            SQLComm = new SqlCommand("Внести_сведения_паспорта", SQLConn);
+            SQLComm = new SqlCommand("Внести сведения паспорта", SQLConn);
             SQLComm.CommandType = CommandType.StoredProcedure;
 
             SqlParameter ParamSQL1 = new SqlParameter();
@@ -260,14 +260,14 @@ namespace NextGenKadr
             SQLComm.Parameters.Add(ParamSQL3);
 
             SqlParameter ParamSQL4 = new SqlParameter();
-            ParamSQL4.ParameterName = "@Дата выдачи";
+            ParamSQL4.ParameterName = "@Дата_выдачи";
             ParamSQL4.SqlDbType = SqlDbType.Date;
             ParamSQL4.Value = Param4;
             ParamSQL4.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL4);
 
             SqlParameter ParamSQL5 = new SqlParameter();
-            ParamSQL5.ParameterName = "@Кем выдан";
+            ParamSQL5.ParameterName = "@Кем_выдан";
             ParamSQL5.SqlDbType = SqlDbType.NVarChar;
             ParamSQL5.Size = 50;
             ParamSQL5.Value = Param5;
@@ -275,7 +275,7 @@ namespace NextGenKadr
             SQLComm.Parameters.Add(ParamSQL5);
 
             SqlParameter ParamSQL6 = new SqlParameter();
-            ParamSQL6.ParameterName = "@Город регистрации";
+            ParamSQL6.ParameterName = "@Город_регистрации";
             ParamSQL6.SqlDbType = SqlDbType.NVarChar;
             ParamSQL6.Size = 50;
             ParamSQL6.Value = Param6;
@@ -285,7 +285,7 @@ namespace NextGenKadr
             SqlParameter ParamSQL7 = new SqlParameter();
             ParamSQL7.ParameterName = "@Индекс";
             ParamSQL7.SqlDbType = SqlDbType.Int;
-            ParamSQL7.Value = Param7;
+            ParamSQL7.Value = Convert.ToInt32(Param7);
             ParamSQL7.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL7);
 
@@ -371,7 +371,7 @@ namespace NextGenKadr
             SQLComm.Parameters.Add(ParamSQL1);
 
             SqlParameter ParamSQL2 = new SqlParameter();
-            ParamSQL2.ParameterName = "@Уровень_образования";
+            ParamSQL2.ParameterName = "@Наименование_документа";
             ParamSQL2.SqlDbType = SqlDbType.NVarChar;
             ParamSQL2.Size = 50;
             ParamSQL2.Value = Param2;
@@ -381,14 +381,14 @@ namespace NextGenKadr
             SqlParameter ParamSQL3 = new SqlParameter();
             ParamSQL3.ParameterName = "@Серия";
             ParamSQL3.SqlDbType = SqlDbType.Int;
-            ParamSQL3.Value = Param3;
+            ParamSQL3.Value = Convert.ToInt32(Param3);
             ParamSQL3.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL3);
 
             SqlParameter ParamSQL4 = new SqlParameter();
             ParamSQL4.ParameterName = "@Номер";
             ParamSQL4.SqlDbType = SqlDbType.Int;
-            ParamSQL4.Value = Param4;
+            ParamSQL4.Value = Convert.ToInt32(Param4);
             ParamSQL4.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL4);
 
@@ -423,7 +423,7 @@ namespace NextGenKadr
             SQLConn = new SqlConnection(Path());
             SQLConn.Open();
 
-            SQLComm = new SqlCommand("Внести сведения об образовании", SQLConn);
+            SQLComm = new SqlCommand("Внести cведения о послевузовском образовании", SQLConn);
             SQLComm.CommandType = CommandType.StoredProcedure;
 
             SqlParameter ParamSQL1 = new SqlParameter();
@@ -434,16 +434,17 @@ namespace NextGenKadr
             SQLComm.Parameters.Add(ParamSQL1);
 
             SqlParameter ParamSQL3 = new SqlParameter();
-            ParamSQL3.ParameterName = "@Серия";
-            ParamSQL3.SqlDbType = SqlDbType.Int;
+            ParamSQL3.ParameterName = "@Наименование_документа";
+            ParamSQL3.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL3.Size = 50;
             ParamSQL3.Value = Param3;
             ParamSQL3.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL3);
 
             SqlParameter ParamSQL4 = new SqlParameter();
-            ParamSQL4.ParameterName = "@Номер";
+            ParamSQL4.ParameterName = "@Номер_Документа";
             ParamSQL4.SqlDbType = SqlDbType.Int;
-            ParamSQL4.Value = Param4;
+            ParamSQL4.Value = Convert.ToInt32(Param4);
             ParamSQL4.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL4);
 
@@ -456,7 +457,7 @@ namespace NextGenKadr
             SQLComm.Parameters.Add(ParamSQL5);
 
             SqlParameter ParamSQL6 = new SqlParameter();
-            ParamSQL6.ParameterName = "@Квалицикация";
+            ParamSQL6.ParameterName = "@Ученая_степень";
             ParamSQL6.SqlDbType = SqlDbType.NVarChar;
             ParamSQL6.Size = 50;
             ParamSQL6.Value = Param6;
@@ -464,7 +465,7 @@ namespace NextGenKadr
             SQLComm.Parameters.Add(ParamSQL6);
 
             SqlParameter ParamSQL7 = new SqlParameter();
-            ParamSQL7.ParameterName = "@Специальность";
+            ParamSQL7.ParameterName = "@Направление";
             ParamSQL7.SqlDbType = SqlDbType.NVarChar;
             ParamSQL7.Size = 50;
             ParamSQL7.Value = Param6;
@@ -478,7 +479,7 @@ namespace NextGenKadr
             SQLConn = new SqlConnection(Path());
             SQLConn.Open();
 
-            SQLComm = new SqlCommand("Внести_сведения_паспорта", SQLConn);
+            SQLComm = new SqlCommand("Внести сведения о воиснком учёте", SQLConn);
             SQLComm.CommandType = CommandType.StoredProcedure;
 
             SqlParameter ParamSQL1 = new SqlParameter();
@@ -498,7 +499,8 @@ namespace NextGenKadr
 
             SqlParameter ParamSQL3 = new SqlParameter();
             ParamSQL3.ParameterName = "@Номер_ВУС";
-            ParamSQL3.SqlDbType = SqlDbType.Int;
+            ParamSQL3.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL3.Size = 50;
             ParamSQL3.Value = Param3;
             ParamSQL3.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL3);
@@ -550,7 +552,7 @@ namespace NextGenKadr
             SQLConn = new SqlConnection(Path());
             SQLConn.Open();
 
-            SQLComm = new SqlCommand("Внести сведения об образовании", SQLConn);
+            SQLComm = new SqlCommand("Внести трудовую деятельность", SQLConn);
             SQLComm.CommandType = CommandType.StoredProcedure;
 
             SqlParameter ParamSQL1 = new SqlParameter();
@@ -569,14 +571,15 @@ namespace NextGenKadr
 
             SqlParameter ParamSQL3 = new SqlParameter();
             ParamSQL3.ParameterName = "@Номер_договора";
-            ParamSQL3.SqlDbType = SqlDbType.Int;
+            ParamSQL3.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL3.Size = 50;
             ParamSQL3.Value = Param3;
             ParamSQL3.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL3);
 
             SqlParameter ParamSQL4 = new SqlParameter();
             ParamSQL4.ParameterName = "@Дата_заключения_договора";
-            ParamSQL4.SqlDbType = SqlDbType.Int;
+            ParamSQL4.SqlDbType = SqlDbType.Date;
             ParamSQL4.Value = Param4;
             ParamSQL4.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL4);
@@ -612,7 +615,7 @@ namespace NextGenKadr
             SQLConn = new SqlConnection(Path());
             SQLConn.Open();
 
-            SQLComm = new SqlCommand("Внести сведения об образовании", SQLConn);
+            SQLComm = new SqlCommand("Внести cведения о заработной плате", SQLConn);
             SQLComm.CommandType = CommandType.StoredProcedure;
 
             SqlParameter ParamSQL1 = new SqlParameter();
@@ -633,45 +636,41 @@ namespace NextGenKadr
             SqlParameter ParamSQL3 = new SqlParameter();
             ParamSQL3.ParameterName = "@Надбавка";
             ParamSQL3.SqlDbType = SqlDbType.Int;
-            ParamSQL3.Value = Param3;
+            ParamSQL3.Value = Convert.ToInt32(Param3);
             ParamSQL3.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL3);
 
             SqlParameter ParamSQL4 = new SqlParameter();
             ParamSQL4.ParameterName = "@Категория";
-            ParamSQL4.SqlDbType = SqlDbType.Int;
+            ParamSQL4.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL4.Size = 50;
             ParamSQL4.Value = Param4;
             ParamSQL4.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL4);
 
             SqlParameter ParamSQL5 = new SqlParameter();
             ParamSQL5.ParameterName = "@Оклад";
-            ParamSQL5.SqlDbType = SqlDbType.NVarChar;
-            ParamSQL5.Size = 50;
-            ParamSQL5.Value = Param5;
+            ParamSQL5.SqlDbType = SqlDbType.Int;
+            ParamSQL5.Value = Convert.ToInt32(Param5);
             ParamSQL5.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL5);
 
             SqlParameter ParamSQL6 = new SqlParameter();
             ParamSQL6.ParameterName = "@Ставка";
-            ParamSQL6.SqlDbType = SqlDbType.NVarChar;
-            ParamSQL6.Size = 50;
-            ParamSQL6.Value = Param6;
+            ParamSQL6.SqlDbType = SqlDbType.Int;
+            ParamSQL6.Value = Convert.ToInt32(Param6);
             ParamSQL6.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL6);
 
             SqlParameter ParamSQL7 = new SqlParameter();
             ParamSQL7.ParameterName = "@Стаж_работы";
-            ParamSQL7.SqlDbType = SqlDbType.NVarChar;
-            ParamSQL7.Size = 50;
-            ParamSQL7.Value = Param6;
+            ParamSQL7.SqlDbType = SqlDbType.Int;
+            ParamSQL7.Value = Convert.ToInt32(Param7);
             ParamSQL7.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL7);
 
             SQLComm.ExecuteNonQuery();
         }
-
-
 
         public static void UpdateDB(string query)
         {

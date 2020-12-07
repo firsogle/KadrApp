@@ -30,12 +30,12 @@
         {
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.Должность_Box = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.Ставка_Box = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.КТУ_Box = new System.Windows.Forms.TextBox();
+            this.Категория_Box = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.Оклад_с_надбавкой = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
             this.Надбавка_Box = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.Оклад_Box = new System.Windows.Forms.TextBox();
@@ -82,7 +82,7 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.Название_документа_Box = new System.Windows.Forms.TextBox();
-            this.Наименование_выдававшего_органа_Box = new System.Windows.Forms.TextBox();
+            this.Наименование_учебного_заведения_После_Box = new System.Windows.Forms.TextBox();
             this.Документ_Num_Box = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -94,7 +94,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.Уровень_образования_Box = new System.Windows.Forms.TextBox();
+            this.Наименование_документа_Box = new System.Windows.Forms.TextBox();
             this.Наименование_учебного_заведения_Box = new System.Windows.Forms.TextBox();
             this.Номер_образование_Box = new System.Windows.Forms.TextBox();
             this.Специальность_Box = new System.Windows.Forms.TextBox();
@@ -208,12 +208,12 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.Должность_Box);
+            this.groupBox8.Controls.Add(this.label25);
             this.groupBox8.Controls.Add(this.Ставка_Box);
             this.groupBox8.Controls.Add(this.label50);
-            this.groupBox8.Controls.Add(this.КТУ_Box);
+            this.groupBox8.Controls.Add(this.Категория_Box);
             this.groupBox8.Controls.Add(this.label51);
-            this.groupBox8.Controls.Add(this.Оклад_с_надбавкой);
-            this.groupBox8.Controls.Add(this.label52);
             this.groupBox8.Controls.Add(this.Надбавка_Box);
             this.groupBox8.Controls.Add(this.label53);
             this.groupBox8.Controls.Add(this.Оклад_Box);
@@ -227,65 +227,69 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Зароботная плата";
             // 
+            // Должность_Box
+            // 
+            this.Должность_Box.Location = new System.Drawing.Point(258, 21);
+            this.Должность_Box.Name = "Должность_Box";
+            this.Должность_Box.Size = new System.Drawing.Size(100, 22);
+            this.Должность_Box.TabIndex = 93;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(70, 28);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(81, 17);
+            this.label25.TabIndex = 92;
+            this.label25.Text = "Должность";
+            // 
             // Ставка_Box
             // 
-            this.Ставка_Box.Location = new System.Drawing.Point(542, 114);
+            this.Ставка_Box.Location = new System.Drawing.Point(542, 60);
             this.Ставка_Box.Name = "Ставка_Box";
             this.Ставка_Box.Size = new System.Drawing.Size(100, 22);
             this.Ставка_Box.TabIndex = 91;
+            this.Ставка_Box.Enter += new System.EventHandler(this.Ставка_Box_Enter);
+            this.Ставка_Box.Leave += new System.EventHandler(this.Ставка_Box_Leave);
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(415, 114);
+            this.label50.Location = new System.Drawing.Point(415, 60);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(54, 17);
             this.label50.TabIndex = 90;
             this.label50.Text = "Ставка";
             // 
-            // КТУ_Box
+            // Категория_Box
             // 
-            this.КТУ_Box.Location = new System.Drawing.Point(542, 71);
-            this.КТУ_Box.Name = "КТУ_Box";
-            this.КТУ_Box.Size = new System.Drawing.Size(100, 22);
-            this.КТУ_Box.TabIndex = 89;
+            this.Категория_Box.Location = new System.Drawing.Point(258, 103);
+            this.Категория_Box.Name = "Категория_Box";
+            this.Категория_Box.Size = new System.Drawing.Size(100, 22);
+            this.Категория_Box.TabIndex = 89;
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(415, 71);
+            this.label51.Location = new System.Drawing.Point(70, 103);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(35, 17);
+            this.label51.Size = new System.Drawing.Size(77, 17);
             this.label51.TabIndex = 88;
-            this.label51.Text = "КТУ";
-            // 
-            // Оклад_с_надбавкой
-            // 
-            this.Оклад_с_надбавкой.Location = new System.Drawing.Point(269, 115);
-            this.Оклад_с_надбавкой.Name = "Оклад_с_надбавкой";
-            this.Оклад_с_надбавкой.Size = new System.Drawing.Size(100, 22);
-            this.Оклад_с_надбавкой.TabIndex = 87;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(81, 115);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(135, 17);
-            this.label52.TabIndex = 86;
-            this.label52.Text = "Оклад с надбавкой";
+            this.label51.Text = "Категория";
             // 
             // Надбавка_Box
             // 
-            this.Надбавка_Box.Location = new System.Drawing.Point(269, 71);
+            this.Надбавка_Box.Location = new System.Drawing.Point(258, 60);
             this.Надбавка_Box.Name = "Надбавка_Box";
             this.Надбавка_Box.Size = new System.Drawing.Size(100, 22);
             this.Надбавка_Box.TabIndex = 84;
+            this.Надбавка_Box.Enter += new System.EventHandler(this.Надбавка_Box_Enter);
+            this.Надбавка_Box.Leave += new System.EventHandler(this.Надбавка_Box_Leave);
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(81, 71);
+            this.label53.Location = new System.Drawing.Point(70, 60);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(72, 17);
             this.label53.TabIndex = 82;
@@ -293,15 +297,17 @@
             // 
             // Оклад_Box
             // 
-            this.Оклад_Box.Location = new System.Drawing.Point(269, 30);
+            this.Оклад_Box.Location = new System.Drawing.Point(542, 25);
             this.Оклад_Box.Name = "Оклад_Box";
             this.Оклад_Box.Size = new System.Drawing.Size(100, 22);
             this.Оклад_Box.TabIndex = 80;
+            this.Оклад_Box.Enter += new System.EventHandler(this.Оклад_Box_Enter);
+            this.Оклад_Box.Leave += new System.EventHandler(this.Оклад_Box_Leave);
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(81, 30);
+            this.label55.Location = new System.Drawing.Point(415, 28);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(50, 17);
             this.label55.TabIndex = 78;
@@ -309,15 +315,17 @@
             // 
             // Стаж_работы_Box
             // 
-            this.Стаж_работы_Box.Location = new System.Drawing.Point(542, 27);
+            this.Стаж_работы_Box.Location = new System.Drawing.Point(542, 98);
             this.Стаж_работы_Box.Name = "Стаж_работы_Box";
             this.Стаж_работы_Box.Size = new System.Drawing.Size(100, 22);
             this.Стаж_работы_Box.TabIndex = 81;
+            this.Стаж_работы_Box.Enter += new System.EventHandler(this.Стаж_работы_Box_Enter);
+            this.Стаж_работы_Box.Leave += new System.EventHandler(this.Стаж_работы_Box_Leave);
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(415, 30);
+            this.label56.Location = new System.Drawing.Point(415, 101);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(94, 17);
             this.label56.TabIndex = 79;
@@ -648,7 +656,7 @@
             this.groupBox6.Controls.Add(this.label41);
             this.groupBox6.Controls.Add(this.label42);
             this.groupBox6.Controls.Add(this.Название_документа_Box);
-            this.groupBox6.Controls.Add(this.Наименование_выдававшего_органа_Box);
+            this.groupBox6.Controls.Add(this.Наименование_учебного_заведения_После_Box);
             this.groupBox6.Controls.Add(this.Документ_Num_Box);
             this.groupBox6.Controls.Add(this.label43);
             this.groupBox6.Location = new System.Drawing.Point(26, 133);
@@ -715,12 +723,12 @@
             this.Название_документа_Box.Size = new System.Drawing.Size(100, 22);
             this.Название_документа_Box.TabIndex = 49;
             // 
-            // Наименование_выдававшего_органа_Box
+            // Наименование_учебного_заведения_После_Box
             // 
-            this.Наименование_выдававшего_органа_Box.Location = new System.Drawing.Point(283, 114);
-            this.Наименование_выдававшего_органа_Box.Name = "Наименование_выдававшего_органа_Box";
-            this.Наименование_выдававшего_органа_Box.Size = new System.Drawing.Size(100, 22);
-            this.Наименование_выдававшего_органа_Box.TabIndex = 67;
+            this.Наименование_учебного_заведения_После_Box.Location = new System.Drawing.Point(283, 114);
+            this.Наименование_учебного_заведения_После_Box.Name = "Наименование_учебного_заведения_После_Box";
+            this.Наименование_учебного_заведения_После_Box.Size = new System.Drawing.Size(100, 22);
+            this.Наименование_учебного_заведения_После_Box.TabIndex = 67;
             // 
             // Документ_Num_Box
             // 
@@ -728,15 +736,17 @@
             this.Документ_Num_Box.Name = "Документ_Num_Box";
             this.Документ_Num_Box.Size = new System.Drawing.Size(100, 22);
             this.Документ_Num_Box.TabIndex = 51;
+            this.Документ_Num_Box.Enter += new System.EventHandler(this.Документ_Num_Box_Enter);
+            this.Документ_Num_Box.Leave += new System.EventHandler(this.Документ_Num_Box_Leave);
             // 
             // label43
             // 
             this.label43.AutoSize = true;
             this.label43.Location = new System.Drawing.Point(22, 114);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(246, 17);
+            this.label43.Size = new System.Drawing.Size(244, 17);
             this.label43.TabIndex = 66;
-            this.label43.Text = "Наименование выдававшего органа";
+            this.label43.Text = "Наименование учебного заведения";
             // 
             // splitter1
             // 
@@ -755,7 +765,7 @@
             this.groupBox5.Controls.Add(this.label36);
             this.groupBox5.Controls.Add(this.label37);
             this.groupBox5.Controls.Add(this.label38);
-            this.groupBox5.Controls.Add(this.Уровень_образования_Box);
+            this.groupBox5.Controls.Add(this.Наименование_документа_Box);
             this.groupBox5.Controls.Add(this.Наименование_учебного_заведения_Box);
             this.groupBox5.Controls.Add(this.Номер_образование_Box);
             this.groupBox5.Controls.Add(this.Специальность_Box);
@@ -773,15 +783,17 @@
             this.Серия_образование_Box.Name = "Серия_образование_Box";
             this.Серия_образование_Box.Size = new System.Drawing.Size(100, 22);
             this.Серия_образование_Box.TabIndex = 5;
+            this.Серия_образование_Box.Enter += new System.EventHandler(this.Серия_образование_Box_Enter);
+            this.Серия_образование_Box.Leave += new System.EventHandler(this.Серия_образование_Box_Leave);
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(32, 26);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(153, 17);
+            this.label33.Size = new System.Drawing.Size(180, 17);
             this.label33.TabIndex = 0;
-            this.label33.Text = "Уровень образования";
+            this.label33.Text = "Наименование документа";
             // 
             // label34
             // 
@@ -795,7 +807,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(436, 21);
+            this.label35.Location = new System.Drawing.Point(438, 26);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(49, 17);
             this.label35.TabIndex = 4;
@@ -804,7 +816,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(436, 96);
+            this.label36.Location = new System.Drawing.Point(436, 59);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(51, 17);
             this.label36.TabIndex = 6;
@@ -822,18 +834,18 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(434, 60);
+            this.label38.Location = new System.Drawing.Point(437, 93);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(106, 17);
             this.label38.TabIndex = 10;
             this.label38.Text = "Квалификация";
             // 
-            // Уровень_образования_Box
+            // Наименование_документа_Box
             // 
-            this.Уровень_образования_Box.Location = new System.Drawing.Point(283, 21);
-            this.Уровень_образования_Box.Name = "Уровень_образования_Box";
-            this.Уровень_образования_Box.Size = new System.Drawing.Size(100, 22);
-            this.Уровень_образования_Box.TabIndex = 1;
+            this.Наименование_документа_Box.Location = new System.Drawing.Point(283, 21);
+            this.Наименование_документа_Box.Name = "Наименование_документа_Box";
+            this.Наименование_документа_Box.Size = new System.Drawing.Size(100, 22);
+            this.Наименование_документа_Box.TabIndex = 1;
             // 
             // Наименование_учебного_заведения_Box
             // 
@@ -844,10 +856,12 @@
             // 
             // Номер_образование_Box
             // 
-            this.Номер_образование_Box.Location = new System.Drawing.Point(574, 93);
+            this.Номер_образование_Box.Location = new System.Drawing.Point(575, 56);
             this.Номер_образование_Box.Name = "Номер_образование_Box";
             this.Номер_образование_Box.Size = new System.Drawing.Size(100, 22);
             this.Номер_образование_Box.TabIndex = 7;
+            this.Номер_образование_Box.Enter += new System.EventHandler(this.Номер_образование_Box_Enter);
+            this.Номер_образование_Box.Leave += new System.EventHandler(this.Номер_образование_Box_Leave);
             // 
             // Специальность_Box
             // 
@@ -858,7 +872,7 @@
             // 
             // Квалификация_Box
             // 
-            this.Квалификация_Box.Location = new System.Drawing.Point(574, 56);
+            this.Квалификация_Box.Location = new System.Drawing.Point(577, 89);
             this.Квалификация_Box.Name = "Квалификация_Box";
             this.Квалификация_Box.Size = new System.Drawing.Size(100, 22);
             this.Квалификация_Box.TabIndex = 11;
@@ -982,7 +996,7 @@
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(231, 21);
+            this.label59.Location = new System.Drawing.Point(243, 21);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(51, 17);
             this.label59.TabIndex = 51;
@@ -1022,7 +1036,7 @@
             // 
             // Номер_загран_Box
             // 
-            this.Номер_загран_Box.Location = new System.Drawing.Point(283, 21);
+            this.Номер_загран_Box.Location = new System.Drawing.Point(295, 21);
             this.Номер_загран_Box.Name = "Номер_загран_Box";
             this.Номер_загран_Box.Size = new System.Drawing.Size(132, 22);
             this.Номер_загран_Box.TabIndex = 52;
@@ -1044,16 +1058,18 @@
             // 
             // Индекс_Box
             // 
-            this.Индекс_Box.Location = new System.Drawing.Point(297, 45);
+            this.Индекс_Box.Location = new System.Drawing.Point(320, 45);
             this.Индекс_Box.Name = "Индекс_Box";
-            this.Индекс_Box.Size = new System.Drawing.Size(107, 22);
+            this.Индекс_Box.Size = new System.Drawing.Size(116, 22);
             this.Индекс_Box.TabIndex = 31;
+            this.Индекс_Box.Enter += new System.EventHandler(this.Индекс_Box_Enter);
+            this.Индекс_Box.Leave += new System.EventHandler(this.Индекс_Box_Leave);
             // 
             // Город_Box
             // 
             this.Город_Box.Location = new System.Drawing.Point(91, 45);
             this.Город_Box.Name = "Город_Box";
-            this.Город_Box.Size = new System.Drawing.Size(127, 22);
+            this.Город_Box.Size = new System.Drawing.Size(163, 22);
             this.Город_Box.TabIndex = 27;
             // 
             // Улица_Box
@@ -1076,7 +1092,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(235, 48);
+            this.label23.Location = new System.Drawing.Point(258, 48);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(56, 17);
             this.label23.TabIndex = 29;
@@ -1131,7 +1147,7 @@
             // 
             // Кем_выдан_Box
             // 
-            this.Кем_выдан_Box.Location = new System.Drawing.Point(91, 64);
+            this.Кем_выдан_Box.Location = new System.Drawing.Point(114, 66);
             this.Кем_выдан_Box.Multiline = true;
             this.Кем_выдан_Box.Name = "Кем_выдан_Box";
             this.Кем_выдан_Box.Size = new System.Drawing.Size(562, 41);
@@ -1139,7 +1155,7 @@
             // 
             // Номер_Box
             // 
-            this.Номер_Box.Location = new System.Drawing.Point(297, 33);
+            this.Номер_Box.Location = new System.Drawing.Point(320, 35);
             this.Номер_Box.Name = "Номер_Box";
             this.Номер_Box.Size = new System.Drawing.Size(107, 22);
             this.Номер_Box.TabIndex = 53;
@@ -1172,7 +1188,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(245, 33);
+            this.label20.Location = new System.Drawing.Point(268, 35);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(51, 17);
             this.label20.TabIndex = 52;
@@ -1633,10 +1649,8 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TextBox Ставка_Box;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox КТУ_Box;
+        private System.Windows.Forms.TextBox Категория_Box;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.TextBox Оклад_с_надбавкой;
-        private System.Windows.Forms.Label label52;
         private System.Windows.Forms.TextBox Надбавка_Box;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.TextBox Оклад_Box;
@@ -1668,19 +1682,18 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TextBox Название_документа_Box;
-        private System.Windows.Forms.TextBox Наименование_выдававшего_органа_Box;
+        private System.Windows.Forms.TextBox Наименование_учебного_заведения_После_Box;
         private System.Windows.Forms.TextBox Документ_Num_Box;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox Серия_образование_Box;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox Уровень_образования_Box;
+        private System.Windows.Forms.TextBox Наименование_документа_Box;
         private System.Windows.Forms.TextBox Наименование_учебного_заведения_Box;
         private System.Windows.Forms.TextBox Номер_образование_Box;
         private System.Windows.Forms.TextBox Специальность_Box;
@@ -1775,5 +1788,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Close;
         private System.Windows.Forms.Button Next;
+        public System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox Должность_Box;
+        private System.Windows.Forms.Label label25;
     }
 }
