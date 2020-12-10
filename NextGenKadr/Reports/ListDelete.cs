@@ -24,7 +24,7 @@ namespace NextGenKadr
         }
         private void ListDelete_Load(object sender, EventArgs e)
         {
-          GridDelete.DataSource = connection.LoadGrid("SELECT Причина, [Номер приказа], Фамилия, Имя, Отчество, Телефон FROM DeletePersons").Tables[0].DefaultView;
+          GridDelete.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]").Tables[0].DefaultView;
         }
 
         private void Excel_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace NextGenKadr
                 }
                 using (XLWorkbook wb = new XLWorkbook())
                 {
-                    wb.Worksheets.Add(dt, "General");
+                    wb.Worksheets.Add(dt, "Сотрудники");
                     wb.SaveAs(Path.Combine(Path.GetTempPath(), (name + ".xlsx")));
                 }
                 System.Diagnostics.Process.Start(Path.GetTempPath() + (name + ".xlsx"));

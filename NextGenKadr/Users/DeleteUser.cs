@@ -20,7 +20,7 @@ namespace NextGenKadr
         private void DeleteUser_Load(object sender, EventArgs e)
         {
             {
-                GridUsers.DataSource = connection.LoadGrid("SELECT [Id пользователя], логин, пароль, права FROM пользователи").Tables[0].DefaultView;
+                GridUsers.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
         }
 
@@ -36,8 +36,8 @@ namespace NextGenKadr
 
             if (result == DialogResult.Yes)
             {
-                connection.DeletePerson($"Delete FROM Users WHERE ID = {id}");
-                GridUsers.DataSource = connection.LoadGrid("SELECT [Табельный номер], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
+                connection.ReadDB($"Delete FROM Пользователи WHERE [Id пользователя] = {id}");
+                GridUsers.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
         }
     }

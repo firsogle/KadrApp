@@ -20,7 +20,7 @@ namespace NextGenKadr
         private void EditUser_Load(object sender, EventArgs e)
         {
             {
-                GridUsers.DataSource = connection.LoadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
+                GridUsers.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
         }
 
@@ -31,7 +31,7 @@ namespace NextGenKadr
 
         private void Select_Click(object sender, EventArgs e)
         {
-            string id = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Id пользователя"].Value.ToString();
+            int id = Convert.ToInt32(GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Id пользователя"].Value.ToString());
             string Login = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Логин"].Value.ToString();
             string Password = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Пароль"].Value.ToString();
             string Root = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Права"].Value.ToString();

@@ -20,7 +20,7 @@ namespace NextGenKadr
             InitializeComponent();
             try
             {
-                string TabNumber = connection.id($"SELECT MAX ([Табельный номер]) FROM Сотрудники");
+                string TabNumber = connection.ReadDB($"SELECT MAX ([Табельный номер]) FROM Сотрудники");
                 int Param = Convert.ToInt32(TabNumber) + 1;
                 Табельный_номер_Box.Text = Param.ToString();
 

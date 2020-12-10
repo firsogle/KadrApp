@@ -32,7 +32,7 @@
             this.User_radioButton = new System.Windows.Forms.RadioButton();
             this.Admin_radioButton = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.Root_Box = new System.Windows.Forms.TextBox();
+            this.ReTypePassword_Box = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             // User_radioButton
             // 
             this.User_radioButton.AutoSize = true;
-            this.User_radioButton.Location = new System.Drawing.Point(298, 259);
+            this.User_radioButton.Location = new System.Drawing.Point(291, 270);
             this.User_radioButton.Name = "User_radioButton";
             this.User_radioButton.Size = new System.Drawing.Size(122, 21);
             this.User_radioButton.TabIndex = 26;
@@ -65,7 +65,7 @@
             // Admin_radioButton
             // 
             this.Admin_radioButton.AutoSize = true;
-            this.Admin_radioButton.Location = new System.Drawing.Point(298, 286);
+            this.Admin_radioButton.Location = new System.Drawing.Point(291, 297);
             this.Admin_radioButton.Name = "Admin_radioButton";
             this.Admin_radioButton.Size = new System.Drawing.Size(132, 21);
             this.Admin_radioButton.TabIndex = 25;
@@ -76,23 +76,23 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(295, 175);
+            this.label8.Location = new System.Drawing.Point(288, 186);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(131, 17);
             this.label8.TabIndex = 24;
             this.label8.Text = "Повторите пароля";
             // 
-            // Root_Box
+            // ReTypePassword_Box
             // 
-            this.Root_Box.Location = new System.Drawing.Point(298, 195);
-            this.Root_Box.Name = "Root_Box";
-            this.Root_Box.Size = new System.Drawing.Size(220, 22);
-            this.Root_Box.TabIndex = 23;
+            this.ReTypePassword_Box.Location = new System.Drawing.Point(291, 206);
+            this.ReTypePassword_Box.Name = "ReTypePassword_Box";
+            this.ReTypePassword_Box.Size = new System.Drawing.Size(220, 22);
+            this.ReTypePassword_Box.TabIndex = 23;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(295, 232);
+            this.label7.Location = new System.Drawing.Point(288, 243);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 17);
             this.label7.TabIndex = 22;
@@ -106,11 +106,12 @@
             this.button4.TabIndex = 21;
             this.button4.Text = "Закрыть";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(295, 111);
+            this.label6.Location = new System.Drawing.Point(288, 122);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(237, 17);
             this.label6.TabIndex = 19;
@@ -118,7 +119,7 @@
             // 
             // Password_Box
             // 
-            this.Password_Box.Location = new System.Drawing.Point(298, 131);
+            this.Password_Box.Location = new System.Drawing.Point(291, 142);
             this.Password_Box.Name = "Password_Box";
             this.Password_Box.Size = new System.Drawing.Size(220, 22);
             this.Password_Box.TabIndex = 18;
@@ -126,7 +127,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(297, 45);
+            this.label5.Location = new System.Drawing.Point(290, 56);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 17);
             this.label5.TabIndex = 17;
@@ -134,7 +135,7 @@
             // 
             // Login_Box
             // 
-            this.Login_Box.Location = new System.Drawing.Point(298, 65);
+            this.Login_Box.Location = new System.Drawing.Point(291, 76);
             this.Login_Box.Name = "Login_Box";
             this.Login_Box.Size = new System.Drawing.Size(220, 22);
             this.Login_Box.TabIndex = 16;
@@ -147,7 +148,7 @@
             this.Controls.Add(this.User_radioButton);
             this.Controls.Add(this.Admin_radioButton);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Root_Box);
+            this.Controls.Add(this.ReTypePassword_Box);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label6);
@@ -158,7 +159,6 @@
             this.Name = "EditUserGrid";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Изменить пользователя";
-            this.Load += new System.EventHandler(this.EditUserGrid_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,7 +169,7 @@
         private System.Windows.Forms.RadioButton User_radioButton;
         private System.Windows.Forms.RadioButton Admin_radioButton;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox Root_Box;
+        private System.Windows.Forms.TextBox ReTypePassword_Box;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label6;

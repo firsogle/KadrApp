@@ -85,13 +85,9 @@ namespace NextGenKadr.Users
                 return;
             }
 
-
-
-
-             TabNumber = connection.id($"SELECT Логин FROM Пользователи WHERE Логин = '{login}'");
+             TabNumber = connection.ReadDB($"SELECT Логин FROM Пользователи WHERE Логин = '{login}'");
             
-            
-            if (TabNumber == Login_Box.Text)
+             if (TabNumber == Login_Box.Text)
             {
                 MessageBox.Show("Логин занят! Попробуйте другой!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;

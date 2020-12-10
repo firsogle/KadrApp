@@ -54,8 +54,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Size = new System.Drawing.Size(954, 673);
-            this.splitContainer1.SplitterDistance = 562;
+            this.splitContainer1.Size = new System.Drawing.Size(972, 677);
+            this.splitContainer1.SplitterDistance = 565;
             this.splitContainer1.TabIndex = 0;
             // 
             // dataGridView1
@@ -66,7 +66,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(954, 562);
+            this.dataGridView1.Size = new System.Drawing.Size(972, 565);
             this.dataGridView1.TabIndex = 0;
             // 
             // button2
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 673);
+            this.ClientSize = new System.Drawing.Size(972, 677);
             this.Controls.Add(this.splitContainer1);
             this.Name = "ReportsDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

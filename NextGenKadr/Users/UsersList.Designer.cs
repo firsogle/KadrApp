@@ -52,8 +52,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Size = new System.Drawing.Size(798, 476);
-            this.splitContainer1.SplitterDistance = 376;
+            this.splitContainer1.Size = new System.Drawing.Size(656, 389);
+            this.splitContainer1.SplitterDistance = 307;
             this.splitContainer1.TabIndex = 0;
             // 
             // GridUsers
@@ -64,12 +64,12 @@
             this.GridUsers.Name = "GridUsers";
             this.GridUsers.RowHeadersWidth = 51;
             this.GridUsers.RowTemplate.Height = 24;
-            this.GridUsers.Size = new System.Drawing.Size(798, 376);
+            this.GridUsers.Size = new System.Drawing.Size(656, 307);
             this.GridUsers.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(353, 23);
+            this.button1.Location = new System.Drawing.Point(254, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 55);
             this.button1.TabIndex = 0;
@@ -81,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 476);
+            this.ClientSize = new System.Drawing.Size(656, 389);
             this.Controls.Add(this.splitContainer1);
             this.Name = "UsersList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

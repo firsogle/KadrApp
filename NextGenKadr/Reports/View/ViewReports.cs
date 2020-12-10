@@ -39,5 +39,10 @@ namespace NextGenKadr
             ViewReportsGrid service = new ViewReportsGrid(4);
             service.ShowDialog();
         }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

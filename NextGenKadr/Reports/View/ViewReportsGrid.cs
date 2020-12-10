@@ -17,19 +17,19 @@ namespace NextGenKadr
             InitializeComponent();
             if (number == 1)
             {
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM Com_List").Tables[0].DefaultView;
+                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о командировках]").Tables[0].DefaultView;
             }
             if (number == 2)
             {
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM Otp_List").Tables[0].DefaultView;
+                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об отпусках]").Tables[0].DefaultView;
             }
             if (number == 3)
             {
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM Bol_List").Tables[0].DefaultView;
+                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о больничных]").Tables[0].DefaultView;
             }
             if (number == 4)
             {
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM DeletePersons").Tables[0].DefaultView;
+                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]").Tables[0].DefaultView;
             }
 
         }

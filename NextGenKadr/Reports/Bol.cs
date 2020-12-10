@@ -19,30 +19,17 @@ namespace NextGenKadr
         {
             InitializeComponent();
             key = id;
-            if (!string.IsNullOrEmpty(Surname_Box.Text = connection.ReadDB($"SELECT Фамилия FROM General WHERE ID = {key}")))
-            {
-                Surname_Box.Text = connection.ReadDB($"SELECT Фамилия FROM General WHERE ID = {key}");
-            }
-            if (!string.IsNullOrEmpty(Name_Box.Text = connection.ReadDB($"SELECT Имя FROM General WHERE ID = {key}")))
-            {
-                Name_Box.Text = connection.ReadDB($"SELECT Имя FROM General WHERE ID = {key}");
-            }
-            if (!string.IsNullOrEmpty(Patronymic_Box.Text = connection.ReadDB($"SELECT Отчество FROM General WHERE ID = {key}")))
-            {
-                Patronymic_Box.Text = connection.ReadDB($"SELECT Отчество FROM General WHERE ID = {key}");
-            }
-            if (!string.IsNullOrEmpty(Number_ID.Text = connection.ReadDB($"SELECT [Табельный номер] FROM General WHERE ID = {key}")))
-            {
-                Number_ID.Text = connection.ReadDB($"SELECT [Табельный номер] FROM General WHERE ID = {key}");
-            }
-
+            Имя_Box.Text = connection.ReadDB($"SELECT Имя FROM Сотрудники WHERE [Табельный номер] = {id}");
+            Фамилия_Box.Text = connection.ReadDB($"SELECT Фамилия FROM Сотрудники WHERE [Табельный номер] = {id}");
+            Отчество_Box.Text = connection.ReadDB($"SELECT Отчество FROM Сотрудники WHERE [Табельный номер] = {id}");
+            Табельный_номер_Box.Text = connection.ReadDB($"SELECT [Табельный номер] FROM [Общие сведения] WHERE [Табельный номер] = {id}");
         }
 
         private void Report_Click(object sender, EventArgs e)
         {
             try
             {
-             //   connection.Build($"INSERT INTO Bol_List (Фамилия, Имя, Отчество, [Табельный номер], [Номер приказа], [Дата приказа], [Номер документа], [Дата документа],[Начало больничного], [Конец больничного]) VALUES (N'{Surname_Box.Text}',N'{Name_Box.Text}',N'{Patronymic_Box.Text}',N'{Number_ID.Text}',N'{NumberOtp_Box.Text}',N'{DateOtp_Box.Text}',N'{NumberDoc_Box.Text}',N'{DateDoc_Box.Text}',N'{Bol1_Picker.Text}',N'{Bol2_Picker.Text}')");
+               connection.Внести_cведения_о_больничных(Табельный_номер_Box.Text, Номер_листа_нетрудоспособности_Box.Text, От_Picker.Text, До_Picker.Text, Номер_приказа_Box.Text, Дата_приказа_Box.Text, Дата_документа_Box.Text);
             }
             catch (Exception sit1)
             {
@@ -53,24 +40,23 @@ namespace NextGenKadr
             var wordApp = new Word.Application();
             var WordDoc = wordApp.Documents.Open(Path.Combine(System.Windows.Forms.Application.StartupPath, "Больничный.docx"));
 
-            ReplaceWordStub("{Surname}", Surname_Box.Text, WordDoc);
-            ReplaceWordStub("{Name}", Name_Box.Text, WordDoc);
-            ReplaceWordStub("{Patronymic}", Patronymic_Box.Text, WordDoc);
-            ReplaceWordStub("{Surname2}", Surname_Box.Text, WordDoc);
-            ReplaceWordStub("{Name2}", Name_Box.Text, WordDoc);
-            ReplaceWordStub("{Patronymic2}", Patronymic_Box.Text, WordDoc);
+            ReplaceWordStub("{Surname}", Фамилия_Box.Text, WordDoc);
+            ReplaceWordStub("{Name}", Имя_Box.Text, WordDoc);
+            ReplaceWordStub("{Patronymic}", Отчество_Box.Text, WordDoc);
+            ReplaceWordStub("{Surname2}", Фамилия_Box.Text, WordDoc);
+            ReplaceWordStub("{Name2}", Имя_Box.Text, WordDoc);
+            ReplaceWordStub("{Patronymic2}", Отчество_Box.Text, WordDoc);
 
-            ReplaceWordStub("{Number_ID}", Number_ID.Text, WordDoc);
+            ReplaceWordStub("{Number_ID}", Табельный_номер_Box.Text, WordDoc);
 
-            ReplaceWordStub("{NumberOtp}", NumberOtp_Box.Text, WordDoc);
-            ReplaceWordStub("{DateOtp}", DateOtp_Box.Text, WordDoc);
+            ReplaceWordStub("{NumberOtp}", Номер_приказа_Box.Text, WordDoc);
+            ReplaceWordStub("{DateOtp}", Дата_приказа_Box.Text, WordDoc);
 
-            ReplaceWordStub("{NumberDoc}", NumberDoc_Box.Text, WordDoc);
-            ReplaceWordStub("{DateDoс}", DateDoc_Box.Text, WordDoc);
+            ReplaceWordStub("{NumberDoc}", Номер_листа_нетрудоспособности_Box.Text, WordDoc);
+            ReplaceWordStub("{DateDoс}", Дата_документа_Box.Text, WordDoc);
 
-            ReplaceWordStub("{Bol1}", Bol1_Picker.Text, WordDoc);
-            ReplaceWordStub("{Bol2}", Bol2_Picker.Text, WordDoc);
-
+            ReplaceWordStub("{Bol1}", От_Picker.Text, WordDoc);
+            ReplaceWordStub("{Bol2}", До_Picker.Text, WordDoc);
 
             var name = DateTime.Now.ToShortDateString() + ".docx";
             try
@@ -90,6 +76,10 @@ namespace NextGenKadr
             range.Find.ClearFormatting();
             range.Find.Execute(FindText: stubToReplace, ReplaceWith: text);
 
+        }
+        private void Close_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

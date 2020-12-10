@@ -52,8 +52,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Size = new System.Drawing.Size(989, 631);
-            this.splitContainer1.SplitterDistance = 527;
+            this.splitContainer1.Size = new System.Drawing.Size(965, 489);
+            this.splitContainer1.SplitterDistance = 408;
             this.splitContainer1.TabIndex = 0;
             // 
             // GridReportView
@@ -64,12 +64,12 @@
             this.GridReportView.Name = "GridReportView";
             this.GridReportView.RowHeadersWidth = 51;
             this.GridReportView.RowTemplate.Height = 24;
-            this.GridReportView.Size = new System.Drawing.Size(989, 527);
+            this.GridReportView.Size = new System.Drawing.Size(965, 408);
             this.GridReportView.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(440, 30);
+            this.button1.Location = new System.Drawing.Point(393, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 58);
             this.button1.TabIndex = 0;
@@ -81,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 631);
+            this.ClientSize = new System.Drawing.Size(965, 489);
             this.Controls.Add(this.splitContainer1);
             this.Name = "ViewReportsGrid";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

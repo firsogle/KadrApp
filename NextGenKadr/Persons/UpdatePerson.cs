@@ -85,7 +85,7 @@ namespace NextGenKadr
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage1"];
             try
             {
-             
+                connection.Обновить_общие_сведения(Телефон_Box.Text, Дата_рождения_Picker.Text, Подразделение_Box.Text, Семейное_положение_Box.Text, Гражданство_Box.Text, Национальность_Box.Text, Номер_страхового_полиса_Box.Text, ИНН_Box.Text, Номер_мед_полиса_Box.Text, Пенсионное_свидетельство_Box.Text);
             }
             catch (Exception sit2)
             {

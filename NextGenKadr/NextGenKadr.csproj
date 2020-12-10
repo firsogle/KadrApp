@@ -84,10 +84,10 @@
     <Compile Include="ButtonClass.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Other\Journal.cs">
+    <Compile Include="Reports\Journal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other\Journal.Designer.cs">
+    <Compile Include="Reports\Journal.Designer.cs">
       <DependentUpon>Journal.cs</DependentUpon>
     </Compile>
     <Compile Include="Other\PathToDB.cs">
@@ -145,10 +145,10 @@
       <DependentUpon>Com.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\connection.cs" />
-    <Compile Include="Reports\DismissPerson.cs">
+    <Compile Include="Persons\DismissPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\DismissPerson.Designer.cs">
+    <Compile Include="Persons\DismissPerson.Designer.cs">
       <DependentUpon>DismissPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\AddUser.cs">
@@ -169,10 +169,10 @@
     <Compile Include="ViewForms\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ReportsDelete.cs">
+    <Compile Include="Other\ReportsDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\ReportsDelete.Designer.cs">
+    <Compile Include="Other\ReportsDelete.Designer.cs">
       <DependentUpon>ReportsDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\UsersList.cs">
@@ -249,7 +249,7 @@
     <EmbeddedResource Include="Reports\Com.resx">
       <DependentUpon>Com.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\DismissPerson.resx">
+    <EmbeddedResource Include="Persons\DismissPerson.resx">
       <DependentUpon>DismissPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\AddUser.resx">
@@ -288,7 +288,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reports\ReportsDelete.resx">
+    <EmbeddedResource Include="Other\ReportsDelete.resx">
       <DependentUpon>ReportsDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persons\UpdatePerson.resx">

@@ -13,40 +13,63 @@ namespace NextGenKadr
 {
     public partial class EditUserGrid : Form
     {
-        string id32 = string.Empty;
-        string Login32;
-        string Password32;
-        string Root32;
+        int id32 ;
+        string root =string.Empty;
 
-        public EditUserGrid(string id, string Login, string Password, string Root)
+        public EditUserGrid(int id, string Login, string Password, string Root)
         {
             InitializeComponent();
-            Login32 = Login;
-            Password32 = Password;
-            Root32 = Root;
+            Login_Box.Text = Login;
+            Password_Box.Text = Password;
             id32 = id;
-
             User_radioButton.Checked = true;
+ 
         }
 
-        private void EditUserGrid_Load(object sender, EventArgs e)
-        {
-           
-            Login_Box.Text = Login32;
-            Password_Box.Text = Password32;
-            Root_Box.Text = Root32;
-        }
-
-        private void Close_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
        private void Edit_Click(object sender, EventArgs e)
         {
-           // connection.Build($"Update Users SET Login=N'{Login_Box.Text}', Password=N'{Password_Box.Text}', Root=N'{Root_Box.Text}' WHERE ID = {id32}");
+            if (Login_Box.TextLength < 5)
+            {
+                MessageBox.Show("Введённый логин короче пяти символов", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Password_Box.TextLength < 5 || ReTypePassword_Box.TextLength < 5)
+            {
+                MessageBox.Show("Введённый пароль короче пяти символов", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Admin_radioButton.Checked == false && User_radioButton.Checked == false)
+            {
+                MessageBox.Show("Выберите уровень прав пользователя", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Login_Box.Text == "" || Password_Box.Text == "" || ReTypePassword_Box.Text == "")
+            {
+                MessageBox.Show("Не все поля формы заполнены", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Password_Box.Text != ReTypePassword_Box.Text)
+            {
+                MessageBox.Show("Введённые пароли не совпадают", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            if (Admin_radioButton.Checked == true)
+            {
+               root = "0";
+            }
+            else
+            {
+                root = "1";
+            }
+            connection.Обновить_сотрудника(id32,Login_Box.Text,Password_Box.Text, root);
             MessageBox.Show("Запись изменена");
             Close();
+        }
 
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
