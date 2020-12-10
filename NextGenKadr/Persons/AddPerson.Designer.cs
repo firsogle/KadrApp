@@ -149,11 +149,9 @@
             this.ИНН_Box = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Номер_страхового_полиса_Box = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.Национальность_Box = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.Место_рождения_Box = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Гражданство_Box = new System.Windows.Forms.TextBox();
@@ -250,6 +248,7 @@
             this.Ставка_Box.Size = new System.Drawing.Size(100, 22);
             this.Ставка_Box.TabIndex = 91;
             this.Ставка_Box.Enter += new System.EventHandler(this.Ставка_Box_Enter);
+            this.Ставка_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Ставка_Box.Leave += new System.EventHandler(this.Ставка_Box_Leave);
             // 
             // label50
@@ -263,7 +262,7 @@
             // 
             // Категория_Box
             // 
-            this.Категория_Box.Location = new System.Drawing.Point(258, 103);
+            this.Категория_Box.Location = new System.Drawing.Point(258, 60);
             this.Категория_Box.Name = "Категория_Box";
             this.Категория_Box.Size = new System.Drawing.Size(100, 22);
             this.Категория_Box.TabIndex = 89;
@@ -271,7 +270,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(70, 103);
+            this.label51.Location = new System.Drawing.Point(70, 60);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(77, 17);
             this.label51.TabIndex = 88;
@@ -279,17 +278,18 @@
             // 
             // Надбавка_Box
             // 
-            this.Надбавка_Box.Location = new System.Drawing.Point(258, 60);
+            this.Надбавка_Box.Location = new System.Drawing.Point(258, 101);
             this.Надбавка_Box.Name = "Надбавка_Box";
             this.Надбавка_Box.Size = new System.Drawing.Size(100, 22);
             this.Надбавка_Box.TabIndex = 84;
             this.Надбавка_Box.Enter += new System.EventHandler(this.Надбавка_Box_Enter);
+            this.Надбавка_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Надбавка_Box.Leave += new System.EventHandler(this.Надбавка_Box_Leave);
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(70, 60);
+            this.label53.Location = new System.Drawing.Point(70, 101);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(72, 17);
             this.label53.TabIndex = 82;
@@ -302,6 +302,7 @@
             this.Оклад_Box.Size = new System.Drawing.Size(100, 22);
             this.Оклад_Box.TabIndex = 80;
             this.Оклад_Box.Enter += new System.EventHandler(this.Оклад_Box_Enter);
+            this.Оклад_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Оклад_Box.Leave += new System.EventHandler(this.Оклад_Box_Leave);
             // 
             // label55
@@ -320,6 +321,7 @@
             this.Стаж_работы_Box.Size = new System.Drawing.Size(100, 22);
             this.Стаж_работы_Box.TabIndex = 81;
             this.Стаж_работы_Box.Enter += new System.EventHandler(this.Стаж_работы_Box_Enter);
+            this.Стаж_работы_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Стаж_работы_Box.Leave += new System.EventHandler(this.Стаж_работы_Box_Leave);
             // 
             // label56
@@ -387,6 +389,7 @@
             this.Num_Договора_Box.Name = "Num_Договора_Box";
             this.Num_Договора_Box.Size = new System.Drawing.Size(100, 22);
             this.Num_Договора_Box.TabIndex = 56;
+            this.Num_Договора_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             // 
             // label46
             // 
@@ -403,6 +406,7 @@
             this.Num_Приказа_Box.Name = "Num_Приказа_Box";
             this.Num_Приказа_Box.Size = new System.Drawing.Size(100, 22);
             this.Num_Приказа_Box.TabIndex = 58;
+            this.Num_Приказа_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             // 
             // label47
             // 
@@ -737,6 +741,7 @@
             this.Документ_Num_Box.Size = new System.Drawing.Size(100, 22);
             this.Документ_Num_Box.TabIndex = 51;
             this.Документ_Num_Box.Enter += new System.EventHandler(this.Документ_Num_Box_Enter);
+            this.Документ_Num_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Документ_Num_Box.Leave += new System.EventHandler(this.Документ_Num_Box_Leave);
             // 
             // label43
@@ -784,6 +789,7 @@
             this.Серия_образование_Box.Size = new System.Drawing.Size(100, 22);
             this.Серия_образование_Box.TabIndex = 5;
             this.Серия_образование_Box.Enter += new System.EventHandler(this.Серия_образование_Box_Enter);
+            this.Серия_образование_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Серия_образование_Box.Leave += new System.EventHandler(this.Серия_образование_Box_Leave);
             // 
             // label33
@@ -861,6 +867,7 @@
             this.Номер_образование_Box.Size = new System.Drawing.Size(100, 22);
             this.Номер_образование_Box.TabIndex = 7;
             this.Номер_образование_Box.Enter += new System.EventHandler(this.Номер_образование_Box_Enter);
+            this.Номер_образование_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Номер_образование_Box.Leave += new System.EventHandler(this.Номер_образование_Box_Leave);
             // 
             // Специальность_Box
@@ -1063,6 +1070,7 @@
             this.Индекс_Box.Size = new System.Drawing.Size(116, 22);
             this.Индекс_Box.TabIndex = 31;
             this.Индекс_Box.Enter += new System.EventHandler(this.Индекс_Box_Enter);
+            this.Индекс_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.Индекс_Box.Leave += new System.EventHandler(this.Индекс_Box_Leave);
             // 
             // Город_Box
@@ -1159,6 +1167,7 @@
             this.Номер_Box.Name = "Номер_Box";
             this.Номер_Box.Size = new System.Drawing.Size(107, 22);
             this.Номер_Box.TabIndex = 53;
+            this.Номер_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             // 
             // Серия_Box
             // 
@@ -1270,11 +1279,9 @@
             this.groupBox2.Controls.Add(this.ИНН_Box);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.Номер_страхового_полиса_Box);
-            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.Национальность_Box);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.Место_рождения_Box);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.Гражданство_Box);
@@ -1302,6 +1309,7 @@
             // 
             this.Табельный_номер_Box.Location = new System.Drawing.Point(197, 21);
             this.Табельный_номер_Box.Name = "Табельный_номер_Box";
+            this.Табельный_номер_Box.ReadOnly = true;
             this.Табельный_номер_Box.Size = new System.Drawing.Size(145, 22);
             this.Табельный_номер_Box.TabIndex = 65;
             // 
@@ -1319,7 +1327,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(78, 141);
+            this.label7.Location = new System.Drawing.Point(78, 113);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(113, 17);
             this.label7.TabIndex = 51;
@@ -1327,7 +1335,7 @@
             // 
             // Пенсионное_свидетельство_Box
             // 
-            this.Пенсионное_свидетельство_Box.Location = new System.Drawing.Point(197, 172);
+            this.Пенсионное_свидетельство_Box.Location = new System.Drawing.Point(197, 141);
             this.Пенсионное_свидетельство_Box.Name = "Пенсионное_свидетельство_Box";
             this.Пенсионное_свидетельство_Box.Size = new System.Drawing.Size(146, 22);
             this.Пенсионное_свидетельство_Box.TabIndex = 73;
@@ -1375,19 +1383,10 @@
             // 
             // Номер_страхового_полиса_Box
             // 
-            this.Номер_страхового_полиса_Box.Location = new System.Drawing.Point(535, 172);
+            this.Номер_страхового_полиса_Box.Location = new System.Drawing.Point(197, 169);
             this.Номер_страхового_полиса_Box.Name = "Номер_страхового_полиса_Box";
             this.Номер_страхового_полиса_Box.Size = new System.Drawing.Size(146, 22);
             this.Номер_страхового_полиса_Box.TabIndex = 67;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(73, 113);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 17);
-            this.label11.TabIndex = 59;
-            this.label11.Text = "Место рождения";
             // 
             // label12
             // 
@@ -1414,13 +1413,6 @@
             this.label13.TabIndex = 63;
             this.label13.Text = "Дата рождения";
             // 
-            // Место_рождения_Box
-            // 
-            this.Место_рождения_Box.Location = new System.Drawing.Point(197, 113);
-            this.Место_рождения_Box.Name = "Место_рождения_Box";
-            this.Место_рождения_Box.Size = new System.Drawing.Size(145, 22);
-            this.Место_рождения_Box.TabIndex = 60;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -1433,7 +1425,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(351, 172);
+            this.label15.Location = new System.Drawing.Point(13, 169);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(178, 17);
             this.label15.TabIndex = 66;
@@ -1473,7 +1465,7 @@
             // 
             // Подразделение_Box
             // 
-            this.Подразделение_Box.Location = new System.Drawing.Point(197, 141);
+            this.Подразделение_Box.Location = new System.Drawing.Point(197, 113);
             this.Подразделение_Box.Name = "Подразделение_Box";
             this.Подразделение_Box.Size = new System.Drawing.Size(145, 22);
             this.Подразделение_Box.TabIndex = 52;
@@ -1481,7 +1473,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1, 172);
+            this.label19.Location = new System.Drawing.Point(1, 141);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(190, 17);
             this.label19.TabIndex = 72;
@@ -1747,11 +1739,9 @@
         private System.Windows.Forms.TextBox ИНН_Box;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox Номер_страхового_полиса_Box;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox Национальность_Box;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox Место_рождения_Box;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox Гражданство_Box;

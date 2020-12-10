@@ -28,101 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Login_Box = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Password_Box = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Root_Box = new System.Windows.Forms.ComboBox();
+            this.User_radioButton = new System.Windows.Forms.RadioButton();
+            this.Admin_radioButton = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Root_Box = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Password_Box = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Login_Box = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // Login_Box
-            // 
-            this.Login_Box.Location = new System.Drawing.Point(296, 171);
-            this.Login_Box.Name = "Login_Box";
-            this.Login_Box.Size = new System.Drawing.Size(220, 22);
-            this.Login_Box.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Логин";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(212, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Пароль";
-            // 
-            // Password_Box
-            // 
-            this.Password_Box.Location = new System.Drawing.Point(296, 207);
-            this.Password_Box.Name = "Password_Box";
-            this.Password_Box.Size = new System.Drawing.Size(220, 22);
-            this.Password_Box.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(201, 379);
+            this.button1.Location = new System.Drawing.Point(230, 370);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 56);
+            this.button1.Size = new System.Drawing.Size(136, 48);
             this.button1.TabIndex = 4;
             this.button1.Text = "Изменить пользователя";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Edit_Click);
             // 
-            // button2
+            // User_radioButton
             // 
-            this.button2.Location = new System.Drawing.Point(474, 379);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 56);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Назад";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Close_Click);
+            this.User_radioButton.AutoSize = true;
+            this.User_radioButton.Location = new System.Drawing.Point(298, 259);
+            this.User_radioButton.Name = "User_radioButton";
+            this.User_radioButton.Size = new System.Drawing.Size(122, 21);
+            this.User_radioButton.TabIndex = 26;
+            this.User_radioButton.TabStop = true;
+            this.User_radioButton.Text = "Пользователь";
+            this.User_radioButton.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // Admin_radioButton
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(212, 247);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 17);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Права";
+            this.Admin_radioButton.AutoSize = true;
+            this.Admin_radioButton.Location = new System.Drawing.Point(298, 286);
+            this.Admin_radioButton.Name = "Admin_radioButton";
+            this.Admin_radioButton.Size = new System.Drawing.Size(132, 21);
+            this.Admin_radioButton.TabIndex = 25;
+            this.Admin_radioButton.TabStop = true;
+            this.Admin_radioButton.Text = "Администратор";
+            this.Admin_radioButton.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(295, 175);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(131, 17);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Повторите пароля";
             // 
             // Root_Box
             // 
-            this.Root_Box.FormattingEnabled = true;
-            this.Root_Box.Items.AddRange(new object[] {
-            "Администратор",
-            "Пользователь"});
-            this.Root_Box.Location = new System.Drawing.Point(296, 244);
+            this.Root_Box.Location = new System.Drawing.Point(298, 195);
             this.Root_Box.Name = "Root_Box";
-            this.Root_Box.Size = new System.Drawing.Size(220, 24);
-            this.Root_Box.TabIndex = 9;
+            this.Root_Box.Size = new System.Drawing.Size(220, 22);
+            this.Root_Box.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(295, 232);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 17);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Права";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(429, 370);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(126, 48);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "Закрыть";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(295, 111);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(237, 17);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Придумайте пароль от 5 символов";
+            // 
+            // Password_Box
+            // 
+            this.Password_Box.Location = new System.Drawing.Point(298, 131);
+            this.Password_Box.Name = "Password_Box";
+            this.Password_Box.Size = new System.Drawing.Size(220, 22);
+            this.Password_Box.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(297, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 17);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Логин";
+            // 
+            // Login_Box
+            // 
+            this.Login_Box.Location = new System.Drawing.Point(298, 65);
+            this.Login_Box.Name = "Login_Box";
+            this.Login_Box.Size = new System.Drawing.Size(220, 22);
+            this.Login_Box.TabIndex = 16;
             // 
             // EditUserGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 472);
+            this.Controls.Add(this.User_radioButton);
+            this.Controls.Add(this.Admin_radioButton);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.Root_Box);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Password_Box);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.Login_Box);
+            this.Controls.Add(this.button1);
             this.Name = "EditUserGrid";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Изменить пользователя";
@@ -133,14 +165,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox Login_Box;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Password_Box;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox Root_Box;
+        private System.Windows.Forms.RadioButton User_radioButton;
+        private System.Windows.Forms.RadioButton Admin_radioButton;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox Root_Box;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox Password_Box;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Login_Box;
     }
 }

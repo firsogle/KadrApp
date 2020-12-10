@@ -27,7 +27,14 @@ namespace NextGenKadr
             service.ShowDialog();
         }
 
-       private void AdminForm_Load(object sender, EventArgs e)
+        private void AddUser_Click(object sender, EventArgs e)
+        {
+
+            AddUser service = new AddUser();
+            service.ShowDialog();
+        }
+
+        private void AdminForm_Load(object sender, EventArgs e)
         {
             MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
             MainGrid.AllowUserToAddRows = false;
@@ -83,11 +90,17 @@ namespace NextGenKadr
 
         private void ViewPersonStrip_Click(object sender, EventArgs e)
         {
-          
+            try
+            {
                 string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
                 ViewPerson service = new ViewPerson(id);
                 service.ShowDialog();
-            
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Не выбран сотрудник, сначала создайте сотрудника", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
 
         }
        
@@ -115,13 +128,6 @@ namespace NextGenKadr
         {
             string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             ReportsDelete service = new ReportsDelete();
-            service.ShowDialog();
-        }
-
-        private void AddUser_Click(object sender, EventArgs e)
-        {
-
-            AddUser service = new AddUser();
             service.ShowDialog();
         }
 

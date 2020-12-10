@@ -25,6 +25,8 @@ namespace NextGenKadr
             Password32 = Password;
             Root32 = Root;
             id32 = id;
+
+            User_radioButton.Checked = true;
         }
 
         private void EditUserGrid_Load(object sender, EventArgs e)
@@ -39,7 +41,6 @@ namespace NextGenKadr
         {
             Close();
         }
-
        private void Edit_Click(object sender, EventArgs e)
         {
            // connection.Build($"Update Users SET Login=N'{Login_Box.Text}', Password=N'{Password_Box.Text}', Root=N'{Root_Box.Text}' WHERE ID = {id32}");

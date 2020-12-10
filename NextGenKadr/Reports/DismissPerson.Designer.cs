@@ -32,23 +32,23 @@
             this.But_Del = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Reason = new System.Windows.Forms.TextBox();
-            this.IdReason = new System.Windows.Forms.TextBox();
-            this.Patronymic_Box = new System.Windows.Forms.TextBox();
-            this.Name_Box = new System.Windows.Forms.TextBox();
-            this.Surname_Box = new System.Windows.Forms.TextBox();
+            this.Причина_Box = new System.Windows.Forms.TextBox();
+            this.Номер_приказа_увольнения_Box = new System.Windows.Forms.TextBox();
+            this.Отчество_Box = new System.Windows.Forms.TextBox();
+            this.Имя_Box = new System.Windows.Forms.TextBox();
+            this.Фамилия_Box = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.ContractTerm_Picker = new System.Windows.Forms.DateTimePicker();
+            this.Срок_договора_Picker = new System.Windows.Forms.DateTimePicker();
             this.label65 = new System.Windows.Forms.Label();
-            this.NumOr2_Box = new System.Windows.Forms.TextBox();
+            this.Номер_приказа_Box = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
-            this.NumberContract_Box = new System.Windows.Forms.TextBox();
+            this.Номер_договора_Box = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
-            this.Position_Box = new System.Windows.Forms.TextBox();
+            this.Должность_Box = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.Phone_Box = new System.Windows.Forms.TextBox();
+            this.Телефон_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -89,40 +89,40 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Номер приказа";
             // 
-            // Reason
+            // Причина_Box
             // 
-            this.Reason.Location = new System.Drawing.Point(246, 197);
-            this.Reason.Name = "Reason";
-            this.Reason.Size = new System.Drawing.Size(508, 22);
-            this.Reason.TabIndex = 6;
+            this.Причина_Box.Location = new System.Drawing.Point(246, 197);
+            this.Причина_Box.Name = "Причина_Box";
+            this.Причина_Box.Size = new System.Drawing.Size(508, 22);
+            this.Причина_Box.TabIndex = 6;
             // 
-            // IdReason
+            // Номер_приказа_увольнения_Box
             // 
-            this.IdReason.Location = new System.Drawing.Point(246, 244);
-            this.IdReason.Name = "IdReason";
-            this.IdReason.Size = new System.Drawing.Size(508, 22);
-            this.IdReason.TabIndex = 7;
+            this.Номер_приказа_увольнения_Box.Location = new System.Drawing.Point(246, 244);
+            this.Номер_приказа_увольнения_Box.Name = "Номер_приказа_увольнения_Box";
+            this.Номер_приказа_увольнения_Box.Size = new System.Drawing.Size(508, 22);
+            this.Номер_приказа_увольнения_Box.TabIndex = 7;
             // 
-            // Patronymic_Box
+            // Отчество_Box
             // 
-            this.Patronymic_Box.Location = new System.Drawing.Point(212, 87);
-            this.Patronymic_Box.Name = "Patronymic_Box";
-            this.Patronymic_Box.Size = new System.Drawing.Size(100, 22);
-            this.Patronymic_Box.TabIndex = 14;
+            this.Отчество_Box.Location = new System.Drawing.Point(212, 87);
+            this.Отчество_Box.Name = "Отчество_Box";
+            this.Отчество_Box.Size = new System.Drawing.Size(100, 22);
+            this.Отчество_Box.TabIndex = 14;
             // 
-            // Name_Box
+            // Имя_Box
             // 
-            this.Name_Box.Location = new System.Drawing.Point(212, 52);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(100, 22);
-            this.Name_Box.TabIndex = 12;
+            this.Имя_Box.Location = new System.Drawing.Point(212, 52);
+            this.Имя_Box.Name = "Имя_Box";
+            this.Имя_Box.Size = new System.Drawing.Size(100, 22);
+            this.Имя_Box.TabIndex = 12;
             // 
-            // Surname_Box
+            // Фамилия_Box
             // 
-            this.Surname_Box.Location = new System.Drawing.Point(212, 17);
-            this.Surname_Box.Name = "Surname_Box";
-            this.Surname_Box.Size = new System.Drawing.Size(100, 22);
-            this.Surname_Box.TabIndex = 10;
+            this.Фамилия_Box.Location = new System.Drawing.Point(212, 17);
+            this.Фамилия_Box.Name = "Фамилия_Box";
+            this.Фамилия_Box.Size = new System.Drawing.Size(100, 22);
+            this.Фамилия_Box.TabIndex = 10;
             // 
             // label4
             // 
@@ -151,16 +151,16 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Фамилия";
             // 
-            // ContractTerm_Picker
+            // Срок_договора_Picker
             // 
-            this.ContractTerm_Picker.CustomFormat = "yyyy.MM.dd";
-            this.ContractTerm_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ContractTerm_Picker.Location = new System.Drawing.Point(606, 115);
-            this.ContractTerm_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.ContractTerm_Picker.Name = "ContractTerm_Picker";
-            this.ContractTerm_Picker.Size = new System.Drawing.Size(100, 22);
-            this.ContractTerm_Picker.TabIndex = 73;
-            this.ContractTerm_Picker.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
+            this.Срок_договора_Picker.CustomFormat = "yyyy.MM.dd";
+            this.Срок_договора_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Срок_договора_Picker.Location = new System.Drawing.Point(606, 115);
+            this.Срок_договора_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Срок_договора_Picker.Name = "Срок_договора_Picker";
+            this.Срок_договора_Picker.Size = new System.Drawing.Size(100, 22);
+            this.Срок_договора_Picker.TabIndex = 73;
+            this.Срок_договора_Picker.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
             // 
             // label65
             // 
@@ -171,12 +171,12 @@
             this.label65.TabIndex = 72;
             this.label65.Text = "Срок договора";
             // 
-            // NumOr2_Box
+            // Номер_приказа_Box
             // 
-            this.NumOr2_Box.Location = new System.Drawing.Point(606, 87);
-            this.NumOr2_Box.Name = "NumOr2_Box";
-            this.NumOr2_Box.Size = new System.Drawing.Size(100, 22);
-            this.NumOr2_Box.TabIndex = 71;
+            this.Номер_приказа_Box.Location = new System.Drawing.Point(606, 87);
+            this.Номер_приказа_Box.Name = "Номер_приказа_Box";
+            this.Номер_приказа_Box.Size = new System.Drawing.Size(100, 22);
+            this.Номер_приказа_Box.TabIndex = 71;
             // 
             // label64
             // 
@@ -187,12 +187,12 @@
             this.label64.TabIndex = 70;
             this.label64.Text = "№ Приказа";
             // 
-            // NumberContract_Box
+            // Номер_договора_Box
             // 
-            this.NumberContract_Box.Location = new System.Drawing.Point(606, 54);
-            this.NumberContract_Box.Name = "NumberContract_Box";
-            this.NumberContract_Box.Size = new System.Drawing.Size(100, 22);
-            this.NumberContract_Box.TabIndex = 69;
+            this.Номер_договора_Box.Location = new System.Drawing.Point(606, 54);
+            this.Номер_договора_Box.Name = "Номер_договора_Box";
+            this.Номер_договора_Box.Size = new System.Drawing.Size(100, 22);
+            this.Номер_договора_Box.TabIndex = 69;
             // 
             // label63
             // 
@@ -203,12 +203,12 @@
             this.label63.TabIndex = 68;
             this.label63.Text = "№ Договора";
             // 
-            // Position_Box
+            // Должность_Box
             // 
-            this.Position_Box.Location = new System.Drawing.Point(606, 20);
-            this.Position_Box.Name = "Position_Box";
-            this.Position_Box.Size = new System.Drawing.Size(100, 22);
-            this.Position_Box.TabIndex = 67;
+            this.Должность_Box.Location = new System.Drawing.Point(606, 20);
+            this.Должность_Box.Name = "Должность_Box";
+            this.Должность_Box.Size = new System.Drawing.Size(100, 22);
+            this.Должность_Box.TabIndex = 67;
             // 
             // label62
             // 
@@ -219,12 +219,12 @@
             this.label62.TabIndex = 66;
             this.label62.Text = "Должность";
             // 
-            // Phone_Box
+            // Телефон_Box
             // 
-            this.Phone_Box.Location = new System.Drawing.Point(212, 120);
-            this.Phone_Box.Name = "Phone_Box";
-            this.Phone_Box.Size = new System.Drawing.Size(100, 22);
-            this.Phone_Box.TabIndex = 74;
+            this.Телефон_Box.Location = new System.Drawing.Point(212, 120);
+            this.Телефон_Box.Name = "Телефон_Box";
+            this.Телефон_Box.Size = new System.Drawing.Size(100, 22);
+            this.Телефон_Box.TabIndex = 74;
             // 
             // label3
             // 
@@ -241,23 +241,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Phone_Box);
-            this.Controls.Add(this.ContractTerm_Picker);
+            this.Controls.Add(this.Телефон_Box);
+            this.Controls.Add(this.Срок_договора_Picker);
             this.Controls.Add(this.label65);
-            this.Controls.Add(this.NumOr2_Box);
+            this.Controls.Add(this.Номер_приказа_Box);
             this.Controls.Add(this.label64);
-            this.Controls.Add(this.NumberContract_Box);
+            this.Controls.Add(this.Номер_договора_Box);
             this.Controls.Add(this.label63);
-            this.Controls.Add(this.Position_Box);
+            this.Controls.Add(this.Должность_Box);
             this.Controls.Add(this.label62);
-            this.Controls.Add(this.Patronymic_Box);
-            this.Controls.Add(this.Name_Box);
-            this.Controls.Add(this.Surname_Box);
+            this.Controls.Add(this.Отчество_Box);
+            this.Controls.Add(this.Имя_Box);
+            this.Controls.Add(this.Фамилия_Box);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.IdReason);
-            this.Controls.Add(this.Reason);
+            this.Controls.Add(this.Номер_приказа_увольнения_Box);
+            this.Controls.Add(this.Причина_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.But_Del);
@@ -276,23 +276,23 @@
         private System.Windows.Forms.Button But_Del;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Reason;
-        private System.Windows.Forms.TextBox IdReason;
-        private System.Windows.Forms.TextBox Patronymic_Box;
-        private System.Windows.Forms.TextBox Name_Box;
-        private System.Windows.Forms.TextBox Surname_Box;
+        private System.Windows.Forms.TextBox Причина_Box;
+        private System.Windows.Forms.TextBox Номер_приказа_увольнения_Box;
+        private System.Windows.Forms.TextBox Отчество_Box;
+        private System.Windows.Forms.TextBox Имя_Box;
+        private System.Windows.Forms.TextBox Фамилия_Box;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker ContractTerm_Picker;
+        private System.Windows.Forms.DateTimePicker Срок_договора_Picker;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox NumOr2_Box;
+        private System.Windows.Forms.TextBox Номер_приказа_Box;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox NumberContract_Box;
+        private System.Windows.Forms.TextBox Номер_договора_Box;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.TextBox Position_Box;
+        private System.Windows.Forms.TextBox Должность_Box;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox Phone_Box;
+        private System.Windows.Forms.TextBox Телефон_Box;
         private System.Windows.Forms.Label label3;
     }
 }

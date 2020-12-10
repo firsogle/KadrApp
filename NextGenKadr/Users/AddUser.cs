@@ -17,6 +17,8 @@ namespace NextGenKadr.Users
         {
             InitializeComponent();
             key = id;
+            User_radioButton.Checked = true;
+
         }
 
         private void Authorization_KeyPress(object sender, KeyPressEventArgs e)
@@ -52,22 +54,66 @@ namespace NextGenKadr.Users
         {
             string login = Login_Box.Text;
             string password = Password_Box.Text;
-            string root = RootBox.Text;
+            string root = string.Empty;
+            string TabNumber = string.Empty;
 
-            if (string.IsNullOrEmpty(connection.ReadDB($"SELECT Login FROM Users WHERE Login = '{login}'")))
+
+
+            if (Login_Box.TextLength < 5)
             {
-               //добавить проверку на заполнение 3 полей
-              // connection.Build($"INSERT INTO Users (Login, Password, Root) VALUES ('{login}','{password}','{root}')");
-               // connection.Build($"INSERT INTO Journal ([User], Time, Action, Famaly) VALUES (N'{Data.UserAuthorization}',N'{Data.Today}',N'{"Увольнение сотрудника"}',N'{login}')");
-                MessageBox.Show("Логин создан!");
-               Close();
+                MessageBox.Show("Введённый логин короче пяти символов", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Password_Box.TextLength < 5 || ReTypePassword_Box.TextLength < 5)
+            {
+                MessageBox.Show("Введённый пароль короче пяти символов", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Admin_radioButton.Checked == false && User_radioButton.Checked == false)
+            {
+                MessageBox.Show("Выберите уровень прав пользователя", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Login_Box.Text == "" || Password_Box.Text == "" || ReTypePassword_Box.Text == "")
+            {
+                MessageBox.Show("Не все поля формы заполнены", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else if (Password_Box.Text != ReTypePassword_Box.Text)
+            {
+                MessageBox.Show("Введённые пароли не совпадают", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
 
+
+
+
+             TabNumber = connection.id($"SELECT Логин FROM Пользователи WHERE Логин = '{login}'");
+            
+            
+            if (TabNumber == Login_Box.Text)
+            {
+                MessageBox.Show("Логин занят! Попробуйте другой!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
             }
             else
             {
-                MessageBox.Show("Логин занят! Попробуйте другой!");
+                if (Admin_radioButton.Checked == true)
+                {
+                    root = "0";
+                }
+                else
+                {
+                    root = "1";
+                }
+                connection.Внести_нового_пользователя(login, password, root);
+                MessageBox.Show("Пользователь создан!");
+                Close();
             }
 
+
         }
+
     }
+
 }

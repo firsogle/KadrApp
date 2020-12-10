@@ -145,11 +145,11 @@
       <DependentUpon>Com.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\connection.cs" />
-    <Compile Include="Persons\DeletePerson.cs">
+    <Compile Include="Reports\DismissPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persons\DeletePerson.Designer.cs">
-      <DependentUpon>DeletePerson.cs</DependentUpon>
+    <Compile Include="Reports\DismissPerson.Designer.cs">
+      <DependentUpon>DismissPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\AddUser.cs">
       <SubType>Form</SubType>
@@ -249,8 +249,8 @@
     <EmbeddedResource Include="Reports\Com.resx">
       <DependentUpon>Com.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persons\DeletePerson.resx">
-      <DependentUpon>DeletePerson.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\DismissPerson.resx">
+      <DependentUpon>DismissPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>

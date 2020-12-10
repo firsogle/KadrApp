@@ -54,8 +54,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Size = new System.Drawing.Size(798, 476);
-            this.splitContainer1.SplitterDistance = 376;
+            this.splitContainer1.Size = new System.Drawing.Size(542, 327);
+            this.splitContainer1.SplitterDistance = 258;
             this.splitContainer1.TabIndex = 0;
             // 
             // GridUsers
@@ -66,12 +66,12 @@
             this.GridUsers.Name = "GridUsers";
             this.GridUsers.RowHeadersWidth = 51;
             this.GridUsers.RowTemplate.Height = 24;
-            this.GridUsers.Size = new System.Drawing.Size(798, 376);
+            this.GridUsers.Size = new System.Drawing.Size(542, 258);
             this.GridUsers.TabIndex = 0;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(242, 23);
+            this.button2.Location = new System.Drawing.Point(130, 7);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 55);
             this.button2.TabIndex = 2;
@@ -81,7 +81,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(434, 23);
+            this.button1.Location = new System.Drawing.Point(309, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 55);
             this.button1.TabIndex = 0;
@@ -93,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 476);
+            this.ClientSize = new System.Drawing.Size(542, 327);
             this.Controls.Add(this.splitContainer1);
             this.Name = "EditUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

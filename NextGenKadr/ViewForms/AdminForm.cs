@@ -32,14 +32,14 @@ namespace NextGenKadr
 
        private void Update_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             UpdatePerson service = new UpdatePerson(id);
             service.ShowDialog();
         }
 
         private void DeletePerson_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             DeletePerson service = new DeletePerson(id);
             service.ShowDialog();
         }
@@ -81,7 +81,7 @@ namespace NextGenKadr
         {
             try
             {
-                string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+                string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
                 ViewPerson service = new ViewPerson(id);
                 service.ShowDialog();
             }
@@ -100,7 +100,7 @@ namespace NextGenKadr
 
         private void Reports_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             Reports service = new Reports();
             service.ShowDialog();
         }
@@ -113,7 +113,7 @@ namespace NextGenKadr
 
         private void DeleteReports_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             ReportsDelete service = new ReportsDelete();
             service.ShowDialog();
         }

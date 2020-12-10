@@ -20,7 +20,7 @@ namespace NextGenKadr
         private void EditUser_Load(object sender, EventArgs e)
         {
             {
-                GridUsers.DataSource = connection.LoadGrid("SELECT Id, Login, Password, Root FROM Users").Tables[0].DefaultView;
+                GridUsers.DataSource = connection.LoadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
         }
 
@@ -31,10 +31,10 @@ namespace NextGenKadr
 
         private void Select_Click(object sender, EventArgs e)
         {
-            string id = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
-            string Login = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Login"].Value.ToString();
-            string Password = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Password"].Value.ToString();
-            string Root = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Root"].Value.ToString();
+            string id = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Id пользователя"].Value.ToString();
+            string Login = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Логин"].Value.ToString();
+            string Password = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Пароль"].Value.ToString();
+            string Root = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Права"].Value.ToString();
             EditUserGrid service = new EditUserGrid(id, Login, Password, Root);
             service.ShowDialog();
         }

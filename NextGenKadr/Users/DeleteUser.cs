@@ -20,7 +20,7 @@ namespace NextGenKadr
         private void DeleteUser_Load(object sender, EventArgs e)
         {
             {
-                GridUsers.DataSource = connection.LoadGrid("SELECT Id, Login, Password, Root FROM Users").Tables[0].DefaultView;
+                GridUsers.DataSource = connection.LoadGrid("SELECT [Id пользователя], логин, пароль, права FROM пользователи").Tables[0].DefaultView;
             }
         }
 
@@ -29,16 +29,16 @@ namespace NextGenKadr
             Close();
         }
 
-     /*   private void Select_CLick(object sender, EventArgs e)
+        private void Select_CLick(object sender, EventArgs e)
         {
-            string id = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["ID"].Value.ToString();
+            string id = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Id пользователя"].Value.ToString();
             DialogResult result = MessageBox.Show("Удалить запись?", "Выйти", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
 
             if (result == DialogResult.Yes)
             {
                 connection.DeletePerson($"Delete FROM Users WHERE ID = {id}");
-                GridUsers.DataSource = connection.LoadGrid("SELECT Id, Login, Password, Root FROM Users").Tables[0].DefaultView;
+                GridUsers.DataSource = connection.LoadGrid("SELECT [Табельный номер], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
-        }*/
+        }
     }
 }

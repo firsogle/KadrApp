@@ -20,1714 +20,1541 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.Rate_Box = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.KTU_Box = new System.Windows.Forms.TextBox();
-            this.label72 = new System.Windows.Forms.Label();
-            this.PremiumSalary_Box = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.Allowance_Box = new System.Windows.Forms.TextBox();
-            this.NumOrder_Box = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.Salary_Box = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.WorkExperience_Box = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.ContractTerm_Picker = new System.Windows.Forms.DateTimePicker();
-            this.NumOr2Date_Picker = new System.Windows.Forms.DateTimePicker();
-            this.label67 = new System.Windows.Forms.Label();
-            this.NumberContractDate_Picker = new System.Windows.Forms.DateTimePicker();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.NumOr2_Box = new System.Windows.Forms.TextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.NumberContract_Box = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.Position_Box = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.DateWork_Picker = new System.Windows.Forms.DateTimePicker();
-            this.label61 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.EDPost_Dir_Box = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.EDPost_Academ_Box = new System.Windows.Forms.TextBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.EDPost_Give_Box = new System.Windows.Forms.TextBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.Mil_Commis_Box = new System.Windows.Forms.TextBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.Mil_Category_Box = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.Mil_Sostav_Box = new System.Windows.Forms.TextBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.Mil_Zapas_Box = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.EDNameDOc = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.Mil_ZV_Box = new System.Windows.Forms.TextBox();
-            this.EDPost_NumbDoc_Box = new System.Windows.Forms.TextBox();
-            this.EDPost_Name_Box = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.Должность_Box = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.Ставка_Box = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.Mil_Special_Box = new System.Windows.Forms.TextBox();
-            this.Mil_VUS_Box = new System.Windows.Forms.TextBox();
-            this.EDQual_Box = new System.Windows.Forms.TextBox();
-            this.EDSpecial_Box = new System.Windows.Forms.TextBox();
-            this.EDNumber_Box = new System.Windows.Forms.TextBox();
-            this.EDSer_Box = new System.Windows.Forms.TextBox();
-            this.EDNameInst_Box = new System.Windows.Forms.TextBox();
-            this.EDNameDoc_Box = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
+            this.Категория_Box = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.Надбавка_Box = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.Оклад_Box = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.Стаж_работы_Box = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
+            this.Дата_приёма_на_работу_TimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label45 = new System.Windows.Forms.Label();
+            this.Num_Договора_Box = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.Num_Приказа_Box = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.Дата_договора_TimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label49 = new System.Windows.Forms.Label();
+            this.Дата_приказа_Box = new System.Windows.Forms.DateTimePicker();
+            this.Срок_договора_Box = new System.Windows.Forms.DateTimePicker();
+            this.button23 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.Коммисариат_Box = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Категория_годности_Box = new System.Windows.Forms.TextBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.Состав_Box = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.Категория_запаса_Box = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.Воинское_звание_Box = new System.Windows.Forms.TextBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.Военно_учетная_специальность_Box = new System.Windows.Forms.TextBox();
+            this.Номер_ВУС_Box = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.Направление_Box = new System.Windows.Forms.TextBox();
+            this.Ученая_степень_Box = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.EXBefore_TimePicker = new System.Windows.Forms.DateTimePicker();
-            this.EXDate_TimePicker = new System.Windows.Forms.DateTimePicker();
-            this.RFTime_TimePicker = new System.Windows.Forms.DateTimePicker();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.EXWhere_Box = new System.Windows.Forms.TextBox();
-            this.EXNumber_Box = new System.Windows.Forms.TextBox();
-            this.EXSeries_Box = new System.Windows.Forms.TextBox();
-            this.RFLiveIndex_Box = new System.Windows.Forms.TextBox();
-            this.RFLiveCity_Box = new System.Windows.Forms.TextBox();
-            this.RFLiveSt_Box = new System.Windows.Forms.TextBox();
-            this.RFRegIndex_Box = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.RFWhere_Box = new System.Windows.Forms.TextBox();
-            this.RFRegCity_Box = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.RFRegSt_Box = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.RFNumber_Box = new System.Windows.Forms.TextBox();
-            this.RFSeries_Box = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.Название_документа_Box = new System.Windows.Forms.TextBox();
+            this.Наименование_учебного_заведения_После_Box = new System.Windows.Forms.TextBox();
+            this.Документ_Num_Box = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.Серия_образование_Box = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.Наименование_документа_Box = new System.Windows.Forms.TextBox();
+            this.Наименование_учебного_заведения_Box = new System.Windows.Forms.TextBox();
+            this.Номер_образование_Box = new System.Windows.Forms.TextBox();
+            this.Специальность_Box = new System.Windows.Forms.TextBox();
+            this.Квалификация_Box = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
-            this.Employmentdate_Picker = new System.Windows.Forms.DateTimePicker();
-            this.button4 = new System.Windows.Forms.Button();
-            this.Birthday_TimePicker = new System.Windows.Forms.DateTimePicker();
-            this.Gender_Box = new System.Windows.Forms.TextBox();
-            this.Pension_Certificate_Box = new System.Windows.Forms.TextBox();
-            this.placeofwork_Box = new System.Windows.Forms.TextBox();
-            this.Medical_policy_box = new System.Windows.Forms.TextBox();
-            this.TIN_Box = new System.Windows.Forms.TextBox();
-            this.Insurance_policy_number_Box = new System.Windows.Forms.TextBox();
-            this.Number_ID = new System.Windows.Forms.TextBox();
-            this.Nationality_Box = new System.Windows.Forms.TextBox();
-            this.Place_Of_Birth_Box = new System.Windows.Forms.TextBox();
-            this.Family_Status_Box = new System.Windows.Forms.TextBox();
-            this.Citizenship_Box = new System.Windows.Forms.TextBox();
-            this.Phone_Box = new System.Windows.Forms.TextBox();
-            this.Structural_subdivision_Box = new System.Windows.Forms.TextBox();
-            this.Patronymic_Box = new System.Windows.Forms.TextBox();
-            this.Name_Box = new System.Windows.Forms.TextBox();
-            this.Surname_Box = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.Срок_действия_загран_Picker = new System.Windows.Forms.DateTimePicker();
+            this.Дата_выдачи_загран_Picker = new System.Windows.Forms.DateTimePicker();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.Серия_загран_Box = new System.Windows.Forms.TextBox();
+            this.Кем_выдан_загран_Box = new System.Windows.Forms.TextBox();
+            this.Номер_загран_Box = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Индекс_Box = new System.Windows.Forms.TextBox();
+            this.Город_Box = new System.Windows.Forms.TextBox();
+            this.Улица_Box = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Дата_выдачи_Picker = new System.Windows.Forms.DateTimePicker();
+            this.Кем_выдан_Box = new System.Windows.Forms.TextBox();
+            this.Номер_Box = new System.Windows.Forms.TextBox();
+            this.Серия_Box = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Семейное_положение_Box = new System.Windows.Forms.ComboBox();
+            this.Табельный_номер_Box = new System.Windows.Forms.TextBox();
+            this.Дата_рождения_Picker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.Label_999 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Label_666 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Пенсионное_свидетельство_Box = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Номер_мед_полиса_Box = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ИНН_Box = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Номер_страхового_полиса_Box = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Национальность_Box = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Место_рождения_Box = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Гражданство_Box = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Телефон_Box = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.Подразделение_Box = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Пол_Box = new System.Windows.Forms.ComboBox();
+            this.Отчество_Box = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Имя_Box = new System.Windows.Forms.TextBox();
+            this.Фамилия_Box = new System.Windows.Forms.TextBox();
+            this.Close = new System.Windows.Forms.Button();
+            this.Next = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage4.Controls.Add(this.button8);
-            this.tabPage4.Controls.Add(this.Rate_Box);
-            this.tabPage4.Controls.Add(this.label74);
-            this.tabPage4.Controls.Add(this.KTU_Box);
-            this.tabPage4.Controls.Add(this.label72);
-            this.tabPage4.Controls.Add(this.PremiumSalary_Box);
-            this.tabPage4.Controls.Add(this.label73);
-            this.tabPage4.Controls.Add(this.Allowance_Box);
-            this.tabPage4.Controls.Add(this.NumOrder_Box);
-            this.tabPage4.Controls.Add(this.label71);
-            this.tabPage4.Controls.Add(this.label68);
-            this.tabPage4.Controls.Add(this.Salary_Box);
-            this.tabPage4.Controls.Add(this.label70);
-            this.tabPage4.Controls.Add(this.WorkExperience_Box);
-            this.tabPage4.Controls.Add(this.label69);
-            this.tabPage4.Controls.Add(this.ContractTerm_Picker);
-            this.tabPage4.Controls.Add(this.NumOr2Date_Picker);
-            this.tabPage4.Controls.Add(this.label67);
-            this.tabPage4.Controls.Add(this.NumberContractDate_Picker);
-            this.tabPage4.Controls.Add(this.label66);
-            this.tabPage4.Controls.Add(this.label65);
-            this.tabPage4.Controls.Add(this.NumOr2_Box);
-            this.tabPage4.Controls.Add(this.label64);
-            this.tabPage4.Controls.Add(this.NumberContract_Box);
-            this.tabPage4.Controls.Add(this.label63);
-            this.tabPage4.Controls.Add(this.Position_Box);
-            this.tabPage4.Controls.Add(this.label62);
-            this.tabPage4.Controls.Add(this.DateWork_Picker);
-            this.tabPage4.Controls.Add(this.label61);
+            this.tabPage4.Controls.Add(this.groupBox8);
+            this.tabPage4.Controls.Add(this.groupBox7);
             this.tabPage4.Controls.Add(this.button23);
-            this.tabPage4.Controls.Add(this.button24);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1049, 749);
+            this.tabPage4.Size = new System.Drawing.Size(765, 635);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Трудовая деятельность";
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(624, 632);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(155, 48);
-            this.button8.TabIndex = 78;
-            this.button8.Text = "Сохранить изменения";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.Update_Click);
-            // 
-            // Rate_Box
-            // 
-            this.Rate_Box.Location = new System.Drawing.Point(410, 456);
-            this.Rate_Box.Name = "Rate_Box";
-            this.Rate_Box.Size = new System.Drawing.Size(100, 22);
-            this.Rate_Box.TabIndex = 77;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(222, 456);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(54, 17);
-            this.label74.TabIndex = 76;
-            this.label74.Text = "Ставка";
-            // 
-            // KTU_Box
-            // 
-            this.KTU_Box.Location = new System.Drawing.Point(410, 413);
-            this.KTU_Box.Name = "KTU_Box";
-            this.KTU_Box.Size = new System.Drawing.Size(100, 22);
-            this.KTU_Box.TabIndex = 73;
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(222, 413);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(35, 17);
-            this.label72.TabIndex = 72;
-            this.label72.Text = "КТУ";
-            // 
-            // PremiumSalary_Box
-            // 
-            this.PremiumSalary_Box.Location = new System.Drawing.Point(410, 372);
-            this.PremiumSalary_Box.Name = "PremiumSalary_Box";
-            this.PremiumSalary_Box.Size = new System.Drawing.Size(100, 22);
-            this.PremiumSalary_Box.TabIndex = 71;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(222, 372);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(135, 17);
-            this.label73.TabIndex = 70;
-            this.label73.Text = "Оклад с надбавкой";
-            // 
-            // Allowance_Box
-            // 
-            this.Allowance_Box.Location = new System.Drawing.Point(410, 328);
-            this.Allowance_Box.Name = "Allowance_Box";
-            this.Allowance_Box.Size = new System.Drawing.Size(100, 22);
-            this.Allowance_Box.TabIndex = 69;
-            // 
-            // NumOrder_Box
-            // 
-            this.NumOrder_Box.Location = new System.Drawing.Point(663, 328);
-            this.NumOrder_Box.Name = "NumOrder_Box";
-            this.NumOrder_Box.Size = new System.Drawing.Size(100, 22);
-            this.NumOrder_Box.TabIndex = 69;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(222, 328);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(72, 17);
-            this.label71.TabIndex = 68;
-            this.label71.Text = "Надбавка";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(536, 328);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(82, 17);
-            this.label68.TabIndex = 68;
-            this.label68.Text = "№ Приказа";
-            // 
-            // Salary_Box
-            // 
-            this.Salary_Box.Location = new System.Drawing.Point(410, 287);
-            this.Salary_Box.Name = "Salary_Box";
-            this.Salary_Box.Size = new System.Drawing.Size(100, 22);
-            this.Salary_Box.TabIndex = 67;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(222, 287);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(50, 17);
-            this.label70.TabIndex = 66;
-            this.label70.Text = "Оклад";
-            // 
-            // WorkExperience_Box
-            // 
-            this.WorkExperience_Box.Location = new System.Drawing.Point(663, 287);
-            this.WorkExperience_Box.Name = "WorkExperience_Box";
-            this.WorkExperience_Box.Size = new System.Drawing.Size(100, 22);
-            this.WorkExperience_Box.TabIndex = 67;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(536, 287);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(94, 17);
-            this.label69.TabIndex = 66;
-            this.label69.Text = "Стаж работы";
-            // 
-            // ContractTerm_Picker
-            // 
-            this.ContractTerm_Picker.CustomFormat = "yyyy.MM.dd";
-            this.ContractTerm_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ContractTerm_Picker.Location = new System.Drawing.Point(410, 215);
-            this.ContractTerm_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.ContractTerm_Picker.Name = "ContractTerm_Picker";
-            this.ContractTerm_Picker.Size = new System.Drawing.Size(100, 22);
-            this.ContractTerm_Picker.TabIndex = 65;
-            this.ContractTerm_Picker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
-            // 
-            // NumOr2Date_Picker
-            // 
-            this.NumOr2Date_Picker.CustomFormat = "yyyy.MM.dd";
-            this.NumOr2Date_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NumOr2Date_Picker.Location = new System.Drawing.Point(663, 175);
-            this.NumOr2Date_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.NumOr2Date_Picker.Name = "NumOr2Date_Picker";
-            this.NumOr2Date_Picker.Size = new System.Drawing.Size(100, 22);
-            this.NumOr2Date_Picker.TabIndex = 64;
-            this.NumOr2Date_Picker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(536, 175);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(100, 17);
-            this.label67.TabIndex = 63;
-            this.label67.Text = "Дата приказа";
-            // 
-            // NumberContractDate_Picker
-            // 
-            this.NumberContractDate_Picker.CustomFormat = "yyyy.MM.dd";
-            this.NumberContractDate_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NumberContractDate_Picker.Location = new System.Drawing.Point(663, 130);
-            this.NumberContractDate_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.NumberContractDate_Picker.Name = "NumberContractDate_Picker";
-            this.NumberContractDate_Picker.Size = new System.Drawing.Size(100, 22);
-            this.NumberContractDate_Picker.TabIndex = 62;
-            this.NumberContractDate_Picker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(536, 130);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(106, 17);
-            this.label66.TabIndex = 61;
-            this.label66.Text = "Дата договора";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(222, 220);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(104, 17);
-            this.label65.TabIndex = 59;
-            this.label65.Text = "Срок договора";
-            // 
-            // NumOr2_Box
-            // 
-            this.NumOr2_Box.Location = new System.Drawing.Point(410, 171);
-            this.NumOr2_Box.Name = "NumOr2_Box";
-            this.NumOr2_Box.Size = new System.Drawing.Size(100, 22);
-            this.NumOr2_Box.TabIndex = 58;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(222, 171);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(82, 17);
-            this.label64.TabIndex = 57;
-            this.label64.Text = "№ Приказа";
-            // 
-            // NumberContract_Box
-            // 
-            this.NumberContract_Box.Location = new System.Drawing.Point(410, 130);
-            this.NumberContract_Box.Name = "NumberContract_Box";
-            this.NumberContract_Box.Size = new System.Drawing.Size(100, 22);
-            this.NumberContract_Box.TabIndex = 56;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(222, 130);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(89, 17);
-            this.label63.TabIndex = 55;
-            this.label63.Text = "№ Договора";
-            // 
-            // Position_Box
-            // 
-            this.Position_Box.Location = new System.Drawing.Point(410, 85);
-            this.Position_Box.Name = "Position_Box";
-            this.Position_Box.Size = new System.Drawing.Size(100, 22);
-            this.Position_Box.TabIndex = 54;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(222, 85);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(81, 17);
-            this.label62.TabIndex = 53;
-            this.label62.Text = "Должность";
-            // 
-            // DateWork_Picker
-            // 
-            this.DateWork_Picker.CustomFormat = "yyyy.MM.dd";
-            this.DateWork_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateWork_Picker.Location = new System.Drawing.Point(410, 46);
-            this.DateWork_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.DateWork_Picker.Name = "DateWork_Picker";
-            this.DateWork_Picker.Size = new System.Drawing.Size(100, 22);
-            this.DateWork_Picker.TabIndex = 52;
-            this.DateWork_Picker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(222, 46);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(165, 17);
-            this.label61.TabIndex = 51;
-            this.label61.Text = "Дата приёма на работу";
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(271, 633);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(120, 53);
-            this.button23.TabIndex = 50;
-            this.button23.Text = "Назад";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(433, 632);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(123, 53);
-            this.button24.TabIndex = 49;
-            this.button24.Text = "Отмена";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Controls.Add(this.EDPost_Dir_Box);
-            this.tabPage3.Controls.Add(this.label60);
-            this.tabPage3.Controls.Add(this.EDPost_Academ_Box);
-            this.tabPage3.Controls.Add(this.label59);
-            this.tabPage3.Controls.Add(this.EDPost_Give_Box);
-            this.tabPage3.Controls.Add(this.label58);
-            this.tabPage3.Controls.Add(this.Mil_Commis_Box);
-            this.tabPage3.Controls.Add(this.label57);
-            this.tabPage3.Controls.Add(this.Mil_Category_Box);
-            this.tabPage3.Controls.Add(this.label56);
-            this.tabPage3.Controls.Add(this.Mil_Sostav_Box);
-            this.tabPage3.Controls.Add(this.label55);
-            this.tabPage3.Controls.Add(this.Mil_Zapas_Box);
-            this.tabPage3.Controls.Add(this.label54);
-            this.tabPage3.Controls.Add(this.label53);
-            this.tabPage3.Controls.Add(this.splitter1);
-            this.tabPage3.Controls.Add(this.EDNameDOc);
-            this.tabPage3.Controls.Add(this.label51);
-            this.tabPage3.Controls.Add(this.Mil_ZV_Box);
-            this.tabPage3.Controls.Add(this.EDPost_NumbDoc_Box);
-            this.tabPage3.Controls.Add(this.EDPost_Name_Box);
-            this.tabPage3.Controls.Add(this.label48);
-            this.tabPage3.Controls.Add(this.label49);
-            this.tabPage3.Controls.Add(this.label50);
-            this.tabPage3.Controls.Add(this.button20);
-            this.tabPage3.Controls.Add(this.button21);
-            this.tabPage3.Controls.Add(this.button22);
-            this.tabPage3.Controls.Add(this.Mil_Special_Box);
-            this.tabPage3.Controls.Add(this.Mil_VUS_Box);
-            this.tabPage3.Controls.Add(this.EDQual_Box);
-            this.tabPage3.Controls.Add(this.EDSpecial_Box);
-            this.tabPage3.Controls.Add(this.EDNumber_Box);
-            this.tabPage3.Controls.Add(this.EDSer_Box);
-            this.tabPage3.Controls.Add(this.EDNameInst_Box);
-            this.tabPage3.Controls.Add(this.EDNameDoc_Box);
-            this.tabPage3.Controls.Add(this.label46);
-            this.tabPage3.Controls.Add(this.label45);
-            this.tabPage3.Controls.Add(this.label44);
-            this.tabPage3.Controls.Add(this.label43);
-            this.tabPage3.Controls.Add(this.label42);
-            this.tabPage3.Controls.Add(this.label41);
-            this.tabPage3.Controls.Add(this.label40);
-            this.tabPage3.Controls.Add(this.label39);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1049, 749);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Образование и воинский учет";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(688, 651);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(155, 48);
-            this.button7.TabIndex = 72;
-            this.button7.Text = "Сохранить изменения";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.Update_Click);
-            // 
-            // EDPost_Dir_Box
-            // 
-            this.EDPost_Dir_Box.Location = new System.Drawing.Point(336, 350);
-            this.EDPost_Dir_Box.Name = "EDPost_Dir_Box";
-            this.EDPost_Dir_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDPost_Dir_Box.TabIndex = 71;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(91, 350);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(97, 17);
-            this.label60.TabIndex = 70;
-            this.label60.Text = "Направление";
-            // 
-            // EDPost_Academ_Box
-            // 
-            this.EDPost_Academ_Box.Location = new System.Drawing.Point(643, 309);
-            this.EDPost_Academ_Box.Name = "EDPost_Academ_Box";
-            this.EDPost_Academ_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDPost_Academ_Box.TabIndex = 69;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(472, 313);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(114, 17);
-            this.label59.TabIndex = 68;
-            this.label59.Text = "Ученая степень";
-            // 
-            // EDPost_Give_Box
-            // 
-            this.EDPost_Give_Box.Location = new System.Drawing.Point(336, 311);
-            this.EDPost_Give_Box.Name = "EDPost_Give_Box";
-            this.EDPost_Give_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDPost_Give_Box.TabIndex = 67;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(87, 309);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(246, 17);
-            this.label58.TabIndex = 66;
-            this.label58.Text = "Наименование выдававшего органа";
-            // 
-            // Mil_Commis_Box
-            // 
-            this.Mil_Commis_Box.Location = new System.Drawing.Point(334, 566);
-            this.Mil_Commis_Box.Name = "Mil_Commis_Box";
-            this.Mil_Commis_Box.Size = new System.Drawing.Size(100, 22);
-            this.Mil_Commis_Box.TabIndex = 65;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(87, 566);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(97, 17);
-            this.label57.TabIndex = 64;
-            this.label57.Text = "Коммисариат";
-            // 
-            // Mil_Category_Box
-            // 
-            this.Mil_Category_Box.Location = new System.Drawing.Point(643, 527);
-            this.Mil_Category_Box.Name = "Mil_Category_Box";
-            this.Mil_Category_Box.Size = new System.Drawing.Size(100, 22);
-            this.Mil_Category_Box.TabIndex = 63;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(473, 529);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(140, 17);
-            this.label56.TabIndex = 62;
-            this.label56.Text = "Категория годности";
-            // 
-            // Mil_Sostav_Box
-            // 
-            this.Mil_Sostav_Box.Location = new System.Drawing.Point(643, 484);
-            this.Mil_Sostav_Box.Name = "Mil_Sostav_Box";
-            this.Mil_Sostav_Box.Size = new System.Drawing.Size(100, 22);
-            this.Mil_Sostav_Box.TabIndex = 61;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(473, 486);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(54, 17);
-            this.label55.TabIndex = 60;
-            this.label55.Text = "Состав";
-            // 
-            // Mil_Zapas_Box
-            // 
-            this.Mil_Zapas_Box.Location = new System.Drawing.Point(643, 440);
-            this.Mil_Zapas_Box.Name = "Mil_Zapas_Box";
-            this.Mil_Zapas_Box.Size = new System.Drawing.Size(100, 22);
-            this.Mil_Zapas_Box.TabIndex = 59;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(473, 442);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(127, 17);
-            this.label54.TabIndex = 58;
-            this.label54.Text = "Категория запаса";
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.Должность_Box);
+            this.groupBox8.Controls.Add(this.label25);
+            this.groupBox8.Controls.Add(this.Ставка_Box);
+            this.groupBox8.Controls.Add(this.label50);
+            this.groupBox8.Controls.Add(this.Категория_Box);
+            this.groupBox8.Controls.Add(this.label51);
+            this.groupBox8.Controls.Add(this.Надбавка_Box);
+            this.groupBox8.Controls.Add(this.label53);
+            this.groupBox8.Controls.Add(this.Оклад_Box);
+            this.groupBox8.Controls.Add(this.label55);
+            this.groupBox8.Controls.Add(this.Стаж_работы_Box);
+            this.groupBox8.Controls.Add(this.label56);
+            this.groupBox8.Location = new System.Drawing.Point(28, 276);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(702, 208);
+            this.groupBox8.TabIndex = 75;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Зароботная плата";
+            // 
+            // Должность_Box
+            // 
+            this.Должность_Box.Location = new System.Drawing.Point(258, 28);
+            this.Должность_Box.Name = "Должность_Box";
+            this.Должность_Box.ReadOnly = true;
+            this.Должность_Box.Size = new System.Drawing.Size(100, 22);
+            this.Должность_Box.TabIndex = 93;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(70, 35);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(81, 17);
+            this.label25.TabIndex = 92;
+            this.label25.Text = "Должность";
+            // 
+            // Ставка_Box
+            // 
+            this.Ставка_Box.Location = new System.Drawing.Point(542, 66);
+            this.Ставка_Box.Name = "Ставка_Box";
+            this.Ставка_Box.ReadOnly = true;
+            this.Ставка_Box.Size = new System.Drawing.Size(100, 22);
+            this.Ставка_Box.TabIndex = 91;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(415, 66);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(54, 17);
+            this.label50.TabIndex = 90;
+            this.label50.Text = "Ставка";
+            // 
+            // Категория_Box
+            // 
+            this.Категория_Box.Location = new System.Drawing.Point(258, 110);
+            this.Категория_Box.Name = "Категория_Box";
+            this.Категория_Box.ReadOnly = true;
+            this.Категория_Box.Size = new System.Drawing.Size(100, 22);
+            this.Категория_Box.TabIndex = 89;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(70, 110);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(77, 17);
+            this.label51.TabIndex = 88;
+            this.label51.Text = "Категория";
+            // 
+            // Надбавка_Box
+            // 
+            this.Надбавка_Box.Location = new System.Drawing.Point(258, 66);
+            this.Надбавка_Box.Name = "Надбавка_Box";
+            this.Надбавка_Box.ReadOnly = true;
+            this.Надбавка_Box.Size = new System.Drawing.Size(100, 22);
+            this.Надбавка_Box.TabIndex = 84;
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label53.Location = new System.Drawing.Point(87, 401);
+            this.label53.Location = new System.Drawing.Point(70, 66);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(118, 17);
-            this.label53.TabIndex = 57;
-            this.label53.Text = "Воинский учет";
+            this.label53.Size = new System.Drawing.Size(72, 17);
+            this.label53.TabIndex = 82;
+            this.label53.Text = "Надбавка";
+            // 
+            // Оклад_Box
+            // 
+            this.Оклад_Box.Location = new System.Drawing.Point(542, 32);
+            this.Оклад_Box.Name = "Оклад_Box";
+            this.Оклад_Box.ReadOnly = true;
+            this.Оклад_Box.Size = new System.Drawing.Size(100, 22);
+            this.Оклад_Box.TabIndex = 80;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(415, 35);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(50, 17);
+            this.label55.TabIndex = 78;
+            this.label55.Text = "Оклад";
+            // 
+            // Стаж_работы_Box
+            // 
+            this.Стаж_работы_Box.Location = new System.Drawing.Point(542, 105);
+            this.Стаж_работы_Box.Name = "Стаж_работы_Box";
+            this.Стаж_работы_Box.ReadOnly = true;
+            this.Стаж_работы_Box.Size = new System.Drawing.Size(100, 22);
+            this.Стаж_работы_Box.TabIndex = 81;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(415, 108);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(94, 17);
+            this.label56.TabIndex = 79;
+            this.label56.Text = "Стаж работы";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label44);
+            this.groupBox7.Controls.Add(this.Дата_приёма_на_работу_TimePicker);
+            this.groupBox7.Controls.Add(this.label45);
+            this.groupBox7.Controls.Add(this.Num_Договора_Box);
+            this.groupBox7.Controls.Add(this.label46);
+            this.groupBox7.Controls.Add(this.Num_Приказа_Box);
+            this.groupBox7.Controls.Add(this.label47);
+            this.groupBox7.Controls.Add(this.label48);
+            this.groupBox7.Controls.Add(this.Дата_договора_TimePicker);
+            this.groupBox7.Controls.Add(this.label49);
+            this.groupBox7.Controls.Add(this.Дата_приказа_Box);
+            this.groupBox7.Controls.Add(this.Срок_договора_Box);
+            this.groupBox7.Location = new System.Drawing.Point(28, 6);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(702, 250);
+            this.groupBox7.TabIndex = 75;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Трудовая деятельность";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(81, 37);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(165, 17);
+            this.label44.TabIndex = 51;
+            this.label44.Text = "Дата приёма на работу";
+            // 
+            // Дата_приёма_на_работу_TimePicker
+            // 
+            this.Дата_приёма_на_работу_TimePicker.CustomFormat = "yyyy.MM.dd";
+            this.Дата_приёма_на_работу_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_приёма_на_работу_TimePicker.Location = new System.Drawing.Point(269, 37);
+            this.Дата_приёма_на_работу_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Дата_приёма_на_работу_TimePicker.Name = "Дата_приёма_на_работу_TimePicker";
+            this.Дата_приёма_на_работу_TimePicker.Size = new System.Drawing.Size(100, 22);
+            this.Дата_приёма_на_работу_TimePicker.TabIndex = 52;
+            this.Дата_приёма_на_работу_TimePicker.Value = new System.DateTime(2020, 5, 24, 19, 42, 19, 0);
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(81, 75);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(89, 17);
+            this.label45.TabIndex = 55;
+            this.label45.Text = "№ Договора";
+            // 
+            // Num_Договора_Box
+            // 
+            this.Num_Договора_Box.Location = new System.Drawing.Point(269, 75);
+            this.Num_Договора_Box.Name = "Num_Договора_Box";
+            this.Num_Договора_Box.ReadOnly = true;
+            this.Num_Договора_Box.Size = new System.Drawing.Size(100, 22);
+            this.Num_Договора_Box.TabIndex = 56;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(81, 120);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(82, 17);
+            this.label46.TabIndex = 57;
+            this.label46.Text = "№ Приказа";
+            // 
+            // Num_Приказа_Box
+            // 
+            this.Num_Приказа_Box.Location = new System.Drawing.Point(269, 120);
+            this.Num_Приказа_Box.Name = "Num_Приказа_Box";
+            this.Num_Приказа_Box.ReadOnly = true;
+            this.Num_Приказа_Box.Size = new System.Drawing.Size(100, 22);
+            this.Num_Приказа_Box.TabIndex = 58;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(81, 159);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(104, 17);
+            this.label47.TabIndex = 59;
+            this.label47.Text = "Срок договора";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(394, 75);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(106, 17);
+            this.label48.TabIndex = 61;
+            this.label48.Text = "Дата договора";
+            // 
+            // Дата_договора_TimePicker
+            // 
+            this.Дата_договора_TimePicker.CustomFormat = "yyyy.MM.dd";
+            this.Дата_договора_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_договора_TimePicker.Location = new System.Drawing.Point(521, 75);
+            this.Дата_договора_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Дата_договора_TimePicker.Name = "Дата_договора_TimePicker";
+            this.Дата_договора_TimePicker.Size = new System.Drawing.Size(100, 22);
+            this.Дата_договора_TimePicker.TabIndex = 62;
+            this.Дата_договора_TimePicker.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(394, 120);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(100, 17);
+            this.label49.TabIndex = 63;
+            this.label49.Text = "Дата приказа";
+            // 
+            // Дата_приказа_Box
+            // 
+            this.Дата_приказа_Box.CustomFormat = "yyyy.MM.dd";
+            this.Дата_приказа_Box.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_приказа_Box.Location = new System.Drawing.Point(521, 120);
+            this.Дата_приказа_Box.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Дата_приказа_Box.Name = "Дата_приказа_Box";
+            this.Дата_приказа_Box.Size = new System.Drawing.Size(100, 22);
+            this.Дата_приказа_Box.TabIndex = 64;
+            this.Дата_приказа_Box.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
+            // 
+            // Срок_договора_Box
+            // 
+            this.Срок_договора_Box.CustomFormat = "yyyy.MM.dd";
+            this.Срок_договора_Box.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Срок_договора_Box.Location = new System.Drawing.Point(269, 159);
+            this.Срок_договора_Box.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Срок_договора_Box.Name = "Срок_договора_Box";
+            this.Срок_договора_Box.Size = new System.Drawing.Size(100, 22);
+            this.Срок_договора_Box.TabIndex = 65;
+            this.Срок_договора_Box.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(322, 546);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(120, 53);
+            this.button23.TabIndex = 50;
+            this.button23.Text = "Закрыть";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.Controls.Add(this.groupBox10);
+            this.tabPage3.Controls.Add(this.groupBox6);
+            this.tabPage3.Controls.Add(this.splitter1);
+            this.tabPage3.Controls.Add(this.groupBox5);
+            this.tabPage3.Controls.Add(this.button20);
+            this.tabPage3.Controls.Add(this.button22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(765, 635);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Образование и воинский учет";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.Коммисариат_Box);
+            this.groupBox10.Controls.Add(this.label17);
+            this.groupBox10.Controls.Add(this.Категория_годности_Box);
+            this.groupBox10.Controls.Add(this.label62);
+            this.groupBox10.Controls.Add(this.Состав_Box);
+            this.groupBox10.Controls.Add(this.label63);
+            this.groupBox10.Controls.Add(this.Категория_запаса_Box);
+            this.groupBox10.Controls.Add(this.label64);
+            this.groupBox10.Controls.Add(this.Воинское_звание_Box);
+            this.groupBox10.Controls.Add(this.label65);
+            this.groupBox10.Controls.Add(this.Военно_учетная_специальность_Box);
+            this.groupBox10.Controls.Add(this.Номер_ВУС_Box);
+            this.groupBox10.Controls.Add(this.label66);
+            this.groupBox10.Controls.Add(this.label67);
+            this.groupBox10.Location = new System.Drawing.Point(26, 306);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(741, 212);
+            this.groupBox10.TabIndex = 75;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Воинский учет";
+            // 
+            // Коммисариат_Box
+            // 
+            this.Коммисариат_Box.Location = new System.Drawing.Point(283, 162);
+            this.Коммисариат_Box.Name = "Коммисариат_Box";
+            this.Коммисариат_Box.ReadOnly = true;
+            this.Коммисариат_Box.Size = new System.Drawing.Size(100, 22);
+            this.Коммисариат_Box.TabIndex = 79;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(22, 167);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(97, 17);
+            this.label17.TabIndex = 78;
+            this.label17.Text = "Коммисариат";
+            // 
+            // Категория_годности_Box
+            // 
+            this.Категория_годности_Box.Location = new System.Drawing.Point(579, 133);
+            this.Категория_годности_Box.Name = "Категория_годности_Box";
+            this.Категория_годности_Box.ReadOnly = true;
+            this.Категория_годности_Box.Size = new System.Drawing.Size(100, 22);
+            this.Категория_годности_Box.TabIndex = 77;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(433, 133);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(140, 17);
+            this.label62.TabIndex = 76;
+            this.label62.Text = "Категория годности";
+            // 
+            // Состав_Box
+            // 
+            this.Состав_Box.Location = new System.Drawing.Point(579, 90);
+            this.Состав_Box.Name = "Состав_Box";
+            this.Состав_Box.ReadOnly = true;
+            this.Состав_Box.Size = new System.Drawing.Size(100, 22);
+            this.Состав_Box.TabIndex = 75;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(433, 90);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(54, 17);
+            this.label63.TabIndex = 74;
+            this.label63.Text = "Состав";
+            // 
+            // Категория_запаса_Box
+            // 
+            this.Категория_запаса_Box.Location = new System.Drawing.Point(579, 46);
+            this.Категория_запаса_Box.Name = "Категория_запаса_Box";
+            this.Категория_запаса_Box.ReadOnly = true;
+            this.Категория_запаса_Box.Size = new System.Drawing.Size(100, 22);
+            this.Категория_запаса_Box.TabIndex = 73;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(433, 46);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(127, 17);
+            this.label64.TabIndex = 72;
+            this.label64.Text = "Категория запаса";
+            // 
+            // Воинское_звание_Box
+            // 
+            this.Воинское_звание_Box.Location = new System.Drawing.Point(282, 45);
+            this.Воинское_звание_Box.Name = "Воинское_звание_Box";
+            this.Воинское_звание_Box.ReadOnly = true;
+            this.Воинское_звание_Box.Size = new System.Drawing.Size(100, 22);
+            this.Воинское_звание_Box.TabIndex = 71;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(22, 38);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(121, 17);
+            this.label65.TabIndex = 70;
+            this.label65.Text = "Воинское звание";
+            // 
+            // Военно_учетная_специальность_Box
+            // 
+            this.Военно_учетная_специальность_Box.Location = new System.Drawing.Point(282, 128);
+            this.Военно_учетная_специальность_Box.Name = "Военно_учетная_специальность_Box";
+            this.Военно_учетная_специальность_Box.ReadOnly = true;
+            this.Военно_учетная_специальность_Box.Size = new System.Drawing.Size(100, 22);
+            this.Военно_учетная_специальность_Box.TabIndex = 69;
+            // 
+            // Номер_ВУС_Box
+            // 
+            this.Номер_ВУС_Box.Location = new System.Drawing.Point(282, 87);
+            this.Номер_ВУС_Box.Name = "Номер_ВУС_Box";
+            this.Номер_ВУС_Box.ReadOnly = true;
+            this.Номер_ВУС_Box.Size = new System.Drawing.Size(100, 22);
+            this.Номер_ВУС_Box.TabIndex = 67;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(22, 123);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(219, 17);
+            this.label66.TabIndex = 68;
+            this.label66.Text = "Военно-учетная специальность";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(22, 77);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(82, 17);
+            this.label67.TabIndex = 66;
+            this.label67.Text = "Номер ВУС";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.Направление_Box);
+            this.groupBox6.Controls.Add(this.Ученая_степень_Box);
+            this.groupBox6.Controls.Add(this.label39);
+            this.groupBox6.Controls.Add(this.label40);
+            this.groupBox6.Controls.Add(this.label41);
+            this.groupBox6.Controls.Add(this.label42);
+            this.groupBox6.Controls.Add(this.Название_документа_Box);
+            this.groupBox6.Controls.Add(this.Наименование_учебного_заведения_После_Box);
+            this.groupBox6.Controls.Add(this.Документ_Num_Box);
+            this.groupBox6.Controls.Add(this.label43);
+            this.groupBox6.Location = new System.Drawing.Point(26, 133);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(741, 167);
+            this.groupBox6.TabIndex = 75;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Послевузовское образование";
+            // 
+            // Направление_Box
+            // 
+            this.Направление_Box.Location = new System.Drawing.Point(579, 78);
+            this.Направление_Box.Name = "Направление_Box";
+            this.Направление_Box.ReadOnly = true;
+            this.Направление_Box.Size = new System.Drawing.Size(100, 22);
+            this.Направление_Box.TabIndex = 71;
+            // 
+            // Ученая_степень_Box
+            // 
+            this.Ученая_степень_Box.Location = new System.Drawing.Point(575, 37);
+            this.Ученая_степень_Box.Name = "Ученая_степень_Box";
+            this.Ученая_степень_Box.ReadOnly = true;
+            this.Ученая_степень_Box.Size = new System.Drawing.Size(100, 22);
+            this.Ученая_степень_Box.TabIndex = 69;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(444, 78);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(97, 17);
+            this.label39.TabIndex = 70;
+            this.label39.Text = "Направление";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(18, 38);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(146, 17);
+            this.label40.TabIndex = 48;
+            this.label40.Text = "Название документа";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(22, 78);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(91, 17);
+            this.label41.TabIndex = 50;
+            this.label41.Text = "Документ №";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(437, 40);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(114, 17);
+            this.label42.TabIndex = 68;
+            this.label42.Text = "Ученая степень";
+            // 
+            // Название_документа_Box
+            // 
+            this.Название_документа_Box.Location = new System.Drawing.Point(283, 38);
+            this.Название_документа_Box.Name = "Название_документа_Box";
+            this.Название_документа_Box.ReadOnly = true;
+            this.Название_документа_Box.Size = new System.Drawing.Size(100, 22);
+            this.Название_документа_Box.TabIndex = 49;
+            // 
+            // Наименование_учебного_заведения_После_Box
+            // 
+            this.Наименование_учебного_заведения_После_Box.Location = new System.Drawing.Point(283, 114);
+            this.Наименование_учебного_заведения_После_Box.Name = "Наименование_учебного_заведения_После_Box";
+            this.Наименование_учебного_заведения_После_Box.ReadOnly = true;
+            this.Наименование_учебного_заведения_После_Box.Size = new System.Drawing.Size(100, 22);
+            this.Наименование_учебного_заведения_После_Box.TabIndex = 67;
+            // 
+            // Документ_Num_Box
+            // 
+            this.Документ_Num_Box.Location = new System.Drawing.Point(283, 73);
+            this.Документ_Num_Box.Name = "Документ_Num_Box";
+            this.Документ_Num_Box.ReadOnly = true;
+            this.Документ_Num_Box.Size = new System.Drawing.Size(100, 22);
+            this.Документ_Num_Box.TabIndex = 51;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(22, 114);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(244, 17);
+            this.label43.TabIndex = 66;
+            this.label43.Text = "Наименование учебного заведения";
             // 
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(3, 3);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 743);
+            this.splitter1.Size = new System.Drawing.Size(3, 629);
             this.splitter1.TabIndex = 56;
             this.splitter1.TabStop = false;
             // 
-            // EDNameDOc
+            // groupBox5
             // 
-            this.EDNameDOc.AutoSize = true;
-            this.EDNameDOc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EDNameDOc.Location = new System.Drawing.Point(87, 26);
-            this.EDNameDOc.Name = "EDNameDOc";
-            this.EDNameDOc.Size = new System.Drawing.Size(108, 17);
-            this.EDNameDOc.TabIndex = 55;
-            this.EDNameDOc.Text = "Образование";
+            this.groupBox5.Controls.Add(this.Серия_образование_Box);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.label34);
+            this.groupBox5.Controls.Add(this.label35);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.label37);
+            this.groupBox5.Controls.Add(this.label38);
+            this.groupBox5.Controls.Add(this.Наименование_документа_Box);
+            this.groupBox5.Controls.Add(this.Наименование_учебного_заведения_Box);
+            this.groupBox5.Controls.Add(this.Номер_образование_Box);
+            this.groupBox5.Controls.Add(this.Специальность_Box);
+            this.groupBox5.Controls.Add(this.Квалификация_Box);
+            this.groupBox5.Location = new System.Drawing.Point(26, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(741, 121);
+            this.groupBox5.TabIndex = 50;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Образование";
             // 
-            // label51
+            // Серия_образование_Box
             // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label51.Location = new System.Drawing.Point(86, 215);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(333, 17);
-            this.label51.TabIndex = 54;
-            this.label51.Text = "Послевузовское образование образование";
+            this.Серия_образование_Box.Location = new System.Drawing.Point(560, 14);
+            this.Серия_образование_Box.Name = "Серия_образование_Box";
+            this.Серия_образование_Box.ReadOnly = true;
+            this.Серия_образование_Box.Size = new System.Drawing.Size(100, 22);
+            this.Серия_образование_Box.TabIndex = 5;
             // 
-            // Mil_ZV_Box
+            // label33
             // 
-            this.Mil_ZV_Box.Location = new System.Drawing.Point(336, 445);
-            this.Mil_ZV_Box.Name = "Mil_ZV_Box";
-            this.Mil_ZV_Box.Size = new System.Drawing.Size(100, 22);
-            this.Mil_ZV_Box.TabIndex = 53;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(20, 19);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(180, 17);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Наименование документа";
             // 
-            // EDPost_NumbDoc_Box
+            // label34
             // 
-            this.EDPost_NumbDoc_Box.Location = new System.Drawing.Point(643, 267);
-            this.EDPost_NumbDoc_Box.Name = "EDPost_NumbDoc_Box";
-            this.EDPost_NumbDoc_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDPost_NumbDoc_Box.TabIndex = 51;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(18, 52);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(244, 17);
+            this.label34.TabIndex = 2;
+            this.label34.Text = "Наименование учебного заведения";
             // 
-            // EDPost_Name_Box
+            // label35
             // 
-            this.EDPost_Name_Box.Location = new System.Drawing.Point(336, 266);
-            this.EDPost_Name_Box.Name = "EDPost_Name_Box";
-            this.EDPost_Name_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDPost_Name_Box.TabIndex = 49;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(424, 19);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(49, 17);
+            this.label35.TabIndex = 4;
+            this.label35.Text = "Серия";
             // 
-            // label48
+            // label36
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(87, 443);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(121, 17);
-            this.label48.TabIndex = 52;
-            this.label48.Text = "Воинское звание";
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(422, 52);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(51, 17);
+            this.label36.TabIndex = 6;
+            this.label36.Text = "Номер";
             // 
-            // label49
+            // label37
             // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(473, 266);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(91, 17);
-            this.label49.TabIndex = 50;
-            this.label49.Text = "Документ №";
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(20, 86);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(109, 17);
+            this.label37.TabIndex = 8;
+            this.label37.Text = "Специальность";
             // 
-            // label50
+            // label38
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(87, 269);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(106, 17);
-            this.label50.TabIndex = 48;
-            this.label50.Text = "Наименование";
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(423, 86);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(106, 17);
+            this.label38.TabIndex = 10;
+            this.label38.Text = "Квалификация";
+            // 
+            // Наименование_документа_Box
+            // 
+            this.Наименование_документа_Box.Location = new System.Drawing.Point(269, 14);
+            this.Наименование_документа_Box.Name = "Наименование_документа_Box";
+            this.Наименование_документа_Box.ReadOnly = true;
+            this.Наименование_документа_Box.Size = new System.Drawing.Size(100, 22);
+            this.Наименование_документа_Box.TabIndex = 1;
+            // 
+            // Наименование_учебного_заведения_Box
+            // 
+            this.Наименование_учебного_заведения_Box.Location = new System.Drawing.Point(269, 49);
+            this.Наименование_учебного_заведения_Box.Name = "Наименование_учебного_заведения_Box";
+            this.Наименование_учебного_заведения_Box.ReadOnly = true;
+            this.Наименование_учебного_заведения_Box.Size = new System.Drawing.Size(100, 22);
+            this.Наименование_учебного_заведения_Box.TabIndex = 3;
+            // 
+            // Номер_образование_Box
+            // 
+            this.Номер_образование_Box.Location = new System.Drawing.Point(561, 49);
+            this.Номер_образование_Box.Name = "Номер_образование_Box";
+            this.Номер_образование_Box.ReadOnly = true;
+            this.Номер_образование_Box.Size = new System.Drawing.Size(100, 22);
+            this.Номер_образование_Box.TabIndex = 7;
+            // 
+            // Специальность_Box
+            // 
+            this.Специальность_Box.Location = new System.Drawing.Point(269, 83);
+            this.Специальность_Box.Name = "Специальность_Box";
+            this.Специальность_Box.ReadOnly = true;
+            this.Специальность_Box.Size = new System.Drawing.Size(100, 22);
+            this.Специальность_Box.TabIndex = 9;
+            // 
+            // Квалификация_Box
+            // 
+            this.Квалификация_Box.Location = new System.Drawing.Point(563, 82);
+            this.Квалификация_Box.Name = "Квалификация_Box";
+            this.Квалификация_Box.ReadOnly = true;
+            this.Квалификация_Box.Size = new System.Drawing.Size(100, 22);
+            this.Квалификация_Box.TabIndex = 11;
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(175, 653);
+            this.button20.Location = new System.Drawing.Point(251, 555);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(120, 53);
             this.button20.TabIndex = 47;
-            this.button20.Text = "Назад";
+            this.button20.Text = "Закрыть";
             this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(516, 651);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(123, 53);
-            this.button21.TabIndex = 46;
-            this.button21.Text = "Отмена";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.Close_Click);
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(333, 653);
+            this.button22.Location = new System.Drawing.Point(414, 555);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(125, 53);
             this.button22.TabIndex = 45;
             this.button22.Text = "Далее";
             this.button22.UseVisualStyleBackColor = true;
             // 
-            // Mil_Special_Box
-            // 
-            this.Mil_Special_Box.Location = new System.Drawing.Point(336, 528);
-            this.Mil_Special_Box.Name = "Mil_Special_Box";
-            this.Mil_Special_Box.Size = new System.Drawing.Size(100, 22);
-            this.Mil_Special_Box.TabIndex = 15;
-            // 
-            // Mil_VUS_Box
-            // 
-            this.Mil_VUS_Box.Location = new System.Drawing.Point(336, 487);
-            this.Mil_VUS_Box.Name = "Mil_VUS_Box";
-            this.Mil_VUS_Box.Size = new System.Drawing.Size(100, 22);
-            this.Mil_VUS_Box.TabIndex = 13;
-            // 
-            // EDQual_Box
-            // 
-            this.EDQual_Box.Location = new System.Drawing.Point(588, 97);
-            this.EDQual_Box.Name = "EDQual_Box";
-            this.EDQual_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDQual_Box.TabIndex = 11;
-            // 
-            // EDSpecial_Box
-            // 
-            this.EDSpecial_Box.Location = new System.Drawing.Point(336, 150);
-            this.EDSpecial_Box.Name = "EDSpecial_Box";
-            this.EDSpecial_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDSpecial_Box.TabIndex = 9;
-            // 
-            // EDNumber_Box
-            // 
-            this.EDNumber_Box.Location = new System.Drawing.Point(773, 60);
-            this.EDNumber_Box.Name = "EDNumber_Box";
-            this.EDNumber_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDNumber_Box.TabIndex = 7;
-            // 
-            // EDSer_Box
-            // 
-            this.EDSer_Box.Location = new System.Drawing.Point(588, 60);
-            this.EDSer_Box.Name = "EDSer_Box";
-            this.EDSer_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDSer_Box.TabIndex = 5;
-            // 
-            // EDNameInst_Box
-            // 
-            this.EDNameInst_Box.Location = new System.Drawing.Point(336, 102);
-            this.EDNameInst_Box.Name = "EDNameInst_Box";
-            this.EDNameInst_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDNameInst_Box.TabIndex = 3;
-            // 
-            // EDNameDoc_Box
-            // 
-            this.EDNameDoc_Box.Location = new System.Drawing.Point(336, 60);
-            this.EDNameDoc_Box.Name = "EDNameDoc_Box";
-            this.EDNameDoc_Box.Size = new System.Drawing.Size(100, 22);
-            this.EDNameDoc_Box.TabIndex = 1;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(87, 528);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(219, 17);
-            this.label46.TabIndex = 14;
-            this.label46.Text = "Военно-учетная специальность";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(87, 482);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(82, 17);
-            this.label45.TabIndex = 12;
-            this.label45.Text = "Номер ВУС";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(474, 102);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(106, 17);
-            this.label44.TabIndex = 10;
-            this.label44.Text = "Квалификация";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(91, 150);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(109, 17);
-            this.label43.TabIndex = 8;
-            this.label43.Text = "Специальность";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(707, 60);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(51, 17);
-            this.label42.TabIndex = 6;
-            this.label42.Text = "Номер";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(476, 63);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(49, 17);
-            this.label41.TabIndex = 4;
-            this.label41.Text = "Серия";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(85, 107);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(244, 17);
-            this.label40.TabIndex = 2;
-            this.label40.Text = "Наименование учебного заведения";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(85, 63);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(180, 17);
-            this.label39.TabIndex = 0;
-            this.label39.Text = "Наименование документа";
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.EXBefore_TimePicker);
-            this.tabPage2.Controls.Add(this.EXDate_TimePicker);
-            this.tabPage2.Controls.Add(this.RFTime_TimePicker);
+            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.groupBox9);
+            this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.button12);
-            this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.label19);
-            this.tabPage2.Controls.Add(this.label23);
-            this.tabPage2.Controls.Add(this.EXWhere_Box);
-            this.tabPage2.Controls.Add(this.EXNumber_Box);
-            this.tabPage2.Controls.Add(this.EXSeries_Box);
-            this.tabPage2.Controls.Add(this.RFLiveIndex_Box);
-            this.tabPage2.Controls.Add(this.RFLiveCity_Box);
-            this.tabPage2.Controls.Add(this.RFLiveSt_Box);
-            this.tabPage2.Controls.Add(this.RFRegIndex_Box);
-            this.tabPage2.Controls.Add(this.textBox9);
-            this.tabPage2.Controls.Add(this.RFWhere_Box);
-            this.tabPage2.Controls.Add(this.RFRegCity_Box);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.RFRegSt_Box);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.RFNumber_Box);
-            this.tabPage2.Controls.Add(this.RFSeries_Box);
-            this.tabPage2.Controls.Add(this.label24);
-            this.tabPage2.Controls.Add(this.label26);
-            this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.label36);
-            this.tabPage2.Controls.Add(this.label33);
-            this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.label35);
-            this.tabPage2.Controls.Add(this.label29);
-            this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(this.label27);
-            this.tabPage2.Controls.Add(this.label31);
-            this.tabPage2.Controls.Add(this.label25);
-            this.tabPage2.Controls.Add(this.label22);
-            this.tabPage2.Controls.Add(this.label30);
-            this.tabPage2.Controls.Add(this.label21);
-            this.tabPage2.Controls.Add(this.label20);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1049, 749);
+            this.tabPage2.Size = new System.Drawing.Size(765, 635);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Паспортные данные";
             // 
-            // button6
+            // button3
             // 
-            this.button6.Location = new System.Drawing.Point(703, 653);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(155, 48);
-            this.button6.TabIndex = 49;
-            this.button6.Text = "Сохранить изменения";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Update_Click);
+            this.button3.Location = new System.Drawing.Point(518, 544);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(127, 53);
+            this.button3.TabIndex = 77;
+            this.button3.Text = "Обновить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Update_Click);
             // 
-            // EXBefore_TimePicker
+            // groupBox9
             // 
-            this.EXBefore_TimePicker.CustomFormat = "yyyy.MM.dd";
-            this.EXBefore_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.EXBefore_TimePicker.Location = new System.Drawing.Point(166, 529);
-            this.EXBefore_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.EXBefore_TimePicker.Name = "EXBefore_TimePicker";
-            this.EXBefore_TimePicker.Size = new System.Drawing.Size(100, 22);
-            this.EXBefore_TimePicker.TabIndex = 48;
-            this.EXBefore_TimePicker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
+            this.groupBox9.Controls.Add(this.Срок_действия_загран_Picker);
+            this.groupBox9.Controls.Add(this.Дата_выдачи_загран_Picker);
+            this.groupBox9.Controls.Add(this.label57);
+            this.groupBox9.Controls.Add(this.label58);
+            this.groupBox9.Controls.Add(this.label59);
+            this.groupBox9.Controls.Add(this.label60);
+            this.groupBox9.Controls.Add(this.label61);
+            this.groupBox9.Controls.Add(this.Серия_загран_Box);
+            this.groupBox9.Controls.Add(this.Кем_выдан_загран_Box);
+            this.groupBox9.Controls.Add(this.Номер_загран_Box);
+            this.groupBox9.Location = new System.Drawing.Point(31, 340);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(702, 140);
+            this.groupBox9.TabIndex = 50;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Заграничный паспорт";
             // 
-            // EXDate_TimePicker
+            // Срок_действия_загран_Picker
             // 
-            this.EXDate_TimePicker.CustomFormat = "yyyy.MM.dd";
-            this.EXDate_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.EXDate_TimePicker.Location = new System.Drawing.Point(578, 449);
-            this.EXDate_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.EXDate_TimePicker.Name = "EXDate_TimePicker";
-            this.EXDate_TimePicker.Size = new System.Drawing.Size(100, 22);
-            this.EXDate_TimePicker.TabIndex = 47;
-            this.EXDate_TimePicker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
+            this.Срок_действия_загран_Picker.CustomFormat = "yyyy.MM.dd";
+            this.Срок_действия_загран_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Срок_действия_загран_Picker.Location = new System.Drawing.Point(138, 77);
+            this.Срок_действия_загран_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Срок_действия_загран_Picker.Name = "Срок_действия_загран_Picker";
+            this.Срок_действия_загран_Picker.Size = new System.Drawing.Size(132, 22);
+            this.Срок_действия_загран_Picker.TabIndex = 59;
+            this.Срок_действия_загран_Picker.Value = new System.DateTime(2020, 5, 24, 18, 40, 20, 0);
             // 
-            // RFTime_TimePicker
+            // Дата_выдачи_загран_Picker
             // 
-            this.RFTime_TimePicker.CustomFormat = "yyyy.MM.dd";
-            this.RFTime_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.RFTime_TimePicker.Location = new System.Drawing.Point(578, 76);
-            this.RFTime_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.RFTime_TimePicker.Name = "RFTime_TimePicker";
-            this.RFTime_TimePicker.Size = new System.Drawing.Size(100, 22);
-            this.RFTime_TimePicker.TabIndex = 46;
-            this.RFTime_TimePicker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
+            this.Дата_выдачи_загран_Picker.CustomFormat = "yyyy.MM.dd";
+            this.Дата_выдачи_загран_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_выдачи_загран_Picker.Location = new System.Drawing.Point(550, 21);
+            this.Дата_выдачи_загран_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Дата_выдачи_загран_Picker.Name = "Дата_выдачи_загран_Picker";
+            this.Дата_выдачи_загран_Picker.Size = new System.Drawing.Size(132, 22);
+            this.Дата_выдачи_загран_Picker.TabIndex = 58;
+            this.Дата_выдачи_загран_Picker.Value = new System.DateTime(2020, 5, 26, 14, 47, 46, 0);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(13, 24);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(49, 17);
+            this.label57.TabIndex = 49;
+            this.label57.Text = "Серия";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(13, 77);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(105, 17);
+            this.label58.TabIndex = 57;
+            this.label58.Text = "Срок действия";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(243, 21);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(51, 17);
+            this.label59.TabIndex = 51;
+            this.label59.Text = "Номер";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(12, 52);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(79, 17);
+            this.label60.TabIndex = 53;
+            this.label60.Text = "Кем выдан";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(449, 21);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(95, 17);
+            this.label61.TabIndex = 55;
+            this.label61.Text = "Дата выдачи";
+            // 
+            // Серия_загран_Box
+            // 
+            this.Серия_загран_Box.Location = new System.Drawing.Point(97, 19);
+            this.Серия_загран_Box.Name = "Серия_загран_Box";
+            this.Серия_загран_Box.ReadOnly = true;
+            this.Серия_загран_Box.Size = new System.Drawing.Size(132, 22);
+            this.Серия_загран_Box.TabIndex = 50;
+            // 
+            // Кем_выдан_загран_Box
+            // 
+            this.Кем_выдан_загран_Box.Location = new System.Drawing.Point(97, 49);
+            this.Кем_выдан_загран_Box.Name = "Кем_выдан_загран_Box";
+            this.Кем_выдан_загран_Box.ReadOnly = true;
+            this.Кем_выдан_загран_Box.Size = new System.Drawing.Size(585, 22);
+            this.Кем_выдан_загран_Box.TabIndex = 54;
+            // 
+            // Номер_загран_Box
+            // 
+            this.Номер_загран_Box.Location = new System.Drawing.Point(295, 21);
+            this.Номер_загран_Box.Name = "Номер_загран_Box";
+            this.Номер_загран_Box.ReadOnly = true;
+            this.Номер_загран_Box.Size = new System.Drawing.Size(132, 22);
+            this.Номер_загран_Box.TabIndex = 52;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.Индекс_Box);
+            this.groupBox4.Controls.Add(this.Город_Box);
+            this.groupBox4.Controls.Add(this.Улица_Box);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Location = new System.Drawing.Point(31, 148);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(688, 186);
+            this.groupBox4.TabIndex = 75;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Регистрация";
+            // 
+            // Индекс_Box
+            // 
+            this.Индекс_Box.Location = new System.Drawing.Point(320, 45);
+            this.Индекс_Box.Name = "Индекс_Box";
+            this.Индекс_Box.ReadOnly = true;
+            this.Индекс_Box.Size = new System.Drawing.Size(116, 22);
+            this.Индекс_Box.TabIndex = 31;
+            // 
+            // Город_Box
+            // 
+            this.Город_Box.Location = new System.Drawing.Point(91, 45);
+            this.Город_Box.Name = "Город_Box";
+            this.Город_Box.ReadOnly = true;
+            this.Город_Box.Size = new System.Drawing.Size(163, 22);
+            this.Город_Box.TabIndex = 27;
+            // 
+            // Улица_Box
+            // 
+            this.Улица_Box.Location = new System.Drawing.Point(91, 96);
+            this.Улица_Box.Multiline = true;
+            this.Улица_Box.Name = "Улица_Box";
+            this.Улица_Box.ReadOnly = true;
+            this.Улица_Box.Size = new System.Drawing.Size(581, 57);
+            this.Улица_Box.TabIndex = 23;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(36, 96);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(49, 17);
+            this.label22.TabIndex = 33;
+            this.label22.Text = "Улица";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(258, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(56, 17);
+            this.label23.TabIndex = 29;
+            this.label23.Text = "Индекс";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(36, 48);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(48, 17);
+            this.label24.TabIndex = 25;
+            this.label24.Text = "Город";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.Дата_выдачи_Picker);
+            this.groupBox3.Controls.Add(this.Кем_выдан_Box);
+            this.groupBox3.Controls.Add(this.Номер_Box);
+            this.groupBox3.Controls.Add(this.Серия_Box);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Location = new System.Drawing.Point(31, 21);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(688, 121);
+            this.groupBox3.TabIndex = 50;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Паспортные данные";
+            // 
+            // Дата_выдачи_Picker
+            // 
+            this.Дата_выдачи_Picker.CustomFormat = "yyyy.MM.dd";
+            this.Дата_выдачи_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_выдачи_Picker.Location = new System.Drawing.Point(534, 33);
+            this.Дата_выдачи_Picker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.Дата_выдачи_Picker.Name = "Дата_выдачи_Picker";
+            this.Дата_выдачи_Picker.Size = new System.Drawing.Size(119, 22);
+            this.Дата_выдачи_Picker.TabIndex = 57;
+            this.Дата_выдачи_Picker.Value = new System.DateTime(2020, 5, 24, 19, 42, 20, 0);
+            // 
+            // Кем_выдан_Box
+            // 
+            this.Кем_выдан_Box.Location = new System.Drawing.Point(114, 66);
+            this.Кем_выдан_Box.Multiline = true;
+            this.Кем_выдан_Box.Name = "Кем_выдан_Box";
+            this.Кем_выдан_Box.ReadOnly = true;
+            this.Кем_выдан_Box.Size = new System.Drawing.Size(562, 41);
+            this.Кем_выдан_Box.TabIndex = 55;
+            // 
+            // Номер_Box
+            // 
+            this.Номер_Box.Location = new System.Drawing.Point(320, 35);
+            this.Номер_Box.Name = "Номер_Box";
+            this.Номер_Box.ReadOnly = true;
+            this.Номер_Box.Size = new System.Drawing.Size(107, 22);
+            this.Номер_Box.TabIndex = 53;
+            // 
+            // Серия_Box
+            // 
+            this.Серия_Box.Location = new System.Drawing.Point(91, 36);
+            this.Серия_Box.Name = "Серия_Box";
+            this.Серия_Box.ReadOnly = true;
+            this.Серия_Box.Size = new System.Drawing.Size(111, 22);
+            this.Серия_Box.TabIndex = 51;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(433, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 17);
+            this.label4.TabIndex = 56;
+            this.label4.Text = "Дата выдачи";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 17);
+            this.label6.TabIndex = 54;
+            this.label6.Text = "Кем выдан";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(268, 35);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(51, 17);
+            this.label20.TabIndex = 52;
+            this.label20.Text = "Номер";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 36);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(49, 17);
+            this.label21.TabIndex = 50;
+            this.label21.Text = "Серия";
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(187, 655);
+            this.button12.Location = new System.Drawing.Point(135, 544);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(120, 53);
             this.button12.TabIndex = 44;
-            this.button12.Text = "Назад";
+            this.button12.Text = "Закрыть";
             this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(525, 653);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 53);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "Отмена";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.Close_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(355, 655);
+            this.button1.Location = new System.Drawing.Point(323, 544);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 53);
             this.button1.TabIndex = 42;
             this.button1.Text = "Далее";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(41, 529);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(105, 17);
-            this.label38.TabIndex = 40;
-            this.label38.Text = "Срок действия";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(40, 426);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(173, 17);
-            this.label19.TabIndex = 39;
-            this.label19.Text = "Паспорт заграничный";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(477, 446);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(95, 17);
-            this.label23.TabIndex = 37;
-            this.label23.Text = "Дата выдачи";
-            // 
-            // EXWhere_Box
-            // 
-            this.EXWhere_Box.Location = new System.Drawing.Point(125, 479);
-            this.EXWhere_Box.Name = "EXWhere_Box";
-            this.EXWhere_Box.Size = new System.Drawing.Size(634, 22);
-            this.EXWhere_Box.TabIndex = 36;
-            // 
-            // EXNumber_Box
-            // 
-            this.EXNumber_Box.Location = new System.Drawing.Point(311, 451);
-            this.EXNumber_Box.Name = "EXNumber_Box";
-            this.EXNumber_Box.Size = new System.Drawing.Size(100, 22);
-            this.EXNumber_Box.TabIndex = 34;
-            // 
-            // EXSeries_Box
-            // 
-            this.EXSeries_Box.Location = new System.Drawing.Point(125, 449);
-            this.EXSeries_Box.Name = "EXSeries_Box";
-            this.EXSeries_Box.Size = new System.Drawing.Size(100, 22);
-            this.EXSeries_Box.TabIndex = 32;
-            // 
-            // RFLiveIndex_Box
-            // 
-            this.RFLiveIndex_Box.Location = new System.Drawing.Point(295, 312);
-            this.RFLiveIndex_Box.Name = "RFLiveIndex_Box";
-            this.RFLiveIndex_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFLiveIndex_Box.TabIndex = 28;
-            // 
-            // RFLiveCity_Box
-            // 
-            this.RFLiveCity_Box.Location = new System.Drawing.Point(94, 315);
-            this.RFLiveCity_Box.Name = "RFLiveCity_Box";
-            this.RFLiveCity_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFLiveCity_Box.TabIndex = 26;
-            // 
-            // RFLiveSt_Box
-            // 
-            this.RFLiveSt_Box.Location = new System.Drawing.Point(94, 358);
-            this.RFLiveSt_Box.Name = "RFLiveSt_Box";
-            this.RFLiveSt_Box.Size = new System.Drawing.Size(665, 22);
-            this.RFLiveSt_Box.TabIndex = 24;
-            // 
-            // RFRegIndex_Box
-            // 
-            this.RFRegIndex_Box.Location = new System.Drawing.Point(295, 177);
-            this.RFRegIndex_Box.Name = "RFRegIndex_Box";
-            this.RFRegIndex_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFRegIndex_Box.TabIndex = 17;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(295, 176);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 17;
-            // 
-            // RFWhere_Box
-            // 
-            this.RFWhere_Box.Location = new System.Drawing.Point(125, 106);
-            this.RFWhere_Box.Name = "RFWhere_Box";
-            this.RFWhere_Box.Size = new System.Drawing.Size(634, 22);
-            this.RFWhere_Box.TabIndex = 11;
-            // 
-            // RFRegCity_Box
-            // 
-            this.RFRegCity_Box.Location = new System.Drawing.Point(94, 180);
-            this.RFRegCity_Box.Name = "RFRegCity_Box";
-            this.RFRegCity_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFRegCity_Box.TabIndex = 9;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(94, 179);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 9;
-            // 
-            // RFRegSt_Box
-            // 
-            this.RFRegSt_Box.Location = new System.Drawing.Point(94, 223);
-            this.RFRegSt_Box.Name = "RFRegSt_Box";
-            this.RFRegSt_Box.Size = new System.Drawing.Size(665, 22);
-            this.RFRegSt_Box.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(94, 222);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(665, 22);
-            this.textBox4.TabIndex = 7;
-            // 
-            // RFNumber_Box
-            // 
-            this.RFNumber_Box.Location = new System.Drawing.Point(311, 78);
-            this.RFNumber_Box.Name = "RFNumber_Box";
-            this.RFNumber_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFNumber_Box.TabIndex = 3;
-            // 
-            // RFSeries_Box
-            // 
-            this.RFSeries_Box.Location = new System.Drawing.Point(125, 78);
-            this.RFSeries_Box.Name = "RFSeries_Box";
-            this.RFSeries_Box.Size = new System.Drawing.Size(100, 22);
-            this.RFSeries_Box.TabIndex = 1;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(40, 482);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 17);
-            this.label24.TabIndex = 35;
-            this.label24.Text = "Кем выдан";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(259, 451);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(51, 17);
-            this.label26.TabIndex = 33;
-            this.label26.Text = "Номер";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(41, 454);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(49, 17);
-            this.label37.TabIndex = 31;
-            this.label37.Text = "Серия";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label36.Location = new System.Drawing.Point(40, 45);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(254, 17);
-            this.label36.TabIndex = 30;
-            this.label36.Text = "Паспорт Российской Федерации";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(41, 358);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(49, 17);
-            this.label33.TabIndex = 29;
-            this.label33.Text = "Улица";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(233, 315);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(56, 17);
-            this.label34.TabIndex = 27;
-            this.label34.Text = "Индекс";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(40, 315);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(48, 17);
-            this.label35.TabIndex = 25;
-            this.label35.Text = "Город";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.Location = new System.Drawing.Point(41, 281);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(149, 17);
-            this.label29.TabIndex = 23;
-            this.label29.Text = "Место проживания";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(41, 223);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(49, 17);
-            this.label32.TabIndex = 22;
-            this.label32.Text = "Улица";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(41, 222);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(49, 17);
-            this.label28.TabIndex = 22;
-            this.label28.Text = "Улица";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(467, 78);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(95, 17);
-            this.label27.TabIndex = 20;
-            this.label27.Text = "Дата выдачи";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(233, 180);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(56, 17);
-            this.label31.TabIndex = 16;
-            this.label31.Text = "Индекс";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(233, 179);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(56, 17);
-            this.label25.TabIndex = 16;
-            this.label25.Text = "Индекс";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(40, 109);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(79, 17);
-            this.label22.TabIndex = 10;
-            this.label22.Text = "Кем выдан";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(40, 180);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(48, 17);
-            this.label30.TabIndex = 8;
-            this.label30.Text = "Город";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(40, 179);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(48, 17);
-            this.label21.TabIndex = 8;
-            this.label21.Text = "Город";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(40, 144);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(103, 17);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Регистрация";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(259, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 17);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Номер";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Серия";
-            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.Employmentdate_Picker);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.Birthday_TimePicker);
-            this.tabPage1.Controls.Add(this.Gender_Box);
-            this.tabPage1.Controls.Add(this.Pension_Certificate_Box);
-            this.tabPage1.Controls.Add(this.placeofwork_Box);
-            this.tabPage1.Controls.Add(this.Medical_policy_box);
-            this.tabPage1.Controls.Add(this.TIN_Box);
-            this.tabPage1.Controls.Add(this.Insurance_policy_number_Box);
-            this.tabPage1.Controls.Add(this.Number_ID);
-            this.tabPage1.Controls.Add(this.Nationality_Box);
-            this.tabPage1.Controls.Add(this.Place_Of_Birth_Box);
-            this.tabPage1.Controls.Add(this.Family_Status_Box);
-            this.tabPage1.Controls.Add(this.Citizenship_Box);
-            this.tabPage1.Controls.Add(this.Phone_Box);
-            this.tabPage1.Controls.Add(this.Structural_subdivision_Box);
-            this.tabPage1.Controls.Add(this.Patronymic_Box);
-            this.tabPage1.Controls.Add(this.Name_Box);
-            this.tabPage1.Controls.Add(this.Surname_Box);
-            this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.Label_999);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.Label_666);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.Close);
+            this.tabPage1.Controls.Add(this.Next);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1049, 749);
+            this.tabPage1.Size = new System.Drawing.Size(765, 635);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Общие данные";
             // 
-            // button5
+            // button2
             // 
-            this.button5.Location = new System.Drawing.Point(262, 631);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(157, 45);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Далее";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(526, 544);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(157, 45);
+            this.button2.TabIndex = 76;
+            this.button2.Text = "Обновить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Update_Click);
             // 
-            // button3
+            // groupBox2
             // 
-            this.button3.Location = new System.Drawing.Point(695, 628);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 48);
-            this.button3.TabIndex = 43;
-            this.button3.Text = "Сохранить изменения";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Update_Click);
+            this.groupBox2.Controls.Add(this.Семейное_положение_Box);
+            this.groupBox2.Controls.Add(this.Табельный_номер_Box);
+            this.groupBox2.Controls.Add(this.Дата_рождения_Picker);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.Пенсионное_свидетельство_Box);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.Номер_мед_полиса_Box);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.ИНН_Box);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.Номер_страхового_полиса_Box);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.Национальность_Box);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.Место_рождения_Box);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.Гражданство_Box);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.Телефон_Box);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.Подразделение_Box);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Location = new System.Drawing.Point(17, 176);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(702, 250);
+            this.groupBox2.TabIndex = 75;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Общие сведения";
             // 
-            // Employmentdate_Picker
+            // Семейное_положение_Box
             // 
-            this.Employmentdate_Picker.CustomFormat = "yyyy.MM.dd";
-            this.Employmentdate_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Employmentdate_Picker.Location = new System.Drawing.Point(750, 215);
-            this.Employmentdate_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.Employmentdate_Picker.Name = "Employmentdate_Picker";
-            this.Employmentdate_Picker.Size = new System.Drawing.Size(100, 22);
-            this.Employmentdate_Picker.TabIndex = 45;
-            this.Employmentdate_Picker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
+            this.Семейное_положение_Box.FormattingEnabled = true;
+            this.Семейное_положение_Box.Location = new System.Drawing.Point(537, 142);
+            this.Семейное_положение_Box.Name = "Семейное_положение_Box";
+            this.Семейное_положение_Box.Size = new System.Drawing.Size(144, 24);
+            this.Семейное_положение_Box.TabIndex = 75;
             // 
-            // button4
+            // Табельный_номер_Box
             // 
-            this.button4.Location = new System.Drawing.Point(479, 629);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 48);
-            this.button4.TabIndex = 44;
-            this.button4.Text = "Отмена";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Табельный_номер_Box.Location = new System.Drawing.Point(197, 21);
+            this.Табельный_номер_Box.Name = "Табельный_номер_Box";
+            this.Табельный_номер_Box.ReadOnly = true;
+            this.Табельный_номер_Box.Size = new System.Drawing.Size(145, 22);
+            this.Табельный_номер_Box.TabIndex = 65;
             // 
-            // Birthday_TimePicker
+            // Дата_рождения_Picker
             // 
-            this.Birthday_TimePicker.CustomFormat = "yyyy.MM.dd";
-            this.Birthday_TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Birthday_TimePicker.Location = new System.Drawing.Point(300, 215);
-            this.Birthday_TimePicker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.Birthday_TimePicker.Name = "Birthday_TimePicker";
-            this.Birthday_TimePicker.Size = new System.Drawing.Size(100, 22);
-            this.Birthday_TimePicker.TabIndex = 40;
-            this.Birthday_TimePicker.Value = new System.DateTime(2020, 5, 13, 0, 0, 0, 0);
-            // 
-            // Gender_Box
-            // 
-            this.Gender_Box.Location = new System.Drawing.Point(750, 72);
-            this.Gender_Box.Name = "Gender_Box";
-            this.Gender_Box.Size = new System.Drawing.Size(100, 22);
-            this.Gender_Box.TabIndex = 38;
-            // 
-            // Pension_Certificate_Box
-            // 
-            this.Pension_Certificate_Box.Location = new System.Drawing.Point(750, 420);
-            this.Pension_Certificate_Box.Name = "Pension_Certificate_Box";
-            this.Pension_Certificate_Box.Size = new System.Drawing.Size(100, 22);
-            this.Pension_Certificate_Box.TabIndex = 37;
-            // 
-            // placeofwork_Box
-            // 
-            this.placeofwork_Box.Location = new System.Drawing.Point(750, 180);
-            this.placeofwork_Box.Name = "placeofwork_Box";
-            this.placeofwork_Box.Size = new System.Drawing.Size(100, 22);
-            this.placeofwork_Box.TabIndex = 33;
-            // 
-            // Medical_policy_box
-            // 
-            this.Medical_policy_box.Location = new System.Drawing.Point(750, 385);
-            this.Medical_policy_box.Name = "Medical_policy_box";
-            this.Medical_policy_box.Size = new System.Drawing.Size(100, 22);
-            this.Medical_policy_box.TabIndex = 29;
-            // 
-            // TIN_Box
-            // 
-            this.TIN_Box.Location = new System.Drawing.Point(750, 350);
-            this.TIN_Box.Name = "TIN_Box";
-            this.TIN_Box.Size = new System.Drawing.Size(100, 22);
-            this.TIN_Box.TabIndex = 27;
-            // 
-            // Insurance_policy_number_Box
-            // 
-            this.Insurance_policy_number_Box.Location = new System.Drawing.Point(750, 315);
-            this.Insurance_policy_number_Box.Name = "Insurance_policy_number_Box";
-            this.Insurance_policy_number_Box.Size = new System.Drawing.Size(100, 22);
-            this.Insurance_policy_number_Box.TabIndex = 25;
-            // 
-            // Number_ID
-            // 
-            this.Number_ID.Location = new System.Drawing.Point(750, 110);
-            this.Number_ID.Name = "Number_ID";
-            this.Number_ID.Size = new System.Drawing.Size(100, 22);
-            this.Number_ID.TabIndex = 23;
-            // 
-            // Nationality_Box
-            // 
-            this.Nationality_Box.Location = new System.Drawing.Point(300, 420);
-            this.Nationality_Box.Name = "Nationality_Box";
-            this.Nationality_Box.Size = new System.Drawing.Size(100, 22);
-            this.Nationality_Box.TabIndex = 15;
-            // 
-            // Place_Of_Birth_Box
-            // 
-            this.Place_Of_Birth_Box.Location = new System.Drawing.Point(300, 350);
-            this.Place_Of_Birth_Box.Name = "Place_Of_Birth_Box";
-            this.Place_Of_Birth_Box.Size = new System.Drawing.Size(100, 22);
-            this.Place_Of_Birth_Box.TabIndex = 13;
-            // 
-            // Family_Status_Box
-            // 
-            this.Family_Status_Box.Location = new System.Drawing.Point(300, 315);
-            this.Family_Status_Box.Name = "Family_Status_Box";
-            this.Family_Status_Box.Size = new System.Drawing.Size(100, 22);
-            this.Family_Status_Box.TabIndex = 11;
-            // 
-            // Citizenship_Box
-            // 
-            this.Citizenship_Box.Location = new System.Drawing.Point(300, 380);
-            this.Citizenship_Box.Name = "Citizenship_Box";
-            this.Citizenship_Box.Size = new System.Drawing.Size(100, 22);
-            this.Citizenship_Box.TabIndex = 11;
-            // 
-            // Phone_Box
-            // 
-            this.Phone_Box.Location = new System.Drawing.Point(300, 183);
-            this.Phone_Box.Name = "Phone_Box";
-            this.Phone_Box.Size = new System.Drawing.Size(100, 22);
-            this.Phone_Box.TabIndex = 9;
-            // 
-            // Structural_subdivision_Box
-            // 
-            this.Structural_subdivision_Box.Location = new System.Drawing.Point(750, 145);
-            this.Structural_subdivision_Box.Name = "Structural_subdivision_Box";
-            this.Structural_subdivision_Box.Size = new System.Drawing.Size(100, 22);
-            this.Structural_subdivision_Box.TabIndex = 7;
-            // 
-            // Patronymic_Box
-            // 
-            this.Patronymic_Box.Location = new System.Drawing.Point(300, 145);
-            this.Patronymic_Box.Name = "Patronymic_Box";
-            this.Patronymic_Box.Size = new System.Drawing.Size(100, 22);
-            this.Patronymic_Box.TabIndex = 5;
-            // 
-            // Name_Box
-            // 
-            this.Name_Box.Location = new System.Drawing.Point(300, 110);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(100, 22);
-            this.Name_Box.TabIndex = 3;
-            // 
-            // Surname_Box
-            // 
-            this.Surname_Box.Location = new System.Drawing.Point(300, 75);
-            this.Surname_Box.Name = "Surname_Box";
-            this.Surname_Box.Size = new System.Drawing.Size(100, 22);
-            this.Surname_Box.TabIndex = 1;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(553, 425);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(190, 17);
-            this.label18.TabIndex = 36;
-            this.label18.Text = "Пенсионное свидетельство";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(663, 180);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(81, 17);
-            this.label17.TabIndex = 32;
-            this.label17.Text = "Должность";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(609, 385);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(135, 17);
-            this.label16.TabIndex = 28;
-            this.label16.Text = "Номер мед. полиса";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(706, 349);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 17);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "ИНН";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(574, 318);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(178, 17);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "Номер страхового полиса";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(617, 110);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(127, 17);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Табельный номер";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(706, 75);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 17);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Пол";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(573, 215);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(165, 17);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Дата приёма на работу";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(176, 215);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 17);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Дата рождения";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(176, 420);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 17);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Национальность";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(176, 353);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 17);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Место рождения";
+            this.Дата_рождения_Picker.CustomFormat = "yyyy.MM.dd";
+            this.Дата_рождения_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_рождения_Picker.Location = new System.Drawing.Point(197, 80);
+            this.Дата_рождения_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Дата_рождения_Picker.Name = "Дата_рождения_Picker";
+            this.Дата_рождения_Picker.Size = new System.Drawing.Size(145, 22);
+            this.Дата_рождения_Picker.TabIndex = 74;
+            this.Дата_рождения_Picker.Value = new System.DateTime(2020, 5, 24, 18, 40, 20, 0);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(143, 318);
+            this.label7.Location = new System.Drawing.Point(78, 141);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 17);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Семейное положение";
+            this.label7.Size = new System.Drawing.Size(113, 17);
+            this.label7.TabIndex = 51;
+            this.label7.Text = "Подразделение";
             // 
-            // Label_999
+            // Пенсионное_свидетельство_Box
             // 
-            this.Label_999.AutoSize = true;
-            this.Label_999.Location = new System.Drawing.Point(200, 383);
-            this.Label_999.Name = "Label_999";
-            this.Label_999.Size = new System.Drawing.Size(94, 17);
-            this.Label_999.TabIndex = 10;
-            this.Label_999.Text = "Гражданство";
+            this.Пенсионное_свидетельство_Box.Location = new System.Drawing.Point(197, 172);
+            this.Пенсионное_свидетельство_Box.Name = "Пенсионное_свидетельство_Box";
+            this.Пенсионное_свидетельство_Box.ReadOnly = true;
+            this.Пенсионное_свидетельство_Box.Size = new System.Drawing.Size(146, 22);
+            this.Пенсионное_свидетельство_Box.TabIndex = 73;
             // 
-            // label5
+            // label8
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(173, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Номер телефона";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(123, 52);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 17);
+            this.label8.TabIndex = 53;
+            this.label8.Text = "Телефон";
             // 
-            // Label_666
+            // Номер_мед_полиса_Box
             // 
-            this.Label_666.AutoSize = true;
-            this.Label_666.Location = new System.Drawing.Point(553, 148);
-            this.Label_666.Name = "Label_666";
-            this.Label_666.Size = new System.Drawing.Size(199, 17);
-            this.Label_666.TabIndex = 6;
-            this.Label_666.Text = "Структурное подразделение";
+            this.Номер_мед_полиса_Box.Location = new System.Drawing.Point(537, 24);
+            this.Номер_мед_полиса_Box.Name = "Номер_мед_полиса_Box";
+            this.Номер_мед_полиса_Box.ReadOnly = true;
+            this.Номер_мед_полиса_Box.Size = new System.Drawing.Size(145, 22);
+            this.Номер_мед_полиса_Box.TabIndex = 71;
             // 
-            // label3
+            // label9
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(223, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Отчество";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(437, 85);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(94, 17);
+            this.label9.TabIndex = 55;
+            this.label9.Text = "Гражданство";
             // 
-            // label2
+            // ИНН_Box
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(259, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Имя";
+            this.ИНН_Box.Location = new System.Drawing.Point(537, 52);
+            this.ИНН_Box.Name = "ИНН_Box";
+            this.ИНН_Box.ReadOnly = true;
+            this.ИНН_Box.Size = new System.Drawing.Size(145, 22);
+            this.ИНН_Box.TabIndex = 69;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(380, 146);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(151, 17);
+            this.label10.TabIndex = 56;
+            this.label10.Text = "Семейное положение";
+            // 
+            // Номер_страхового_полиса_Box
+            // 
+            this.Номер_страхового_полиса_Box.Location = new System.Drawing.Point(535, 172);
+            this.Номер_страхового_полиса_Box.Name = "Номер_страхового_полиса_Box";
+            this.Номер_страхового_полиса_Box.ReadOnly = true;
+            this.Номер_страхового_полиса_Box.Size = new System.Drawing.Size(146, 22);
+            this.Номер_страхового_полиса_Box.TabIndex = 67;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(73, 113);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(118, 17);
+            this.label11.TabIndex = 59;
+            this.label11.Text = "Место рождения";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(413, 116);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(118, 17);
+            this.label12.TabIndex = 61;
+            this.label12.Text = "Национальность";
+            // 
+            // Национальность_Box
+            // 
+            this.Национальность_Box.Location = new System.Drawing.Point(537, 113);
+            this.Национальность_Box.Name = "Национальность_Box";
+            this.Национальность_Box.ReadOnly = true;
+            this.Национальность_Box.Size = new System.Drawing.Size(145, 22);
+            this.Национальность_Box.TabIndex = 62;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(80, 80);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(111, 17);
+            this.label13.TabIndex = 63;
+            this.label13.Text = "Дата рождения";
+            // 
+            // Место_рождения_Box
+            // 
+            this.Место_рождения_Box.Location = new System.Drawing.Point(197, 113);
+            this.Место_рождения_Box.Name = "Место_рождения_Box";
+            this.Место_рождения_Box.ReadOnly = true;
+            this.Место_рождения_Box.Size = new System.Drawing.Size(145, 22);
+            this.Место_рождения_Box.TabIndex = 60;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(64, 24);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(127, 17);
+            this.label14.TabIndex = 64;
+            this.label14.Text = "Табельный номер";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(351, 172);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(178, 17);
+            this.label15.TabIndex = 66;
+            this.label15.Text = "Номер страхового полиса";
+            // 
+            // Гражданство_Box
+            // 
+            this.Гражданство_Box.Location = new System.Drawing.Point(537, 82);
+            this.Гражданство_Box.Name = "Гражданство_Box";
+            this.Гражданство_Box.ReadOnly = true;
+            this.Гражданство_Box.Size = new System.Drawing.Size(145, 22);
+            this.Гражданство_Box.TabIndex = 58;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(493, 55);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(38, 17);
+            this.label16.TabIndex = 68;
+            this.label16.Text = "ИНН";
+            // 
+            // Телефон_Box
+            // 
+            this.Телефон_Box.Location = new System.Drawing.Point(197, 52);
+            this.Телефон_Box.Name = "Телефон_Box";
+            this.Телефон_Box.ReadOnly = true;
+            this.Телефон_Box.Size = new System.Drawing.Size(145, 22);
+            this.Телефон_Box.TabIndex = 54;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(396, 24);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(135, 17);
+            this.label18.TabIndex = 70;
+            this.label18.Text = "Номер мед. полиса";
+            // 
+            // Подразделение_Box
+            // 
+            this.Подразделение_Box.Location = new System.Drawing.Point(197, 141);
+            this.Подразделение_Box.Name = "Подразделение_Box";
+            this.Подразделение_Box.ReadOnly = true;
+            this.Подразделение_Box.Size = new System.Drawing.Size(145, 22);
+            this.Подразделение_Box.TabIndex = 52;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1, 172);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(190, 17);
+            this.label19.TabIndex = 72;
+            this.label19.Text = "Пенсионное свидетельство";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Пол_Box);
+            this.groupBox1.Controls.Add(this.Отчество_Box);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.Имя_Box);
+            this.groupBox1.Controls.Add(this.Фамилия_Box);
+            this.groupBox1.Location = new System.Drawing.Point(17, 16);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(688, 121);
+            this.groupBox1.TabIndex = 50;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "ФИО";
+            // 
+            // Пол_Box
+            // 
+            this.Пол_Box.FormattingEnabled = true;
+            this.Пол_Box.Items.AddRange(new object[] {
+            "Мужской",
+            "Женский",
+            "Не указан"});
+            this.Пол_Box.Location = new System.Drawing.Point(416, 67);
+            this.Пол_Box.Name = "Пол_Box";
+            this.Пол_Box.Size = new System.Drawing.Size(265, 24);
+            this.Пол_Box.TabIndex = 51;
+            // 
+            // Отчество_Box
+            // 
+            this.Отчество_Box.Location = new System.Drawing.Point(416, 37);
+            this.Отчество_Box.Name = "Отчество_Box";
+            this.Отчество_Box.ReadOnly = true;
+            this.Отчество_Box.Size = new System.Drawing.Size(266, 22);
+            this.Отчество_Box.TabIndex = 44;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(224, 78);
+            this.label1.Location = new System.Drawing.Point(15, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 17);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 39;
             this.label1.Text = "Фамилия";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(50, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 17);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Имя";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(339, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Отчество";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(376, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 17);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Пол";
+            // 
+            // Имя_Box
+            // 
+            this.Имя_Box.Location = new System.Drawing.Point(91, 70);
+            this.Имя_Box.Name = "Имя_Box";
+            this.Имя_Box.ReadOnly = true;
+            this.Имя_Box.Size = new System.Drawing.Size(243, 22);
+            this.Имя_Box.TabIndex = 42;
+            // 
+            // Фамилия_Box
+            // 
+            this.Фамилия_Box.Location = new System.Drawing.Point(91, 35);
+            this.Фамилия_Box.Name = "Фамилия_Box";
+            this.Фамилия_Box.ReadOnly = true;
+            this.Фамилия_Box.Size = new System.Drawing.Size(242, 22);
+            this.Фамилия_Box.TabIndex = 40;
+            // 
+            // Close
+            // 
+            this.Close.Location = new System.Drawing.Point(106, 544);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(160, 48);
+            this.Close.TabIndex = 49;
+            this.Close.Text = "Закрыть";
+            this.Close.UseVisualStyleBackColor = true;
+            this.Close.Click += new System.EventHandler(this.Close_Click);
+            // 
+            // Next
+            // 
+            this.Next.Location = new System.Drawing.Point(324, 544);
+            this.Next.Name = "Next";
+            this.Next.Size = new System.Drawing.Size(138, 48);
+            this.Next.TabIndex = 47;
+            this.Next.Text = "Далее";
+            this.Next.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
@@ -1739,196 +1566,188 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1057, 778);
+            this.tabControl1.Size = new System.Drawing.Size(773, 664);
             this.tabControl1.TabIndex = 0;
             // 
             // UpdatePerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 778);
+            this.ClientSize = new System.Drawing.Size(773, 664);
             this.Controls.Add(this.tabControl1);
             this.Name = "UpdatePerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Изменить данные";
+            this.Text = "Изменить сотрудника";
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
-        #endregion
 
-        private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.TextBox Mil_Special_Box;
-        private System.Windows.Forms.TextBox Mil_VUS_Box;
-        private System.Windows.Forms.TextBox EDQual_Box;
-        private System.Windows.Forms.TextBox EDSpecial_Box;
-        private System.Windows.Forms.TextBox EDNumber_Box;
-        private System.Windows.Forms.TextBox EDSer_Box;
-        private System.Windows.Forms.TextBox EDNameInst_Box;
-        private System.Windows.Forms.TextBox EDNameDoc_Box;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox Категория_Box;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox Надбавка_Box;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.TextBox Оклад_Box;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TextBox Стаж_работы_Box;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.DateTimePicker Дата_приёма_на_работу_TimePicker;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox Num_Договора_Box;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox Num_Приказа_Box;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.DateTimePicker Дата_договора_TimePicker;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.DateTimePicker Дата_приказа_Box;
+        private System.Windows.Forms.DateTimePicker Срок_договора_Box;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox Направление_Box;
+        private System.Windows.Forms.TextBox Ученая_степень_Box;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox EXWhere_Box;
-        private System.Windows.Forms.TextBox EXNumber_Box;
-        private System.Windows.Forms.TextBox EXSeries_Box;
-        private System.Windows.Forms.TextBox RFLiveIndex_Box;
-        private System.Windows.Forms.TextBox RFLiveCity_Box;
-        private System.Windows.Forms.TextBox RFLiveSt_Box;
-        private System.Windows.Forms.TextBox RFRegIndex_Box;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox RFWhere_Box;
-        private System.Windows.Forms.TextBox RFRegCity_Box;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox RFRegSt_Box;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox RFNumber_Box;
-        private System.Windows.Forms.TextBox RFSeries_Box;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox Название_документа_Box;
+        private System.Windows.Forms.TextBox Наименование_учебного_заведения_После_Box;
+        private System.Windows.Forms.TextBox Документ_Num_Box;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox Серия_образование_Box;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DateTimePicker Employmentdate_Picker;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DateTimePicker Birthday_TimePicker;
-        private System.Windows.Forms.TextBox Gender_Box;
-        private System.Windows.Forms.TextBox Pension_Certificate_Box;
-        private System.Windows.Forms.TextBox placeofwork_Box;
-        private System.Windows.Forms.TextBox Medical_policy_box;
-        private System.Windows.Forms.TextBox TIN_Box;
-        private System.Windows.Forms.TextBox Insurance_policy_number_Box;
-        private System.Windows.Forms.TextBox Number_ID;
-        private System.Windows.Forms.TextBox Nationality_Box;
-        private System.Windows.Forms.TextBox Place_Of_Birth_Box;
-        private System.Windows.Forms.TextBox Family_Status_Box;
-        private System.Windows.Forms.TextBox Citizenship_Box;
-        private System.Windows.Forms.TextBox Phone_Box;
-        private System.Windows.Forms.TextBox Structural_subdivision_Box;
-        private System.Windows.Forms.TextBox Patronymic_Box;
-        private System.Windows.Forms.TextBox Name_Box;
-        private System.Windows.Forms.TextBox Surname_Box;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label Label_999;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label Label_666;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.DateTimePicker EXDate_TimePicker;
-        private System.Windows.Forms.DateTimePicker RFTime_TimePicker;
-        private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.Label EDNameDOc;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.TextBox Mil_ZV_Box;
-        private System.Windows.Forms.TextBox EDPost_NumbDoc_Box;
-        private System.Windows.Forms.TextBox EDPost_Name_Box;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox EDPost_Dir_Box;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.TextBox EDPost_Academ_Box;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.TextBox EDPost_Give_Box;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.TextBox Mil_Commis_Box;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox Наименование_документа_Box;
+        private System.Windows.Forms.TextBox Наименование_учебного_заведения_Box;
+        private System.Windows.Forms.TextBox Номер_образование_Box;
+        private System.Windows.Forms.TextBox Специальность_Box;
+        private System.Windows.Forms.TextBox Квалификация_Box;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.DateTimePicker Срок_действия_загран_Picker;
+        private System.Windows.Forms.DateTimePicker Дата_выдачи_загран_Picker;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TextBox Mil_Category_Box;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.TextBox Mil_Sostav_Box;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.TextBox Mil_Zapas_Box;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.DateTimePicker DateWork_Picker;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.TextBox Rate_Box;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.TextBox KTU_Box;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.TextBox PremiumSalary_Box;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TextBox Allowance_Box;
-        private System.Windows.Forms.TextBox NumOrder_Box;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox Salary_Box;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.TextBox WorkExperience_Box;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.DateTimePicker ContractTerm_Picker;
-        private System.Windows.Forms.DateTimePicker NumOr2Date_Picker;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.DateTimePicker NumberContractDate_Picker;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox NumOr2_Box;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox NumberContract_Box;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.TextBox Position_Box;
+        private System.Windows.Forms.TextBox Серия_загран_Box;
+        private System.Windows.Forms.TextBox Кем_выдан_загран_Box;
+        private System.Windows.Forms.TextBox Номер_загран_Box;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox Индекс_Box;
+        private System.Windows.Forms.TextBox Город_Box;
+        private System.Windows.Forms.TextBox Улица_Box;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DateTimePicker Дата_выдачи_Picker;
+        private System.Windows.Forms.TextBox Кем_выдан_Box;
+        private System.Windows.Forms.TextBox Номер_Box;
+        private System.Windows.Forms.TextBox Серия_Box;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox Семейное_положение_Box;
+        private System.Windows.Forms.TextBox Табельный_номер_Box;
+        private System.Windows.Forms.DateTimePicker Дата_рождения_Picker;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox Пенсионное_свидетельство_Box;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox Номер_мед_полиса_Box;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox ИНН_Box;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox Номер_страхового_полиса_Box;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox Национальность_Box;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox Место_рождения_Box;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox Гражданство_Box;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox Телефон_Box;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox Подразделение_Box;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox Пол_Box;
+        private System.Windows.Forms.TextBox Отчество_Box;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Имя_Box;
+        private System.Windows.Forms.TextBox Фамилия_Box;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.TextBox Коммисариат_Box;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox Категория_годности_Box;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.DateTimePicker EXBefore_TimePicker;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox Состав_Box;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.TextBox Категория_запаса_Box;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.TextBox Воинское_звание_Box;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.TextBox Военно_учетная_специальность_Box;
+        private System.Windows.Forms.TextBox Номер_ВУС_Box;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Button Close;
+        public System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox Должность_Box;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Next;
+        private System.Windows.Forms.TextBox Ставка_Box;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
