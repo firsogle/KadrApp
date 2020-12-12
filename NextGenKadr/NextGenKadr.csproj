@@ -81,203 +81,194 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ButtonClass.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Journal.cs">
+    <Compile Include="Other\Путь_к_базе.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Journal.Designer.cs">
-      <DependentUpon>Journal.cs</DependentUpon>
+    <Compile Include="Other\Путь_к_базе.Designer.cs">
+      <DependentUpon>Путь_к_базе.cs</DependentUpon>
     </Compile>
-    <Compile Include="Other\PathToDB.cs">
+    <Compile Include="Other\Настройки.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other\PathToDB.Designer.cs">
-      <DependentUpon>PathToDB.cs</DependentUpon>
+    <Compile Include="Other\Настройки.Designer.cs">
+      <DependentUpon>Настройки.cs</DependentUpon>
     </Compile>
-    <Compile Include="Other\Settings.cs">
+    <Compile Include="Persons\Поиск_сотрудника.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other\Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <Compile Include="Persons\Поиск_сотрудника.Designer.cs">
+      <DependentUpon>Поиск_сотрудника.cs</DependentUpon>
     </Compile>
-    <Compile Include="Persons\SearchPerson.cs">
+    <Compile Include="Users\Изменить_пользователя.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persons\SearchPerson.Designer.cs">
-      <DependentUpon>SearchPerson.cs</DependentUpon>
+    <Compile Include="Users\Изменить_пользователя.Designer.cs">
+      <DependentUpon>Изменить_пользователя.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\EditUserGrid.cs">
+    <Compile Include="ViewForms\Главная_форма.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\EditUserGrid.Designer.cs">
-      <DependentUpon>EditUserGrid.cs</DependentUpon>
+    <Compile Include="ViewForms\Главная_форма.Designer.cs">
+      <DependentUpon>Главная_форма.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewForms\MainForm.cs">
+    <Compile Include="Users\Удалить_пользователя.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewForms\MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Users\Удалить_пользователя.Designer.cs">
+      <DependentUpon>Удалить_пользователя.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\DeleteUser.cs">
+    <Compile Include="Users\Изменить_пользователя_поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\DeleteUser.Designer.cs">
-      <DependentUpon>DeleteUser.cs</DependentUpon>
+    <Compile Include="Users\Изменить_пользователя_поле.Designer.cs">
+      <DependentUpon>Изменить_пользователя_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\EditUser.cs">
+    <Compile Include="Reports\Больничный.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\EditUser.Designer.cs">
-      <DependentUpon>EditUser.cs</DependentUpon>
+    <Compile Include="Reports\Больничный.Designer.cs">
+      <DependentUpon>Больничный.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Bol.cs">
+    <Compile Include="Reports\Командировка.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Bol.Designer.cs">
-      <DependentUpon>Bol.cs</DependentUpon>
+    <Compile Include="Reports\Командировка.Designer.cs">
+      <DependentUpon>Командировка.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Com.cs">
+    <Compile Include="Functions\Подключение.cs" />
+    <Compile Include="Persons\Уволить_сотрудника.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Com.Designer.cs">
-      <DependentUpon>Com.cs</DependentUpon>
+    <Compile Include="Persons\Уволить_сотрудника.Designer.cs">
+      <DependentUpon>Уволить_сотрудника.cs</DependentUpon>
     </Compile>
-    <Compile Include="Functions\connection.cs" />
-    <Compile Include="Persons\DismissPerson.cs">
+    <Compile Include="Users\Добавить_пользователя.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persons\DismissPerson.Designer.cs">
-      <DependentUpon>DismissPerson.cs</DependentUpon>
+    <Compile Include="Users\Добавить_пользователя.Designer.cs">
+      <DependentUpon>Добавить_пользователя.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\AddUser.cs">
+    <Compile Include="ViewForms\Авторизация.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\AddUser.Designer.cs">
-      <DependentUpon>AddUser.cs</DependentUpon>
+    <Compile Include="ViewForms\Авторизация.Designer.cs">
+      <DependentUpon>Авторизация.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewForms\Authorization.cs">
+    <Compile Include="ViewForms\Форма_администратора.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewForms\Authorization.Designer.cs">
-      <DependentUpon>Authorization.cs</DependentUpon>
+    <Compile Include="ViewForms\Форма_администратора.Designer.cs">
+      <DependentUpon>Форма_администратора.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewForms\AdminForm.cs">
+    <Compile Include="Reports\Удалить_отчеты.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewForms\AdminForm.Designer.cs">
-      <DependentUpon>AdminForm.cs</DependentUpon>
+    <Compile Include="Reports\Удалить_отчеты.Designer.cs">
+      <DependentUpon>Удалить_отчеты.cs</DependentUpon>
     </Compile>
-    <Compile Include="Other\ReportsDelete.cs">
+    <Compile Include="Users\Просмотреть_список_пользователей.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other\ReportsDelete.Designer.cs">
-      <DependentUpon>ReportsDelete.cs</DependentUpon>
+    <Compile Include="Users\Просмотреть_список_пользователей.Designer.cs">
+      <DependentUpon>Просмотреть_список_пользователей.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\UsersList.cs">
+    <Compile Include="Reports\Просмотреть_отчеты_поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\UsersList.Designer.cs">
-      <DependentUpon>UsersList.cs</DependentUpon>
+    <Compile Include="Reports\Просмотреть_отчеты_поле.Designer.cs">
+      <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\View\ViewReportsGrid.cs">
+    <Compile Include="Reports\Просмотреть_отчеты.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\View\ViewReportsGrid.Designer.cs">
-      <DependentUpon>ViewReportsGrid.cs</DependentUpon>
+    <Compile Include="Reports\Просмотреть_отчеты.Designer.cs">
+      <DependentUpon>Просмотреть_отчеты.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\View\ViewReports.cs">
+    <Compile Include="Reports\Отпуск.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\View\ViewReports.Designer.cs">
-      <DependentUpon>ViewReports.cs</DependentUpon>
+    <Compile Include="Reports\Отпуск.Designer.cs">
+      <DependentUpon>Отпуск.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Otp.cs">
+    <Compile Include="Reports\Выбор_отчета_поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Otp.Designer.cs">
-      <DependentUpon>Otp.cs</DependentUpon>
+    <Compile Include="Reports\Выбор_отчета_поле.Designer.cs">
+      <DependentUpon>Выбор_отчета_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Reports.cs">
+    <Compile Include="Reports\Отчет_на_увольнение.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Reports.Designer.cs">
-      <DependentUpon>Reports.cs</DependentUpon>
+    <Compile Include="Reports\Отчет_на_увольнение.Designer.cs">
+      <DependentUpon>Отчет_на_увольнение.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ListDelete.cs">
+    <Compile Include="Persons\Изменить_сотрудника.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\ListDelete.Designer.cs">
-      <DependentUpon>ListDelete.cs</DependentUpon>
+    <Compile Include="Persons\Изменить_сотрудника.Designer.cs">
+      <DependentUpon>Изменить_сотрудника.cs</DependentUpon>
     </Compile>
-    <Compile Include="Persons\UpdatePerson.cs">
+    <Compile Include="Persons\Добавить_сотрудника.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persons\UpdatePerson.Designer.cs">
-      <DependentUpon>UpdatePerson.cs</DependentUpon>
+    <Compile Include="Persons\Добавить_сотрудника.Designer.cs">
+      <DependentUpon>Добавить_сотрудника.cs</DependentUpon>
     </Compile>
-    <Compile Include="Persons\AddPerson.cs">
+    <Compile Include="Persons\Просмотреть_сотрудника.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persons\AddPerson.Designer.cs">
-      <DependentUpon>AddPerson.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Persons\ViewPerson.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Persons\ViewPerson.Designer.cs">
-      <DependentUpon>ViewPerson.cs</DependentUpon>
+    <Compile Include="Persons\Просмотреть_сотрудника.Designer.cs">
+      <DependentUpon>Просмотреть_сотрудника.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Other\PathToDB.resx">
-      <DependentUpon>PathToDB.cs</DependentUpon>
+    <EmbeddedResource Include="Other\Путь_к_базе.resx">
+      <DependentUpon>Путь_к_базе.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Other\Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <EmbeddedResource Include="Other\Настройки.resx">
+      <DependentUpon>Настройки.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persons\AddPerson.resx">
-      <DependentUpon>AddPerson.cs</DependentUpon>
+    <EmbeddedResource Include="Persons\Добавить_сотрудника.resx">
+      <DependentUpon>Добавить_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persons\SearchPerson.resx">
-      <DependentUpon>SearchPerson.cs</DependentUpon>
+    <EmbeddedResource Include="Persons\Поиск_сотрудника.resx">
+      <DependentUpon>Поиск_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Bol.resx">
-      <DependentUpon>Bol.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Больничный.resx">
+      <DependentUpon>Больничный.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Com.resx">
-      <DependentUpon>Com.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Командировка.resx">
+      <DependentUpon>Командировка.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persons\DismissPerson.resx">
-      <DependentUpon>DismissPerson.cs</DependentUpon>
+    <EmbeddedResource Include="Persons\Уволить_сотрудника.resx">
+      <DependentUpon>Уволить_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\AddUser.resx">
-      <DependentUpon>AddUser.cs</DependentUpon>
+    <EmbeddedResource Include="Users\Добавить_пользователя.resx">
+      <DependentUpon>Добавить_пользователя.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\DeleteUser.resx">
-      <DependentUpon>DeleteUser.cs</DependentUpon>
+    <EmbeddedResource Include="Users\Удалить_пользователя.resx">
+      <DependentUpon>Удалить_пользователя.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\EditUser.resx">
-      <DependentUpon>EditUser.cs</DependentUpon>
+    <EmbeddedResource Include="Users\Изменить_пользователя_поле.resx">
+      <DependentUpon>Изменить_пользователя_поле.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\EditUserGrid.resx">
-      <DependentUpon>EditUserGrid.cs</DependentUpon>
+    <EmbeddedResource Include="Users\Изменить_пользователя.resx">
+      <DependentUpon>Изменить_пользователя.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewForms\Authorization.resx">
-      <DependentUpon>Authorization.cs</DependentUpon>
+    <EmbeddedResource Include="ViewForms\Авторизация.resx">
+      <DependentUpon>Авторизация.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewForms\AdminForm.resx">
-      <DependentUpon>AdminForm.cs</DependentUpon>
+    <EmbeddedResource Include="ViewForms\Форма_администратора.resx">
+      <DependentUpon>Форма_администратора.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ListDelete.resx">
-      <DependentUpon>ListDelete.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Отчет_на_увольнение.resx">
+      <DependentUpon>Отчет_на_увольнение.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Otp.resx">
-      <DependentUpon>Otp.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Отпуск.resx">
+      <DependentUpon>Отпуск.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Reports.resx">
-      <DependentUpon>Reports.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Выбор_отчета_поле.resx">
+      <DependentUpon>Выбор_отчета_поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -288,26 +279,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Other\ReportsDelete.resx">
-      <DependentUpon>ReportsDelete.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Удалить_отчеты.resx">
+      <DependentUpon>Удалить_отчеты.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persons\UpdatePerson.resx">
-      <DependentUpon>UpdatePerson.cs</DependentUpon>
+    <EmbeddedResource Include="Persons\Изменить_сотрудника.resx">
+      <DependentUpon>Изменить_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\UsersList.resx">
-      <DependentUpon>UsersList.cs</DependentUpon>
+    <EmbeddedResource Include="Users\Просмотреть_список_пользователей.resx">
+      <DependentUpon>Просмотреть_список_пользователей.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Persons\ViewPerson.resx">
-      <DependentUpon>ViewPerson.cs</DependentUpon>
+    <EmbeddedResource Include="Persons\Просмотреть_сотрудника.resx">
+      <DependentUpon>Просмотреть_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\View\ViewReports.resx">
-      <DependentUpon>ViewReports.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Просмотреть_отчеты.resx">
+      <DependentUpon>Просмотреть_отчеты.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\View\ViewReportsGrid.resx">
-      <DependentUpon>ViewReportsGrid.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Просмотреть_отчеты_поле.resx">
+      <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewForms\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="ViewForms\Главная_форма.resx">
+      <DependentUpon>Главная_форма.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -322,15 +313,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DataBase_Kadry.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataBase_Kadry_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DataBase_Kadry.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -376,6 +358,14 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataBase_Kadry.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataBase_Kadry_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DataBase_Kadry.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
