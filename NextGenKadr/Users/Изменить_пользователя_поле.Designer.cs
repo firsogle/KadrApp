@@ -71,19 +71,19 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(74, 15);
+            this.button2.Location = new System.Drawing.Point(42, 15);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 55);
+            this.button2.Size = new System.Drawing.Size(174, 55);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Изменить пользователя";
+            this.button2.Text = "Выбрать пользователя для изменения";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Select_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(266, 15);
+            this.button1.Location = new System.Drawing.Point(255, 15);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 55);
+            this.button1.Size = new System.Drawing.Size(164, 55);
             this.button1.TabIndex = 0;
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "EditUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Users";
+            this.Text = "Список пользоваталей";
             this.Load += new System.EventHandler(this.EditUser_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

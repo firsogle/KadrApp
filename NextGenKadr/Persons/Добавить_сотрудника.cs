@@ -21,7 +21,7 @@ namespace NextGenKadr
             this.StartPosition = FormStartPosition.CenterScreen;
             try
             {
-                string TabNumber = connection.ReadDB($"SELECT MAX ([Табельный номер]) FROM Сотрудники");
+                string TabNumber = connection.Получить_сведения_из_базы_данных($"SELECT MAX ([Табельный номер]) FROM Сотрудники");
                 int Param = Convert.ToInt32(TabNumber) + 1;
                 Табельный_номер_Box.Text = Param.ToString();
 
@@ -38,6 +38,7 @@ namespace NextGenKadr
             Документ_Num_Box.Text = "0";
             Надбавка_Box.Text = "0";
             Оклад_Box.Text = Ставка_Box.Text = Стаж_работы_Box.Text = "0";
+            Серия_загран_Box.Text = Номер_загран_Box.Text= "0";
         }
         private void Button_Cancel_Click(object sender, EventArgs e)
         {
@@ -204,6 +205,32 @@ namespace NextGenKadr
             if (Стаж_работы_Box.Text == "")
             {
                 Стаж_работы_Box.Text = "0";
+            }
+        }
+
+        private void Серия_загран_Box_Enter(object sender, EventArgs e)
+        {
+            Серия_загран_Box.Text = "0";
+        }
+
+        private void Серия_загран_Box_Leave(object sender, EventArgs e)
+        {
+            if (Серия_загран_Box.Text == "")
+            {
+                Серия_загран_Box.Text = "0";
+            }
+        }
+
+        private void Номер_загран_Box_Enter(object sender, EventArgs e)
+        {
+            Номер_загран_Box.Text = "0";
+        }
+
+        private void Номер_загран_Box_Leave(object sender, EventArgs e)
+        {
+            if (Номер_загран_Box.Text == "")
+            {
+                Номер_загран_Box.Text = "0";
             }
         }
     }

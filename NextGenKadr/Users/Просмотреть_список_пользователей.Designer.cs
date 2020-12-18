@@ -69,7 +69,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(172, 10);
+            this.button1.Location = new System.Drawing.Point(175, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 55);
             this.button1.TabIndex = 0;
@@ -85,7 +85,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "UsersList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Users";
+            this.Text = "Список пользователей";
             this.Load += new System.EventHandler(this.UsersList_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

@@ -305,7 +305,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Bol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать отчет больничного сотрудника";
+            this.Text = "Создать Создание отчета о больничном";
             this.Сотрудник.ResumeLayout(false);
             this.Сотрудник.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -123,16 +123,16 @@
     <Compile Include="Users\Изменить_пользователя_поле.Designer.cs">
       <DependentUpon>Изменить_пользователя_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Больничный.cs">
+    <Compile Include="Reports\Создать\Больничный.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Больничный.Designer.cs">
+    <Compile Include="Reports\Создать\Больничный.Designer.cs">
       <DependentUpon>Больничный.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Командировка.cs">
+    <Compile Include="Reports\Создать\Командировка.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Командировка.Designer.cs">
+    <Compile Include="Reports\Создать\Командировка.Designer.cs">
       <DependentUpon>Командировка.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\Подключение.cs" />
@@ -160,10 +160,10 @@
     <Compile Include="ViewForms\Форма_администратора.Designer.cs">
       <DependentUpon>Форма_администратора.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Удалить_отчеты.cs">
+    <Compile Include="Other\Удалить_отчеты.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Удалить_отчеты.Designer.cs">
+    <Compile Include="Other\Удалить_отчеты.Designer.cs">
       <DependentUpon>Удалить_отчеты.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Просмотреть_список_пользователей.cs">
@@ -172,35 +172,35 @@
     <Compile Include="Users\Просмотреть_список_пользователей.Designer.cs">
       <DependentUpon>Просмотреть_список_пользователей.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Просмотреть_отчеты_поле.cs">
+    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты_поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Просмотреть_отчеты_поле.Designer.cs">
+    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты_поле.Designer.cs">
       <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Просмотреть_отчеты.cs">
+    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Просмотреть_отчеты.Designer.cs">
+    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты.Designer.cs">
       <DependentUpon>Просмотреть_отчеты.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Отпуск.cs">
+    <Compile Include="Reports\Создать\Отпуск.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Отпуск.Designer.cs">
+    <Compile Include="Reports\Создать\Отпуск.Designer.cs">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Выбор_отчета_поле.cs">
+    <Compile Include="Reports\Создать\Создать_отчет.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Выбор_отчета_поле.Designer.cs">
-      <DependentUpon>Выбор_отчета_поле.cs</DependentUpon>
+    <Compile Include="Reports\Создать\Создать_отчет.Designer.cs">
+      <DependentUpon>Создать_отчет.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Отчет_на_увольнение.cs">
+    <Compile Include="Reports\Создать\Увольнение.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Отчет_на_увольнение.Designer.cs">
-      <DependentUpon>Отчет_на_увольнение.cs</DependentUpon>
+    <Compile Include="Reports\Создать\Увольнение.Designer.cs">
+      <DependentUpon>Увольнение.cs</DependentUpon>
     </Compile>
     <Compile Include="Persons\Изменить_сотрудника.cs">
       <SubType>Form</SubType>
@@ -234,10 +234,10 @@
     <EmbeddedResource Include="Persons\Поиск_сотрудника.resx">
       <DependentUpon>Поиск_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Больничный.resx">
+    <EmbeddedResource Include="Reports\Создать\Больничный.resx">
       <DependentUpon>Больничный.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Командировка.resx">
+    <EmbeddedResource Include="Reports\Создать\Командировка.resx">
       <DependentUpon>Командировка.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persons\Уволить_сотрудника.resx">
@@ -261,14 +261,14 @@
     <EmbeddedResource Include="ViewForms\Форма_администратора.resx">
       <DependentUpon>Форма_администратора.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Отчет_на_увольнение.resx">
-      <DependentUpon>Отчет_на_увольнение.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Создать\Увольнение.resx">
+      <DependentUpon>Увольнение.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Отпуск.resx">
+    <EmbeddedResource Include="Reports\Создать\Отпуск.resx">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Выбор_отчета_поле.resx">
-      <DependentUpon>Выбор_отчета_поле.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Создать\Создать_отчет.resx">
+      <DependentUpon>Создать_отчет.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -279,7 +279,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reports\Удалить_отчеты.resx">
+    <EmbeddedResource Include="Other\Удалить_отчеты.resx">
       <DependentUpon>Удалить_отчеты.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persons\Изменить_сотрудника.resx">
@@ -291,10 +291,10 @@
     <EmbeddedResource Include="Persons\Просмотреть_сотрудника.resx">
       <DependentUpon>Просмотреть_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Просмотреть_отчеты.resx">
+    <EmbeddedResource Include="Reports\Просмотреть\Просмотреть_отчеты.resx">
       <DependentUpon>Просмотреть_отчеты.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Просмотреть_отчеты_поле.resx">
+    <EmbeddedResource Include="Reports\Просмотреть\Просмотреть_отчеты_поле.resx">
       <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForms\Главная_форма.resx">
@@ -367,5 +367,6 @@
       <DependentUpon>DataBase_Kadry.mdf</DependentUpon>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

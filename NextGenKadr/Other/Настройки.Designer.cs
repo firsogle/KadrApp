@@ -52,7 +52,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Удалить всех пользователей";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Del_users_Click);
+            this.button2.Click += new System.EventHandler(this.Удалить_пользователей_Click);
             // 
             // button3
             // 
@@ -62,7 +62,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Удалить всех сотрудников";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Del_Persons_Click);
+            this.button3.Click += new System.EventHandler(this.Удалить_сотрудников_Click);
             // 
             // button4
             // 
@@ -72,7 +72,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "Очистить базу данных";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Del_DB);
+            this.button4.Click += new System.EventHandler(this.Удалить_всё_Click);
             // 
             // button5
             // 
@@ -82,7 +82,7 @@
             this.button5.TabIndex = 9;
             this.button5.Text = "Удалить все отчеты";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Del_Reports_Click);
+            this.button5.Click += new System.EventHandler(this.Удалить_отчеты_Click);
             // 
             // button1
             // 

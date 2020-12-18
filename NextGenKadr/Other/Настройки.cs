@@ -23,30 +23,48 @@ namespace NextGenKadr
             Close();
         }
 
-        private void Del_Reports_Click(object sender, EventArgs e)
+        private void Удалить_пользователей_Click(object sender, EventArgs e)
         {
-            connection.ReadDB("DELETE from [Сведения об отпусках]");
-            connection.ReadDB("delete from [Сведения о командировках]");
-            connection.ReadDB("delete from [Сведения об уволенных]");
-            connection.ReadDB("delete from [Сведения о больничных]");
+            connection.Получить_сведения_из_базы_данных("delete from [Пользователи] where Логин != 'admin'");
+            MessageBox.Show("Все пользователи удалены! Кроме admin", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void Del_Persons_Click(object sender, EventArgs e)
+        private void Удалить_сотрудников_Click(object sender, EventArgs e)
         {
-
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о воиснком учёте]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о заработной плате]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о послевузовском образовании]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения об образовании]");
+            connection.Получить_сведения_из_базы_данных("delete from [Трудовая деятельность]");
+            connection.Получить_сведения_из_базы_данных("delete from [Общие сведения]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сотрудники]");
+            MessageBox.Show("Все сотрудники удалены", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+            
+        private void Удалить_отчеты_Click(object sender, EventArgs e)
+        {
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения об отпусках]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о командировках]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения об уволенных]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о больничных]");
+            MessageBox.Show("Все отчеты удалены!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void Del_users_Click(object sender, EventArgs e)
+        private void Удалить_всё_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Del_DB(object sender, EventArgs e)
-        {
-            connection.ReadDB("DELETE from [Сведения об отпусках]");
-            connection.ReadDB("delete from [Сведения о командировках]");
-            connection.ReadDB("delete from [Сведения об уволенных]");
-            connection.ReadDB("delete from [Сведения о больничных]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения об отпусках]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о командировках]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения об уволенных]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о больничных]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о воиснком учёте]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о заработной плате]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения о послевузовском образовании]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сведения об образовании]");
+            connection.Получить_сведения_из_базы_данных("delete from [Трудовая деятельность]");
+            connection.Получить_сведения_из_базы_данных("delete from [Общие сведения]");
+            connection.Получить_сведения_из_базы_данных("delete from [Сотрудники]");
+            connection.Получить_сведения_из_базы_данных("delete from [Пользователи] where Логин != 'admin'");
+            MessageBox.Show("Все записи удалены!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

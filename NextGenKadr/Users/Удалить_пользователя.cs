@@ -37,7 +37,7 @@ namespace NextGenKadr
 
             if (result == DialogResult.Yes)
             {
-                connection.ReadDB($"Delete FROM Пользователи WHERE [Id пользователя] = {id}");
+                connection.Получить_сведения_из_базы_данных($"Delete FROM Пользователи WHERE [Id пользователя] = {id}");
                 GridUsers.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
         }

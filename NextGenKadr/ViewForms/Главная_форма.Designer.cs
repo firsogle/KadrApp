@@ -85,7 +85,7 @@
             this.toolStripSeparator8,
             this.опрограммеToolStripMenuItem});
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
             this.справкаToolStripMenuItem.Text = "Спра&вка";
             // 
             // toolStripSeparator8
@@ -114,7 +114,7 @@
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(196, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(187, 24);
             this.toolStripButton1.Text = "Добавить сотрудника";
             this.toolStripButton1.Click += new System.EventHandler(this.AddPerson_Click);
             // 
@@ -124,7 +124,7 @@
             this.toolstrip2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstrip2.Name = "toolstrip2";
             this.toolstrip2.Size = new System.Drawing.Size(196, 24);
-            this.toolstrip2.Text = "Изменить данные";
+            this.toolstrip2.Text = "Изменить сотрудника";
             this.toolstrip2.Click += new System.EventHandler(this.Update_Click);
             // 
             // toolStripButton3
@@ -132,7 +132,7 @@
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(196, 24);
+            this.toolStripButton3.Size = new System.Drawing.Size(187, 24);
             this.toolStripButton3.Text = "Уволить сотрудника";
             this.toolStripButton3.Click += new System.EventHandler(this.DeletePerson_Click);
             // 
@@ -148,14 +148,14 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(196, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(187, 6);
             // 
             // Reports
             // 
             this.Reports.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Reports.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Reports.Name = "Reports";
-            this.Reports.Size = new System.Drawing.Size(196, 24);
+            this.Reports.Size = new System.Drawing.Size(187, 24);
             this.Reports.Text = "Создать отчеты";
             this.Reports.Click += new System.EventHandler(this.Reports_Click);
             // 
@@ -164,7 +164,7 @@
             this.toolStripButton11.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton11.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton11.Name = "toolStripButton11";
-            this.toolStripButton11.Size = new System.Drawing.Size(196, 24);
+            this.toolStripButton11.Size = new System.Drawing.Size(187, 24);
             this.toolStripButton11.Text = "Удалить отчеты";
             this.toolStripButton11.Click += new System.EventHandler(this.DeleteReports_Click);
             // 
@@ -173,7 +173,7 @@
             this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(196, 24);
+            this.toolStripButton4.Size = new System.Drawing.Size(187, 24);
             this.toolStripButton4.Text = "Просмотреть отчеты";
             this.toolStripButton4.Click += new System.EventHandler(this.ViewReports_Click);
             // 
@@ -182,7 +182,7 @@
             this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(196, 24);
+            this.toolStripButton5.Size = new System.Drawing.Size(187, 24);
             this.toolStripButton5.Text = "Экспорт в Excel";
             this.toolStripButton5.Click += new System.EventHandler(this.Export_Click);
             // 
@@ -195,8 +195,8 @@
             this.toolStripButton1,
             this.toolstrip2,
             this.toolStripButton3,
-            this.toolStripButton2,
             this.ViewPersonStrip,
+            this.toolStripButton2,
             this.toolStripSeparator1,
             this.Reports,
             this.toolStripButton11,

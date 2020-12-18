@@ -42,7 +42,12 @@ namespace NextGenKadr
             }
         }
 
-        private void Authorization_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Авторизация(object sender, EventArgs e)
         {
             string login = Login_Box.Text;
             string password = Password_Box.Text;
@@ -81,15 +86,7 @@ namespace NextGenKadr
                 PathToDB service = new PathToDB();
                 service.ShowDialog();
             }
-
-
-
         }
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
     }
 }
 

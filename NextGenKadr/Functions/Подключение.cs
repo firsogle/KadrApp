@@ -296,17 +296,15 @@ namespace NextGenKadr
 
             SqlParameter ParamSQL2 = new SqlParameter();
             ParamSQL2.ParameterName = "@Серия";
-            ParamSQL2.SqlDbType = SqlDbType.NVarChar;
-            ParamSQL2.Size = 50;
-            ParamSQL2.Value = Param2;
+            ParamSQL2.SqlDbType = SqlDbType.Int;
+            ParamSQL2.Value = Convert.ToInt32(Param2);
             ParamSQL2.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL2);
 
             SqlParameter ParamSQL3 = new SqlParameter();
             ParamSQL3.ParameterName = "@Номер";
-            ParamSQL3.SqlDbType = SqlDbType.NVarChar;
-            ParamSQL3.Size = 50;
-            ParamSQL3.Value = Param3;
+            ParamSQL3.SqlDbType = SqlDbType.Int;
+            ParamSQL3.Value = Convert.ToInt32(Param3);
             ParamSQL3.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL3);
 
@@ -852,6 +850,39 @@ namespace NextGenKadr
 
             SQLComm.ExecuteNonQuery();
         }
+        public static void Внести_cведения_об_уволенных(string Param, string Param1, string Param2)
+        {
+            SQLConn = new SqlConnection(Path());
+            SQLConn.Open();
+
+            SQLComm = new SqlCommand("Внести сведения об уволенных", SQLConn);
+            SQLComm.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter ParamSQL = new SqlParameter();
+            ParamSQL.ParameterName = "@Табельный_номер";
+            ParamSQL.SqlDbType = SqlDbType.Int;
+            ParamSQL.Value = Param;
+            ParamSQL.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL);
+
+            SqlParameter ParamSQL1 = new SqlParameter();
+            ParamSQL1.ParameterName = "@Причина";
+            ParamSQL1.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL1.Value = Param1;
+            ParamSQL1.Size = 50;
+            ParamSQL1.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL1);
+
+            SqlParameter ParamSQL2 = new SqlParameter();
+            ParamSQL2.ParameterName = "@Дата_увольнения";
+            ParamSQL2.SqlDbType = SqlDbType.Date;
+            ParamSQL2.Value = Param2;
+            ParamSQL2.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL2);
+
+
+            SQLComm.ExecuteNonQuery();
+        }
         public static void Обновить_сотрудника(int param, string Param1, string Param2, string Param3)
         {
             SQLConn = new SqlConnection(Path());
@@ -1049,7 +1080,7 @@ namespace NextGenKadr
 
             SQLComm.ExecuteNonQuery();
         }
-        public static string ReadDB(string query)
+        public static string Получить_сведения_из_базы_данных(string query)
         {
             try
             {

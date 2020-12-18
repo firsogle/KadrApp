@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Причина_Box = new System.Windows.Forms.TextBox();
-            this.Номер_приказа_увольнения_Box = new System.Windows.Forms.TextBox();
             this.Отчество_Box = new System.Windows.Forms.TextBox();
             this.Имя_Box = new System.Windows.Forms.TextBox();
             this.Фамилия_Box = new System.Windows.Forms.TextBox();
@@ -48,8 +47,9 @@
             this.label63 = new System.Windows.Forms.Label();
             this.Должность_Box = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.Телефон_Box = new System.Windows.Forms.TextBox();
+            this.Табельный_номер_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Дата_увольнения_Picker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // button1
@@ -74,7 +74,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 200);
+            this.label1.Location = new System.Drawing.Point(12, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(204, 17);
             this.label1.TabIndex = 3;
@@ -83,11 +83,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 247);
+            this.label2.Location = new System.Drawing.Point(93, 247);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 17);
+            this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Номер приказа";
+            this.label2.Text = "Дата увольнения";
             // 
             // Причина_Box
             // 
@@ -95,13 +95,6 @@
             this.Причина_Box.Name = "Причина_Box";
             this.Причина_Box.Size = new System.Drawing.Size(508, 22);
             this.Причина_Box.TabIndex = 6;
-            // 
-            // Номер_приказа_увольнения_Box
-            // 
-            this.Номер_приказа_увольнения_Box.Location = new System.Drawing.Point(246, 244);
-            this.Номер_приказа_увольнения_Box.Name = "Номер_приказа_увольнения_Box";
-            this.Номер_приказа_увольнения_Box.Size = new System.Drawing.Size(508, 22);
-            this.Номер_приказа_увольнения_Box.TabIndex = 7;
             // 
             // Отчество_Box
             // 
@@ -219,29 +212,41 @@
             this.label62.TabIndex = 66;
             this.label62.Text = "Должность";
             // 
-            // Телефон_Box
+            // Табельный_номер_Box
             // 
-            this.Телефон_Box.Location = new System.Drawing.Point(212, 120);
-            this.Телефон_Box.Name = "Телефон_Box";
-            this.Телефон_Box.Size = new System.Drawing.Size(100, 22);
-            this.Телефон_Box.TabIndex = 74;
+            this.Табельный_номер_Box.Location = new System.Drawing.Point(212, 120);
+            this.Табельный_номер_Box.Name = "Табельный_номер_Box";
+            this.Табельный_номер_Box.Size = new System.Drawing.Size(100, 22);
+            this.Табельный_номер_Box.TabIndex = 74;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(135, 123);
+            this.label3.Location = new System.Drawing.Point(79, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(127, 17);
             this.label3.TabIndex = 75;
-            this.label3.Text = "Телефон";
+            this.label3.Text = "Табельный номер";
+            // 
+            // Дата_увольнения_Picker
+            // 
+            this.Дата_увольнения_Picker.CustomFormat = "yyyy.MM.dd";
+            this.Дата_увольнения_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_увольнения_Picker.Location = new System.Drawing.Point(246, 247);
+            this.Дата_увольнения_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Дата_увольнения_Picker.Name = "Дата_увольнения_Picker";
+            this.Дата_увольнения_Picker.Size = new System.Drawing.Size(100, 22);
+            this.Дата_увольнения_Picker.TabIndex = 76;
+            this.Дата_увольнения_Picker.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
             // 
             // DeletePerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Дата_увольнения_Picker);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Телефон_Box);
+            this.Controls.Add(this.Табельный_номер_Box);
             this.Controls.Add(this.Срок_договора_Picker);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.Номер_приказа_Box);
@@ -256,7 +261,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.Номер_приказа_увольнения_Box);
             this.Controls.Add(this.Причина_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -277,7 +281,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Причина_Box;
-        private System.Windows.Forms.TextBox Номер_приказа_увольнения_Box;
         private System.Windows.Forms.TextBox Отчество_Box;
         private System.Windows.Forms.TextBox Имя_Box;
         private System.Windows.Forms.TextBox Фамилия_Box;
@@ -292,7 +295,8 @@
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TextBox Должность_Box;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox Телефон_Box;
+        private System.Windows.Forms.TextBox Табельный_номер_Box;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker Дата_увольнения_Picker;
     }
 }

@@ -85,7 +85,7 @@ namespace NextGenKadr.Users
                 return;
             }
 
-             TabNumber = connection.ReadDB($"SELECT Логин FROM Пользователи WHERE Логин = '{login}'");
+             TabNumber = connection.Получить_сведения_из_базы_данных($"SELECT Логин FROM Пользователи WHERE Логин = '{login}'");
             
              if (TabNumber == Login_Box.Text)
             {

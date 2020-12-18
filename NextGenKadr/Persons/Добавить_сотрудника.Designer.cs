@@ -1033,6 +1033,8 @@
             this.Серия_загран_Box.Name = "Серия_загран_Box";
             this.Серия_загран_Box.Size = new System.Drawing.Size(132, 22);
             this.Серия_загран_Box.TabIndex = 50;
+            this.Серия_загран_Box.Enter += new System.EventHandler(this.Серия_загран_Box_Enter);
+            this.Серия_загран_Box.Leave += new System.EventHandler(this.Серия_загран_Box_Leave);
             // 
             // Кем_выдан_загран_Box
             // 
@@ -1043,10 +1045,12 @@
             // 
             // Номер_загран_Box
             // 
-            this.Номер_загран_Box.Location = new System.Drawing.Point(295, 21);
+            this.Номер_загран_Box.Location = new System.Drawing.Point(300, 18);
             this.Номер_загран_Box.Name = "Номер_загран_Box";
             this.Номер_загран_Box.Size = new System.Drawing.Size(132, 22);
             this.Номер_загран_Box.TabIndex = 52;
+            this.Номер_загран_Box.Enter += new System.EventHandler(this.Номер_загран_Box_Enter);
+            this.Номер_загран_Box.Leave += new System.EventHandler(this.Номер_загран_Box_Leave);
             // 
             // groupBox4
             // 
@@ -1606,7 +1610,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "AddPerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Новый сотрудник";
+            this.Text = "Добавить сотрудника";
             this.tabPage4.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();

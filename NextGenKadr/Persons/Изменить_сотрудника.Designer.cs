@@ -216,7 +216,6 @@
             // 
             this.Должность_Box.Location = new System.Drawing.Point(258, 28);
             this.Должность_Box.Name = "Должность_Box";
-            this.Должность_Box.ReadOnly = true;
             this.Должность_Box.Size = new System.Drawing.Size(100, 22);
             this.Должность_Box.TabIndex = 93;
             // 
@@ -233,7 +232,6 @@
             // 
             this.Ставка_Box.Location = new System.Drawing.Point(542, 66);
             this.Ставка_Box.Name = "Ставка_Box";
-            this.Ставка_Box.ReadOnly = true;
             this.Ставка_Box.Size = new System.Drawing.Size(100, 22);
             this.Ставка_Box.TabIndex = 91;
             // 
@@ -250,7 +248,6 @@
             // 
             this.Категория_Box.Location = new System.Drawing.Point(258, 110);
             this.Категория_Box.Name = "Категория_Box";
-            this.Категория_Box.ReadOnly = true;
             this.Категория_Box.Size = new System.Drawing.Size(100, 22);
             this.Категория_Box.TabIndex = 89;
             // 
@@ -267,7 +264,6 @@
             // 
             this.Надбавка_Box.Location = new System.Drawing.Point(258, 66);
             this.Надбавка_Box.Name = "Надбавка_Box";
-            this.Надбавка_Box.ReadOnly = true;
             this.Надбавка_Box.Size = new System.Drawing.Size(100, 22);
             this.Надбавка_Box.TabIndex = 84;
             // 
@@ -284,7 +280,6 @@
             // 
             this.Оклад_Box.Location = new System.Drawing.Point(542, 32);
             this.Оклад_Box.Name = "Оклад_Box";
-            this.Оклад_Box.ReadOnly = true;
             this.Оклад_Box.Size = new System.Drawing.Size(100, 22);
             this.Оклад_Box.TabIndex = 80;
             // 
@@ -301,7 +296,6 @@
             // 
             this.Стаж_работы_Box.Location = new System.Drawing.Point(542, 105);
             this.Стаж_работы_Box.Name = "Стаж_работы_Box";
-            this.Стаж_работы_Box.ReadOnly = true;
             this.Стаж_работы_Box.Size = new System.Drawing.Size(100, 22);
             this.Стаж_работы_Box.TabIndex = 81;
             // 
@@ -368,7 +362,6 @@
             // 
             this.Num_Договора_Box.Location = new System.Drawing.Point(269, 75);
             this.Num_Договора_Box.Name = "Num_Договора_Box";
-            this.Num_Договора_Box.ReadOnly = true;
             this.Num_Договора_Box.Size = new System.Drawing.Size(100, 22);
             this.Num_Договора_Box.TabIndex = 56;
             // 
@@ -385,7 +378,6 @@
             // 
             this.Num_Приказа_Box.Location = new System.Drawing.Point(269, 120);
             this.Num_Приказа_Box.Name = "Num_Приказа_Box";
-            this.Num_Приказа_Box.ReadOnly = true;
             this.Num_Приказа_Box.Size = new System.Drawing.Size(100, 22);
             this.Num_Приказа_Box.TabIndex = 58;
             // 
@@ -501,7 +493,6 @@
             // 
             this.Коммисариат_Box.Location = new System.Drawing.Point(283, 162);
             this.Коммисариат_Box.Name = "Коммисариат_Box";
-            this.Коммисариат_Box.ReadOnly = true;
             this.Коммисариат_Box.Size = new System.Drawing.Size(100, 22);
             this.Коммисариат_Box.TabIndex = 79;
             // 
@@ -518,7 +509,6 @@
             // 
             this.Категория_годности_Box.Location = new System.Drawing.Point(579, 133);
             this.Категория_годности_Box.Name = "Категория_годности_Box";
-            this.Категория_годности_Box.ReadOnly = true;
             this.Категория_годности_Box.Size = new System.Drawing.Size(100, 22);
             this.Категория_годности_Box.TabIndex = 77;
             // 
@@ -535,7 +525,6 @@
             // 
             this.Состав_Box.Location = new System.Drawing.Point(579, 90);
             this.Состав_Box.Name = "Состав_Box";
-            this.Состав_Box.ReadOnly = true;
             this.Состав_Box.Size = new System.Drawing.Size(100, 22);
             this.Состав_Box.TabIndex = 75;
             // 
@@ -552,7 +541,6 @@
             // 
             this.Категория_запаса_Box.Location = new System.Drawing.Point(579, 46);
             this.Категория_запаса_Box.Name = "Категория_запаса_Box";
-            this.Категория_запаса_Box.ReadOnly = true;
             this.Категория_запаса_Box.Size = new System.Drawing.Size(100, 22);
             this.Категория_запаса_Box.TabIndex = 73;
             // 
@@ -569,7 +557,6 @@
             // 
             this.Воинское_звание_Box.Location = new System.Drawing.Point(282, 45);
             this.Воинское_звание_Box.Name = "Воинское_звание_Box";
-            this.Воинское_звание_Box.ReadOnly = true;
             this.Воинское_звание_Box.Size = new System.Drawing.Size(100, 22);
             this.Воинское_звание_Box.TabIndex = 71;
             // 
@@ -586,7 +573,6 @@
             // 
             this.Военно_учетная_специальность_Box.Location = new System.Drawing.Point(282, 128);
             this.Военно_учетная_специальность_Box.Name = "Военно_учетная_специальность_Box";
-            this.Военно_учетная_специальность_Box.ReadOnly = true;
             this.Военно_учетная_специальность_Box.Size = new System.Drawing.Size(100, 22);
             this.Военно_учетная_специальность_Box.TabIndex = 69;
             // 
@@ -594,7 +580,6 @@
             // 
             this.Номер_ВУС_Box.Location = new System.Drawing.Point(282, 87);
             this.Номер_ВУС_Box.Name = "Номер_ВУС_Box";
-            this.Номер_ВУС_Box.ReadOnly = true;
             this.Номер_ВУС_Box.Size = new System.Drawing.Size(100, 22);
             this.Номер_ВУС_Box.TabIndex = 67;
             // 
@@ -639,7 +624,6 @@
             // 
             this.Направление_Box.Location = new System.Drawing.Point(579, 78);
             this.Направление_Box.Name = "Направление_Box";
-            this.Направление_Box.ReadOnly = true;
             this.Направление_Box.Size = new System.Drawing.Size(100, 22);
             this.Направление_Box.TabIndex = 71;
             // 
@@ -647,7 +631,6 @@
             // 
             this.Ученая_степень_Box.Location = new System.Drawing.Point(575, 37);
             this.Ученая_степень_Box.Name = "Ученая_степень_Box";
-            this.Ученая_степень_Box.ReadOnly = true;
             this.Ученая_степень_Box.Size = new System.Drawing.Size(100, 22);
             this.Ученая_степень_Box.TabIndex = 69;
             // 
@@ -691,7 +674,6 @@
             // 
             this.Название_документа_Box.Location = new System.Drawing.Point(283, 38);
             this.Название_документа_Box.Name = "Название_документа_Box";
-            this.Название_документа_Box.ReadOnly = true;
             this.Название_документа_Box.Size = new System.Drawing.Size(100, 22);
             this.Название_документа_Box.TabIndex = 49;
             // 
@@ -699,7 +681,6 @@
             // 
             this.Наименование_учебного_заведения_После_Box.Location = new System.Drawing.Point(283, 114);
             this.Наименование_учебного_заведения_После_Box.Name = "Наименование_учебного_заведения_После_Box";
-            this.Наименование_учебного_заведения_После_Box.ReadOnly = true;
             this.Наименование_учебного_заведения_После_Box.Size = new System.Drawing.Size(100, 22);
             this.Наименование_учебного_заведения_После_Box.TabIndex = 67;
             // 
@@ -707,7 +688,6 @@
             // 
             this.Документ_Num_Box.Location = new System.Drawing.Point(283, 73);
             this.Документ_Num_Box.Name = "Документ_Num_Box";
-            this.Документ_Num_Box.ReadOnly = true;
             this.Документ_Num_Box.Size = new System.Drawing.Size(100, 22);
             this.Документ_Num_Box.TabIndex = 51;
             // 
@@ -753,7 +733,6 @@
             // 
             this.Серия_образование_Box.Location = new System.Drawing.Point(560, 14);
             this.Серия_образование_Box.Name = "Серия_образование_Box";
-            this.Серия_образование_Box.ReadOnly = true;
             this.Серия_образование_Box.Size = new System.Drawing.Size(100, 22);
             this.Серия_образование_Box.TabIndex = 5;
             // 
@@ -813,17 +792,15 @@
             // 
             // Наименование_документа_Box
             // 
-            this.Наименование_документа_Box.Location = new System.Drawing.Point(269, 14);
+            this.Наименование_документа_Box.Location = new System.Drawing.Point(282, 14);
             this.Наименование_документа_Box.Name = "Наименование_документа_Box";
-            this.Наименование_документа_Box.ReadOnly = true;
             this.Наименование_документа_Box.Size = new System.Drawing.Size(100, 22);
             this.Наименование_документа_Box.TabIndex = 1;
             // 
             // Наименование_учебного_заведения_Box
             // 
-            this.Наименование_учебного_заведения_Box.Location = new System.Drawing.Point(269, 49);
+            this.Наименование_учебного_заведения_Box.Location = new System.Drawing.Point(282, 49);
             this.Наименование_учебного_заведения_Box.Name = "Наименование_учебного_заведения_Box";
-            this.Наименование_учебного_заведения_Box.ReadOnly = true;
             this.Наименование_учебного_заведения_Box.Size = new System.Drawing.Size(100, 22);
             this.Наименование_учебного_заведения_Box.TabIndex = 3;
             // 
@@ -831,15 +808,13 @@
             // 
             this.Номер_образование_Box.Location = new System.Drawing.Point(561, 49);
             this.Номер_образование_Box.Name = "Номер_образование_Box";
-            this.Номер_образование_Box.ReadOnly = true;
             this.Номер_образование_Box.Size = new System.Drawing.Size(100, 22);
             this.Номер_образование_Box.TabIndex = 7;
             // 
             // Специальность_Box
             // 
-            this.Специальность_Box.Location = new System.Drawing.Point(269, 83);
+            this.Специальность_Box.Location = new System.Drawing.Point(282, 83);
             this.Специальность_Box.Name = "Специальность_Box";
-            this.Специальность_Box.ReadOnly = true;
             this.Специальность_Box.Size = new System.Drawing.Size(100, 22);
             this.Специальность_Box.TabIndex = 9;
             // 
@@ -847,7 +822,6 @@
             // 
             this.Квалификация_Box.Location = new System.Drawing.Point(563, 82);
             this.Квалификация_Box.Name = "Квалификация_Box";
-            this.Квалификация_Box.ReadOnly = true;
             this.Квалификация_Box.Size = new System.Drawing.Size(100, 22);
             this.Квалификация_Box.TabIndex = 11;
             // 
@@ -986,7 +960,6 @@
             // 
             this.Серия_загран_Box.Location = new System.Drawing.Point(97, 19);
             this.Серия_загран_Box.Name = "Серия_загран_Box";
-            this.Серия_загран_Box.ReadOnly = true;
             this.Серия_загран_Box.Size = new System.Drawing.Size(132, 22);
             this.Серия_загран_Box.TabIndex = 50;
             // 
@@ -994,7 +967,6 @@
             // 
             this.Кем_выдан_загран_Box.Location = new System.Drawing.Point(97, 49);
             this.Кем_выдан_загран_Box.Name = "Кем_выдан_загран_Box";
-            this.Кем_выдан_загран_Box.ReadOnly = true;
             this.Кем_выдан_загран_Box.Size = new System.Drawing.Size(585, 22);
             this.Кем_выдан_загран_Box.TabIndex = 54;
             // 
@@ -1002,7 +974,6 @@
             // 
             this.Номер_загран_Box.Location = new System.Drawing.Point(295, 21);
             this.Номер_загран_Box.Name = "Номер_загран_Box";
-            this.Номер_загран_Box.ReadOnly = true;
             this.Номер_загран_Box.Size = new System.Drawing.Size(132, 22);
             this.Номер_загран_Box.TabIndex = 52;
             // 
@@ -1025,7 +996,6 @@
             // 
             this.Индекс_Box.Location = new System.Drawing.Point(320, 45);
             this.Индекс_Box.Name = "Индекс_Box";
-            this.Индекс_Box.ReadOnly = true;
             this.Индекс_Box.Size = new System.Drawing.Size(116, 22);
             this.Индекс_Box.TabIndex = 31;
             // 
@@ -1033,7 +1003,6 @@
             // 
             this.Город_Box.Location = new System.Drawing.Point(91, 45);
             this.Город_Box.Name = "Город_Box";
-            this.Город_Box.ReadOnly = true;
             this.Город_Box.Size = new System.Drawing.Size(163, 22);
             this.Город_Box.TabIndex = 27;
             // 
@@ -1042,7 +1011,6 @@
             this.Улица_Box.Location = new System.Drawing.Point(91, 96);
             this.Улица_Box.Multiline = true;
             this.Улица_Box.Name = "Улица_Box";
-            this.Улица_Box.ReadOnly = true;
             this.Улица_Box.Size = new System.Drawing.Size(581, 57);
             this.Улица_Box.TabIndex = 23;
             // 
@@ -1103,18 +1071,16 @@
             // 
             // Кем_выдан_Box
             // 
-            this.Кем_выдан_Box.Location = new System.Drawing.Point(114, 66);
+            this.Кем_выдан_Box.Location = new System.Drawing.Point(91, 67);
             this.Кем_выдан_Box.Multiline = true;
             this.Кем_выдан_Box.Name = "Кем_выдан_Box";
-            this.Кем_выдан_Box.ReadOnly = true;
-            this.Кем_выдан_Box.Size = new System.Drawing.Size(562, 41);
+            this.Кем_выдан_Box.Size = new System.Drawing.Size(581, 41);
             this.Кем_выдан_Box.TabIndex = 55;
             // 
             // Номер_Box
             // 
             this.Номер_Box.Location = new System.Drawing.Point(320, 35);
             this.Номер_Box.Name = "Номер_Box";
-            this.Номер_Box.ReadOnly = true;
             this.Номер_Box.Size = new System.Drawing.Size(107, 22);
             this.Номер_Box.TabIndex = 53;
             // 
@@ -1122,7 +1088,6 @@
             // 
             this.Серия_Box.Location = new System.Drawing.Point(91, 36);
             this.Серия_Box.Name = "Серия_Box";
-            this.Серия_Box.ReadOnly = true;
             this.Серия_Box.Size = new System.Drawing.Size(111, 22);
             this.Серия_Box.TabIndex = 51;
             // 
@@ -1249,7 +1214,6 @@
             // 
             this.Табельный_номер_Box.Location = new System.Drawing.Point(197, 21);
             this.Табельный_номер_Box.Name = "Табельный_номер_Box";
-            this.Табельный_номер_Box.ReadOnly = true;
             this.Табельный_номер_Box.Size = new System.Drawing.Size(145, 22);
             this.Табельный_номер_Box.TabIndex = 65;
             // 
@@ -1277,7 +1241,6 @@
             // 
             this.Пенсионное_свидетельство_Box.Location = new System.Drawing.Point(197, 139);
             this.Пенсионное_свидетельство_Box.Name = "Пенсионное_свидетельство_Box";
-            this.Пенсионное_свидетельство_Box.ReadOnly = true;
             this.Пенсионное_свидетельство_Box.Size = new System.Drawing.Size(146, 22);
             this.Пенсионное_свидетельство_Box.TabIndex = 73;
             // 
@@ -1294,7 +1257,6 @@
             // 
             this.Номер_мед_полиса_Box.Location = new System.Drawing.Point(537, 24);
             this.Номер_мед_полиса_Box.Name = "Номер_мед_полиса_Box";
-            this.Номер_мед_полиса_Box.ReadOnly = true;
             this.Номер_мед_полиса_Box.Size = new System.Drawing.Size(145, 22);
             this.Номер_мед_полиса_Box.TabIndex = 71;
             // 
@@ -1311,7 +1273,6 @@
             // 
             this.ИНН_Box.Location = new System.Drawing.Point(537, 52);
             this.ИНН_Box.Name = "ИНН_Box";
-            this.ИНН_Box.ReadOnly = true;
             this.ИНН_Box.Size = new System.Drawing.Size(145, 22);
             this.ИНН_Box.TabIndex = 69;
             // 
@@ -1328,7 +1289,6 @@
             // 
             this.Номер_страхового_полиса_Box.Location = new System.Drawing.Point(197, 167);
             this.Номер_страхового_полиса_Box.Name = "Номер_страхового_полиса_Box";
-            this.Номер_страхового_полиса_Box.ReadOnly = true;
             this.Номер_страхового_полиса_Box.Size = new System.Drawing.Size(146, 22);
             this.Номер_страхового_полиса_Box.TabIndex = 67;
             // 
@@ -1345,7 +1305,6 @@
             // 
             this.Национальность_Box.Location = new System.Drawing.Point(537, 113);
             this.Национальность_Box.Name = "Национальность_Box";
-            this.Национальность_Box.ReadOnly = true;
             this.Национальность_Box.Size = new System.Drawing.Size(145, 22);
             this.Национальность_Box.TabIndex = 62;
             // 
@@ -1380,7 +1339,6 @@
             // 
             this.Гражданство_Box.Location = new System.Drawing.Point(537, 82);
             this.Гражданство_Box.Name = "Гражданство_Box";
-            this.Гражданство_Box.ReadOnly = true;
             this.Гражданство_Box.Size = new System.Drawing.Size(145, 22);
             this.Гражданство_Box.TabIndex = 58;
             // 
@@ -1397,7 +1355,6 @@
             // 
             this.Телефон_Box.Location = new System.Drawing.Point(197, 52);
             this.Телефон_Box.Name = "Телефон_Box";
-            this.Телефон_Box.ReadOnly = true;
             this.Телефон_Box.Size = new System.Drawing.Size(145, 22);
             this.Телефон_Box.TabIndex = 54;
             // 
@@ -1414,7 +1371,6 @@
             // 
             this.Подразделение_Box.Location = new System.Drawing.Point(197, 108);
             this.Подразделение_Box.Name = "Подразделение_Box";
-            this.Подразделение_Box.ReadOnly = true;
             this.Подразделение_Box.Size = new System.Drawing.Size(145, 22);
             this.Подразделение_Box.TabIndex = 52;
             // 
@@ -1460,7 +1416,6 @@
             // 
             this.Отчество_Box.Location = new System.Drawing.Point(416, 37);
             this.Отчество_Box.Name = "Отчество_Box";
-            this.Отчество_Box.ReadOnly = true;
             this.Отчество_Box.Size = new System.Drawing.Size(266, 22);
             this.Отчество_Box.TabIndex = 44;
             // 
@@ -1504,7 +1459,6 @@
             // 
             this.Имя_Box.Location = new System.Drawing.Point(91, 70);
             this.Имя_Box.Name = "Имя_Box";
-            this.Имя_Box.ReadOnly = true;
             this.Имя_Box.Size = new System.Drawing.Size(243, 22);
             this.Имя_Box.TabIndex = 42;
             // 
@@ -1512,7 +1466,6 @@
             // 
             this.Фамилия_Box.Location = new System.Drawing.Point(91, 35);
             this.Фамилия_Box.Name = "Фамилия_Box";
-            this.Фамилия_Box.ReadOnly = true;
             this.Фамилия_Box.Size = new System.Drawing.Size(242, 22);
             this.Фамилия_Box.TabIndex = 40;
             // 

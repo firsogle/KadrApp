@@ -13,11 +13,10 @@ namespace NextGenKadr
     public partial class UsersList : Form
     {
         string key = string.Empty;
-        public UsersList(string id = "")
+        public UsersList()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            key = id;
         }
 
         private void UsersList_Load(object sender, EventArgs e)
