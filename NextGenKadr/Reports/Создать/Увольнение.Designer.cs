@@ -20,7 +20,13 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+       
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+       #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -28,90 +34,189 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.GridDelete = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridDelete)).BeginInit();
+            this.Создать = new System.Windows.Forms.Button();
+            this.Табельный_номер_Box = new System.Windows.Forms.TextBox();
+            this.Отчество_Box = new System.Windows.Forms.TextBox();
+            this.Имя_Box = new System.Windows.Forms.TextBox();
+            this.Фамилия_Box = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Закрыть = new System.Windows.Forms.Button();
+            this.Дата_увольнения_Picker = new System.Windows.Forms.DateTimePicker();
+            this.Причина_Box = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // splitContainer1
+            // Создать
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.Создать.Location = new System.Drawing.Point(149, 206);
+            this.Создать.Name = "Создать";
+            this.Создать.Size = new System.Drawing.Size(132, 42);
+            this.Создать.TabIndex = 0;
+            this.Создать.Text = "Excel экспорт";
+            this.Создать.UseVisualStyleBackColor = true;
+            this.Создать.Click += new System.EventHandler(this.Создать_Click);
             // 
-            // splitContainer1.Panel1
+            // Табельный_номер_Box
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.GridDelete);
+            this.Табельный_номер_Box.Location = new System.Drawing.Point(136, 137);
+            this.Табельный_номер_Box.Name = "Табельный_номер_Box";
+            this.Табельный_номер_Box.ReadOnly = true;
+            this.Табельный_номер_Box.Size = new System.Drawing.Size(100, 22);
+            this.Табельный_номер_Box.TabIndex = 50;
             // 
-            // splitContainer1.Panel2
+            // Отчество_Box
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Size = new System.Drawing.Size(926, 588);
-            this.splitContainer1.SplitterDistance = 485;
-            this.splitContainer1.TabIndex = 1;
+            this.Отчество_Box.Location = new System.Drawing.Point(136, 105);
+            this.Отчество_Box.Name = "Отчество_Box";
+            this.Отчество_Box.ReadOnly = true;
+            this.Отчество_Box.Size = new System.Drawing.Size(100, 22);
+            this.Отчество_Box.TabIndex = 48;
             // 
-            // GridDelete
+            // Имя_Box
             // 
-            this.GridDelete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridDelete.Location = new System.Drawing.Point(0, 0);
-            this.GridDelete.Name = "GridDelete";
-            this.GridDelete.RowHeadersWidth = 51;
-            this.GridDelete.RowTemplate.Height = 24;
-            this.GridDelete.Size = new System.Drawing.Size(926, 485);
-            this.GridDelete.TabIndex = 0;
+            this.Имя_Box.Location = new System.Drawing.Point(136, 68);
+            this.Имя_Box.Name = "Имя_Box";
+            this.Имя_Box.ReadOnly = true;
+            this.Имя_Box.Size = new System.Drawing.Size(100, 22);
+            this.Имя_Box.TabIndex = 46;
             // 
-            // button2
+            // Фамилия_Box
             // 
-            this.button2.Location = new System.Drawing.Point(533, 24);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 63);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Экспорт в Excel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Excel_Click);
+            this.Фамилия_Box.Location = new System.Drawing.Point(136, 31);
+            this.Фамилия_Box.Name = "Фамилия_Box";
+            this.Фамилия_Box.ReadOnly = true;
+            this.Фамилия_Box.Size = new System.Drawing.Size(100, 22);
+            this.Фамилия_Box.TabIndex = 44;
             // 
-            // button1
+            // label13
             // 
-            this.button1.Location = new System.Drawing.Point(263, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 142);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(127, 17);
+            this.label13.TabIndex = 49;
+            this.label13.Text = "Табельный номер";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(59, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 17);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "Отчество";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(95, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 17);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Имя";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(60, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 17);
+            this.label6.TabIndex = 43;
+            this.label6.Text = "Фамилия";
+            // 
+            // Закрыть
+            // 
+            this.Закрыть.Location = new System.Drawing.Point(357, 206);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(132, 42);
+            this.Закрыть.TabIndex = 54;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
+            // 
+            // Дата_увольнения_Picker
+            // 
+            this.Дата_увольнения_Picker.CustomFormat = "yyyy.MM.dd";
+            this.Дата_увольнения_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Дата_увольнения_Picker.Location = new System.Drawing.Point(286, 103);
+            this.Дата_увольнения_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.Дата_увольнения_Picker.Name = "Дата_увольнения_Picker";
+            this.Дата_увольнения_Picker.Size = new System.Drawing.Size(100, 22);
+            this.Дата_увольнения_Picker.TabIndex = 82;
+            this.Дата_увольнения_Picker.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
+            // 
+            // Причина_Box
+            // 
+            this.Причина_Box.Location = new System.Drawing.Point(286, 48);
+            this.Причина_Box.Name = "Причина_Box";
+            this.Причина_Box.ReadOnly = true;
+            this.Причина_Box.Size = new System.Drawing.Size(342, 22);
+            this.Причина_Box.TabIndex = 81;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(283, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 17);
+            this.label2.TabIndex = 80;
+            this.label2.Text = "Дата увольнения";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(283, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 17);
+            this.label1.TabIndex = 79;
+            this.label1.Text = "Причина увольнения";
             // 
             // ListDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 588);
-            this.Controls.Add(this.splitContainer1);
+            this.ClientSize = new System.Drawing.Size(661, 275);
+            this.Controls.Add(this.Фамилия_Box);
+            this.Controls.Add(this.Дата_увольнения_Picker);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Причина_Box);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.Имя_Box);
+            this.Controls.Add(this.Закрыть);
+            this.Controls.Add(this.Табельный_номер_Box);
+            this.Controls.Add(this.Отчество_Box);
+            this.Controls.Add(this.Создать);
             this.Name = "ListDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.ListDelete_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GridDelete)).EndInit();
+            this.Text = "Создать отчет об увольнение";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView GridDelete;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Создать;
+        private System.Windows.Forms.TextBox Табельный_номер_Box;
+        private System.Windows.Forms.TextBox Отчество_Box;
+        private System.Windows.Forms.TextBox Имя_Box;
+        private System.Windows.Forms.TextBox Фамилия_Box;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button Закрыть;
+        private System.Windows.Forms.DateTimePicker Дата_увольнения_Picker;
+        private System.Windows.Forms.TextBox Причина_Box;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

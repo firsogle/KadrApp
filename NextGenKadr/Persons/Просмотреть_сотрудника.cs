@@ -82,5 +82,15 @@ namespace NextGenKadr
         {
             Close();
         }
+
+        private void Закрыть_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Назад_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

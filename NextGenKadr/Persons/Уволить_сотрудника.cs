@@ -28,11 +28,19 @@ namespace NextGenKadr
         }
         private void But_Del_Click(object sender, EventArgs e)
         {
-            connection.Внести_cведения_об_уволенных(Табельный_номер_Box.Text, Причина_Box.Text, Дата_увольнения_Picker.Text);
+            connection.Внести_cведения_об_уволенных(Табельный_номер_Box.Text, Причина_Box.Text, Дата_увольнения_Picker.Text, Имя_Box.Text, Фамилия_Box.Text, Отчество_Box.Text);
             connection.Получить_сведения_из_базы_данных($"Delete FROM LaborActiv WHERE ID = {key}");
             connection.Получить_сведения_из_базы_данных($"Delete FROM Passport WHERE ID = {key}");
             connection.Получить_сведения_из_базы_данных($"Delete FROM EducMil WHERE ID = {key}");
-            connection.Получить_сведения_из_базы_данных($"Delete FROM General WHERE ID = {key}");            
+            connection.Получить_сведения_из_базы_данных($"Delete FROM General WHERE ID = {key}");
+
+            ListDelete ls = new ListDelete();
+            ls.ShowDialog();
+        }
+
+        private void Закрыть_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

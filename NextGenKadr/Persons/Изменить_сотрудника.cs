@@ -77,7 +77,13 @@ namespace NextGenKadr
             return;
         }
 
-        private void Update_Click(object sender, EventArgs e)
+
+        private void Закрыть_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Обновить_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage2"];
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage3"];
@@ -91,12 +97,36 @@ namespace NextGenKadr
             {
                 MessageBox.Show(sit2.Message);
             }
-
         }
 
-        private void Close_Click(object sender, EventArgs e)
+        private void Назад3_Click(object sender, EventArgs e)
         {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage4"];
+        }
 
+        private void Назад2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage2"];
+        }
+
+        private void Назад_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage1"];
+        }
+
+        private void Далее_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage2"];
+        }
+
+        private void Далее3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage4"];
+        }
+
+        private void Далее2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabControl1.TabPages["TabPage3"];
         }
     }
 }

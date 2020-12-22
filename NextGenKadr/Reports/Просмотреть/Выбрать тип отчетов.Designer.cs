@@ -109,7 +109,7 @@
             this.HelpButton = true;
             this.Name = "ViewReports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Просмотреть отчеты";
+            this.Text = "Выбрать отчет";
             this.ResumeLayout(false);
             this.PerformLayout();
 

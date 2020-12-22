@@ -128,7 +128,7 @@ namespace NextGenKadr
         private void DeleteReports_Click(object sender, EventArgs e)
         {
             string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
-            ReportsDelete service = new ReportsDelete();
+            DeleteView service = new DeleteView();
             service.ShowDialog();
         }
 
@@ -155,6 +155,11 @@ namespace NextGenKadr
         {
             SearchPerson sp = new SearchPerson();
             sp.ShowDialog();
+        }
+
+        private void MainForms_Enter(object sender, EventArgs e)
+        {
+            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
         }
     }
 

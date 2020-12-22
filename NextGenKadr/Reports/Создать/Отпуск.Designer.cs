@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Создать_отчет = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,22 +45,22 @@
             this.Номер_приказа_Box = new System.Windows.Forms.TextBox();
             this.Дата_приказа_Box = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Закрыть = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Сотрудник = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.Сотрудник.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // Создать_отчет
             // 
-            this.button1.Location = new System.Drawing.Point(164, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Создать отчет";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Создать_отчет.Location = new System.Drawing.Point(164, 275);
+            this.Создать_отчет.Name = "Создать_отчет";
+            this.Создать_отчет.Size = new System.Drawing.Size(139, 58);
+            this.Создать_отчет.TabIndex = 0;
+            this.Создать_отчет.Text = "Создать отчет";
+            this.Создать_отчет.UseVisualStyleBackColor = true;
+            this.Создать_отчет.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -185,6 +185,9 @@
             this.Номер_приказа_Box.Name = "Номер_приказа_Box";
             this.Номер_приказа_Box.Size = new System.Drawing.Size(100, 22);
             this.Номер_приказа_Box.TabIndex = 51;
+            this.Номер_приказа_Box.Enter += new System.EventHandler(this.Номер_Enter);
+            this.Номер_приказа_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
+            this.Номер_приказа_Box.Leave += new System.EventHandler(this.Номер_Leave);
             // 
             // Дата_приказа_Box
             // 
@@ -206,15 +209,15 @@
             this.label7.TabIndex = 53;
             this.label7.Text = "Дата приказа";
             // 
-            // button2
+            // Закрыть
             // 
-            this.button2.Location = new System.Drawing.Point(358, 275);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 42);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "Закрыть";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Cancel_Click);
+            this.Закрыть.Location = new System.Drawing.Point(358, 275);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(139, 58);
+            this.Закрыть.TabIndex = 54;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // groupBox2
             // 
@@ -257,8 +260,8 @@
             this.ClientSize = new System.Drawing.Size(696, 372);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Сотрудник);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Закрыть);
+            this.Controls.Add(this.Создать_отчет);
             this.Name = "Otp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Создать отчет отпуска сотрудника";
@@ -272,7 +275,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Создать_отчет;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -289,7 +292,7 @@
         private System.Windows.Forms.TextBox Номер_приказа_Box;
         private System.Windows.Forms.DateTimePicker Дата_приказа_Box;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Закрыть;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox Сотрудник;
     }

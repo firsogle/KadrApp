@@ -57,6 +57,14 @@
     <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
       <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System">
       <HintPath>..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -98,6 +106,12 @@
     </Compile>
     <Compile Include="Persons\Поиск_сотрудника.Designer.cs">
       <DependentUpon>Поиск_сотрудника.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Удалить отчеты\Выбрать тип отчетов.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Удалить отчеты\Выбрать тип отчетов.Designer.cs">
+      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Изменить_пользователя.cs">
       <SubType>Form</SubType>
@@ -160,11 +174,11 @@
     <Compile Include="ViewForms\Форма_администратора.Designer.cs">
       <DependentUpon>Форма_администратора.cs</DependentUpon>
     </Compile>
-    <Compile Include="Other\Удалить_отчеты.cs">
+    <Compile Include="Reports\Удалить отчеты\Удалить отчеты поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other\Удалить_отчеты.Designer.cs">
-      <DependentUpon>Удалить_отчеты.cs</DependentUpon>
+    <Compile Include="Reports\Удалить отчеты\Удалить отчеты поле.Designer.cs">
+      <DependentUpon>Удалить отчеты поле.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Просмотреть_список_пользователей.cs">
       <SubType>Form</SubType>
@@ -178,11 +192,11 @@
     <Compile Include="Reports\Просмотреть\Просмотреть_отчеты_поле.Designer.cs">
       <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты.cs">
+    <Compile Include="Reports\Просмотреть\Выбрать тип отчетов.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты.Designer.cs">
-      <DependentUpon>Просмотреть_отчеты.cs</DependentUpon>
+    <Compile Include="Reports\Просмотреть\Выбрать тип отчетов.Designer.cs">
+      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Создать\Отпуск.cs">
       <SubType>Form</SubType>
@@ -190,11 +204,11 @@
     <Compile Include="Reports\Создать\Отпуск.Designer.cs">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Создать\Создать_отчет.cs">
+    <Compile Include="Reports\Создать\Выбрать тип отчетов поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Создать\Создать_отчет.Designer.cs">
-      <DependentUpon>Создать_отчет.cs</DependentUpon>
+    <Compile Include="Reports\Создать\Выбрать тип отчетов поле.Designer.cs">
+      <DependentUpon>Выбрать тип отчетов поле.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Создать\Увольнение.cs">
       <SubType>Form</SubType>
@@ -243,6 +257,9 @@
     <EmbeddedResource Include="Persons\Уволить_сотрудника.resx">
       <DependentUpon>Уволить_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Удалить отчеты\Выбрать тип отчетов.resx">
+      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Users\Добавить_пользователя.resx">
       <DependentUpon>Добавить_пользователя.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,8 +284,8 @@
     <EmbeddedResource Include="Reports\Создать\Отпуск.resx">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Создать\Создать_отчет.resx">
-      <DependentUpon>Создать_отчет.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Создать\Выбрать тип отчетов поле.resx">
+      <DependentUpon>Выбрать тип отчетов поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -279,8 +296,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Other\Удалить_отчеты.resx">
-      <DependentUpon>Удалить_отчеты.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Удалить отчеты\Удалить отчеты поле.resx">
+      <DependentUpon>Удалить отчеты поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persons\Изменить_сотрудника.resx">
       <DependentUpon>Изменить_сотрудника.cs</DependentUpon>
@@ -291,8 +308,8 @@
     <EmbeddedResource Include="Persons\Просмотреть_сотрудника.resx">
       <DependentUpon>Просмотреть_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Просмотреть\Просмотреть_отчеты.resx">
-      <DependentUpon>Просмотреть_отчеты.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Просмотреть\Выбрать тип отчетов.resx">
+      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Просмотреть\Просмотреть_отчеты_поле.resx">
       <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
@@ -334,15 +351,6 @@
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
       <VersionMajor>2</VersionMajor>
       <VersionMinor>8</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="Microsoft.Office.Interop.Word">
-      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
-      <VersionMajor>8</VersionMajor>
-      <VersionMinor>7</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>

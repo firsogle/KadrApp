@@ -46,6 +46,7 @@ namespace NextGenKadr
 
         private void Export_Click(object sender, EventArgs e)
         {
+            try
             {
                 Random r = new Random();
                 string name = string.Empty;
@@ -73,8 +74,14 @@ namespace NextGenKadr
                     wb.SaveAs(Path.Combine(Path.GetTempPath(), (name + ".xlsx")));
                 }
                 System.Diagnostics.Process.Start(Path.GetTempPath() + (name + ".xlsx"));
-
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Excel не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+            
         }
 
       private void ViewPersonStrip_Click(object sender, EventArgs e)
@@ -114,7 +121,7 @@ namespace NextGenKadr
         private void DeleteReports_Click(object sender, EventArgs e)
         {
             string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
-            ReportsDelete service = new ReportsDelete();
+            DeleteView service = new DeleteView();
             service.ShowDialog();
         }
 

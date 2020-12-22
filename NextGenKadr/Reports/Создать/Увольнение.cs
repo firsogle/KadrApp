@@ -7,58 +7,84 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using ClosedXML.Excel;
 using System.IO;
-using System.Diagnostics;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace NextGenKadr
 {
     public partial class ListDelete : Form
     {
         string key = string.Empty;
+
         public ListDelete(string id = "")
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             key = id;
-        }
-        private void ListDelete_Load(object sender, EventArgs e)
-        {
-          GridDelete.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]").Tables[0].DefaultView;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            Имя_Box.Text =
+                connection.Получить_сведения_из_базы_данных(
+                    $"SELECT Имя FROM [Сведения об уволенных] WHERE [Табельный номер] = {id}");
+            Фамилия_Box.Text =
+                connection.Получить_сведения_из_базы_данных(
+                    $"SELECT Фамилия FROM [Сведения об уволенных] WHERE [Табельный номер] = {id}");
+            Отчество_Box.Text =
+                connection.Получить_сведения_из_базы_данных(
+                    $"SELECT Отчество FROM [Сведения об уволенных] WHERE [Табельный номер] = {id}");
+            Причина_Box.Text =
+                connection.Получить_сведения_из_базы_данных(
+                    $"SELECT [Причина] FROM [Сведения об уволенных] WHERE [Табельный номер] = {id}");
+            Табельный_номер_Box.Text = connection.Получить_сведения_из_базы_данных(
+                $"SELECT [Табельный номер] FROM [Сведения об уволенных] WHERE [Табельный номер] = {id}");
+            Дата_увольнения_Picker.Text = connection.Получить_сведения_из_базы_данных(
+                $"SELECT [Дата увольнения] FROM [Сведения об уволенных] WHERE [Табельный номер] = {id}");
+
         }
 
-        private void Excel_Click(object sender, EventArgs e)
+        private void Создать_Click(object sender, EventArgs e)
         {
+            var wordApp = new Word.Application();
+            var WordDoc =
+                wordApp.Documents.Open(Path.Combine(System.Windows.Forms.Application.StartupPath, "Командировка.docx"));
+
+            ReplaceWordStub("{Фамилия}", Фамилия_Box.Text, WordDoc);
+            ReplaceWordStub("{Имя}", Имя_Box.Text, WordDoc);
+            ReplaceWordStub("{Отчество}", Отчество_Box.Text, WordDoc);
+            ReplaceWordStub("{Фамилия2}", Фамилия_Box.Text, WordDoc);
+            ReplaceWordStub("{Имя2}", Имя_Box.Text, WordDoc);
+            ReplaceWordStub("{Отчество2}", Отчество_Box.Text, WordDoc);
+
+            ReplaceWordStub("{Табельный_номер}", Табельный_номер_Box.Text, WordDoc);
+            ReplaceWordStub("{Дата_увольнения}", Дата_увольнения_Picker.Text, WordDoc);
+            ReplaceWordStub("{Причина}", Причина_Box.Text, WordDoc);
+
+
+
+
+            var name = DateTime.Now.ToShortDateString() + ".docx";
+            try
             {
-                Random r = new Random();
-                string name = string.Empty;
-                for (int i = 0; i < 10; i++)
-                {
-                    char randomChar = (char)r.Next('a', 'z');
-                    name = name + randomChar;
-                }
-                DataTable dt = new DataTable();
-                foreach (DataGridViewColumn column in GridDelete.Columns)
-                {
-                    dt.Columns.Add(column.HeaderText, column.ValueType);
-                }
-                foreach (DataGridViewRow row in GridDelete.Rows)
-                {
-                    dt.Rows.Add();
-                    foreach (DataGridViewCell cell in row.Cells)
-                    {
-                        dt.Rows[dt.Rows.Count - 1][cell.ColumnIndex] = cell.Value.ToString();
-                    }
-                }
-                using (XLWorkbook wb = new XLWorkbook())
-                {
-                    wb.Worksheets.Add(dt, "Сотрудники");
-                    wb.SaveAs(Path.Combine(Path.GetTempPath(), (name + ".xlsx")));
-                }
-                System.Diagnostics.Process.Start(Path.GetTempPath() + (name + ".xlsx"));
-
+                wordApp.ActiveDocument.SaveAs(FileName: name);
+                wordApp.Visible = true;
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Закройте прошлый отчет");
+                throw;
+            }
+        }
+
+        private static void ReplaceWordStub(string stubToReplace, string text, Word.Document wordDocument)
+        {
+            var range = wordDocument.Content;
+            range.Find.ClearFormatting();
+            range.Find.Execute(FindText: stubToReplace, ReplaceWith: text);
+
+        }
+
+        private void Закрыть_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

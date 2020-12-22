@@ -44,14 +44,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Создать_отчет = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.Дата_документа_Box = new System.Windows.Forms.DateTimePicker();
             this.Номер_листа_нетрудоспособности_Box = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Сотрудник = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Закрыть = new System.Windows.Forms.Button();
             this.Сотрудник.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -82,10 +82,13 @@
             this.Номер_приказа_Box.Name = "Номер_приказа_Box";
             this.Номер_приказа_Box.Size = new System.Drawing.Size(100, 22);
             this.Номер_приказа_Box.TabIndex = 68;
+            this.Номер_приказа_Box.Enter += new System.EventHandler(this.Номер_приказа_Enter);
+            this.Номер_приказа_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
+            this.Номер_приказа_Box.Leave += new System.EventHandler(this.Номер_листа_нетрудоспособности_Leave);
             // 
             // Табельный_номер_Box
             // 
-            this.Табельный_номер_Box.Location = new System.Drawing.Point(166, 153);
+            this.Табельный_номер_Box.Location = new System.Drawing.Point(166, 151);
             this.Табельный_номер_Box.Name = "Табельный_номер_Box";
             this.Табельный_номер_Box.ReadOnly = true;
             this.Табельный_номер_Box.Size = new System.Drawing.Size(100, 22);
@@ -118,7 +121,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(33, 158);
+            this.label13.Location = new System.Drawing.Point(33, 156);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(127, 17);
             this.label13.TabIndex = 66;
@@ -166,30 +169,30 @@
             // 
             this.От_Picker.CustomFormat = "yyyy.MM.dd";
             this.От_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.От_Picker.Location = new System.Drawing.Point(88, 54);
+            this.От_Picker.Location = new System.Drawing.Point(65, 54);
             this.От_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.От_Picker.Name = "От_Picker";
-            this.От_Picker.Size = new System.Drawing.Size(100, 22);
+            this.От_Picker.Size = new System.Drawing.Size(93, 22);
             this.От_Picker.TabIndex = 58;
             this.От_Picker.Value = new System.DateTime(2020, 12, 11, 0, 0, 0, 0);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(209, 54);
+            this.label3.Location = new System.Drawing.Point(164, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 17);
+            this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 57;
-            this.label3.Text = "До";
+            this.label3.Text = "Окончание";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 54);
+            this.label2.Location = new System.Drawing.Point(7, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 17);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 56;
-            this.label2.Text = "От";
+            this.label2.Text = "Начало";
             // 
             // label1
             // 
@@ -200,15 +203,15 @@
             this.label1.TabIndex = 55;
             this.label1.Text = "Номер приказа";
             // 
-            // button1
+            // Создать_отчет
             // 
-            this.button1.Location = new System.Drawing.Point(165, 246);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 55);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Создать отчет";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Report_Click);
+            this.Создать_отчет.Location = new System.Drawing.Point(176, 261);
+            this.Создать_отчет.Name = "Создать_отчет";
+            this.Создать_отчет.Size = new System.Drawing.Size(153, 55);
+            this.Создать_отчет.TabIndex = 54;
+            this.Создать_отчет.Text = "Создать отчет";
+            this.Создать_отчет.UseVisualStyleBackColor = true;
+            this.Создать_отчет.Click += new System.EventHandler(this.Report_Click);
             // 
             // label8
             // 
@@ -236,6 +239,9 @@
             this.Номер_листа_нетрудоспособности_Box.Name = "Номер_листа_нетрудоспособности_Box";
             this.Номер_листа_нетрудоспособности_Box.Size = new System.Drawing.Size(100, 22);
             this.Номер_листа_нетрудоспособности_Box.TabIndex = 74;
+            this.Номер_листа_нетрудоспособности_Box.Enter += new System.EventHandler(this.Номер_листа_нетрудоспособности_Box_Enter);
+            this.Номер_листа_нетрудоспособности_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
+            this.Номер_листа_нетрудоспособности_Box.Leave += new System.EventHandler(this.Номер_листа_нетрудоспособности_Box_Leave);
             // 
             // label9
             // 
@@ -258,7 +264,7 @@
             this.Сотрудник.Controls.Add(this.Табельный_номер_Box);
             this.Сотрудник.Location = new System.Drawing.Point(12, 22);
             this.Сотрудник.Name = "Сотрудник";
-            this.Сотрудник.Size = new System.Drawing.Size(318, 204);
+            this.Сотрудник.Size = new System.Drawing.Size(318, 218);
             this.Сотрудник.TabIndex = 75;
             this.Сотрудник.TabStop = false;
             this.Сотрудник.Text = "Сотрудник";
@@ -279,30 +285,30 @@
             this.groupBox2.Controls.Add(this.Дата_приказа_Box);
             this.groupBox2.Location = new System.Drawing.Point(336, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(358, 214);
+            this.groupBox2.Size = new System.Drawing.Size(388, 228);
             this.groupBox2.TabIndex = 76;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Больничный";
             // 
-            // button2
+            // Закрыть
             // 
-            this.button2.Location = new System.Drawing.Point(401, 246);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 55);
-            this.button2.TabIndex = 77;
-            this.button2.Text = "Назад";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Close_Click);
+            this.Закрыть.Location = new System.Drawing.Point(392, 261);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(147, 55);
+            this.Закрыть.TabIndex = 77;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // Bol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 328);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Закрыть);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Сотрудник);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Создать_отчет);
             this.Name = "Bol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Создать Создание отчета о больничном";
@@ -332,13 +338,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Создать_отчет;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker Дата_документа_Box;
         private System.Windows.Forms.TextBox Номер_листа_нетрудоспособности_Box;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox Сотрудник;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Закрыть;
     }
 }

@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.GridReportView = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Поле_список_отчетов = new System.Windows.Forms.DataGridView();
+            this.Выбрать_запись = new System.Windows.Forms.Button();
+            this.Закрыть = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridReportView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_список_отчетов)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -47,35 +48,47 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.GridReportView);
+            this.splitContainer1.Panel1.Controls.Add(this.Поле_список_отчетов);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
+            this.splitContainer1.Panel2.Controls.Add(this.Выбрать_запись);
+            this.splitContainer1.Panel2.Controls.Add(this.Закрыть);
             this.splitContainer1.Size = new System.Drawing.Size(965, 489);
             this.splitContainer1.SplitterDistance = 408;
             this.splitContainer1.TabIndex = 0;
             // 
-            // GridReportView
+            // Поле_список_отчетов
             // 
-            this.GridReportView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridReportView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridReportView.Location = new System.Drawing.Point(0, 0);
-            this.GridReportView.Name = "GridReportView";
-            this.GridReportView.RowHeadersWidth = 51;
-            this.GridReportView.RowTemplate.Height = 24;
-            this.GridReportView.Size = new System.Drawing.Size(965, 408);
-            this.GridReportView.TabIndex = 0;
+            this.Поле_список_отчетов.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Поле_список_отчетов.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Поле_список_отчетов.Location = new System.Drawing.Point(0, 0);
+            this.Поле_список_отчетов.Name = "Поле_список_отчетов";
+            this.Поле_список_отчетов.RowHeadersWidth = 51;
+            this.Поле_список_отчетов.RowTemplate.Height = 24;
+            this.Поле_список_отчетов.Size = new System.Drawing.Size(965, 408);
+            this.Поле_список_отчетов.TabIndex = 0;
             // 
-            // button1
+            // Выбрать_запись
             // 
-            this.button1.Location = new System.Drawing.Point(393, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 58);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Выбрать_запись.Enabled = false;
+            this.Выбрать_запись.Location = new System.Drawing.Point(344, 7);
+            this.Выбрать_запись.Name = "Выбрать_запись";
+            this.Выбрать_запись.Size = new System.Drawing.Size(113, 58);
+            this.Выбрать_запись.TabIndex = 1;
+            this.Выбрать_запись.Text = "Выбрать запись";
+            this.Выбрать_запись.UseVisualStyleBackColor = true;
+            this.Выбрать_запись.Click += new System.EventHandler(this.Экспорт_Click);
+            // 
+            // Закрыть
+            // 
+            this.Закрыть.Location = new System.Drawing.Point(501, 7);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(113, 58);
+            this.Закрыть.TabIndex = 0;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // ViewReportsGrid
             // 
@@ -90,7 +103,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GridReportView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_список_отчетов)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -98,7 +111,8 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView GridReportView;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView Поле_список_отчетов;
+        private System.Windows.Forms.Button Закрыть;
+        private System.Windows.Forms.Button Выбрать_запись;
     }
 }

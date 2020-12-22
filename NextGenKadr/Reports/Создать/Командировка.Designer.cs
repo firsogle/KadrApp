@@ -36,12 +36,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Создать_отчет = new System.Windows.Forms.Button();
             this.Место_командировки_Box = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Цель_Box = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Закрыть = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Сотрудник = new System.Windows.Forms.GroupBox();
             this.Фамилия_Box = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(148, 166);
+            this.label7.Location = new System.Drawing.Point(147, 163);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 17);
             this.label7.TabIndex = 70;
@@ -69,7 +69,7 @@
             // 
             this.Дата_приказа_Box.CustomFormat = "yyyy.MM.dd";
             this.Дата_приказа_Box.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Дата_приказа_Box.Location = new System.Drawing.Point(151, 186);
+            this.Дата_приказа_Box.Location = new System.Drawing.Point(150, 183);
             this.Дата_приказа_Box.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.Дата_приказа_Box.Name = "Дата_приказа_Box";
             this.Дата_приказа_Box.Size = new System.Drawing.Size(100, 22);
@@ -78,16 +78,19 @@
             // 
             // Номер_приказа_Box
             // 
-            this.Номер_приказа_Box.Location = new System.Drawing.Point(18, 186);
+            this.Номер_приказа_Box.Location = new System.Drawing.Point(17, 183);
             this.Номер_приказа_Box.Name = "Номер_приказа_Box";
             this.Номер_приказа_Box.Size = new System.Drawing.Size(106, 22);
             this.Номер_приказа_Box.TabIndex = 68;
+            this.Номер_приказа_Box.Enter += new System.EventHandler(this.Номер_Enter);
+            this.Номер_приказа_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
+            this.Номер_приказа_Box.Leave += new System.EventHandler(this.Номер_Leave);
             // 
             // До_Picker
             // 
             this.До_Picker.CustomFormat = "yyyy.MM.dd";
             this.До_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.До_Picker.Location = new System.Drawing.Point(151, 133);
+            this.До_Picker.Location = new System.Drawing.Point(150, 130);
             this.До_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.До_Picker.Name = "До_Picker";
             this.До_Picker.Size = new System.Drawing.Size(100, 22);
@@ -98,7 +101,7 @@
             // 
             this.От_Picker.CustomFormat = "yyyy.MM.dd";
             this.От_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.От_Picker.Location = new System.Drawing.Point(19, 133);
+            this.От_Picker.Location = new System.Drawing.Point(18, 130);
             this.От_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.От_Picker.Name = "От_Picker";
             this.От_Picker.Size = new System.Drawing.Size(100, 22);
@@ -126,21 +129,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 168);
+            this.label1.Location = new System.Drawing.Point(14, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 17);
             this.label1.TabIndex = 55;
             this.label1.Text = "Номер приказа";
             // 
-            // button1
+            // Создать_отчет
             // 
-            this.button1.Location = new System.Drawing.Point(150, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 55);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Создать отчет";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Report_Click);
+            this.Создать_отчет.Location = new System.Drawing.Point(159, 256);
+            this.Создать_отчет.Name = "Создать_отчет";
+            this.Создать_отчет.Size = new System.Drawing.Size(151, 55);
+            this.Создать_отчет.TabIndex = 54;
+            this.Создать_отчет.Text = "Создать отчет";
+            this.Создать_отчет.UseVisualStyleBackColor = true;
+            this.Создать_отчет.Click += new System.EventHandler(this.Report_Click);
             // 
             // Место_командировки_Box
             // 
@@ -174,14 +177,15 @@
             this.label9.TabIndex = 73;
             this.label9.Text = "Цель";
             // 
-            // button2
+            // Закрыть
             // 
-            this.button2.Location = new System.Drawing.Point(351, 248);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 55);
-            this.button2.TabIndex = 81;
-            this.button2.Text = "Закрыть";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Закрыть.Location = new System.Drawing.Point(360, 256);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(147, 55);
+            this.Закрыть.TabIndex = 81;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // groupBox2
             // 
@@ -294,10 +298,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 343);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Закрыть);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Сотрудник);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Создать_отчет);
             this.Name = "Com";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Создать отчет о командировке";
@@ -319,12 +323,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Создать_отчет;
         private System.Windows.Forms.TextBox Место_командировки_Box;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Цель_Box;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Закрыть;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox Сотрудник;
         private System.Windows.Forms.TextBox Фамилия_Box;

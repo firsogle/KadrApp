@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Закрыть = new System.Windows.Forms.Button();
             this.But_Del = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,18 +52,19 @@
             this.Дата_увольнения_Picker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // button1
+            // Закрыть
             // 
-            this.button1.Location = new System.Drawing.Point(455, 362);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Отмена";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Закрыть.Location = new System.Drawing.Point(482, 359);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(111, 55);
+            this.Закрыть.TabIndex = 0;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // But_Del
             // 
-            this.But_Del.Location = new System.Drawing.Point(212, 362);
+            this.But_Del.Location = new System.Drawing.Point(239, 359);
             this.But_Del.Name = "But_Del";
             this.But_Del.Size = new System.Drawing.Size(132, 55);
             this.But_Del.TabIndex = 1;
@@ -265,7 +266,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.But_Del);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Закрыть);
             this.Name = "DeletePerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Увольнение";
@@ -276,7 +277,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Закрыть;
         private System.Windows.Forms.Button But_Del;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

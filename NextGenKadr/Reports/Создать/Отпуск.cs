@@ -20,6 +20,7 @@ namespace NextGenKadr
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             key = id;
+            Номер_приказа_Box.Text = "0";
             Имя_Box.Text = connection.Получить_сведения_из_базы_данных($"SELECT Имя FROM Сотрудники WHERE [Табельный номер] = {id}");
             Фамилия_Box.Text = connection.Получить_сведения_из_базы_данных($"SELECT Фамилия FROM Сотрудники WHERE [Табельный номер] = {id}");
             Отчество_Box.Text = connection.Получить_сведения_из_базы_данных($"SELECT Отчество FROM Сотрудники WHERE [Табельный номер] = {id}");
@@ -59,10 +60,30 @@ namespace NextGenKadr
             range.Find.Execute(FindText: stubToReplace, ReplaceWith: text);
 
         }
-
+        private void KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        
         private void Cancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Номер_Enter(object sender, EventArgs e)
+        {
+            Номер_приказа_Box.Text = "";
+        }
+
+        private void Номер_Leave(object sender, EventArgs e)
+        {
+            if (Номер_приказа_Box.Text == "")
+            {
+                Номер_приказа_Box.Text = "0";
+            }
         }
     }
 }

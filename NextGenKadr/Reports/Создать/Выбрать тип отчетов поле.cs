@@ -22,10 +22,8 @@ namespace NextGenKadr
 
         private void Reports_Load(object sender, EventArgs e)
         {
-            {
-                GridReport.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
-                GridReport.AllowUserToAddRows = false;
-            }
+            GridReport.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView; 
+            GridReport.AllowUserToAddRows = false;
         }
 
         private void Com_Click(object sender, EventArgs e)
@@ -52,8 +50,9 @@ namespace NextGenKadr
         private void ListDelete_Click(object sender, EventArgs e)
         {
             string id = GridReport.Rows[GridReport.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
-            ListDelete service = new ListDelete(id);
-            service.ShowDialog();
+            ViewReportsGrid ls = new ViewReportsGrid(5);
+            ls.ShowDialog();
+            
         }
     }
 }

@@ -106,7 +106,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Name = "Settings";
-            this.Text = "Settings";
+            this.Text = "Очистка";
             this.ResumeLayout(false);
             this.PerformLayout();
 

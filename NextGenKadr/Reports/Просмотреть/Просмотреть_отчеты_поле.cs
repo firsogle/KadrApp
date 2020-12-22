@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace NextGenKadr
 {
-   public partial class ViewReportsGrid : Form
+    public partial class ViewReportsGrid : Form
     {
         public ViewReportsGrid(int number)
         {
@@ -18,27 +18,49 @@ namespace NextGenKadr
             this.StartPosition = FormStartPosition.CenterScreen;
             if (number == 1)
             {
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о командировках]").Tables[0].DefaultView;
+                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о командировках]")
+                    .Tables[0].DefaultView;
             }
+
             if (number == 2)
             {
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о больничных]").Tables[0].DefaultView;
+                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о больничных]")
+                    .Tables[0].DefaultView;
             }
+
             if (number == 3)
             {
-               
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]").Tables[0].DefaultView;
+                this.Выбрать_запись.Enabled = false;
+                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]")
+                    .Tables[0].DefaultView;
             }
+
             if (number == 4)
             {
-                GridReportView.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об отпусках]").Tables[0].DefaultView;
+                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об отпусках]").Tables[0]
+                    .DefaultView;
             }
-           
 
+            if (number == 5)
+            {
+                this.Выбрать_запись.Enabled = true;
+                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]")
+                    .Tables[0].DefaultView;
+            }
         }
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void Закрыть_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Экспорт_Click(object sender, EventArgs e)
+        {
+            string id = Поле_список_отчетов.Rows[Поле_список_отчетов.CurrentCell.RowIndex].Cells["Табельный номер"]
+                .Value.ToString();
+            ListDelete service = new ListDelete(id);
+            service.ShowDialog();
         }
     }
 }

@@ -850,7 +850,7 @@ namespace NextGenKadr
 
             SQLComm.ExecuteNonQuery();
         }
-        public static void Внести_cведения_об_уволенных(string Param, string Param1, string Param2)
+        public static void Внести_cведения_об_уволенных(string Param, string Param1, string Param2, string Param3, string Param4, string Param5)
         {
             SQLConn = new SqlConnection(Path());
             SQLConn.Open();
@@ -879,6 +879,30 @@ namespace NextGenKadr
             ParamSQL2.Value = Param2;
             ParamSQL2.Direction = ParameterDirection.Input;
             SQLComm.Parameters.Add(ParamSQL2);
+
+            SqlParameter ParamSQL3 = new SqlParameter();
+            ParamSQL3.ParameterName = "@Имя";
+            ParamSQL3.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL3.Size = 50;
+            ParamSQL3.Value = Param3;
+            ParamSQL3.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL3);
+
+            SqlParameter ParamSQL4 = new SqlParameter();
+            ParamSQL4.ParameterName = "@Фамилия";
+            ParamSQL4.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL4.Size = 50;
+            ParamSQL4.Value = Param4;
+            ParamSQL4.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL4);
+
+            SqlParameter ParamSQL5 = new SqlParameter();
+            ParamSQL5.ParameterName = "@Отчество";
+            ParamSQL5.SqlDbType = SqlDbType.NVarChar;
+            ParamSQL5.Size = 50;
+            ParamSQL5.Value = Param5;
+            ParamSQL5.Direction = ParameterDirection.Input;
+            SQLComm.Parameters.Add(ParamSQL5);
 
 
             SQLComm.ExecuteNonQuery();
