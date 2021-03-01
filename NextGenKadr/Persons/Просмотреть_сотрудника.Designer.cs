@@ -23,6 +23,7 @@
         private void InitializeComponent()
         {
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.Должность_Box = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.Срок_договора_Box = new System.Windows.Forms.DateTimePicker();
             this.Закрыть4 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.Коммисариат_Box = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -94,6 +96,7 @@
             this.Закрыть3 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Назад = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.Срок_действия_загран_Picker = new System.Windows.Forms.DateTimePicker();
             this.Дата_выдачи_загран_Picker = new System.Windows.Forms.DateTimePicker();
@@ -124,6 +127,7 @@
             this.Закрыть2 = new System.Windows.Forms.Button();
             this.Далее2 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Семейное_положение_Box = new System.Windows.Forms.ComboBox();
             this.Табельный_номер_Box = new System.Windows.Forms.TextBox();
@@ -158,10 +162,6 @@
             this.Фамилия_Box = new System.Windows.Forms.TextBox();
             this.Next = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Назад = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabPage4.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -181,7 +181,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.tabPage4.Controls.Add(this.button4);
             this.tabPage4.Controls.Add(this.groupBox8);
             this.tabPage4.Controls.Add(this.groupBox7);
@@ -192,6 +192,15 @@
             this.tabPage4.Size = new System.Drawing.Size(765, 635);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Трудовая деятельность";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(412, 546);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(125, 53);
+            this.button4.TabIndex = 78;
+            this.button4.Text = "Назад";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -454,7 +463,7 @@
             // Закрыть4
             // 
             this.Закрыть4.Cursor = System.Windows.Forms.Cursors.SizeWE;
-            this.Закрыть4.Location = new System.Drawing.Point(253, 546);
+            this.Закрыть4.Location = new System.Drawing.Point(230, 546);
             this.Закрыть4.Name = "Закрыть4";
             this.Закрыть4.Size = new System.Drawing.Size(120, 53);
             this.Закрыть4.TabIndex = 50;
@@ -464,7 +473,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.groupBox10);
             this.tabPage3.Controls.Add(this.groupBox6);
@@ -475,9 +484,18 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(765, 635);
+            this.tabPage3.Size = new System.Drawing.Size(788, 654);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Образование и воинский учет";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(335, 546);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 53);
+            this.button3.TabIndex = 77;
+            this.button3.Text = "Назад";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -504,7 +522,7 @@
             // 
             // Коммисариат_Box
             // 
-            this.Коммисариат_Box.Location = new System.Drawing.Point(283, 162);
+            this.Коммисариат_Box.Location = new System.Drawing.Point(272, 150);
             this.Коммисариат_Box.Name = "Коммисариат_Box";
             this.Коммисариат_Box.ReadOnly = true;
             this.Коммисариат_Box.Size = new System.Drawing.Size(100, 22);
@@ -521,7 +539,7 @@
             // 
             // Категория_годности_Box
             // 
-            this.Категория_годности_Box.Location = new System.Drawing.Point(579, 133);
+            this.Категория_годности_Box.Location = new System.Drawing.Point(563, 123);
             this.Категория_годности_Box.Name = "Категория_годности_Box";
             this.Категория_годности_Box.ReadOnly = true;
             this.Категория_годности_Box.Size = new System.Drawing.Size(100, 22);
@@ -530,7 +548,7 @@
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(433, 133);
+            this.label62.Location = new System.Drawing.Point(417, 123);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(140, 17);
             this.label62.TabIndex = 76;
@@ -538,7 +556,7 @@
             // 
             // Состав_Box
             // 
-            this.Состав_Box.Location = new System.Drawing.Point(579, 90);
+            this.Состав_Box.Location = new System.Drawing.Point(563, 80);
             this.Состав_Box.Name = "Состав_Box";
             this.Состав_Box.ReadOnly = true;
             this.Состав_Box.Size = new System.Drawing.Size(100, 22);
@@ -547,7 +565,7 @@
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(433, 90);
+            this.label63.Location = new System.Drawing.Point(417, 80);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(54, 17);
             this.label63.TabIndex = 74;
@@ -555,7 +573,7 @@
             // 
             // Категория_запаса_Box
             // 
-            this.Категория_запаса_Box.Location = new System.Drawing.Point(579, 46);
+            this.Категория_запаса_Box.Location = new System.Drawing.Point(563, 36);
             this.Категория_запаса_Box.Name = "Категория_запаса_Box";
             this.Категория_запаса_Box.ReadOnly = true;
             this.Категория_запаса_Box.Size = new System.Drawing.Size(100, 22);
@@ -564,7 +582,7 @@
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(433, 46);
+            this.label64.Location = new System.Drawing.Point(417, 36);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(127, 17);
             this.label64.TabIndex = 72;
@@ -572,7 +590,7 @@
             // 
             // Воинское_звание_Box
             // 
-            this.Воинское_звание_Box.Location = new System.Drawing.Point(282, 45);
+            this.Воинское_звание_Box.Location = new System.Drawing.Point(271, 33);
             this.Воинское_звание_Box.Name = "Воинское_звание_Box";
             this.Воинское_звание_Box.ReadOnly = true;
             this.Воинское_звание_Box.Size = new System.Drawing.Size(100, 22);
@@ -589,7 +607,7 @@
             // 
             // Военно_учетная_специальность_Box
             // 
-            this.Военно_учетная_специальность_Box.Location = new System.Drawing.Point(282, 128);
+            this.Военно_учетная_специальность_Box.Location = new System.Drawing.Point(271, 116);
             this.Военно_учетная_специальность_Box.Name = "Военно_учетная_специальность_Box";
             this.Военно_учетная_специальность_Box.ReadOnly = true;
             this.Военно_учетная_специальность_Box.Size = new System.Drawing.Size(100, 22);
@@ -597,7 +615,7 @@
             // 
             // Номер_ВУС_Box
             // 
-            this.Номер_ВУС_Box.Location = new System.Drawing.Point(282, 87);
+            this.Номер_ВУС_Box.Location = new System.Drawing.Point(271, 75);
             this.Номер_ВУС_Box.Name = "Номер_ВУС_Box";
             this.Номер_ВУС_Box.ReadOnly = true;
             this.Номер_ВУС_Box.Size = new System.Drawing.Size(100, 22);
@@ -642,7 +660,7 @@
             // 
             // Направление_Box
             // 
-            this.Направление_Box.Location = new System.Drawing.Point(579, 78);
+            this.Направление_Box.Location = new System.Drawing.Point(561, 78);
             this.Направление_Box.Name = "Направление_Box";
             this.Направление_Box.ReadOnly = true;
             this.Направление_Box.Size = new System.Drawing.Size(100, 22);
@@ -650,7 +668,7 @@
             // 
             // Ученая_степень_Box
             // 
-            this.Ученая_степень_Box.Location = new System.Drawing.Point(575, 37);
+            this.Ученая_степень_Box.Location = new System.Drawing.Point(563, 38);
             this.Ученая_степень_Box.Name = "Ученая_степень_Box";
             this.Ученая_степень_Box.ReadOnly = true;
             this.Ученая_степень_Box.Size = new System.Drawing.Size(100, 22);
@@ -659,7 +677,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(444, 78);
+            this.label39.Location = new System.Drawing.Point(426, 78);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(97, 17);
             this.label39.TabIndex = 70;
@@ -686,7 +704,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(437, 40);
+            this.label42.Location = new System.Drawing.Point(425, 41);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(114, 17);
             this.label42.TabIndex = 68;
@@ -694,7 +712,7 @@
             // 
             // Название_документа_Box
             // 
-            this.Название_документа_Box.Location = new System.Drawing.Point(283, 38);
+            this.Название_документа_Box.Location = new System.Drawing.Point(272, 35);
             this.Название_документа_Box.Name = "Название_документа_Box";
             this.Название_документа_Box.ReadOnly = true;
             this.Название_документа_Box.Size = new System.Drawing.Size(100, 22);
@@ -702,7 +720,7 @@
             // 
             // Наименование_учебного_заведения_После_Box
             // 
-            this.Наименование_учебного_заведения_После_Box.Location = new System.Drawing.Point(283, 114);
+            this.Наименование_учебного_заведения_После_Box.Location = new System.Drawing.Point(272, 111);
             this.Наименование_учебного_заведения_После_Box.Name = "Наименование_учебного_заведения_После_Box";
             this.Наименование_учебного_заведения_После_Box.ReadOnly = true;
             this.Наименование_учебного_заведения_После_Box.Size = new System.Drawing.Size(100, 22);
@@ -710,7 +728,7 @@
             // 
             // Документ_Num_Box
             // 
-            this.Документ_Num_Box.Location = new System.Drawing.Point(283, 73);
+            this.Документ_Num_Box.Location = new System.Drawing.Point(272, 70);
             this.Документ_Num_Box.Name = "Документ_Num_Box";
             this.Документ_Num_Box.ReadOnly = true;
             this.Документ_Num_Box.Size = new System.Drawing.Size(100, 22);
@@ -729,7 +747,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(3, 3);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 629);
+            this.splitter1.Size = new System.Drawing.Size(3, 648);
             this.splitter1.TabIndex = 56;
             this.splitter1.TabStop = false;
             // 
@@ -877,7 +895,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.tabPage2.Controls.Add(this.Назад);
             this.tabPage2.Controls.Add(this.groupBox9);
             this.tabPage2.Controls.Add(this.groupBox4);
@@ -890,6 +908,16 @@
             this.tabPage2.Size = new System.Drawing.Size(765, 635);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Паспортные данные";
+            // 
+            // Назад
+            // 
+            this.Назад.Location = new System.Drawing.Point(314, 541);
+            this.Назад.Name = "Назад";
+            this.Назад.Size = new System.Drawing.Size(125, 53);
+            this.Назад.TabIndex = 76;
+            this.Назад.Text = "Назад";
+            this.Назад.UseVisualStyleBackColor = true;
+            this.Назад.Click += new System.EventHandler(this.Назад_Click);
             // 
             // groupBox9
             // 
@@ -1179,7 +1207,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
@@ -1190,6 +1218,16 @@
             this.tabPage1.Size = new System.Drawing.Size(765, 635);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Общие данные";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(237, 540);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 53);
+            this.button1.TabIndex = 76;
+            this.button1.Text = "Закрыть";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // groupBox2
             // 
@@ -1520,52 +1558,14 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(773, 664);
+            this.tabControl1.Size = new System.Drawing.Size(796, 683);
             this.tabControl1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(237, 540);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 53);
-            this.button1.TabIndex = 76;
-            this.button1.Text = "Закрыть";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Закрыть_Click);
-            // 
-            // Назад
-            // 
-            this.Назад.Location = new System.Drawing.Point(314, 541);
-            this.Назад.Name = "Назад";
-            this.Назад.Size = new System.Drawing.Size(125, 53);
-            this.Назад.TabIndex = 76;
-            this.Назад.Text = "Назад";
-            this.Назад.UseVisualStyleBackColor = true;
-            this.Назад.Click += new System.EventHandler(this.Назад_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(335, 546);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 53);
-            this.button3.TabIndex = 77;
-            this.button3.Text = "Назад";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(412, 546);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 53);
-            this.button4.TabIndex = 78;
-            this.button4.Text = "Назад";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // ViewPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 664);
+            this.ClientSize = new System.Drawing.Size(796, 683);
             this.Controls.Add(this.tabControl1);
             this.Name = "ViewPerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

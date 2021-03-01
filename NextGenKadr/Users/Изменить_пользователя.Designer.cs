@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Изменить_пользователя_Button = new System.Windows.Forms.Button();
             this.User_radioButton = new System.Windows.Forms.RadioButton();
             this.Admin_radioButton = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
@@ -41,15 +41,15 @@
             this.Login_Box = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // Изменить_пользователя_Button
             // 
-            this.button1.Location = new System.Drawing.Point(230, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 48);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Изменить пользователя";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Edit_Click);
+            this.Изменить_пользователя_Button.Location = new System.Drawing.Point(230, 370);
+            this.Изменить_пользователя_Button.Name = "Изменить_пользователя_Button";
+            this.Изменить_пользователя_Button.Size = new System.Drawing.Size(136, 48);
+            this.Изменить_пользователя_Button.TabIndex = 4;
+            this.Изменить_пользователя_Button.Text = "Изменить пользователя";
+            this.Изменить_пользователя_Button.UseVisualStyleBackColor = true;
+            this.Изменить_пользователя_Button.Click += new System.EventHandler(this.Edit_Click);
             // 
             // User_radioButton
             // 
@@ -144,6 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(810, 472);
             this.Controls.Add(this.User_radioButton);
             this.Controls.Add(this.Admin_radioButton);
@@ -155,7 +156,7 @@
             this.Controls.Add(this.Password_Box);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Login_Box);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Изменить_пользователя_Button);
             this.Name = "EditUserGrid";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Изменить пользователя";
@@ -165,7 +166,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Изменить_пользователя_Button;
         private System.Windows.Forms.RadioButton User_radioButton;
         private System.Windows.Forms.RadioButton Admin_radioButton;
         private System.Windows.Forms.Label label8;

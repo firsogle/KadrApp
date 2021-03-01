@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.Поле_удаления_отчета = new System.Windows.Forms.DataGridView();
+            this.Поле_список_отчетов_Grid = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Удалить_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Поле_удаления_отчета)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_список_отчетов_Grid)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -48,26 +48,26 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.Поле_удаления_отчета);
+            this.splitContainer1.Panel1.Controls.Add(this.Поле_список_отчетов_Grid);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.button2);
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
+            this.splitContainer1.Panel2.Controls.Add(this.Удалить_Button);
             this.splitContainer1.Size = new System.Drawing.Size(957, 594);
             this.splitContainer1.SplitterDistance = 495;
             this.splitContainer1.TabIndex = 0;
             // 
-            // Поле_удаления_отчета
+            // Поле_список_отчетов_Grid
             // 
-            this.Поле_удаления_отчета.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Поле_удаления_отчета.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Поле_удаления_отчета.Location = new System.Drawing.Point(0, 0);
-            this.Поле_удаления_отчета.Name = "Поле_удаления_отчета";
-            this.Поле_удаления_отчета.RowHeadersWidth = 51;
-            this.Поле_удаления_отчета.RowTemplate.Height = 24;
-            this.Поле_удаления_отчета.Size = new System.Drawing.Size(957, 495);
-            this.Поле_удаления_отчета.TabIndex = 0;
+            this.Поле_список_отчетов_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Поле_список_отчетов_Grid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Поле_список_отчетов_Grid.Location = new System.Drawing.Point(0, 0);
+            this.Поле_список_отчетов_Grid.Name = "Поле_список_отчетов_Grid";
+            this.Поле_список_отчетов_Grid.RowHeadersWidth = 51;
+            this.Поле_список_отчетов_Grid.RowTemplate.Height = 24;
+            this.Поле_список_отчетов_Grid.Size = new System.Drawing.Size(957, 495);
+            this.Поле_список_отчетов_Grid.TabIndex = 0;
             // 
             // button2
             // 
@@ -79,30 +79,31 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Закрыть_Click);
             // 
-            // button1
+            // Удалить_Button
             // 
-            this.button1.Location = new System.Drawing.Point(300, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 59);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Удалить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Удалить_отчет);
+            this.Удалить_Button.Location = new System.Drawing.Point(300, 24);
+            this.Удалить_Button.Name = "Удалить_Button";
+            this.Удалить_Button.Size = new System.Drawing.Size(110, 59);
+            this.Удалить_Button.TabIndex = 0;
+            this.Удалить_Button.Text = "Удалить";
+            this.Удалить_Button.UseVisualStyleBackColor = true;
+            this.Удалить_Button.Click += new System.EventHandler(this.Удалить_отчет);
             // 
             // ReportsDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(957, 594);
             this.Controls.Add(this.splitContainer1);
             this.Name = "ReportsDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ReportsDelete";
+            this.Text = "0";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Поле_удаления_отчета)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_список_отчетов_Grid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -110,8 +111,8 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView Поле_удаления_отчета;
+        private System.Windows.Forms.DataGridView Поле_список_отчетов_Grid;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Удалить_Button;
     }
 }

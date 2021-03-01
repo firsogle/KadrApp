@@ -55,7 +55,7 @@
             this.label49 = new System.Windows.Forms.Label();
             this.Дата_приказа_Box = new System.Windows.Forms.DateTimePicker();
             this.Срок_договора_Box = new System.Windows.Forms.DateTimePicker();
-            this.button23 = new System.Windows.Forms.Button();
+            this.Закрыть3 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -99,7 +99,7 @@
             this.Номер_образование_Box = new System.Windows.Forms.TextBox();
             this.Специальность_Box = new System.Windows.Forms.TextBox();
             this.Квалификация_Box = new System.Windows.Forms.TextBox();
-            this.button20 = new System.Windows.Forms.Button();
+            this.Закрыть2 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -132,10 +132,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Закрыть_1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Закрыть = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Семейное_положение_Box = new System.Windows.Forms.ComboBox();
@@ -169,9 +170,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Имя_Box = new System.Windows.Forms.TextBox();
             this.Фамилия_Box = new System.Windows.Forms.TextBox();
-            this.Next = new System.Windows.Forms.Button();
+            this.Далее = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabPage4.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -191,10 +191,10 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.tabPage4.Controls.Add(this.groupBox8);
             this.tabPage4.Controls.Add(this.groupBox7);
-            this.tabPage4.Controls.Add(this.button23);
+            this.tabPage4.Controls.Add(this.Закрыть3);
             this.tabPage4.Controls.Add(this.button24);
             this.tabPage4.Controls.Add(this.button25);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
@@ -468,15 +468,15 @@
             this.Срок_договора_Box.TabIndex = 65;
             this.Срок_договора_Box.Value = new System.DateTime(2020, 5, 24, 18, 40, 19, 0);
             // 
-            // button23
+            // Закрыть3
             // 
-            this.button23.Location = new System.Drawing.Point(154, 539);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(120, 53);
-            this.button23.TabIndex = 50;
-            this.button23.Text = "Назад";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.Назад4_Click);
+            this.Закрыть3.Location = new System.Drawing.Point(154, 539);
+            this.Закрыть3.Name = "Закрыть3";
+            this.Закрыть3.Size = new System.Drawing.Size(120, 53);
+            this.Закрыть3.TabIndex = 50;
+            this.Закрыть3.Text = "Назад";
+            this.Закрыть3.UseVisualStyleBackColor = true;
+            this.Закрыть3.Click += new System.EventHandler(this.Назад4_Click);
             // 
             // button24
             // 
@@ -500,12 +500,12 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.tabPage3.Controls.Add(this.groupBox10);
             this.tabPage3.Controls.Add(this.groupBox6);
             this.tabPage3.Controls.Add(this.splitter1);
             this.tabPage3.Controls.Add(this.groupBox5);
-            this.tabPage3.Controls.Add(this.button20);
+            this.tabPage3.Controls.Add(this.Закрыть2);
             this.tabPage3.Controls.Add(this.button21);
             this.tabPage3.Controls.Add(this.button22);
             this.tabPage3.Controls.Add(this.button14);
@@ -515,6 +515,7 @@
             this.tabPage3.Size = new System.Drawing.Size(765, 635);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Образование и воинский учет";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // groupBox10
             // 
@@ -672,7 +673,7 @@
             // 
             // Направление_Box
             // 
-            this.Направление_Box.Location = new System.Drawing.Point(579, 78);
+            this.Направление_Box.Location = new System.Drawing.Point(574, 78);
             this.Направление_Box.Name = "Направление_Box";
             this.Направление_Box.Size = new System.Drawing.Size(100, 22);
             this.Направление_Box.TabIndex = 71;
@@ -884,19 +885,19 @@
             this.Квалификация_Box.Size = new System.Drawing.Size(100, 22);
             this.Квалификация_Box.TabIndex = 11;
             // 
-            // button20
+            // Закрыть2
             // 
-            this.button20.Location = new System.Drawing.Point(80, 554);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(120, 53);
-            this.button20.TabIndex = 47;
-            this.button20.Text = "Назад";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.Назад2_Click);
+            this.Закрыть2.Location = new System.Drawing.Point(80, 554);
+            this.Закрыть2.Name = "Закрыть2";
+            this.Закрыть2.Size = new System.Drawing.Size(120, 53);
+            this.Закрыть2.TabIndex = 47;
+            this.Закрыть2.Text = "Назад";
+            this.Закрыть2.UseVisualStyleBackColor = true;
+            this.Закрыть2.Click += new System.EventHandler(this.Назад2_Click);
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(426, 554);
+            this.button21.Location = new System.Drawing.Point(424, 554);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(123, 53);
             this.button21.TabIndex = 46;
@@ -926,12 +927,12 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.tabPage2.Controls.Add(this.groupBox9);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.button13);
             this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Controls.Add(this.button12);
+            this.tabPage2.Controls.Add(this.Закрыть_1);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -1216,15 +1217,15 @@
             this.label21.TabIndex = 50;
             this.label21.Text = "Серия";
             // 
-            // button12
+            // Закрыть_1
             // 
-            this.button12.Location = new System.Drawing.Point(79, 540);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(120, 53);
-            this.button12.TabIndex = 44;
-            this.button12.Text = "Назад";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.Назад_Click);
+            this.Закрыть_1.Location = new System.Drawing.Point(79, 540);
+            this.Закрыть_1.Name = "Закрыть_1";
+            this.Закрыть_1.Size = new System.Drawing.Size(120, 53);
+            this.Закрыть_1.TabIndex = 44;
+            this.Закрыть_1.Text = "Назад";
+            this.Закрыть_1.UseVisualStyleBackColor = true;
+            this.Закрыть_1.Click += new System.EventHandler(this.Назад_Click);
             // 
             // button2
             // 
@@ -1248,18 +1249,28 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.tabPage1.Controls.Add(this.Закрыть);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.Next);
+            this.tabPage1.Controls.Add(this.Далее);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(765, 635);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Общие данные";
+            // 
+            // Закрыть
+            // 
+            this.Закрыть.Location = new System.Drawing.Point(307, 544);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(120, 53);
+            this.Закрыть.TabIndex = 80;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // button3
             // 
@@ -1570,15 +1581,15 @@
             this.Фамилия_Box.Size = new System.Drawing.Size(242, 22);
             this.Фамилия_Box.TabIndex = 40;
             // 
-            // Next
+            // Далее
             // 
-            this.Next.Location = new System.Drawing.Point(304, 544);
-            this.Next.Name = "Next";
-            this.Next.Size = new System.Drawing.Size(123, 53);
-            this.Next.TabIndex = 47;
-            this.Next.Text = "Далее";
-            this.Next.UseVisualStyleBackColor = true;
-            this.Next.Click += new System.EventHandler(this.Далее_Click);
+            this.Далее.Location = new System.Drawing.Point(155, 544);
+            this.Далее.Name = "Далее";
+            this.Далее.Size = new System.Drawing.Size(123, 53);
+            this.Далее.TabIndex = 47;
+            this.Далее.Text = "Далее";
+            this.Далее.UseVisualStyleBackColor = true;
+            this.Далее.Click += new System.EventHandler(this.Далее_Click);
             // 
             // tabControl1
             // 
@@ -1592,16 +1603,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(773, 664);
             this.tabControl1.TabIndex = 0;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(143, 544);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 53);
-            this.button4.TabIndex = 80;
-            this.button4.Text = "Закрыть";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // AddPerson
             // 
@@ -1667,7 +1668,7 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.DateTimePicker Дата_приказа_Box;
         private System.Windows.Forms.DateTimePicker Срок_договора_Box;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button Закрыть3;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.TabPage tabPage3;
@@ -1695,7 +1696,7 @@
         private System.Windows.Forms.TextBox Номер_образование_Box;
         private System.Windows.Forms.TextBox Специальность_Box;
         private System.Windows.Forms.TextBox Квалификация_Box;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button Закрыть2;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button14;
@@ -1728,7 +1729,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Закрыть_1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -1781,10 +1782,10 @@
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button Next;
+        private System.Windows.Forms.Button Далее;
         public System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox Должность_Box;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Закрыть;
     }
 }

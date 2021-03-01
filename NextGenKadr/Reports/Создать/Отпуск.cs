@@ -50,8 +50,6 @@ namespace NextGenKadr
             var name = DateTime.Now.ToShortDateString() + ".docx";
             wordApp.ActiveDocument.SaveAs(FileName: name);
             wordApp.Visible = true;
-            
-
         }
         public static void ReplaceWordStub(string stubToReplace, string text, Word.Document wordDocument)
         {

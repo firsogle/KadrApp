@@ -44,14 +44,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Создать_отчет = new System.Windows.Forms.Button();
+            this.Создать_отчет_Button = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.Дата_документа_Box = new System.Windows.Forms.DateTimePicker();
             this.Номер_листа_нетрудоспособности_Box = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Сотрудник = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Закрыть = new System.Windows.Forms.Button();
+            this.Закрыть_Button = new System.Windows.Forms.Button();
             this.Сотрудник.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -203,15 +203,15 @@
             this.label1.TabIndex = 55;
             this.label1.Text = "Номер приказа";
             // 
-            // Создать_отчет
+            // Создать_отчет_Button
             // 
-            this.Создать_отчет.Location = new System.Drawing.Point(176, 261);
-            this.Создать_отчет.Name = "Создать_отчет";
-            this.Создать_отчет.Size = new System.Drawing.Size(153, 55);
-            this.Создать_отчет.TabIndex = 54;
-            this.Создать_отчет.Text = "Создать отчет";
-            this.Создать_отчет.UseVisualStyleBackColor = true;
-            this.Создать_отчет.Click += new System.EventHandler(this.Report_Click);
+            this.Создать_отчет_Button.Location = new System.Drawing.Point(176, 261);
+            this.Создать_отчет_Button.Name = "Создать_отчет_Button";
+            this.Создать_отчет_Button.Size = new System.Drawing.Size(153, 55);
+            this.Создать_отчет_Button.TabIndex = 54;
+            this.Создать_отчет_Button.Text = "Создать отчет";
+            this.Создать_отчет_Button.UseVisualStyleBackColor = true;
+            this.Создать_отчет_Button.Click += new System.EventHandler(this.Report_Click);
             // 
             // label8
             // 
@@ -248,9 +248,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(7, 26);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(235, 17);
+            this.label9.Size = new System.Drawing.Size(239, 17);
             this.label9.TabIndex = 73;
-            this.label9.Text = "Номер листа нетрудоспособности";
+            this.label9.Text = "Номер листа нетрудоспособности ";
             // 
             // Сотрудник
             // 
@@ -290,28 +290,29 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Больничный";
             // 
-            // Закрыть
+            // Закрыть_Button
             // 
-            this.Закрыть.Location = new System.Drawing.Point(392, 261);
-            this.Закрыть.Name = "Закрыть";
-            this.Закрыть.Size = new System.Drawing.Size(147, 55);
-            this.Закрыть.TabIndex = 77;
-            this.Закрыть.Text = "Закрыть";
-            this.Закрыть.UseVisualStyleBackColor = true;
-            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
+            this.Закрыть_Button.Location = new System.Drawing.Point(392, 261);
+            this.Закрыть_Button.Name = "Закрыть_Button";
+            this.Закрыть_Button.Size = new System.Drawing.Size(147, 55);
+            this.Закрыть_Button.TabIndex = 77;
+            this.Закрыть_Button.Text = "Закрыть";
+            this.Закрыть_Button.UseVisualStyleBackColor = true;
+            this.Закрыть_Button.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // Bol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(736, 328);
-            this.Controls.Add(this.Закрыть);
+            this.Controls.Add(this.Закрыть_Button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Сотрудник);
-            this.Controls.Add(this.Создать_отчет);
+            this.Controls.Add(this.Создать_отчет_Button);
             this.Name = "Bol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать Создание отчета о больничном";
+            this.Text = "Создание отчета о больничном";
             this.Сотрудник.ResumeLayout(false);
             this.Сотрудник.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -338,13 +339,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Создать_отчет;
+        private System.Windows.Forms.Button Создать_отчет_Button;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker Дата_документа_Box;
         private System.Windows.Forms.TextBox Номер_листа_нетрудоспособности_Box;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox Сотрудник;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button Закрыть;
+        private System.Windows.Forms.Button Закрыть_Button;
     }
 }

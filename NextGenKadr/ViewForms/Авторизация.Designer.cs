@@ -28,100 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Login_Box = new System.Windows.Forms.TextBox();
-            this.Password_Box = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Логин_Label = new System.Windows.Forms.Label();
+            this.Пароль_Label = new System.Windows.Forms.Label();
+            this.Войти_Button = new System.Windows.Forms.Button();
+            this.Логин_Box = new System.Windows.Forms.TextBox();
+            this.Пароль_Box = new System.Windows.Forms.TextBox();
+            this.Закрыть_Button = new System.Windows.Forms.Button();
+            this.Авторизация_Label = new System.Windows.Forms.Label();
+            this.Кадровик_Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // Логин_Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(149, 207);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Логин";
+            this.Логин_Label.AutoSize = true;
+            this.Логин_Label.Location = new System.Drawing.Point(149, 207);
+            this.Логин_Label.Name = "Логин_Label";
+            this.Логин_Label.Size = new System.Drawing.Size(47, 17);
+            this.Логин_Label.TabIndex = 0;
+            this.Логин_Label.Text = "Логин";
             // 
-            // label2
+            // Пароль_Label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(149, 249);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Пароль";
+            this.Пароль_Label.AutoSize = true;
+            this.Пароль_Label.Location = new System.Drawing.Point(149, 249);
+            this.Пароль_Label.Name = "Пароль_Label";
+            this.Пароль_Label.Size = new System.Drawing.Size(57, 17);
+            this.Пароль_Label.TabIndex = 1;
+            this.Пароль_Label.Text = "Пароль";
             // 
-            // button1
+            // Войти_Button
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(130, 388);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 51);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Авторизация);
+            this.Войти_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Войти_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.Войти_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.Войти_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.Войти_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Войти_Button.Location = new System.Drawing.Point(130, 388);
+            this.Войти_Button.Name = "Войти_Button";
+            this.Войти_Button.Size = new System.Drawing.Size(113, 51);
+            this.Войти_Button.TabIndex = 2;
+            this.Войти_Button.Text = "Войти";
+            this.Войти_Button.UseVisualStyleBackColor = false;
+            this.Войти_Button.Click += new System.EventHandler(this.Авторизация);
             // 
-            // Login_Box
+            // Логин_Box
             // 
-            this.Login_Box.Location = new System.Drawing.Point(218, 202);
-            this.Login_Box.Name = "Login_Box";
-            this.Login_Box.Size = new System.Drawing.Size(252, 22);
-            this.Login_Box.TabIndex = 4;
-            this.Login_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_Box_KeyPress);
+            this.Логин_Box.Location = new System.Drawing.Point(218, 202);
+            this.Логин_Box.Name = "Логин_Box";
+            this.Логин_Box.Size = new System.Drawing.Size(252, 22);
+            this.Логин_Box.TabIndex = 4;
+            this.Логин_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_Box_KeyPress);
             // 
-            // Password_Box
+            // Пароль_Box
             // 
-            this.Password_Box.Location = new System.Drawing.Point(218, 246);
-            this.Password_Box.Name = "Password_Box";
-            this.Password_Box.PasswordChar = '*';
-            this.Password_Box.Size = new System.Drawing.Size(252, 22);
-            this.Password_Box.TabIndex = 5;
-            this.Password_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Password_Box_KeyPress);
+            this.Пароль_Box.Location = new System.Drawing.Point(218, 246);
+            this.Пароль_Box.Name = "Пароль_Box";
+            this.Пароль_Box.PasswordChar = '*';
+            this.Пароль_Box.Size = new System.Drawing.Size(252, 22);
+            this.Пароль_Box.TabIndex = 5;
+            this.Пароль_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Password_Box_KeyPress);
             // 
-            // button2
+            // Закрыть_Button
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(434, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 51);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Закрыть";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Exit_Click);
+            this.Закрыть_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Закрыть_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.Закрыть_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.Закрыть_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.Закрыть_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Закрыть_Button.Location = new System.Drawing.Point(434, 388);
+            this.Закрыть_Button.Name = "Закрыть_Button";
+            this.Закрыть_Button.Size = new System.Drawing.Size(113, 51);
+            this.Закрыть_Button.TabIndex = 6;
+            this.Закрыть_Button.Text = "Закрыть";
+            this.Закрыть_Button.UseVisualStyleBackColor = false;
+            this.Закрыть_Button.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // label3
+            // Авторизация_Label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(255, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 29);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Авторизация";
+            this.Авторизация_Label.AutoSize = true;
+            this.Авторизация_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Авторизация_Label.Location = new System.Drawing.Point(255, 140);
+            this.Авторизация_Label.Name = "Авторизация_Label";
+            this.Авторизация_Label.Size = new System.Drawing.Size(166, 29);
+            this.Авторизация_Label.TabIndex = 7;
+            this.Авторизация_Label.Text = "Авторизация";
             // 
-            // label4
+            // Кадровик_Label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(230, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 48);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Кадровик";
+            this.Кадровик_Label.AutoSize = true;
+            this.Кадровик_Label.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Кадровик_Label.Location = new System.Drawing.Point(230, 9);
+            this.Кадровик_Label.Name = "Кадровик_Label";
+            this.Кадровик_Label.Size = new System.Drawing.Size(220, 48);
+            this.Кадровик_Label.TabIndex = 0;
+            this.Кадровик_Label.Text = "Кадровик";
             // 
             // Authorization
             // 
@@ -129,14 +129,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(640, 480);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Password_Box);
-            this.Controls.Add(this.Login_Box);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Кадровик_Label);
+            this.Controls.Add(this.Авторизация_Label);
+            this.Controls.Add(this.Закрыть_Button);
+            this.Controls.Add(this.Пароль_Box);
+            this.Controls.Add(this.Логин_Box);
+            this.Controls.Add(this.Войти_Button);
+            this.Controls.Add(this.Пароль_Label);
+            this.Controls.Add(this.Логин_Label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Authorization";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
@@ -150,13 +150,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox Login_Box;
-        private System.Windows.Forms.TextBox Password_Box;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Логин_Label;
+        private System.Windows.Forms.Label Пароль_Label;
+        private System.Windows.Forms.Button Войти_Button;
+        private System.Windows.Forms.TextBox Логин_Box;
+        private System.Windows.Forms.TextBox Пароль_Box;
+        private System.Windows.Forms.Button Закрыть_Button;
+        private System.Windows.Forms.Label Авторизация_Label;
+        private System.Windows.Forms.Label Кадровик_Label;
     }
 }

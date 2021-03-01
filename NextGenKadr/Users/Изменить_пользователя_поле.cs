@@ -21,7 +21,7 @@ namespace NextGenKadr
         private void EditUser_Load(object sender, EventArgs e)
         {
             {
-                GridUsers.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
+                Поле_пользователей_Grid.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
         }
 
@@ -32,12 +32,17 @@ namespace NextGenKadr
 
         private void Select_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Id пользователя"].Value.ToString());
-            string Login = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Логин"].Value.ToString();
-            string Password = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Пароль"].Value.ToString();
-            string Root = GridUsers.Rows[GridUsers.CurrentCell.RowIndex].Cells["Права"].Value.ToString();
+            int id = Convert.ToInt32(Поле_пользователей_Grid.Rows[Поле_пользователей_Grid.CurrentCell.RowIndex].Cells["Id пользователя"].Value.ToString());
+            string Login = Поле_пользователей_Grid.Rows[Поле_пользователей_Grid.CurrentCell.RowIndex].Cells["Логин"].Value.ToString();
+            string Password = Поле_пользователей_Grid.Rows[Поле_пользователей_Grid.CurrentCell.RowIndex].Cells["Пароль"].Value.ToString();
+            string Root = Поле_пользователей_Grid.Rows[Поле_пользователей_Grid.CurrentCell.RowIndex].Cells["Права"].Value.ToString();
             EditUserGrid service = new EditUserGrid(id, Login, Password, Root);
             service.ShowDialog();
+        }
+
+        private void Закрыть_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

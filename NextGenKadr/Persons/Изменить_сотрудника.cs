@@ -128,6 +128,11 @@ namespace NextGenKadr
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage3"];
         }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

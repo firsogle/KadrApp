@@ -34,7 +34,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Создать = new System.Windows.Forms.Button();
+            this.Экспорт_в_Word_Button = new System.Windows.Forms.Button();
             this.Табельный_номер_Box = new System.Windows.Forms.TextBox();
             this.Отчество_Box = new System.Windows.Forms.TextBox();
             this.Имя_Box = new System.Windows.Forms.TextBox();
@@ -50,15 +50,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Создать
+            // Экспорт_в_Word_Button
             // 
-            this.Создать.Location = new System.Drawing.Point(149, 206);
-            this.Создать.Name = "Создать";
-            this.Создать.Size = new System.Drawing.Size(132, 42);
-            this.Создать.TabIndex = 0;
-            this.Создать.Text = "Excel экспорт";
-            this.Создать.UseVisualStyleBackColor = true;
-            this.Создать.Click += new System.EventHandler(this.Создать_Click);
+            this.Экспорт_в_Word_Button.ForeColor = System.Drawing.Color.DarkBlue;
+            this.Экспорт_в_Word_Button.Location = new System.Drawing.Point(149, 206);
+            this.Экспорт_в_Word_Button.Name = "Экспорт_в_Word_Button";
+            this.Экспорт_в_Word_Button.Size = new System.Drawing.Size(132, 42);
+            this.Экспорт_в_Word_Button.TabIndex = 0;
+            this.Экспорт_в_Word_Button.Text = "Эспорт Word";
+            this.Экспорт_в_Word_Button.UseVisualStyleBackColor = true;
+            this.Экспорт_в_Word_Button.Click += new System.EventHandler(this.Создать_Click);
             // 
             // Табельный_номер_Box
             // 
@@ -179,6 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(661, 275);
             this.Controls.Add(this.Фамилия_Box);
             this.Controls.Add(this.Дата_увольнения_Picker);
@@ -193,10 +195,10 @@
             this.Controls.Add(this.Закрыть);
             this.Controls.Add(this.Табельный_номер_Box);
             this.Controls.Add(this.Отчество_Box);
-            this.Controls.Add(this.Создать);
+            this.Controls.Add(this.Экспорт_в_Word_Button);
             this.Name = "ListDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать отчет об увольнение";
+            this.Text = "Создать отчет об увольнении";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,7 +206,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Создать;
+        private System.Windows.Forms.Button Экспорт_в_Word_Button;
         private System.Windows.Forms.TextBox Табельный_номер_Box;
         private System.Windows.Forms.TextBox Отчество_Box;
         private System.Windows.Forms.TextBox Имя_Box;

@@ -7,7 +7,7 @@ namespace NextGenKadr
 {
     public partial class PathToDB : Form
     {
-        public string Path;
+        public static string Path;
 
         public PathToDB()
         {
@@ -26,9 +26,9 @@ namespace NextGenKadr
                 {
                     StreamReader inputfile = new StreamReader(filestream);
                     Path = Convert.ToString(inputfile.ReadLine());
-                    PathToDB_TextBox.Text = Path;
+                    Путь_к_базе_TextBox.Text = Path;
                     filestream.Close();
-                    PathToDB_TextBox.Text = Path;
+                    Путь_к_базе_TextBox.Text = Path;
                     return Path;
 
                 }
@@ -68,18 +68,18 @@ namespace NextGenKadr
         {
             StreamWriter file;
             FileInfo fi = new FileInfo("Path.txt");
-            PathToDB_TextBox.Text = Path;
+            Путь_к_базе_TextBox.Text = Path;
             file = fi.CreateText();   
             file.WriteLine(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = "+Path+"; Integrated Security = True");
             file.Close();
-            PathToDB_TextBox.Text = Path;
+            Путь_к_базе_TextBox.Text = Path;
         }
 
         private void PathToDB_Load(object sender, EventArgs e)
         {
             FileStream filestream = new FileStream("Path.txt", FileMode.Open, FileAccess.Read);
             StreamReader inputfile = new StreamReader(filestream);
-            PathToDB_TextBox.Text = Convert.ToString(inputfile.ReadLine());
+            Путь_к_базе_TextBox.Text = Convert.ToString(inputfile.ReadLine());
             filestream.Close();
         }
 

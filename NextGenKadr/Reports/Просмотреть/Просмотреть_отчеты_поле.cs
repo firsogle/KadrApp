@@ -18,33 +18,33 @@ namespace NextGenKadr
             this.StartPosition = FormStartPosition.CenterScreen;
             if (number == 1)
             {
-                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о командировках]")
+                Поле_список_отчетов_Grid.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о командировках]")
                     .Tables[0].DefaultView;
             }
 
             if (number == 2)
             {
-                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о больничных]")
+                Поле_список_отчетов_Grid.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения о больничных]")
                     .Tables[0].DefaultView;
             }
 
             if (number == 3)
             {
-                this.Выбрать_запись.Enabled = false;
-                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]")
+                this.Выбрать_запись_Button.Enabled = false;
+                Поле_список_отчетов_Grid.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]")
                     .Tables[0].DefaultView;
             }
 
             if (number == 4)
             {
-                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об отпусках]").Tables[0]
+                Поле_список_отчетов_Grid.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об отпусках]").Tables[0]
                     .DefaultView;
             }
 
             if (number == 5)
             {
-                this.Выбрать_запись.Enabled = true;
-                Поле_список_отчетов.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]")
+                this.Выбрать_запись_Button.Enabled = true;
+                Поле_список_отчетов_Grid.DataSource = connection.ReloadGrid("SELECT * FROM [Сведения об уволенных]")
                     .Tables[0].DefaultView;
             }
         }
@@ -57,8 +57,7 @@ namespace NextGenKadr
 
         private void Экспорт_Click(object sender, EventArgs e)
         {
-            string id = Поле_список_отчетов.Rows[Поле_список_отчетов.CurrentCell.RowIndex].Cells["Табельный номер"]
-                .Value.ToString();
+            string id = Поле_список_отчетов_Grid.Rows[Поле_список_отчетов_Grid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             ListDelete service = new ListDelete(id);
             service.ShowDialog();
         }

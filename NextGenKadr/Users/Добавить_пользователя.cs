@@ -17,7 +17,7 @@ namespace NextGenKadr.Users
         {
             InitializeComponent();
             key = id;
-            User_radioButton.Checked = true;
+            Пользователь_radioButton.Checked = true;
 
         }
 
@@ -25,7 +25,7 @@ namespace NextGenKadr.Users
         {
             if (e.KeyChar == (char)13)
             {
-                button1.PerformClick();
+                Создать_пользователя_Box.PerformClick();
             }
         }
 
@@ -33,7 +33,7 @@ namespace NextGenKadr.Users
         {
             if (e.KeyChar == (char)13)
             {
-                button1.PerformClick();
+                Создать_пользователя_Box.PerformClick();
             }
         }
 
@@ -41,7 +41,7 @@ namespace NextGenKadr.Users
         {
             if (e.KeyChar == (char)13)
             {
-                button1.PerformClick();
+                Создать_пользователя_Box.PerformClick();
             }
         }
 
@@ -52,34 +52,34 @@ namespace NextGenKadr.Users
 
         private void AddUser_Click(object sender, EventArgs e)
         {
-            string login = Login_Box.Text;
-            string password = Password_Box.Text;
+            string login = Логин_Box.Text;
+            string password = Пароль_Box.Text;
             string root = string.Empty;
             string TabNumber = string.Empty;
 
 
 
-            if (Login_Box.TextLength < 5)
+            if (Логин_Box.TextLength < 5)
             {
                 MessageBox.Show("Введённый логин короче пяти символов", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            else if (Password_Box.TextLength < 5 || ReTypePassword_Box.TextLength < 5)
+            else if (Пароль_Box.TextLength < 5 || Повтор_пароля_Box.TextLength < 5)
             {
                 MessageBox.Show("Введённый пароль короче пяти символов", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            else if (Admin_radioButton.Checked == false && User_radioButton.Checked == false)
+            else if (Администратор_radioButton.Checked == false && Пользователь_radioButton.Checked == false)
             {
                 MessageBox.Show("Выберите уровень прав пользователя", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            else if (Login_Box.Text == "" || Password_Box.Text == "" || ReTypePassword_Box.Text == "")
+            else if (Логин_Box.Text == "" || Пароль_Box.Text == "" || Повтор_пароля_Box.Text == "")
             {
                 MessageBox.Show("Не все поля формы заполнены", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            else if (Password_Box.Text != ReTypePassword_Box.Text)
+            else if (Пароль_Box.Text != Повтор_пароля_Box.Text)
             {
                 MessageBox.Show("Введённые пароли не совпадают", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -87,14 +87,14 @@ namespace NextGenKadr.Users
 
              TabNumber = connection.Получить_сведения_из_базы_данных($"SELECT Логин FROM Пользователи WHERE Логин = '{login}'");
             
-             if (TabNumber == Login_Box.Text)
+             if (TabNumber == Логин_Box.Text)
             {
                 MessageBox.Show("Логин занят! Попробуйте другой!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             else
             {
-                if (Admin_radioButton.Checked == true)
+                if (Администратор_radioButton.Checked == true)
                 {
                     root = "0";
                 }

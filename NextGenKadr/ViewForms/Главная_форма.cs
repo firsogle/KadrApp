@@ -37,21 +37,21 @@ namespace NextGenKadr
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
-            MainGrid.AllowUserToAddRows = false;
-            UserLabel.Text = Data.UserAuthorization;
+            Поле_главного_меню.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
+            Поле_главного_меню.AllowUserToAddRows = false;
+            Пользователь_Label.Text = Data.UserAuthorization;
         }
 
         private void Update_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+            string id = Поле_главного_меню.Rows[Поле_главного_меню.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             UpdatePerson service = new UpdatePerson(id);
             service.ShowDialog();
         }
 
         private void DeletePerson_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+            string id = Поле_главного_меню.Rows[Поле_главного_меню.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             DeletePerson service = new DeletePerson(id);
             service.ShowDialog();
         }
@@ -67,11 +67,11 @@ namespace NextGenKadr
                     name = name + randomChar;
                 }
                 DataTable dt = new DataTable();
-                foreach (DataGridViewColumn column in MainGrid.Columns)
+                foreach (DataGridViewColumn column in Поле_главного_меню.Columns)
                 {
                     dt.Columns.Add(column.HeaderText, column.ValueType);
                 }
-                foreach (DataGridViewRow row in MainGrid.Rows)
+                foreach (DataGridViewRow row in Поле_главного_меню.Rows)
                 {
                     dt.Rows.Add();
                     foreach (DataGridViewCell cell in row.Cells)
@@ -88,12 +88,11 @@ namespace NextGenKadr
 
             }
         }
-
         private void ViewPersonStrip_Click(object sender, EventArgs e)
         {
             try
             {
-                string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+                string id = Поле_главного_меню.Rows[Поле_главного_меню.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
                 ViewPerson service = new ViewPerson(id);
                 service.ShowDialog();
             }
@@ -102,65 +101,39 @@ namespace NextGenKadr
                 MessageBox.Show("Не выбран сотрудник, сначала создайте сотрудника", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-
         }
-       
         private void ViewReports_Click(object sender, EventArgs e)
         {
             ViewReports service = new ViewReports();
             service.ShowDialog();
-
         }
-
         private void Reports_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+            string id = Поле_главного_меню.Rows[Поле_главного_меню.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             Reports service = new Reports();
             service.ShowDialog();
         }
-
-        private void UsersList_Click(object sender, EventArgs e)
-        {
-            UsersList service = new UsersList();
-            service.ShowDialog();
-        }
-
         private void DeleteReports_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+            string id = Поле_главного_меню.Rows[Поле_главного_меню.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
             DeleteView service = new DeleteView();
             service.ShowDialog();
         }
-
         private void Exit(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private Point MouseMain;
-
         private void MainForms_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left) MouseMain = e.Location;
             Location = new Point((Size)Location - (Size)MouseMain + (Size)e.Location);
         }
-
         private void menuStrip1_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left) MouseMain = e.Location;
             Location = new Point((Size)Location - (Size)MouseMain + (Size)e.Location);
         }
 
-        private void search_person_Click(object sender, EventArgs e)
-        {
-            SearchPerson sp = new SearchPerson();
-            sp.ShowDialog();
-        }
-
-        private void MainForms_Enter(object sender, EventArgs e)
-        {
-            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
-        }
     }
-
 }

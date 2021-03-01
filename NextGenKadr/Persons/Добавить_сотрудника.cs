@@ -224,5 +224,10 @@ namespace NextGenKadr
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TabPage3"];
         }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

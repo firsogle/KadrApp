@@ -95,17 +95,11 @@
     <Compile Include="Other\Путь_к_базе.Designer.cs">
       <DependentUpon>Путь_к_базе.cs</DependentUpon>
     </Compile>
-    <Compile Include="Other\Настройки.cs">
+    <Compile Include="Other\Очистка базы.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other\Настройки.Designer.cs">
-      <DependentUpon>Настройки.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Persons\Поиск_сотрудника.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Persons\Поиск_сотрудника.Designer.cs">
-      <DependentUpon>Поиск_сотрудника.cs</DependentUpon>
+    <Compile Include="Other\Очистка базы.Designer.cs">
+      <DependentUpon>Очистка базы.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Удалить отчеты\Выбрать тип отчетов.cs">
       <SubType>Form</SubType>
@@ -204,11 +198,11 @@
     <Compile Include="Reports\Создать\Отпуск.Designer.cs">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Создать\Выбрать тип отчетов поле.cs">
+    <Compile Include="Reports\Создать\Выбрать сотрудника поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Создать\Выбрать тип отчетов поле.Designer.cs">
-      <DependentUpon>Выбрать тип отчетов поле.cs</DependentUpon>
+    <Compile Include="Reports\Создать\Выбрать сотрудника поле.Designer.cs">
+      <DependentUpon>Выбрать сотрудника поле.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Создать\Увольнение.cs">
       <SubType>Form</SubType>
@@ -239,14 +233,11 @@
     <EmbeddedResource Include="Other\Путь_к_базе.resx">
       <DependentUpon>Путь_к_базе.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Other\Настройки.resx">
-      <DependentUpon>Настройки.cs</DependentUpon>
+    <EmbeddedResource Include="Other\Очистка базы.resx">
+      <DependentUpon>Очистка базы.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persons\Добавить_сотрудника.resx">
       <DependentUpon>Добавить_сотрудника.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Persons\Поиск_сотрудника.resx">
-      <DependentUpon>Поиск_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Создать\Больничный.resx">
       <DependentUpon>Больничный.cs</DependentUpon>
@@ -284,8 +275,8 @@
     <EmbeddedResource Include="Reports\Создать\Отпуск.resx">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Создать\Выбрать тип отчетов поле.resx">
-      <DependentUpon>Выбрать тип отчетов поле.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Создать\Выбрать сотрудника поле.resx">
+      <DependentUpon>Выбрать сотрудника поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -317,6 +308,7 @@
     <EmbeddedResource Include="ViewForms\Главная_форма.resx">
       <DependentUpon>Главная_форма.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

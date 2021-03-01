@@ -22,7 +22,7 @@ namespace NextGenKadr
         private void UsersList_Load(object sender, EventArgs e)
         {
             {
-                GridUsers.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
+                Поле_пользователей_Grid.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
             }
         }
         private void Close_Click(object sender, EventArgs e)

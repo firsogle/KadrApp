@@ -79,11 +79,7 @@ namespace NextGenKadr
             {
                 MessageBox.Show("Excel не найден", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-            
         }
-
       private void ViewPersonStrip_Click(object sender, EventArgs e)
         {
             try
@@ -147,7 +143,6 @@ namespace NextGenKadr
         {
             Application.Exit();
         }
-
         private Point MouseHook;
         private void AdminForm_MouseMove(object sender, MouseEventArgs e)
         {
@@ -159,25 +154,19 @@ namespace NextGenKadr
                 Cursor = Cursors.Hand;
             }
         }
-
-
-
         private void Path_Click(object sender, EventArgs e)
         {
             PathToDB service = new PathToDB();
             service.ShowDialog();
         }
-
         private void Settings_Click(object sender, EventArgs e)
         {
             Settings service = new Settings();
             service.ShowDialog();
         }
-
-        private void search_person_Click(object sender, EventArgs e)
+        private void MainGrid_VisibleChanged(object sender, EventArgs e)
         {
-            SearchPerson sp = new SearchPerson();
-            sp.ShowDialog();
+            MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
         }
     }
 }

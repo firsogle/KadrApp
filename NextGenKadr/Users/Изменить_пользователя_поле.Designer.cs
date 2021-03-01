@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.GridUsers = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Поле_пользователей_Grid = new System.Windows.Forms.DataGridView();
+            this.Выбрать_пользователя_для_изменения_Button = new System.Windows.Forms.Button();
+            this.Закрыть = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridUsers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_пользователей_Grid)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -48,46 +48,47 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.GridUsers);
+            this.splitContainer1.Panel1.Controls.Add(this.Поле_пользователей_Grid);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.splitContainer1.Panel2.Controls.Add(this.Выбрать_пользователя_для_изменения_Button);
+            this.splitContainer1.Panel2.Controls.Add(this.Закрыть);
             this.splitContainer1.Size = new System.Drawing.Size(442, 453);
             this.splitContainer1.SplitterDistance = 356;
             this.splitContainer1.TabIndex = 0;
             // 
-            // GridUsers
+            // Поле_пользователей_Grid
             // 
-            this.GridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridUsers.Location = new System.Drawing.Point(0, 0);
-            this.GridUsers.Name = "GridUsers";
-            this.GridUsers.RowHeadersWidth = 51;
-            this.GridUsers.RowTemplate.Height = 24;
-            this.GridUsers.Size = new System.Drawing.Size(442, 356);
-            this.GridUsers.TabIndex = 0;
+            this.Поле_пользователей_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Поле_пользователей_Grid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Поле_пользователей_Grid.Location = new System.Drawing.Point(0, 0);
+            this.Поле_пользователей_Grid.Name = "Поле_пользователей_Grid";
+            this.Поле_пользователей_Grid.RowHeadersWidth = 51;
+            this.Поле_пользователей_Grid.RowTemplate.Height = 24;
+            this.Поле_пользователей_Grid.Size = new System.Drawing.Size(442, 356);
+            this.Поле_пользователей_Grid.TabIndex = 0;
             // 
-            // button2
+            // Выбрать_пользователя_для_изменения_Button
             // 
-            this.button2.Location = new System.Drawing.Point(42, 15);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 55);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Выбрать пользователя для изменения";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Select_Click);
+            this.Выбрать_пользователя_для_изменения_Button.Location = new System.Drawing.Point(42, 15);
+            this.Выбрать_пользователя_для_изменения_Button.Name = "Выбрать_пользователя_для_изменения_Button";
+            this.Выбрать_пользователя_для_изменения_Button.Size = new System.Drawing.Size(174, 55);
+            this.Выбрать_пользователя_для_изменения_Button.TabIndex = 2;
+            this.Выбрать_пользователя_для_изменения_Button.Text = "Выбрать пользователя для изменения";
+            this.Выбрать_пользователя_для_изменения_Button.UseVisualStyleBackColor = true;
+            this.Выбрать_пользователя_для_изменения_Button.Click += new System.EventHandler(this.Select_Click);
             // 
-            // button1
+            // Закрыть
             // 
-            this.button1.Location = new System.Drawing.Point(255, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Cancel_Click);
+            this.Закрыть.Location = new System.Drawing.Point(255, 15);
+            this.Закрыть.Name = "Закрыть";
+            this.Закрыть.Size = new System.Drawing.Size(164, 55);
+            this.Закрыть.TabIndex = 0;
+            this.Закрыть.Text = "Закрыть";
+            this.Закрыть.UseVisualStyleBackColor = true;
+            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // EditUser
             // 
@@ -97,13 +98,13 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "EditUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Список пользоваталей";
+            this.Text = "Список пользователей  для изменения";
             this.Load += new System.EventHandler(this.EditUser_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GridUsers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_пользователей_Grid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -111,8 +112,8 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView GridUsers;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView Поле_пользователей_Grid;
+        private System.Windows.Forms.Button Закрыть;
+        private System.Windows.Forms.Button Выбрать_пользователя_для_изменения_Button;
     }
 }

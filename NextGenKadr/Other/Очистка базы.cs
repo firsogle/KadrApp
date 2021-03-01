@@ -18,11 +18,6 @@ namespace NextGenKadr
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void Close_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void Удалить_пользователей_Click(object sender, EventArgs e)
         {
             connection.Получить_сведения_из_базы_данных("delete from [Пользователи] where Логин != 'admin'");
@@ -65,6 +60,11 @@ namespace NextGenKadr
             connection.Получить_сведения_из_базы_данных("delete from [Сотрудники]");
             connection.Получить_сведения_из_базы_данных("delete from [Пользователи] where Логин != 'admin'");
             MessageBox.Show("Все записи удалены!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void Закрыть_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

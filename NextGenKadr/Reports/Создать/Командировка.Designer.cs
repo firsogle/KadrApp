@@ -36,12 +36,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Создать_отчет = new System.Windows.Forms.Button();
+            this.Создать_отчет_Button = new System.Windows.Forms.Button();
             this.Место_командировки_Box = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Цель_Box = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.Закрыть = new System.Windows.Forms.Button();
+            this.Закрыть_Button = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Сотрудник = new System.Windows.Forms.GroupBox();
             this.Фамилия_Box = new System.Windows.Forms.TextBox();
@@ -135,15 +135,15 @@
             this.label1.TabIndex = 55;
             this.label1.Text = "Номер приказа";
             // 
-            // Создать_отчет
+            // Создать_отчет_Button
             // 
-            this.Создать_отчет.Location = new System.Drawing.Point(159, 256);
-            this.Создать_отчет.Name = "Создать_отчет";
-            this.Создать_отчет.Size = new System.Drawing.Size(151, 55);
-            this.Создать_отчет.TabIndex = 54;
-            this.Создать_отчет.Text = "Создать отчет";
-            this.Создать_отчет.UseVisualStyleBackColor = true;
-            this.Создать_отчет.Click += new System.EventHandler(this.Report_Click);
+            this.Создать_отчет_Button.Location = new System.Drawing.Point(159, 256);
+            this.Создать_отчет_Button.Name = "Создать_отчет_Button";
+            this.Создать_отчет_Button.Size = new System.Drawing.Size(151, 55);
+            this.Создать_отчет_Button.TabIndex = 54;
+            this.Создать_отчет_Button.Text = "Создать отчет";
+            this.Создать_отчет_Button.UseVisualStyleBackColor = true;
+            this.Создать_отчет_Button.Click += new System.EventHandler(this.Report_Click);
             // 
             // Место_командировки_Box
             // 
@@ -177,15 +177,15 @@
             this.label9.TabIndex = 73;
             this.label9.Text = "Цель";
             // 
-            // Закрыть
+            // Закрыть_Button
             // 
-            this.Закрыть.Location = new System.Drawing.Point(360, 256);
-            this.Закрыть.Name = "Закрыть";
-            this.Закрыть.Size = new System.Drawing.Size(147, 55);
-            this.Закрыть.TabIndex = 81;
-            this.Закрыть.Text = "Закрыть";
-            this.Закрыть.UseVisualStyleBackColor = true;
-            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
+            this.Закрыть_Button.Location = new System.Drawing.Point(360, 256);
+            this.Закрыть_Button.Name = "Закрыть_Button";
+            this.Закрыть_Button.Size = new System.Drawing.Size(147, 55);
+            this.Закрыть_Button.TabIndex = 81;
+            this.Закрыть_Button.Text = "Закрыть";
+            this.Закрыть_Button.UseVisualStyleBackColor = true;
+            this.Закрыть_Button.Click += new System.EventHandler(this.Закрыть_Click);
             // 
             // groupBox2
             // 
@@ -297,11 +297,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 343);
-            this.Controls.Add(this.Закрыть);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ClientSize = new System.Drawing.Size(724, 351);
+            this.Controls.Add(this.Закрыть_Button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Сотрудник);
-            this.Controls.Add(this.Создать_отчет);
+            this.Controls.Add(this.Создать_отчет_Button);
             this.Name = "Com";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Создать отчет о командировке";
@@ -323,12 +324,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Создать_отчет;
+        private System.Windows.Forms.Button Создать_отчет_Button;
         private System.Windows.Forms.TextBox Место_командировки_Box;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Цель_Box;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button Закрыть;
+        private System.Windows.Forms.Button Закрыть_Button;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox Сотрудник;
         private System.Windows.Forms.TextBox Фамилия_Box;

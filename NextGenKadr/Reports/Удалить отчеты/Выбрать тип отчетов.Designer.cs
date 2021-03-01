@@ -100,6 +100,7 @@ namespace NextGenKadr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(538, 407);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
@@ -110,7 +111,7 @@ namespace NextGenKadr
             this.HelpButton = true;
             this.Name = "DeleteView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Выбрать отчет";
+            this.Text = "Выбрать тип отчетов";
             this.ResumeLayout(false);
             this.PerformLayout();
 

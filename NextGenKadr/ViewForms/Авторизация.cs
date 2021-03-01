@@ -22,7 +22,7 @@ namespace NextGenKadr
         {
             if (e.KeyChar == (char)13)
             {
-                button1.PerformClick();
+                Войти_Button.PerformClick();
             }
         }
 
@@ -30,7 +30,7 @@ namespace NextGenKadr
         {
             if (e.KeyChar == (char)13)
             {
-                button1.PerformClick();
+                Войти_Button.PerformClick();
             }
         }
 
@@ -38,7 +38,7 @@ namespace NextGenKadr
         {
             if (e.KeyChar == (char)13)
             {
-                button1.PerformClick();
+                Войти_Button.PerformClick();
             }
         }
 
@@ -49,8 +49,8 @@ namespace NextGenKadr
 
         private void Авторизация(object sender, EventArgs e)
         {
-            string login = Login_Box.Text;
-            string password = Password_Box.Text;
+            string login = Логин_Box.Text;
+            string password = Пароль_Box.Text;
             string root = "";
 
             try
@@ -69,14 +69,14 @@ namespace NextGenKadr
                 if (root == "0")
                 {
                     this.DialogResult = DialogResult.OK;
-                    Data.UserAuthorization = Login_Box.Text;
+                    Data.UserAuthorization = Логин_Box.Text;
                     Close();
                 }
 
                 if (root == "1")
                 {
                     this.DialogResult = DialogResult.No;
-                    Data.UserAuthorization = Login_Box.Text;
+                    Data.UserAuthorization = Логин_Box.Text;
                     Close();
                 }
             }

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.GridUsers = new System.Windows.Forms.DataGridView();
+            this.Поле_пользователей_Grid = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridUsers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_пользователей_Grid)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -47,25 +47,26 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.GridUsers);
+            this.splitContainer1.Panel1.Controls.Add(this.Поле_пользователей_Grid);
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Size = new System.Drawing.Size(455, 453);
             this.splitContainer1.SplitterDistance = 357;
             this.splitContainer1.TabIndex = 0;
             // 
-            // GridUsers
+            // Поле_пользователей_Grid
             // 
-            this.GridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridUsers.Location = new System.Drawing.Point(0, 0);
-            this.GridUsers.Name = "GridUsers";
-            this.GridUsers.RowHeadersWidth = 51;
-            this.GridUsers.RowTemplate.Height = 24;
-            this.GridUsers.Size = new System.Drawing.Size(455, 357);
-            this.GridUsers.TabIndex = 0;
+            this.Поле_пользователей_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Поле_пользователей_Grid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Поле_пользователей_Grid.Location = new System.Drawing.Point(0, 0);
+            this.Поле_пользователей_Grid.Name = "Поле_пользователей_Grid";
+            this.Поле_пользователей_Grid.RowHeadersWidth = 51;
+            this.Поле_пользователей_Grid.RowTemplate.Height = 24;
+            this.Поле_пользователей_Grid.Size = new System.Drawing.Size(455, 357);
+            this.Поле_пользователей_Grid.TabIndex = 0;
             // 
             // button1
             // 
@@ -84,14 +85,14 @@
             this.ClientSize = new System.Drawing.Size(455, 453);
             this.Controls.Add(this.splitContainer1);
             this.Name = "UsersList";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Список пользователей";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Список пользователей для просмотра";
             this.Load += new System.EventHandler(this.UsersList_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GridUsers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Поле_пользователей_Grid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -99,7 +100,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView GridUsers;
+        private System.Windows.Forms.DataGridView Поле_пользователей_Grid;
         private System.Windows.Forms.Button button1;
     }
 }

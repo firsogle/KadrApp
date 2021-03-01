@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Закрыть = new System.Windows.Forms.Button();
-            this.But_Del = new System.Windows.Forms.Button();
+            this.Закрыть_Button = new System.Windows.Forms.Button();
+            this.Удалить_сотрудника_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Причина_Box = new System.Windows.Forms.TextBox();
@@ -52,25 +52,25 @@
             this.Дата_увольнения_Picker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // Закрыть
+            // Закрыть_Button
             // 
-            this.Закрыть.Location = new System.Drawing.Point(482, 359);
-            this.Закрыть.Name = "Закрыть";
-            this.Закрыть.Size = new System.Drawing.Size(111, 55);
-            this.Закрыть.TabIndex = 0;
-            this.Закрыть.Text = "Закрыть";
-            this.Закрыть.UseVisualStyleBackColor = true;
-            this.Закрыть.Click += new System.EventHandler(this.Закрыть_Click);
+            this.Закрыть_Button.Location = new System.Drawing.Point(482, 359);
+            this.Закрыть_Button.Name = "Закрыть_Button";
+            this.Закрыть_Button.Size = new System.Drawing.Size(111, 55);
+            this.Закрыть_Button.TabIndex = 0;
+            this.Закрыть_Button.Text = "Закрыть";
+            this.Закрыть_Button.UseVisualStyleBackColor = true;
+            this.Закрыть_Button.Click += new System.EventHandler(this.Закрыть_Click);
             // 
-            // But_Del
+            // Удалить_сотрудника_Button
             // 
-            this.But_Del.Location = new System.Drawing.Point(239, 359);
-            this.But_Del.Name = "But_Del";
-            this.But_Del.Size = new System.Drawing.Size(132, 55);
-            this.But_Del.TabIndex = 1;
-            this.But_Del.Text = "Уволить сотрудника";
-            this.But_Del.UseVisualStyleBackColor = true;
-            this.But_Del.Click += new System.EventHandler(this.But_Del_Click);
+            this.Удалить_сотрудника_Button.Location = new System.Drawing.Point(239, 359);
+            this.Удалить_сотрудника_Button.Name = "Удалить_сотрудника_Button";
+            this.Удалить_сотрудника_Button.Size = new System.Drawing.Size(132, 55);
+            this.Удалить_сотрудника_Button.TabIndex = 1;
+            this.Удалить_сотрудника_Button.Text = "Уволить сотрудника";
+            this.Удалить_сотрудника_Button.UseVisualStyleBackColor = true;
+            this.Удалить_сотрудника_Button.Click += new System.EventHandler(this.Уволить_Click);
             // 
             // label1
             // 
@@ -101,6 +101,7 @@
             // 
             this.Отчество_Box.Location = new System.Drawing.Point(212, 87);
             this.Отчество_Box.Name = "Отчество_Box";
+            this.Отчество_Box.ReadOnly = true;
             this.Отчество_Box.Size = new System.Drawing.Size(100, 22);
             this.Отчество_Box.TabIndex = 14;
             // 
@@ -108,6 +109,7 @@
             // 
             this.Имя_Box.Location = new System.Drawing.Point(212, 52);
             this.Имя_Box.Name = "Имя_Box";
+            this.Имя_Box.ReadOnly = true;
             this.Имя_Box.Size = new System.Drawing.Size(100, 22);
             this.Имя_Box.TabIndex = 12;
             // 
@@ -115,6 +117,7 @@
             // 
             this.Фамилия_Box.Location = new System.Drawing.Point(212, 17);
             this.Фамилия_Box.Name = "Фамилия_Box";
+            this.Фамилия_Box.ReadOnly = true;
             this.Фамилия_Box.Size = new System.Drawing.Size(100, 22);
             this.Фамилия_Box.TabIndex = 10;
             // 
@@ -217,6 +220,7 @@
             // 
             this.Табельный_номер_Box.Location = new System.Drawing.Point(212, 120);
             this.Табельный_номер_Box.Name = "Табельный_номер_Box";
+            this.Табельный_номер_Box.ReadOnly = true;
             this.Табельный_номер_Box.Size = new System.Drawing.Size(100, 22);
             this.Табельный_номер_Box.TabIndex = 74;
             // 
@@ -244,6 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Дата_увольнения_Picker);
             this.Controls.Add(this.label3);
@@ -265,11 +270,11 @@
             this.Controls.Add(this.Причина_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.But_Del);
-            this.Controls.Add(this.Закрыть);
+            this.Controls.Add(this.Удалить_сотрудника_Button);
+            this.Controls.Add(this.Закрыть_Button);
             this.Name = "DeletePerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Увольнение";
+            this.Text = "Уволить сотрудника";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,8 +282,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Закрыть;
-        private System.Windows.Forms.Button But_Del;
+        private System.Windows.Forms.Button Закрыть_Button;
+        private System.Windows.Forms.Button Удалить_сотрудника_Button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Причина_Box;
