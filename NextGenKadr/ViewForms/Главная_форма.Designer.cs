@@ -91,12 +91,12 @@
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(193, 6);
             // 
             // опрограммеToolStripMenuItem
             // 
             this.опрограммеToolStripMenuItem.Name = "опрограммеToolStripMenuItem";
-            this.опрограммеToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.опрограммеToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
             this.опрограммеToolStripMenuItem.Text = "&О программе...";
             // 
             // Пользователь_Label
@@ -123,7 +123,7 @@
             this.Изменить_сотрудника_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Изменить_сотрудника_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Изменить_сотрудника_Button.Name = "Изменить_сотрудника_Button";
-            this.Изменить_сотрудника_Button.Size = new System.Drawing.Size(215, 24);
+            this.Изменить_сотрудника_Button.Size = new System.Drawing.Size(196, 24);
             this.Изменить_сотрудника_Button.Text = "Изменить сотрудника";
             this.Изменить_сотрудника_Button.Click += new System.EventHandler(this.Update_Click);
             // 
@@ -132,7 +132,7 @@
             this.Уволить_сотрудника_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Уволить_сотрудника_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Уволить_сотрудника_Button.Name = "Уволить_сотрудника_Button";
-            this.Уволить_сотрудника_Button.Size = new System.Drawing.Size(215, 24);
+            this.Уволить_сотрудника_Button.Size = new System.Drawing.Size(196, 24);
             this.Уволить_сотрудника_Button.Text = "Уволить сотрудника";
             this.Уволить_сотрудника_Button.Click += new System.EventHandler(this.DeletePerson_Click);
             // 
@@ -141,21 +141,21 @@
             this.Просмотреть_сотрудников_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Просмотреть_сотрудников_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Просмотреть_сотрудников_Button.Name = "Просмотреть_сотрудников_Button";
-            this.Просмотреть_сотрудников_Button.Size = new System.Drawing.Size(215, 24);
+            this.Просмотреть_сотрудников_Button.Size = new System.Drawing.Size(196, 24);
             this.Просмотреть_сотрудников_Button.Text = "Просмотреть сотрудников";
             this.Просмотреть_сотрудников_Button.Click += new System.EventHandler(this.ViewPersonStrip_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(196, 6);
             // 
             // Создать_отчеты_Button
             // 
             this.Создать_отчеты_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Создать_отчеты_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Создать_отчеты_Button.Name = "Создать_отчеты_Button";
-            this.Создать_отчеты_Button.Size = new System.Drawing.Size(215, 24);
+            this.Создать_отчеты_Button.Size = new System.Drawing.Size(196, 24);
             this.Создать_отчеты_Button.Text = "Создать отчеты";
             this.Создать_отчеты_Button.Click += new System.EventHandler(this.Reports_Click);
             // 
@@ -164,7 +164,7 @@
             this.Удалить_отчеты_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Удалить_отчеты_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Удалить_отчеты_Button.Name = "Удалить_отчеты_Button";
-            this.Удалить_отчеты_Button.Size = new System.Drawing.Size(215, 24);
+            this.Удалить_отчеты_Button.Size = new System.Drawing.Size(196, 24);
             this.Удалить_отчеты_Button.Text = "Удалить отчеты";
             this.Удалить_отчеты_Button.Click += new System.EventHandler(this.DeleteReports_Click);
             // 
@@ -173,7 +173,7 @@
             this.Просмотреть_отчеты_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Просмотреть_отчеты_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Просмотреть_отчеты_Button.Name = "Просмотреть_отчеты_Button";
-            this.Просмотреть_отчеты_Button.Size = new System.Drawing.Size(215, 24);
+            this.Просмотреть_отчеты_Button.Size = new System.Drawing.Size(196, 24);
             this.Просмотреть_отчеты_Button.Text = "Просмотреть отчеты";
             this.Просмотреть_отчеты_Button.Click += new System.EventHandler(this.ViewReports_Click);
             // 
@@ -182,7 +182,7 @@
             this.Сотрудники_в_Excel_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Сотрудники_в_Excel_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Сотрудники_в_Excel_Button.Name = "Сотрудники_в_Excel_Button";
-            this.Сотрудники_в_Excel_Button.Size = new System.Drawing.Size(215, 24);
+            this.Сотрудники_в_Excel_Button.Size = new System.Drawing.Size(196, 24);
             this.Сотрудники_в_Excel_Button.Text = "Сотрудники в Excel";
             this.Сотрудники_в_Excel_Button.Click += new System.EventHandler(this.Export_Click);
             // 
