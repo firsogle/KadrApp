@@ -312,7 +312,7 @@
             this.Controls.Add(this.Создать_отчет_Button);
             this.Name = "Bol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создание отчета о больничном";
+            this.Text = "Создание приказа о больничном";
             this.Сотрудник.ResumeLayout(false);
             this.Сотрудник.PerformLayout();
             this.groupBox2.ResumeLayout(false);

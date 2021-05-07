@@ -305,7 +305,7 @@
             this.Controls.Add(this.Создать_отчет_Button);
             this.Name = "Com";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать отчет о командировке";
+            this.Text = "Создать приказ о командировке";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.Сотрудник.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace NextGenKadr
 {
-    partial class ViewReports
+    partial class View_orders
     {
         /// <summary>
         /// Required designer variable.
@@ -95,7 +95,7 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Cancel_Click);
             // 
-            // ViewReports
+            // View_orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,9 +108,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.HelpButton = true;
-            this.Name = "ViewReports";
+            this.Name = "View_orders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Выбрать тип отчетов";
+            this.Text = "Выбрать приказ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -265,7 +265,7 @@
             this.Controls.Add(this.Создать_отчет_Button);
             this.Name = "Otp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать отчет отпуска сотрудника";
+            this.Text = "Создать приказ отпуска сотрудника";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.Сотрудник.ResumeLayout(false);

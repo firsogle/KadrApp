@@ -101,10 +101,10 @@
     <Compile Include="Other\Очистка базы.Designer.cs">
       <DependentUpon>Очистка базы.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Удалить отчеты\Выбрать тип отчетов.cs">
+    <Compile Include="Orders\Удалить отчеты\Выбрать тип отчетов.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Удалить отчеты\Выбрать тип отчетов.Designer.cs">
+    <Compile Include="Orders\Удалить отчеты\Выбрать тип отчетов.Designer.cs">
       <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Изменить_пользователя.cs">
@@ -131,16 +131,16 @@
     <Compile Include="Users\Изменить_пользователя_поле.Designer.cs">
       <DependentUpon>Изменить_пользователя_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Создать\Больничный.cs">
+    <Compile Include="Orders\Создать\Больничный.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Создать\Больничный.Designer.cs">
+    <Compile Include="Orders\Создать\Больничный.Designer.cs">
       <DependentUpon>Больничный.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Создать\Командировка.cs">
+    <Compile Include="Orders\Создать\Командировка.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Создать\Командировка.Designer.cs">
+    <Compile Include="Orders\Создать\Командировка.Designer.cs">
       <DependentUpon>Командировка.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\Подключение.cs" />
@@ -168,10 +168,10 @@
     <Compile Include="ViewForms\Форма_администратора.Designer.cs">
       <DependentUpon>Форма_администратора.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Удалить отчеты\Удалить отчеты поле.cs">
+    <Compile Include="Orders\Удалить отчеты\Удалить отчеты поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Удалить отчеты\Удалить отчеты поле.Designer.cs">
+    <Compile Include="Orders\Удалить отчеты\Удалить отчеты поле.Designer.cs">
       <DependentUpon>Удалить отчеты поле.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Просмотреть_список_пользователей.cs">
@@ -180,34 +180,34 @@
     <Compile Include="Users\Просмотреть_список_пользователей.Designer.cs">
       <DependentUpon>Просмотреть_список_пользователей.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты_поле.cs">
+    <Compile Include="Orders\Просмотреть\Просмотреть_приказы_поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Просмотреть\Просмотреть_отчеты_поле.Designer.cs">
-      <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
+    <Compile Include="Orders\Просмотреть\Просмотреть_приказы_поле.Designer.cs">
+      <DependentUpon>Просмотреть_приказы_поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Просмотреть\Выбрать тип отчетов.cs">
+    <Compile Include="Orders\Просмотреть\Выбрать приказ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Просмотреть\Выбрать тип отчетов.Designer.cs">
-      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
+    <Compile Include="Orders\Просмотреть\Выбрать приказ.Designer.cs">
+      <DependentUpon>Выбрать приказ.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Создать\Отпуск.cs">
+    <Compile Include="Orders\Создать\Отпуск.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Создать\Отпуск.Designer.cs">
+    <Compile Include="Orders\Создать\Отпуск.Designer.cs">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Создать\Выбрать сотрудника поле.cs">
+    <Compile Include="Orders\Создать\Выбрать сотрудника поле.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Создать\Выбрать сотрудника поле.Designer.cs">
+    <Compile Include="Orders\Создать\Выбрать сотрудника поле.Designer.cs">
       <DependentUpon>Выбрать сотрудника поле.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Создать\Увольнение.cs">
+    <Compile Include="Orders\Создать\Увольнение.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Создать\Увольнение.Designer.cs">
+    <Compile Include="Orders\Создать\Увольнение.Designer.cs">
       <DependentUpon>Увольнение.cs</DependentUpon>
     </Compile>
     <Compile Include="Persons\Изменить_сотрудника.cs">
@@ -239,16 +239,16 @@
     <EmbeddedResource Include="Persons\Добавить_сотрудника.resx">
       <DependentUpon>Добавить_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Создать\Больничный.resx">
+    <EmbeddedResource Include="Orders\Создать\Больничный.resx">
       <DependentUpon>Больничный.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Создать\Командировка.resx">
+    <EmbeddedResource Include="Orders\Создать\Командировка.resx">
       <DependentUpon>Командировка.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persons\Уволить_сотрудника.resx">
       <DependentUpon>Уволить_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Удалить отчеты\Выбрать тип отчетов.resx">
+    <EmbeddedResource Include="Orders\Удалить отчеты\Выбрать тип отчетов.resx">
       <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Добавить_пользователя.resx">
@@ -269,13 +269,13 @@
     <EmbeddedResource Include="ViewForms\Форма_администратора.resx">
       <DependentUpon>Форма_администратора.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Создать\Увольнение.resx">
+    <EmbeddedResource Include="Orders\Создать\Увольнение.resx">
       <DependentUpon>Увольнение.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Создать\Отпуск.resx">
+    <EmbeddedResource Include="Orders\Создать\Отпуск.resx">
       <DependentUpon>Отпуск.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Создать\Выбрать сотрудника поле.resx">
+    <EmbeddedResource Include="Orders\Создать\Выбрать сотрудника поле.resx">
       <DependentUpon>Выбрать сотрудника поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -287,7 +287,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reports\Удалить отчеты\Удалить отчеты поле.resx">
+    <EmbeddedResource Include="Orders\Удалить отчеты\Удалить отчеты поле.resx">
       <DependentUpon>Удалить отчеты поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Persons\Изменить_сотрудника.resx">
@@ -299,11 +299,11 @@
     <EmbeddedResource Include="Persons\Просмотреть_сотрудника.resx">
       <DependentUpon>Просмотреть_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Просмотреть\Выбрать тип отчетов.resx">
-      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
+    <EmbeddedResource Include="Orders\Просмотреть\Выбрать приказ.resx">
+      <DependentUpon>Выбрать приказ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Просмотреть\Просмотреть_отчеты_поле.resx">
-      <DependentUpon>Просмотреть_отчеты_поле.cs</DependentUpon>
+    <EmbeddedResource Include="Orders\Просмотреть\Просмотреть_приказы_поле.resx">
+      <DependentUpon>Просмотреть_приказы_поле.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForms\Главная_форма.resx">
       <DependentUpon>Главная_форма.cs</DependentUpon>
@@ -366,6 +366,8 @@
       <DependentUpon>DataBase_Kadry.mdf</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

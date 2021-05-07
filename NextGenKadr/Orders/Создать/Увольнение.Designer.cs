@@ -198,7 +198,7 @@
             this.Controls.Add(this.Экспорт_в_Word_Button);
             this.Name = "ListDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать отчет об увольнении";
+            this.Text = "Создать приказ об увольнении";
             this.ResumeLayout(false);
             this.PerformLayout();
 

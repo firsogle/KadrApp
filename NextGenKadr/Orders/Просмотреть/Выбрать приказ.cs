@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NextGenKadr
 {
-    public partial class ViewReports : Form
+    public partial class View_orders : Form
     {
-        public ViewReports()
+        public View_orders()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;

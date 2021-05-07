@@ -96,7 +96,7 @@ namespace NextGenKadr
 
         private void ViewReports_Click(object sender, EventArgs e)
         {
-            ViewReports service = new ViewReports();
+            View_orders service = new View_orders();
             service.ShowDialog();
 
         }
