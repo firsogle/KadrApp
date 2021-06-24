@@ -44,5 +44,10 @@ namespace NextGenKadr
         {
             Close();
         }
+
+        private void EditUser_Activated(object sender, EventArgs e)
+        {
+            Поле_пользователей_Grid.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace NextGenKadr.Users
 {
@@ -20,7 +21,25 @@ namespace NextGenKadr.Users
             Пользователь_radioButton.Checked = true;
 
         }
-
+        public static string HashPassword(string password)
+        {
+            byte[] salt;
+            byte[] buffer2;
+            if (password == null)
+            {
+                throw new ArgumentNullException("password");
+            }
+            using (Rfc2898DeriveBytes bytes = new Rfc2898DeriveBytes(password, 0x10, 0x3e8))
+            {
+                salt = bytes.Salt;
+                buffer2 = bytes.GetBytes(0x20);
+            }
+            byte[] dst = new byte[0x31];
+            Buffer.BlockCopy(salt, 0, dst, 1, 0x10);
+            Buffer.BlockCopy(buffer2, 0, dst, 0x11, 0x20);
+            return Convert.ToBase64String(dst);
+        }
+        
         private void Authorization_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13)
@@ -102,14 +121,14 @@ namespace NextGenKadr.Users
                 {
                     root = "1";
                 }
-                connection.Внести_нового_пользователя(login, password, root);
+                connection.Внести_нового_пользователя(login, HashPassword(password), root);
                 MessageBox.Show("Пользователь создан!");
+                connection.Запись_в_журнал(Логин_Box.Text, "Создание пользователя", "Пользователи", Data.UserAuthorization);
                 Close();
             }
 
 
         }
-
     }
 
 }

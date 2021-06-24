@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
-            this.Дата_приказа_Box = new System.Windows.Forms.DateTimePicker();
-            this.Номер_приказа_Box = new System.Windows.Forms.TextBox();
-            this.Табельный_номер_Box = new System.Windows.Forms.TextBox();
+            this.Табельный = new System.Windows.Forms.TextBox();
             this.Отчество_Box = new System.Windows.Forms.TextBox();
             this.Имя_Box = new System.Windows.Forms.TextBox();
             this.Фамилия_Box = new System.Windows.Forms.TextBox();
@@ -43,7 +40,6 @@
             this.От_Picker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Создать_отчет_Button = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.Дата_документа_Box = new System.Windows.Forms.DateTimePicker();
@@ -51,48 +47,22 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Сотрудник = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Код_причины = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Название_организации_выдавшей_листокBox = new System.Windows.Forms.TextBox();
             this.Закрыть_Button = new System.Windows.Forms.Button();
             this.Сотрудник.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label7
+            // Табельный
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(137, 128);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 17);
-            this.label7.TabIndex = 70;
-            this.label7.Text = "Дата приказа";
-            // 
-            // Дата_приказа_Box
-            // 
-            this.Дата_приказа_Box.CustomFormat = "yyyy.MM.dd";
-            this.Дата_приказа_Box.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Дата_приказа_Box.Location = new System.Drawing.Point(252, 128);
-            this.Дата_приказа_Box.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.Дата_приказа_Box.Name = "Дата_приказа_Box";
-            this.Дата_приказа_Box.Size = new System.Drawing.Size(100, 22);
-            this.Дата_приказа_Box.TabIndex = 69;
-            this.Дата_приказа_Box.Value = new System.DateTime(2020, 12, 11, 0, 0, 0, 0);
-            // 
-            // Номер_приказа_Box
-            // 
-            this.Номер_приказа_Box.Location = new System.Drawing.Point(252, 88);
-            this.Номер_приказа_Box.Name = "Номер_приказа_Box";
-            this.Номер_приказа_Box.Size = new System.Drawing.Size(100, 22);
-            this.Номер_приказа_Box.TabIndex = 68;
-            this.Номер_приказа_Box.Enter += new System.EventHandler(this.Номер_приказа_Enter);
-            this.Номер_приказа_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            this.Номер_приказа_Box.Leave += new System.EventHandler(this.Номер_листа_нетрудоспособности_Leave);
-            // 
-            // Табельный_номер_Box
-            // 
-            this.Табельный_номер_Box.Location = new System.Drawing.Point(166, 151);
-            this.Табельный_номер_Box.Name = "Табельный_номер_Box";
-            this.Табельный_номер_Box.ReadOnly = true;
-            this.Табельный_номер_Box.Size = new System.Drawing.Size(100, 22);
-            this.Табельный_номер_Box.TabIndex = 67;
+            this.Табельный.Location = new System.Drawing.Point(166, 151);
+            this.Табельный.Name = "Табельный";
+            this.Табельный.ReadOnly = true;
+            this.Табельный.Size = new System.Drawing.Size(100, 22);
+            this.Табельный.TabIndex = 67;
             // 
             // Отчество_Box
             // 
@@ -158,7 +128,7 @@
             // 
             this.До_Picker.CustomFormat = "yyyy.MM.dd";
             this.До_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.До_Picker.Location = new System.Drawing.Point(252, 54);
+            this.До_Picker.Location = new System.Drawing.Point(332, 70);
             this.До_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.До_Picker.Name = "До_Picker";
             this.До_Picker.Size = new System.Drawing.Size(100, 22);
@@ -169,17 +139,17 @@
             // 
             this.От_Picker.CustomFormat = "yyyy.MM.dd";
             this.От_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.От_Picker.Location = new System.Drawing.Point(65, 54);
+            this.От_Picker.Location = new System.Drawing.Point(115, 72);
             this.От_Picker.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.От_Picker.Name = "От_Picker";
-            this.От_Picker.Size = new System.Drawing.Size(93, 22);
+            this.От_Picker.Size = new System.Drawing.Size(124, 22);
             this.От_Picker.TabIndex = 58;
             this.От_Picker.Value = new System.DateTime(2020, 12, 11, 0, 0, 0, 0);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(164, 56);
+            this.label3.Location = new System.Drawing.Point(244, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 57;
@@ -188,45 +158,36 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 56);
+            this.label2.Location = new System.Drawing.Point(16, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 56;
             this.label2.Text = "Начало";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(137, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
-            this.label1.TabIndex = 55;
-            this.label1.Text = "Номер приказа";
-            // 
             // Создать_отчет_Button
             // 
-            this.Создать_отчет_Button.Location = new System.Drawing.Point(176, 261);
+            this.Создать_отчет_Button.Location = new System.Drawing.Point(271, 390);
             this.Создать_отчет_Button.Name = "Создать_отчет_Button";
             this.Создать_отчет_Button.Size = new System.Drawing.Size(153, 55);
             this.Создать_отчет_Button.TabIndex = 54;
-            this.Создать_отчет_Button.Text = "Создать отчет";
+            this.Создать_отчет_Button.Text = "Создать запись";
             this.Создать_отчет_Button.UseVisualStyleBackColor = true;
             this.Создать_отчет_Button.Click += new System.EventHandler(this.Report_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(128, 166);
+            this.label8.Location = new System.Drawing.Point(24, 224);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 17);
+            this.label8.Size = new System.Drawing.Size(155, 17);
             this.label8.TabIndex = 72;
-            this.label8.Text = "Дата документа";
+            this.label8.Text = "Дата предоставления";
             // 
             // Дата_документа_Box
             // 
             this.Дата_документа_Box.CustomFormat = "yyyy.MM.dd";
             this.Дата_документа_Box.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Дата_документа_Box.Location = new System.Drawing.Point(252, 161);
+            this.Дата_документа_Box.Location = new System.Drawing.Point(185, 219);
             this.Дата_документа_Box.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
             this.Дата_документа_Box.Name = "Дата_документа_Box";
             this.Дата_документа_Box.Size = new System.Drawing.Size(100, 22);
@@ -235,9 +196,9 @@
             // 
             // Номер_листа_нетрудоспособности_Box
             // 
-            this.Номер_листа_нетрудоспособности_Box.Location = new System.Drawing.Point(252, 21);
+            this.Номер_листа_нетрудоспособности_Box.Location = new System.Drawing.Point(260, 29);
             this.Номер_листа_нетрудоспособности_Box.Name = "Номер_листа_нетрудоспособности_Box";
-            this.Номер_листа_нетрудоспособности_Box.Size = new System.Drawing.Size(100, 22);
+            this.Номер_листа_нетрудоспособности_Box.Size = new System.Drawing.Size(172, 22);
             this.Номер_листа_нетрудоспособности_Box.TabIndex = 74;
             this.Номер_листа_нетрудоспособности_Box.Enter += new System.EventHandler(this.Номер_листа_нетрудоспособности_Box_Enter);
             this.Номер_листа_нетрудоспособности_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
@@ -246,7 +207,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 26);
+            this.label9.Location = new System.Drawing.Point(17, 32);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(239, 17);
             this.label9.TabIndex = 73;
@@ -261,7 +222,7 @@
             this.Сотрудник.Controls.Add(this.label13);
             this.Сотрудник.Controls.Add(this.Имя_Box);
             this.Сотрудник.Controls.Add(this.Отчество_Box);
-            this.Сотрудник.Controls.Add(this.Табельный_номер_Box);
+            this.Сотрудник.Controls.Add(this.Табельный);
             this.Сотрудник.Location = new System.Drawing.Point(12, 22);
             this.Сотрудник.Name = "Сотрудник";
             this.Сотрудник.Size = new System.Drawing.Size(318, 218);
@@ -271,8 +232,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.Номер_листа_нетрудоспособности_Box);
             this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.Код_причины);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.Название_организации_выдавшей_листокBox);
+            this.groupBox2.Controls.Add(this.Номер_листа_нетрудоспособности_Box);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label3);
@@ -280,19 +244,48 @@
             this.groupBox2.Controls.Add(this.От_Picker);
             this.groupBox2.Controls.Add(this.Дата_документа_Box);
             this.groupBox2.Controls.Add(this.До_Picker);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.Номер_приказа_Box);
-            this.groupBox2.Controls.Add(this.Дата_приказа_Box);
             this.groupBox2.Location = new System.Drawing.Point(336, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(388, 228);
+            this.groupBox2.Size = new System.Drawing.Size(530, 324);
             this.groupBox2.TabIndex = 76;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Больничный";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 17);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Код причины";
+            // 
+            // Код_причины
+            // 
+            this.Код_причины.Location = new System.Drawing.Point(115, 113);
+            this.Код_причины.Name = "Код_причины";
+            this.Код_причины.Size = new System.Drawing.Size(124, 22);
+            this.Код_причины.TabIndex = 78;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(17, 159);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(280, 17);
+            this.label10.TabIndex = 75;
+            this.label10.Text = "Название организации выдавшей листок";
+            // 
+            // Название_организации_выдавшей_листокBox
+            // 
+            this.Название_организации_выдавшей_листокBox.Location = new System.Drawing.Point(20, 179);
+            this.Название_организации_выдавшей_листокBox.Name = "Название_организации_выдавшей_листокBox";
+            this.Название_организации_выдавшей_листокBox.Size = new System.Drawing.Size(350, 22);
+            this.Название_организации_выдавшей_листокBox.TabIndex = 76;
+            // 
             // Закрыть_Button
             // 
-            this.Закрыть_Button.Location = new System.Drawing.Point(392, 261);
+            this.Закрыть_Button.Location = new System.Drawing.Point(487, 390);
             this.Закрыть_Button.Name = "Закрыть_Button";
             this.Закрыть_Button.Size = new System.Drawing.Size(147, 55);
             this.Закрыть_Button.TabIndex = 77;
@@ -305,14 +298,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(736, 328);
+            this.ClientSize = new System.Drawing.Size(928, 482);
             this.Controls.Add(this.Закрыть_Button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Сотрудник);
             this.Controls.Add(this.Создать_отчет_Button);
             this.Name = "Bol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создание приказа о больничном";
+            this.Text = "Создание записи о больничном";
             this.Сотрудник.ResumeLayout(false);
             this.Сотрудник.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -322,11 +315,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker Дата_приказа_Box;
-        private System.Windows.Forms.TextBox Номер_приказа_Box;
-        private System.Windows.Forms.TextBox Табельный_номер_Box;
+        private System.Windows.Forms.TextBox Табельный;
         private System.Windows.Forms.TextBox Отчество_Box;
         private System.Windows.Forms.TextBox Имя_Box;
         private System.Windows.Forms.TextBox Фамилия_Box;
@@ -338,7 +327,6 @@
         private System.Windows.Forms.DateTimePicker От_Picker;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Создать_отчет_Button;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker Дата_документа_Box;
@@ -347,5 +335,9 @@
         private System.Windows.Forms.GroupBox Сотрудник;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button Закрыть_Button;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox Название_организации_выдавшей_листокBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Код_причины;
     }
 }

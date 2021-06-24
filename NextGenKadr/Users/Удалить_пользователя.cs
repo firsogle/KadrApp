@@ -32,8 +32,10 @@ namespace NextGenKadr
 
             if (result == DialogResult.Yes)
             {
+                string login = connection.Получить_сведения_из_базы_данных($"SELECT Логин FROM Пользователи WHERE [Id пользователя] = {id}");
                 connection.Получить_сведения_из_базы_данных($"Delete FROM Пользователи WHERE [Id пользователя] = {id}");
                 Поле_пользователей_Grid.DataSource = connection.ReloadGrid("SELECT [Id пользователя], Логин, Пароль, Права FROM Пользователи").Tables[0].DefaultView;
+                connection.Запись_в_журнал(login, "Изменение пользователя", "Пользователи", Data.UserAuthorization);
             }
         }
 

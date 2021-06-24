@@ -57,7 +57,7 @@ namespace NextGenKadr
 
         private void Экспорт_Click(object sender, EventArgs e)
         {
-            string id = Поле_список_отчетов_Grid.Rows[Поле_список_отчетов_Grid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+            string id = Поле_список_отчетов_Grid.Rows[Поле_список_отчетов_Grid.CurrentCell.RowIndex].Cells["Id увольнения"].Value.ToString();
             ListDelete service = new ListDelete(id);
             service.ShowDialog();
         }

@@ -116,12 +116,13 @@
             // Кадровик_Label
             // 
             this.Кадровик_Label.AutoSize = true;
-            this.Кадровик_Label.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Кадровик_Label.Location = new System.Drawing.Point(230, 9);
+            this.Кадровик_Label.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Кадровик_Label.Location = new System.Drawing.Point(265, 9);
             this.Кадровик_Label.Name = "Кадровик_Label";
-            this.Кадровик_Label.Size = new System.Drawing.Size(220, 48);
+            this.Кадровик_Label.Size = new System.Drawing.Size(134, 34);
             this.Кадровик_Label.TabIndex = 0;
-            this.Кадровик_Label.Text = "Кадровик";
+            this.Кадровик_Label.Text = "АРМСКС";
+            this.Кадровик_Label.Click += new System.EventHandler(this.Кадровик_Label_Click);
             // 
             // Authorization
             // 

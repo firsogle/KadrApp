@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using ClosedXML.Excel;
 using System.IO;
 using NextGenKadr.Users;
-
+using NextGenKadr.Other;
 
 namespace NextGenKadr
 {
@@ -29,12 +29,31 @@ namespace NextGenKadr
             MainGrid.AllowUserToAddRows = false;
             UserLabel.Text = Data.UserAuthorization;
         }
-
+     
        private void Update_Click(object sender, EventArgs e)
         {
-            string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+            string id = "";
+            try
+            {
+                if ((id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString()) != null)
+                {
+                    id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
+                }
+                else
+                {
+                    DialogResult dialogResult = MessageBox.Show("Сотрудник еще не добавлен", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception)
+            {
+
+                DialogResult dialogResult = MessageBox.Show("Сотрудник еще не добавлен", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             UpdatePerson service = new UpdatePerson(id);
             service.ShowDialog();
+
+
         }
 
         private void DeletePerson_Click(object sender, EventArgs e)
@@ -82,16 +101,13 @@ namespace NextGenKadr
         }
       private void ViewPersonStrip_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
                 string id = MainGrid.Rows[MainGrid.CurrentCell.RowIndex].Cells["Табельный номер"].Value.ToString();
                 ViewPerson service = new ViewPerson(id);
                 service.ShowDialog();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Выберите запись сотрудника");
-            }
+            
+    
+            
         }
 
         private void ViewReports_Click(object sender, EventArgs e)
@@ -164,9 +180,21 @@ namespace NextGenKadr
             Settings service = new Settings();
             service.ShowDialog();
         }
-        private void MainGrid_VisibleChanged(object sender, EventArgs e)
+
+        private void AdminForm_Activated(object sender, EventArgs e)
         {
             MainGrid.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
+        }
+
+        private void Просмотреть_журнал(object sender, EventArgs e)
+        {
+            Grid_Журнал service = new Grid_Журнал();
+            service.ShowDialog();
+        }
+
+        private void UserLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

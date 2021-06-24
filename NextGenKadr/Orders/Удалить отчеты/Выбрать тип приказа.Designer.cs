@@ -111,7 +111,7 @@ namespace NextGenKadr
             this.HelpButton = true;
             this.Name = "DeleteView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Выбрать тип отчетов";
+            this.Text = "Выбрать тип приказа";
             this.ResumeLayout(false);
             this.PerformLayout();
 

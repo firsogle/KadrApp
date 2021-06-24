@@ -80,7 +80,7 @@
             this.Список_уволенных_Button.Name = "Список_уволенных_Button";
             this.Список_уволенных_Button.Size = new System.Drawing.Size(134, 51);
             this.Список_уволенных_Button.TabIndex = 6;
-            this.Список_уволенных_Button.Text = "Список уволенных";
+            this.Список_уволенных_Button.Text = "Создать приказ на увольнение";
             this.Список_уволенных_Button.UseVisualStyleBackColor = true;
             this.Список_уволенных_Button.Click += new System.EventHandler(this.ListDelete_Click);
             // 
@@ -90,7 +90,7 @@
             this.Больничный_Button.Name = "Больничный_Button";
             this.Больничный_Button.Size = new System.Drawing.Size(134, 51);
             this.Больничный_Button.TabIndex = 5;
-            this.Больничный_Button.Text = "Больничный";
+            this.Больничный_Button.Text = "Больничные";
             this.Больничный_Button.UseVisualStyleBackColor = true;
             this.Больничный_Button.Click += new System.EventHandler(this.Bol_Click);
             // 
@@ -98,9 +98,9 @@
             // 
             this.Отпуск_Button.Location = new System.Drawing.Point(208, 24);
             this.Отпуск_Button.Name = "Отпуск_Button";
-            this.Отпуск_Button.Size = new System.Drawing.Size(134, 51);
+            this.Отпуск_Button.Size = new System.Drawing.Size(133, 51);
             this.Отпуск_Button.TabIndex = 4;
-            this.Отпуск_Button.Text = "Отпуск";
+            this.Отпуск_Button.Text = "Создать приказ на отпуск";
             this.Отпуск_Button.UseVisualStyleBackColor = true;
             this.Отпуск_Button.Click += new System.EventHandler(this.Otp_Click);
             // 
@@ -110,7 +110,7 @@
             this.Командировка_Button.Name = "Командировка_Button";
             this.Командировка_Button.Size = new System.Drawing.Size(134, 51);
             this.Командировка_Button.TabIndex = 3;
-            this.Командировка_Button.Text = "Командировка";
+            this.Командировка_Button.Text = "Создать приказ на командировку";
             this.Командировка_Button.UseVisualStyleBackColor = true;
             this.Командировка_Button.Click += new System.EventHandler(this.Com_Click);
             // 

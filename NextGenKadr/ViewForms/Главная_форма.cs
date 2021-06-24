@@ -135,5 +135,9 @@ namespace NextGenKadr
             Location = new Point((Size)Location - (Size)MouseMain + (Size)e.Location);
         }
 
+        private void MainForms_Activated(object sender, EventArgs e)
+        {
+            Поле_главного_меню.DataSource = connection.ReloadGrid("SELECT * FROM Сотрудники").Tables[0].DefaultView;
+        }
     }
 }

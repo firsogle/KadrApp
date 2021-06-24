@@ -89,6 +89,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Other\Журнал.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Журнал.Designer.cs">
+      <DependentUpon>Журнал.cs</DependentUpon>
+    </Compile>
     <Compile Include="Other\Путь_к_базе.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +107,11 @@
     <Compile Include="Other\Очистка базы.Designer.cs">
       <DependentUpon>Очистка базы.cs</DependentUpon>
     </Compile>
-    <Compile Include="Orders\Удалить отчеты\Выбрать тип отчетов.cs">
+    <Compile Include="Orders\Удалить отчеты\Выбрать тип приказа.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Orders\Удалить отчеты\Выбрать тип отчетов.Designer.cs">
-      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
+    <Compile Include="Orders\Удалить отчеты\Выбрать тип приказа.Designer.cs">
+      <DependentUpon>Выбрать тип приказа.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Изменить_пользователя.cs">
       <SubType>Form</SubType>
@@ -230,6 +236,9 @@
     </Compile>
     <Compile Include="Functions\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Other\Журнал.resx">
+      <DependentUpon>Журнал.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Other\Путь_к_базе.resx">
       <DependentUpon>Путь_к_базе.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,8 +257,8 @@
     <EmbeddedResource Include="Persons\Уволить_сотрудника.resx">
       <DependentUpon>Уволить_сотрудника.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Orders\Удалить отчеты\Выбрать тип отчетов.resx">
-      <DependentUpon>Выбрать тип отчетов.cs</DependentUpon>
+    <EmbeddedResource Include="Orders\Удалить отчеты\Выбрать тип приказа.resx">
+      <DependentUpon>Выбрать тип приказа.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Добавить_пользователя.resx">
       <DependentUpon>Добавить_пользователя.cs</DependentUpon>
@@ -366,8 +375,6 @@
       <DependentUpon>DataBase_Kadry.mdf</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reports\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

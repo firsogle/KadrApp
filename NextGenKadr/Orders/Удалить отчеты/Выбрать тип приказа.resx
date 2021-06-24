@@ -117,20 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="label56.ToolTip" xml:space="preserve">
-    <value>2 - только начальное (4 класса), в том числе 5 или 6 классов средней школы
-3 - только основное (9 классов)
-7 - полное среднее (11 классов)
-10 - начальное профессиональное
-11- техникумы, ПТУ, колледжи
-15- Работник окончил три и более курсов вуза (института, университета или академии) и больше не учился либо продолжает обучение
-18 - высшее (вуз)
-19 - послевузовское (например, аспирантура)</value>
-  </data>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>30</value>
-  </metadata>
 </root>

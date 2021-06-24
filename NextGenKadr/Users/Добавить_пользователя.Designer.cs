@@ -62,7 +62,8 @@
             this.Создать_пользователя_Box.Location = new System.Drawing.Point(201, 379);
             this.Создать_пользователя_Box.Name = "Создать_пользователя_Box";
             this.Создать_пользователя_Box.Size = new System.Drawing.Size(124, 56);
-            this.Создать_пользователя_Box.TabIndex = 4;
+            this.Создать_пользователя_Box.TabIndex = 3;
+            this.Создать_пользователя_Box.TabStop = false;
             this.Создать_пользователя_Box.Text = "Создать пользователя";
             this.Создать_пользователя_Box.UseVisualStyleBackColor = true;
             this.Создать_пользователя_Box.Click += new System.EventHandler(this.AddUser_Click);
@@ -73,6 +74,7 @@
             this.Закрыть_Button.Name = "Закрыть_Button";
             this.Закрыть_Button.Size = new System.Drawing.Size(103, 56);
             this.Закрыть_Button.TabIndex = 5;
+            this.Закрыть_Button.TabStop = false;
             this.Закрыть_Button.Text = "Закрыть";
             this.Закрыть_Button.UseVisualStyleBackColor = true;
             this.Закрыть_Button.Click += new System.EventHandler(this.button2_Click);
@@ -91,7 +93,7 @@
             this.Пароль_Box.Location = new System.Drawing.Point(296, 171);
             this.Пароль_Box.Name = "Пароль_Box";
             this.Пароль_Box.Size = new System.Drawing.Size(220, 22);
-            this.Пароль_Box.TabIndex = 2;
+            this.Пароль_Box.TabIndex = 1;
             // 
             // label2
             // 
@@ -116,7 +118,7 @@
             this.Повтор_пароля_Box.Location = new System.Drawing.Point(296, 235);
             this.Повтор_пароля_Box.Name = "Повтор_пароля_Box";
             this.Повтор_пароля_Box.Size = new System.Drawing.Size(220, 22);
-            this.Повтор_пароля_Box.TabIndex = 10;
+            this.Повтор_пароля_Box.TabIndex = 2;
             // 
             // Администратор_radioButton
             // 
@@ -125,7 +127,6 @@
             this.Администратор_radioButton.Name = "Администратор_radioButton";
             this.Администратор_radioButton.Size = new System.Drawing.Size(132, 21);
             this.Администратор_radioButton.TabIndex = 14;
-            this.Администратор_radioButton.TabStop = true;
             this.Администратор_radioButton.Text = "Администратор";
             this.Администратор_radioButton.UseVisualStyleBackColor = true;
             // 
@@ -136,7 +137,6 @@
             this.Пользователь_radioButton.Name = "Пользователь_radioButton";
             this.Пользователь_radioButton.Size = new System.Drawing.Size(122, 21);
             this.Пользователь_radioButton.TabIndex = 15;
-            this.Пользователь_radioButton.TabStop = true;
             this.Пользователь_radioButton.Text = "Пользователь";
             this.Пользователь_radioButton.UseVisualStyleBackColor = true;
             // 
